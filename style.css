@@ -35,3 +35,33 @@
   height: 30px;
   border-radius: 5px;
 }
+
+.trybewarts-login {
+  display: flex;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 130px;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.input {
+  margin-right: 10px;
+}
+
+#btn {
+  width: 80px;
+  background-color: greenyellow;
+}
+
+#btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
