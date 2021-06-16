@@ -55,9 +55,44 @@
   justify-content: space-around;
 }
 
+#evaluation-form h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
 .section-form {
   display: flex;
   justify-content: center;
+}
+
+.login-container {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#input-name, #input-lastname {
+  width: 100%;
+}
+
+#input-email {
+  width: 50%;
+}
+
+#house {  
+  margin: 50px;
+  width: 200px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: white;
+  height: 34px;
+}
+
+
+.email-option-container {
+  display: flex;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -68,7 +103,7 @@
   display: flex;
   align-items: space-between;
   justify-content: center;
-  padding: 25px;
+  margin: 25px 0;
 }
 
 .family-items {
@@ -101,7 +136,7 @@
 }
 
 .subject {
-  margin-left: 9px;
+  margin-left: 5px;
 }
 
 .section-rate {
