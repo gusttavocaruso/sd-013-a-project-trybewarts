@@ -82,7 +82,8 @@ main {
 
 .label-rate {
   display: flex;
-  flex-flow: wrap row;
+  flex-flow: column row;
+  box-sizing: border-box;
 }
 
 footer {
