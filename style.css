@@ -42,7 +42,7 @@ input {
   color: rgb(246, 248, 250);	
   background-color: rgb(94, 93, 88);
   padding: 7px 15px;
-  border-radius: 9px;#input-radios-container
+  border-radius: 9px;
 }
 
 .main-container {
@@ -90,7 +90,29 @@ input {
 	padding: 15px;
 }
 
-#input-radios-container {
+.input-radio-container {
   display: flex;
   flex-direction: column;
+}
+
+label {
+  margin-top: 5px;
+}
+
+.input-checkbox {
+  margin: 7px 5px;
+}
+
+.input-radio {
+  margin: 5px;
+}
+
+.radios {
+  margin: 5px;
+}
+
+#container-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
