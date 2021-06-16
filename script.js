@@ -11,3 +11,18 @@ function checkLogin() {
 }
 
 butao.addEventListener('click', checkLogin);
+
+// butão submit
+
+const ok = document.getElementById('agreement');
+const butaumSubmit = document.getElementById('submit-btn');
+
+function enableSubmit() {
+  if (ok.checked) {
+    butaumSubmit.disabled = false;
+  } else {
+    butaumSubmit.disabled = true;
+  }
+}
+
+ok.addEventListener('change', enableSubmit);
