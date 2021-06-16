@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body{
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -22,6 +25,7 @@ img .trybewarts-header-logo {
 main {
     display: flex;
     justify-content: center;
+    border: 2px solid red;
 }
 
 #trybewarts-header-title {
@@ -66,4 +70,35 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.family-content{
+  display: flex;
+  justify-content: space-around;
+  width: 470px;
+  border: 2px solid blue;
+
+}
+
+.family{
+  border: 2px solid blue;
+}
+
+.content{
+  border: 2px solid black;
+  width: 300px;
+
+}
+
+.all{
+  border: 2px solid rebeccapurple;
+  width: 480px;
+}
+
+#textarea{
+  width: 470px;
+}
+
+.getContent{
+  margin: 7px;
 }
