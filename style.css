@@ -6,6 +6,10 @@ main {
   width: 675px;
   flex-direction: column;
 }
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
+}
+#evaluation-form input{
+  flex-flow: column;
+  width: 300px;
 }
