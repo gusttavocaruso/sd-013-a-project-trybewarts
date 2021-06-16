@@ -26,7 +26,14 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  flex-flow: wrap;
   width: 675px;
+}
+
+#evaluation-form input, select {
+  width: 50%;
 }
 
 #trybewarts-forms-logo {
