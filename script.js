@@ -1,6 +1,8 @@
 const loginInput = document.getElementById('login');
 const passInput = document.getElementById('pass');
 const loginButton = document.getElementById('login-bt');
+const submitCheck = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
 
 const dataLogin = {
   login: 'tryber@teste.com',
@@ -17,4 +19,13 @@ function loginAuthentication() {
   }
 }
 
+function agreeInfos() {
+  if (submitCheck.checked) {
+    submitButton.removeAttribute('disabled');
+  } else {
+    submitButton.setAttribute('disabled', 'disabled');
+  }
+}
+
 loginButton.onclick = loginAuthentication;
+submitCheck.onclick = agreeInfos;
