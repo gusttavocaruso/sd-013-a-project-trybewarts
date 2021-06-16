@@ -15,6 +15,7 @@
 
 .form-principal {
   display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -44,4 +45,9 @@
 
 .evaluation-form-satisfacao {
   display: flex;
+}
+
+.evaluation-form-textarea-comment {
+  display: flex;
+  flex-direction: column;
 }
