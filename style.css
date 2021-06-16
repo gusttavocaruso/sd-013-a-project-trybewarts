@@ -66,3 +66,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* CSS req12 */
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
