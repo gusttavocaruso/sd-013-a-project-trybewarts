@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="header-container">
-   <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-   <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="GET">
       <input type="email" name="login" id="email" class="login-form" placeholder="Login" required>
       <input type="password" name="login" class="login-form" id="password" placeholder="Senha" required>
@@ -20,24 +22,64 @@
     </form>
   </header>
   <main class="evaluation-form-container">
+
     <form id="evaluation-form" action="" method="get">
-      <div class="name-lastname-container">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <h2 class="form-title">Forms</h2>
+      <div class="input-container">
+        <div class="name-lastname-container">
+          <input type="text" id="input-name" placeholder="Nome">
+          <input type="text" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div class="email-house-container">
+          <input type="email" name="evaluator" id="input-email" placeholder="Email">
+          <label for="house" id="house-label">Casa:</label>
+          <select name="evaluator" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
-      <div class="email-house-container">
-        <input type="email" name="evaluator" id="input-email" placeholder="Email">
-      <label for="house" id="house-label">Casa:</label>
-      <select name="evaluator" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
+      <hr>
+      <div class="input-options-container">
+        <div class="family-input-container">
+          <label id="label-family">Qual sua família?</label>
+          <div class="frontend-container family">
+            <input type="radio" name="family" id="frontend-family" value="Frontend">
+            <label for="frontend-family">Família Frontend</label>
+          </div>
+
+          <div class="backend-container family">
+            <input type="radio" name="family" id="backend-family" value="Backend">
+            <label for="backend-family">Família Backend</label>
+          </div>
+
+          <div class="fullstack-container family">
+            <input type="radio" name="family" id="fullstack-family" value="FullStack">
+            <label for="fullstack-family">Família Fullstack</label>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="conteudos">
+            <input type="checkbox" value="HoFs" name="content" id="hofs" class="subject"><span>Hofs</span>
+            <input type="checkbox" value="Jest" name="content" id="jest" class="subject"><span>Jest</span>
+            <input type="checkbox" value="Promises" name="content" id="promises" class="subject"><span>Promises</span>
+          </div>
+          <div class="conteudos">
+            <input type="checkbox" value="React" name="content" id="react" class="subject"><span>React</span>
+            <input type="checkbox" value="SQL" name="content" id="sql" class="subject"><span>SQL</span>
+            <input type="checkbox" value="Python" name="content" id="python" class="subject"><span>Python</span>
+          </div>
+        </div>
       </div>
+
     </form>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    <img src="images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
