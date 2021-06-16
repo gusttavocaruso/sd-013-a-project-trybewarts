@@ -41,3 +41,8 @@
   width: 675px;
   flex-direction: column;
 }
+
+/* tamanho da logo (requisito 7) */
+#trybewarts-forms-logo {
+  height: 500px;
+}
