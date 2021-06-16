@@ -10,4 +10,31 @@
   display: flex;
   width: 100%;
   height: 100px;
+  justify-content: space-evenly;
 }
+
+main {
+  display: flex;
+}
+
+main #evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  flex-wrap: wrap;
+}
+
+#name-lastname {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#name-lastname input {
+  width: 40%;
+}
+
+main #trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+}
+
