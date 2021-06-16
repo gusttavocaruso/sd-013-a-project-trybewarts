@@ -73,6 +73,7 @@ main {
 }
 
 #evaluation-form {
+  padding: 50px;
   background-color: rgb(240, 240, 230);
   border: 1px solid rgb(207, 198, 180);
   display: flex;
@@ -83,4 +84,38 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.names-box {
+  display: flex;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+}
+
+.label-select {
+  margin: 1em;
+}
+
+.choose-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.family-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.checkbox-container {
+  max-width: 60%;
+}
+
+#label-content {
+  display: block;
 }
