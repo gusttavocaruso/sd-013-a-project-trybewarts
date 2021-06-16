@@ -4,8 +4,9 @@
     justify-content: space-between;
 }
 
-.trybewarts-header-logo{
-
+.trybewarts-login{
+    display: flex;
+   
 }
 
 #trybewarts-forms-logo {
