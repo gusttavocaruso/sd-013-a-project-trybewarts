@@ -12,11 +12,11 @@
   height: 54px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 form {
-  position: absolute;
-  right: 0;
+  display: inline-flex;
 }
 
 .input , .btn-logar {
@@ -29,6 +29,4 @@ form {
   width: 42px;
   height: 44px;
   border: 1px solid black;
-  position: absolute;
-  left: 0;
 }
