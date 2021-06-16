@@ -19,7 +19,9 @@
 .forms {
   display: flex;
   width: 675px;
+  flex-shrink: 0;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 20px;
 }
