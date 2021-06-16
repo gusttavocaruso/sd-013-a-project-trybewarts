@@ -46,6 +46,6 @@ inserirContador();
 // });
 
 textArea.addEventListener('input', () => {
-  count -= 1;
+  count = 500 - textArea.value.length;
   inserirContador();
 });
