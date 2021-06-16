@@ -45,7 +45,7 @@
 
 .radio-family {
   display: flex;
- flex-direction: row;
+  flex-direction: row;
 }
 
 .inputs-checkbox {
