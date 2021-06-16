@@ -9,13 +9,26 @@
 </head>
 <body>
   <header class="header">
-    <div>
+    <div class="container-form">
       <div>
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo-trybewarts" width="50px">
       </div>
-      <div>
-
-      </div>
+      <form class="trybewarts-login">
+        <div>
+          <label for="input-login">
+            <input type="email" name="login" id="input-login" placeholder="Login" >
+          </label>
+        </div>
+        <div>
+          <label for="input-password">
+            <input type="password" name="password" id="input-password" placeholder="Senha" >
+          </label>
+        </div>
+        <div>
+          <button type="submit" id="btn-enter">Entrar</button>
+        </div>
+        <p id="test"></p>
+      </form>
     </div>
   </header>
 
