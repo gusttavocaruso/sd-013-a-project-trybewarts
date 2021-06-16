@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
 }
@@ -43,4 +43,8 @@ header {
   color: white;
   background-color: #4E2C82;
   font-weight: bold;
+}
+.trybewarts-login {
+  display: flex;
+  justify-content: space-evenly;
 }
