@@ -11,7 +11,9 @@
   <!-- Código criado para fazer minha parte dos requisitos no trabalho em dupla -->
 
   <main>
+    <!-- FORMULÁRIO -->
     <form action="" method="GET" id="evaluation-form">
+      <!-- SEÇÃO COM NOME E SOBRENOME -->
       <section class="input-names">
         <label for="input-name">
           <input type="text" name="name" placeholder="Nome" id="input-name">
@@ -21,6 +23,7 @@
         </label>
       </section>
 
+      <!-- SEÇÃO COM EMAIL E CASAS -->
       <section class="input-email-house">
         <label for="input-email">
           <input type="email" name="email" placeholder="Email" id="input-email">
@@ -35,6 +38,57 @@
           </select>
         </label>
       </section>
+
+      <hr>
+
+      <!-- SEÇÃO JUNTANDO RADIO E CHECKBOX -->
+      <section class="input-radio-checkbox">
+        <!-- SEÇÃO COM RADIOS DAS FAMÍLIAS -->
+        <label for="family" id="label-family">
+          Qual a sua família?
+          <label for="radio-frontend">
+            <input type="radio" name="family" id="radio-frontend" value="Frontend">
+            Família Frontend
+          </label>
+          <label for="radio-backend">
+            <input type="radio" name="family" id="radio-backend" value="Backend">
+            Família Backend
+          </label>
+          <label for="radio-fullstack">
+            <input type="radio" name="family" id="radio-fullstack" value="FullStack">
+            Família FullStack
+          </label>
+        </label>
+        <!-- SEÇÃO COM LISTA DE CONTEÚDOS -->
+        <label for="conteudo" id=label-content>
+          Qual conteúdo você está com mais vontade de aprender?
+          <label for="checkbox-hofs">
+            <input type="checkbox" name="conteudo" id="checkbox-hofs" value="HoFs">
+            HoFs
+          </label>
+          <label for="checkbox-jest">
+            <input type="checkbox" name="conteudo" id="checkbox-jest" value="Jest">
+            Jest
+          </label>
+          <label for="checkbox-promises">
+            <input type="checkbox" name="conteudo" id="checkbox-promises">
+            Promises
+          </label>
+          <label for="checkbox-react">
+            <input type="checkbox" name="conteudo" id="checkbox-react" value="React">
+            React
+          </label>
+          <label for="checkbox-sql">
+            <input type="checkbox" name="conteudo" id="checkbox-sql" value="SQL">
+            SQL
+          </label>
+          <label for="checkbox-python">
+            <input type="checkbox" name="conteudo" id="checkbox-python" value="Python">
+            Python
+          </label>
+        </label>
+      </section>
+
     </form>
 
     <img src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts" id="trybewarts-forms-logo">

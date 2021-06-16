@@ -6,6 +6,15 @@
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main input, select {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 5px;
 }
 
 #evaluation-form {
@@ -14,12 +23,29 @@ main {
   width: 675px;
 }
 
+hr {
+  width: 450px;
+  margin: 15px 0;
+}
+
+.input-radio-checkbox {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+#label-content {
+  display: flex;
+  flex-flow: row wrap;
+  width: 230px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-main input, select {
-  margin-bottom: 10px;
-  margin-right: 5px;
-  padding: 5px;
-}
+
