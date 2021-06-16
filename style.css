@@ -17,18 +17,10 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-
 }
 
-/* .form-conteiner {
+.family {
   display: flex;
-  flex-direction: row;
-} */
+  flex-direction: column;
+}
 
-/* #input-name {
-  display: flex;
-} */
-
-/* #input-lastname {
-  display: flex;
-} */
