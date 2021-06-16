@@ -1,13 +1,13 @@
-*, *:after, *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* , *:after , *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    font-size: 100%;
-    list-style-type: none;
+  font-size: 100%;
+  list-style-type: none;
 }
 
 .header {
@@ -35,7 +35,7 @@ body {
   align-self: end;
 }
 
-.login, .senha, .logar {
+.login , .senha , .logar {
   height: 30px;
   border: none;
   text-indent: 10px;
@@ -49,20 +49,6 @@ body {
   background-color: rgb(80, 0, 145);
   color: white;
   text-indent: 0;
-}
-
-main {
-  display: flex;
-}
-
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-  width: 675px;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
 }
 
 main {
