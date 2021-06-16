@@ -10,3 +10,6 @@ formButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+// Requisito 14
+const radioDiv = document.querySelector('.radio-buttons-rate');
