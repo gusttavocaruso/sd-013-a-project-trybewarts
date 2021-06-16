@@ -54,3 +54,14 @@ footer {
   align-items: center;
   height: 50px;
 }
+
+.flex-container {
+  display:flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: red;
+}
+
+form {
+  width: 675px;
+}
