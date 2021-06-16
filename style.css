@@ -1,0 +1,9 @@
+.forms-container, .family-container, .content-container, .comments-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate-container {
+  display: flex;  
+}
+
