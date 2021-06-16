@@ -4,6 +4,6 @@
 
 #evaluation-form {
   width: 675px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
