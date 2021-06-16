@@ -47,11 +47,11 @@ main {
   width: 500px;
 }
 
-#family input {
+.checkbox input {
   display: flex;
-  flex-direction: column; 
 }
 
-.checkbox input {
-  display: flex;  
+#family input {
+  display: flex;
+  flex-direction: column;
 }
