@@ -6,5 +6,18 @@ body {
 
 .header {
     display: flex;
-    background-color: rgb(50, 167, 145)
+    background-color: rgb(50, 167, 145);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+    width: 60px;
+    
+}
+
+.trybewarts-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
