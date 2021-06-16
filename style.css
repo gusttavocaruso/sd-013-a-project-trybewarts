@@ -73,8 +73,8 @@ main {
 
 #div1 {
   align-items: center;
+  width: 50vw;
   display: flex;
-  width: 675px;
   flex-flow: column wrap;
 }
 
@@ -84,9 +84,11 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   margin-top: 10px;
+  align-items: center;
   justify-content: center;
+  width: 675px;
 }
 
 #evaluation-form input {
