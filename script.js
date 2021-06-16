@@ -8,6 +8,6 @@ getButton.addEventListener('click', () => {
   if ( (getLogin.value !== login) && (getSenha.value !== senha)) {
     alert ('Login ou senha inválidos.');
   } else {
-    alert ('Login efetuado!')
+    alert ("Olá, Tryber!");
   }
 })
