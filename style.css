@@ -26,3 +26,8 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.evaluation-form-nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+}
