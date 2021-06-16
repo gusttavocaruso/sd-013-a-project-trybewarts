@@ -21,3 +21,12 @@
   width: 675px;
   flex-direction: column;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
