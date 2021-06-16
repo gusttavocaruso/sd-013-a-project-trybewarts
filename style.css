@@ -22,3 +22,14 @@
   display: flex;
   align-items: center;
 }
+
+/* Main */
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
