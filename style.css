@@ -64,7 +64,11 @@ form {
   height: 500px;
 }
 
-
+.juntin {
+  display: flex;
+  background-color: blueviolet;
+  
+}
 
 
 
