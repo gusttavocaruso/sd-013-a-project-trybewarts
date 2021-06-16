@@ -5,7 +5,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(163, 163, 163);
+}
+
 .header {
+  color: white;
   background-color: rgb(50, 167, 145);
   display: flex;
   width: 100%;
@@ -19,10 +24,20 @@
   align-items: center;
   max-width: 100%;
   border: white 1px solid;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.header img {
+  height: 100px;
 }
 
 main {
   display: flex;
+  width: 100vw;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 main #evaluation-form {
@@ -32,18 +47,46 @@ main #evaluation-form {
   flex-wrap: wrap;
 }
 
-#name-lastname {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-#name-lastname input {
+#input-container input {
   width: 40%;
 }
 
 main #trybewarts-forms-logo {
+  width: 400px;
   display: flex;
   height: 500px;
+}
+
+#div-family-tecnologies-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+h2 {
+  display: block;
+}
+
+#label-family {
+  width: 40%;
+}
+
+#checkboxes {
+  display: flex;
 }
 
 #login-input, #pass-input {
@@ -79,10 +122,15 @@ main #trybewarts-forms-logo {
 }
 
 .trybewarts-header-logo {
-  
+
 }
 
 .container-title {
   display: flex;
   align-self: center;
+}
+
+#tecnologies {
+  display: flex;
+  flex-direction: column;
 }

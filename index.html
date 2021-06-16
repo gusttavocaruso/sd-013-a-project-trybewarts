@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" type="text/css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>TRYBEWARTS</title>
 </head>
 <body>
@@ -24,14 +26,50 @@
     </form>
   </header>
   <main>
-    <form action="#" id="evaluation-form">
-      <div id="name-lastname">
-        <input type="text" name="name" placeholder="Nome" id="input-name">
+    <form action="#" id="evaluation-form"> <h1>FORMS</h1>
+      <div id="input-container">
 
-        <input type="text" placeholder="Sobrenome" name="name" id="input-lastname">
+          <input type="text" class="form-control" name="name" placeholder="Nome" id="input-name">
+
+          <input type="text" class="form-control" placeholder="Sobrenome" name="name" id="input-lastname">
+
+        <input type="email" class="form-control" placeholder="Email" name="name" id="input-email">
+
       </div>
+      <div id="div-family-tecnologies-container">
+        <div for="family" id="label-family">
+          <h4>Qual Sua Família?</h4>
+          <div>
+            <input type="radio" class="form-check-input" value="Frontend" name="family" id="Frontend">Família Frontend
+          </div>
+          <div>
+            <input type="radio" class="form-check-input" value="Backend" name="family" id="Backend">Família Backend
+          </div>
+          <div>
+            <input type="radio" class="form-check-input" value="FullStack" name="family" id="FullStack">Família FullStack
+          </div>
+        </div>
+        <div id="tecnologies">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div id="checkboxes">
+            <input type="checkbox" value="HoFs" class="form-check-input subject">HoFs
+            <input type="checkbox" value="Jest" class="form-check-input subject">Jest
+            <input type="checkbox" value="Promises" class="form-check-input subject">Promises
+            <input type="checkbox" value="Promises" class="form-check-input subject">React
+            <input type="checkbox" value="SQL" class="form-check-input subject">SQL
+            <input type="checkbox" value="Python" class="form-check-input subject">Python
 
-      <input type="email" placeholder="Email" name="name" id="input-email">
+          </div>
+
+          <!--
+O campo deve ser formado por seis checkbox com as seguintes opções (seguindo esta ordem): HoFs, Jest, Promises, React, SQL e Python
+Os valores (value) dos campos são, respectivamente: HoFs, Jest, Promises, React, SQL, Python
+As classes (class) dos campos devem ser subject
+Posicione as checkbox para ficar lado a lado
+Posicione as checkbox a abaixo do label
+ -->
+        </div>
+      </div>
 
     </form>
     <div id="trybewarts-forms-logo">
