@@ -46,27 +46,44 @@
         </label>
       </div>
 
-      <div id="label-content">Qual conteúdo você está com mais vontade de aprender?<br>
-        <label for="hofs">HoFs
-          <input type="checkbox" id="hofs" name="subject" value="HoFs">
-        </label>
-        <label for="jest">Jest
-          <input type="checkbox" id="jest" name="subject" value="Jest">
-        </label>          
-        <label for="promises">Promises
-          <input type="checkbox" id="promises" name="subject" value="Promises">
-        </label>          
-        <label for="react">React
-          <input type="checkbox" id="react" name="subject" value="React">
-        </label>
-        <label for="sql">SQL
-          <input type="checkbox" id="sql" name="subject" value="SQL">
-        </label>
-        <label for="python">Python
-          <input type="checkbox" id="p ython" name="subject" value="Python">
-        </label>
-      </div>
+      <div class="form-row">
+        <div class="form-column">
+          <h4 id="label-family">Qual sua família?</h4>
+          <label for="Frontend">Frontend
+            <input type="radio" id="Frontend" name="family" value="Frontend">
+          </label>
+          <label for="Backend">Backend
+            <input type="radio" id="Backend" name="family" value="Backend">
+          </label>
+          <label for="FullStack">FullStack
+            <input type="radio" id="FullStack" name="family" value="FullStack">
+          </label>
+        </div>
 
+        <div class="form-column">
+          <h4 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h4>
+          <div class="form-row">
+            <label for="hofs">HoFs
+              <input type="checkbox" id="hofs" name="subject" value="HoFs">
+            </label>
+            <label for="jest">Jest
+              <input type="checkbox" id="jest" name="subject" value="Jest">
+            </label>
+            <label for="promises">Promises
+              <input type="checkbox" id="promises" name="subject" value="Promises">
+            </label>
+            <label for="react">React
+              <input type="checkbox" id="react" name="subject" value="React">
+            </label>
+            <label for="sql">SQL
+              <input type="checkbox" id="sql" name="subject" value="SQL">
+            </label>
+            <label for="python">Python
+              <input type="checkbox" id="p ython" name="subject" value="Python">
+            </label>
+          </div>
+        </div>
+      </div>
 
       <div class="form-row">
         <h4 id="label-rate">Como você avalia a Trybewarts?</h4>
