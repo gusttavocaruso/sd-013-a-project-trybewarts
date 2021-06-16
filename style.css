@@ -66,3 +66,13 @@ h5 {
   text-align: center;
   color: rgb(119, 134, 130);
 }
+
+.family-trybewarts {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
