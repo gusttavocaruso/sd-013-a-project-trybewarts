@@ -52,7 +52,11 @@
   align-self: flex-start;
 }
 
-.radio-group {
+#label-content {
+  display: flex;
+}
+
+.div-label-contaneir {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
