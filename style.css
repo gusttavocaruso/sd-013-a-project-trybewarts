@@ -26,6 +26,18 @@
   height: 20px;
 }
 
+.div-family {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.div-check-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
