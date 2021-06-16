@@ -11,26 +11,41 @@
 
 <body>
   <header>
-      <div class="header">
-        <div class="container-trybewarts-header-logo">
-          <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybe-logo">
-        </div>
-          <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <div class="container-trybewarts-login">
-          <form action="" class="trybewarts-login">
-            <input type="email" name="email" id="email" placeholder="Login">
-            <input type="password" name="pass" id="password" placeholder="Senha">
-            <button type="submit" id="entrar">Entrar</button>
-          </form>
-        </div>
+    <div class="header">
+      <div class="container-trybewarts-header-logo">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybe-logo">
       </div>
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <div class="container-trybewarts-login">
+        <form action="" class="trybewarts-login">
+          <input type="email" name="email" id="email" placeholder="Login">
+          <input type="password" name="pass" id="password" placeholder="Senha">
+          <button type="submit" id="entrar" class="button">Entrar</button>
+        </form>
+      </div>
+    </div>
   </header>
   <main>
-    <form action="" id= "evaluation-form">
-
+    <form action="" id="evaluation-form">
+      <div class="name-last-name-container">
+        <input type="text" name="name" id="input-name" placeholder="Nome">
+        <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <input type="email" name="email" id="input-email" placeholder="Email">
     </form>
+    <div class="imagem-main">
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-trybe">
+    </div>
+    <select name="casa" id="mouse">
+      <option label="Gitnória" value="Gitnória" id="gitnoria-house"></option>
+      <option label="Reactpuff" value="Reactpuff" id="reactpuff-house"></option>
+      <option label="Corvinode" value="Corvinode" id="corvinode-house"></option>
+      <option label="Pytherina" value="Pytherina" id="pytherina-house"></option>
+    </select>
   </main>
+
   <script src="script.js"></script>
+
 </body>
 
 </html>
