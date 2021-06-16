@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>TrybeWarts</title>
+  <title>Project TrybeWarts</title>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <img src="images/trybewarts-header-logo.svg" alt="trabewarts logo" class="trybewarts-header-logo">
+      <form class="trybewarts-login" id="loginForm">
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="password">
+        <button type="submit">Entrar</button>
+      </form>
+    </header>
+  </div>
   <main class="flex-container">
     <form class="flex-container" id="evaluation-form">
-      
       <label for="nome">Nome:
         <input type="text" id="input-name" name="nome" placeholder="Nome"><br>
       </label>
-      
       <label for="sobrenome">Sobrenome:
         <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome"><br>
       </label>
       <label for="email">E-mail:
         <input type="text" id="input-email" name="email" placeholder="Email"><br>
       </label>
-
       <label for="house">Escolha uma casa:
         <select id="house" name="house">
           <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
           <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-        
         </select>
       </label>
-
-
     </form>
   </main>
-  
   <script src="script.js"></script>
 </body>
 </html>
