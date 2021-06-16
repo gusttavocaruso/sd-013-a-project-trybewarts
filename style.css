@@ -6,4 +6,5 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  background-color: yellow;
 }
