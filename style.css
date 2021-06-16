@@ -32,17 +32,18 @@ main {
   display: flex;
   width: 675px;
   flex-flow: column wrap;
-}
-
-#evaluation-form:nth-child(1) {
+  /* flex-basis: 50%; */
   max-height: 50px;
 }
+
+/* #evaluation-form:nth-child(1) {
+} */
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#label-family {
+#evaluation-form #family-label {
   display: flex;
   flex-direction: column;
 }
