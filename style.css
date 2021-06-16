@@ -71,24 +71,20 @@ main {
   display: flex;
 }
 
-#div1 {
+/* #div1 {
   align-items: center;
   width: 50vw;
   display: flex;
   flex-flow: column wrap;
-}
+} */
 
-#div1 h1 {
-  font-size: x-large;
-}
 
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
   margin-top: 10px;
-  align-items: center;
-  justify-content: center;
   width: 675px;
+  margin-left: 20px;
 }
 
 #evaluation-form input {
