@@ -43,3 +43,8 @@ footer {
 #house {
   width: 185px;
 }
+
+#future-learn {
+  display: flex;
+  flex-wrap: wrap;
+}
