@@ -49,5 +49,9 @@ main {
 
 #family input {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+}
+
+.checkbox input {
+  display: flex;  
 }
