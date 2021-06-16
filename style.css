@@ -43,3 +43,8 @@ main form {
 .complete-name {
   display: flex;
 }
+
+.families {
+  display: flex;
+  flex-direction: column;
+}
