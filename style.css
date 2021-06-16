@@ -1,0 +1,18 @@
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content{
+  display: flex;
+  flex-direction: column;
+}
+
+/* #submit-btn {
+  display: none;
+} */
