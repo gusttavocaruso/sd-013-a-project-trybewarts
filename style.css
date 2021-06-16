@@ -1,5 +1,6 @@
 main {
   display: flex;
+  margin: 50px
 }
 
 #evaluation-form {
@@ -14,4 +15,13 @@ main {
 
 .informations {
   width: 500px;
+}
+
+#family input {
+  display: flex;
+  flex-direction: column; 
+}
+
+.checkbox input {
+  display: flex;  
 }
