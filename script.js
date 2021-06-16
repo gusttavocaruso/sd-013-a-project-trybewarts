@@ -1,13 +1,13 @@
-const login = document.getElementById("login-input");
-const senha = document.getElementById("senha-input");
-const logar = document.getElementById("logar-button");
+const login = document.getElementById('login-input');
+const senha = document.getElementById('senha-input');
+const logar = document.getElementById('logar-button');
 
 function validarLogin() {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
-    alert("Olá, Tryber!");
+    alert('Olá, Tryber!');
   } else {
-    alert("Login ou senha inválidos.");
+    alert('Login ou senha inválidos.');
   }
 }
 
-logar.addEventListener("click", validarLogin);
+logar.addEventListener('click', validarLogin);
