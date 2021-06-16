@@ -1,4 +1,4 @@
-function verificaLogin() {
+
   const login = document.querySelector('.login');
   const senha = document.querySelector('.senha');
   const logar = document.querySelector('.btn-logar');
@@ -9,5 +9,5 @@ function verificaLogin() {
         alert('Olá, Tryber!');
       }
     })
-}
-verificaLogin();
+
+
