@@ -8,7 +8,6 @@
 
 .trybewarts-header-logo {
   display: flex;
-  justify-content: flex-start;
   margin-left: 30px;
 }
 
@@ -22,6 +21,7 @@
   align-items: center;
   margin-right: 30px;
 }
+
 input {
   width: 100px;
 }
@@ -36,3 +36,11 @@ main {
   flex-direction: column;
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+aside {
+  display: flex;
+  justify-content: flex-end;
+}
