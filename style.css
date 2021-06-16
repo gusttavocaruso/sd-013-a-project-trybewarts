@@ -37,3 +37,13 @@
   display: flex;
   width: 675px;
 }
+
+.family-trybewarts {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
