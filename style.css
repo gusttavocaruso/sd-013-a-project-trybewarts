@@ -23,18 +23,43 @@
   width: 675px;
   display: flex;
   flex-flow: column;
+  width: 70%;
+  align-items: center;
+  
 }
 
 .family {
   display: flex;
   flex-flow: column;
   margin-top: 10px;
+  margin-right: 50px;
+  height: 180px;
+  width: 180px;
 }
 
 main {
   display: flex;
 }
 
+label{
+    margin-top: 10px;
+}
+
+
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.checkbox{
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  width: 20%;
+}
+
+.test{
+    display: flex;
 }
