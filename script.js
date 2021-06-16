@@ -11,3 +11,17 @@ function validarLogin() {
 }
 
 logar.addEventListener('click', validarLogin);
+
+const check = document.getElementById('agreement');
+const send = document.getElementById('submit-btn');
+send.disabled = true;
+
+function validarEnviar () {
+  if (check.checked) {
+    send.disabled = false;
+  } else {
+    send.disabled = true;
+  }
+}
+
+check.addEventListener('click', validarEnviar);

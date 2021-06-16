@@ -96,3 +96,42 @@ hr {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#avaliacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+#textarea {
+  width: 67%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#area-de-texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.infos {
+  display: flex;
+  margin-top: 15px;
+}
+
+#agreement {
+  margin-left: 10px;
+}
+
+#submit-btn {
+  width: 65%;
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: rgb(100, 0, 255);
+  color: white;
+}
