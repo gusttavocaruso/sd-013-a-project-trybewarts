@@ -3,3 +3,8 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+
+/* estilo do requisito 4 */
+#trybewarts-header-title {
+  text-align: center;
+}
