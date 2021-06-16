@@ -50,5 +50,6 @@
   border-radius: 10px;
   background-color: teal;
   box-shadow: 3px 3px 5px rgb(0, 56, 56);
-  color: white;
+  color: rgb(141, 163, 156);
+  margin: 10px auto;
 }
