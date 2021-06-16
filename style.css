@@ -63,3 +63,12 @@
 .container-direction {
   flex-direction: column;
 }
+
+/* Alinhamento dos radio-buttons (requisito 14) */
+.rate-container {
+  display: flex;
+}
+
+.radio-buttons-rate {
+  display: flex;
+}
