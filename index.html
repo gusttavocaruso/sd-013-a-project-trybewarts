@@ -47,22 +47,22 @@
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id="conteudos">
         <label for="HoFs">HoFs
-          <input type="checkbox" id="HoFs" value="HoFs" class="subject">
+          <input type="checkbox" id="HoFs" value="HoFs" class="subject" name="conteudo">
         </label>
         <label for="Jest">Jest
-          <input type="checkbox" id="Jest" value="Jest" class="subject">
+          <input type="checkbox" id="Jest" value="Jest" class="subject" name="conteudo">
         </label>
         <label for="promises">Promises
-          <input type="checkbox" id="promises" value="Promises" class="subject">
+          <input type="checkbox" id="promises" value="Promises" class="subject" name="conteudo">
         </label>
         <label for="react">React
-          <input type="checkbox" id="react" value="React" class="subject">
+          <input type="checkbox" id="react" value="React" class="subject" name="conteudo">
         </label>
         <label for="sql">SQL
-          <input type="checkbox" id="sql" value="SQL" class="subject">
+          <input type="checkbox" id="sql" value="SQL" class="subject" name="conteudo">
         </label>
         <label for="python">Python
-          <input type="checkbox" id="python" value="Python" class="subject">
+          <input type="checkbox" id="python" value="Python" class="subject" name="conteudo">
         </label>
       </div>
       <div id="score">
@@ -100,8 +100,11 @@
           </label>
         </div>
       </div>
-      <label class="textarea">Deixe seu comentário:</label>
-      <textarea id="textarea" maxlength="500"></textarea>
+      <div id="texto">
+        <label class="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" maxlength="500"></textarea>
+        <p id="counter"></p>
+      </div>
       <div id="infos">
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">      
@@ -110,6 +113,9 @@
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
   </main>
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
 </body>
 <script src="script.js"></script>
 </html>
