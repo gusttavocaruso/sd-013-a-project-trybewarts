@@ -4,7 +4,6 @@
 }
 
 /* css do cabeçalho, requisitos de 1 a 4 */
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -60,7 +59,7 @@
   height: 500px;
 }
 
-/* css do rodapé*/
+/* css do rodapé */
 footer {
   display: flex;
   background-color: gray;
