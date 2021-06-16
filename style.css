@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-#fullName , #email-house , #label-rate , #label-infos {
+#fullName , #email-house , #duvida , #label-infos {
   display: flex;
   align-items: center;
 }
