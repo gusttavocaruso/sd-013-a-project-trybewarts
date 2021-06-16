@@ -34,6 +34,8 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  border: 2px solid red;
+  width: 50%;
 }
 
 #trybewarts-forms-logo {
@@ -43,12 +45,6 @@ main {
 aside {
   display: flex;
   justify-content: flex-end;
-}
-
-#evaluation-form {
-  display: flex;
-  border: 2px solid red;
-  width: 50%;
 }
 
 #input-name {
