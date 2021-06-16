@@ -22,25 +22,29 @@
     </header>
   </div>
 
-  <main class="flex-container">
+  <main class="main-container">
     <form class="flex-container" id="evaluation-form">
-      <label for="nome">Nome:
-        <input type="text" id="input-name" name="nome" placeholder="Nome"><br>
-      </label>
-      <label for="sobrenome">Sobrenome:
-        <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome"><br>
-      </label>
-      <label for="email">E-mail:
-        <input type="text" id="input-email" name="email" placeholder="Email"><br>
-      </label>
-      <label for="house">Escolha uma casa:
-        <select id="house" name="house">
-          <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </label>
+      <div class="form-row">
+        <label for="nome">Nome:
+          <input type="text" id="input-name" name="nome" placeholder="Nome"><br>
+        </label>
+        <label for="sobrenome">Sobrenome:
+          <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome"><br>
+        </label>
+      </div>
+      <div class="form-row">
+        <label for="email">E-mail:
+          <input type="text" id="input-email" name="email" placeholder="Email"><br>
+        </label>
+        <label for="house">Escolha uma casa:
+          <select id="house" name="house">
+            <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="trybewarts forms logo" id="trybewarts-forms-logo">
   </main>
