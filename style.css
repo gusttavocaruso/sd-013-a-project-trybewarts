@@ -19,9 +19,7 @@
 .forms {
   display: flex;
   width: 675px;
-  flex-shrink: 0;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: wrap column;
   justify-content: space-between;
   height: 20px;
 }
@@ -43,11 +41,12 @@ main {
   flex-wrap: wrap;
 }
 
-/* Aside Logo*/
+/* Aside Logo */
 .trybewarts-logo-aside {
   display: flex;
 }
 
 .label-rate {
   display: flex;
+  flex-flow: wrap row;
 }
