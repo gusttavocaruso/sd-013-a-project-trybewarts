@@ -1,8 +1,8 @@
 body {
-    margin: 0%;
-  }
-  
-  /* área dedicada à header! */
+  margin: 0%;
+}
+
+/* área dedicada à header! */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -50,9 +50,9 @@ main {
   height: 500px;
 }
 
-#evaluation-form input {
-  flex-flow: column;
-  width: 300px;
+.label {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -70,4 +70,3 @@ footer p {
   margin: 0;
   color: white;
 }
-g
