@@ -8,7 +8,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  flex-direction: column;
+  width: 100%;
 }
 
 .trybewarts-login {
@@ -27,5 +27,15 @@
 }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Aside Logo*/
+.trybewarts-logo-aside {
+  display: flex;
+}
+
+.label-rate {
   display: flex;
 }
