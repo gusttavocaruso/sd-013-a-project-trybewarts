@@ -4,6 +4,7 @@
 
 .form {
   display: flex;
+  width: 675px;
 }
 
 .header {
@@ -29,5 +30,6 @@
   align-items: center;
 }
 
-
-
+#trybewarts-forms-logo {
+  height: 500px;
+}
