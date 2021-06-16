@@ -1,6 +1,6 @@
 const submitButton = document.querySelector('.login-button');
 
-function submitlogin() {
+function submitLogin() {
   submitButton.addEventListener('click', (event) => {
     event.preventDefault();
     const senha = document.querySelector('#senha-usuario');
@@ -13,4 +13,4 @@ function submitlogin() {
   });
 }
 
-submitlogin();
+submitLogin();
