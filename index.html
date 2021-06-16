@@ -20,12 +20,23 @@
     <form action="" class="trybewarts-login">
       <input id="email" type="email" placeholder="Login">
       <input id="password" type="password" placeholder="Senha">
-      <button >Login</button>
+      <button>Login</button>
     </form>
   </header>
   <!-- criando formulario centralizado (requisitos 5 e 6) -->
   <main class="flex-container">
     <form id="evaluation-form" class="flex-container form-size">
+        <!-- Requisito 8 -->
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" id="input-email" placeholder="Email">
+        <!-- Requisito 9 -->
+        <select name="" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
         <!-- Crie um campo de entrada para qual família a pessoa estudante se identifica (requisito 12) -->
         <div class="flex-container container-direction">
           <label for="family" id="label-family">Qual sua família?</label>
@@ -34,8 +45,8 @@
           <input type="radio" name="family" value="FullStack">FullStack
         </div>
     </form>
-        <!-- logo da trybewarts (requisito 7) -->
-        <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    <!-- logo da trybewarts (requisito 7) -->
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
   <script src="script.js"></script>
 </body>
