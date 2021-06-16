@@ -1,4 +1,4 @@
-function validationLogin () {
+function validationLogin() {
   const getInputLogin = document.getElementById('input-login');
   const getInputSenha = document.getElementById('input-senha');
   const getButtonLogin = document.getElementById('button-login');
@@ -9,5 +9,5 @@ function validationLogin () {
     } else {
       alert('Login ou senha inválidos.');
     }
-  });  
-}validationLogin();
+  });
+} validationLogin();
