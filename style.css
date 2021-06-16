@@ -20,6 +20,12 @@
   height: 30px;
 }
 
+#leave-comment {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
 select {
   height: 30px;
   margin: 5px;
