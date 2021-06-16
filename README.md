@@ -317,7 +317,7 @@ Caso você faça o download de bibliotecas externas, utilize o diretório libs (
   - Os inputs de login e senha possuem, respectivamente, os _placeholders_ `Login` e `Senha`
   - O formulário possui a propriedade CSS `display: flex`
   - O click no botão de login dispara um alert com o texto "Login ou senha inválidos", no caso de erro de preenchimento dos dados
-  - O click no botão de login dispara um alert com o texto "Olá, Tryber!", no caso de preenchimento correto dos dados.
+  - O click no botão de login dispara um alert com o texto "Olá, Tryber!", no caso de preenchimento correto dos dados.  
 
 ### 4. Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header'
 
