@@ -30,19 +30,14 @@ main {
 
 #evaluation-form {
   display: flex;
-  width: 675px;
   flex-flow: column wrap;
+  width: 675px;
 }
 
-#evaluation-form:nth-child(1) {
-  max-height: 50px;
-}
+/* #evaluation-form:nth-child(1) {
+  max-width: 20%;
+} */
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-#label-family {
-  display: flex;
-  flex-direction: column;
 }
