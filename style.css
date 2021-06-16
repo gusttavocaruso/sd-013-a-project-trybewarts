@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+=======
 
 
 
@@ -113,3 +125,4 @@ form {
 
 
 
+>>>>>>> 0d0d9da597df53b1c8c07e2bb39757c9ca2dac65
