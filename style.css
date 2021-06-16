@@ -22,9 +22,13 @@
   flex-direction: column;
 }
 
+#name-lastname {
+  flex-direction: row;
+}
+
 footer {
-  position: fixed;
   bottom: 0;
+  position: fixed;
 }
 
 #trybewarts-forms-logo {
