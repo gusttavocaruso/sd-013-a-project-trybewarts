@@ -22,6 +22,7 @@
   align-items: center;
   margin-right: 30px;
 }
+
 input {
   width: 100px;
 }
@@ -36,3 +37,4 @@ main {
   flex-direction: column;
 }
 
+#trybe
