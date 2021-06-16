@@ -4,5 +4,17 @@
 }
 
 .trybewarts-header-logo{
-    
+
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
+#check-conteudos{
+    display: flex;
+}
+
+#buttons-rate{
+    display: flex;
 }
