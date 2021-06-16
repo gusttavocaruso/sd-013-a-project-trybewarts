@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Staatliches, cursive;
 }
 
 body {
   padding-top: 50px;
 }
 
+/* Header */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -30,6 +32,7 @@ body {
   width: 50px;
 }
 
+
 .trybewarts-login {
   display: flex;
   height: 20px;
@@ -37,33 +40,76 @@ body {
   align-content: center;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 1300px;
-}
 
 .forms {
   display: flex;
+  max-width: 675px;
   width: 675px;
   flex-flow: wrap column;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 550px;
+  order: 1;
+  flex-shrink: px;
 }
 
-.forms input, select {
-  width: 40%;
+.primeiro-form {
+  display: flex;
+  flex-flow: nowrap row;
+  order: 0;
+}
+
+.segundo-form {
+  display: flex;
+  flex-flow: nowrap row;
+  order: 0;
 }
 
 .div-family {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  width: 50%;
+  order: 0;
+}
+
+.input-text {
+  width: 300px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  padding: 20px;
+  margin: 2px;
+}
+
+.input-login {
+  width: 100px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  margin: 2px 0 10px 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.input-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  margin: 5px 0 10px 10px;
+}
+
+.input-select {
+  width: 120px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  padding: 20px;
+  margin: 2px;
 }
 
 .div-conteudo {
-  
+  order: 0;
 }
 
 .div-check-box {
@@ -72,29 +118,29 @@ main {
   width: 180px;
 }
 
-.label-rate {
+main {
   display: flex;
-  flex-flow: column row;
-  box-sizing: border-box;
-  width: 80%;
+  flex-wrap: wrap;
 }
 
-.div-textarea {
-  width: 80%;
-}
-
+/* Aside Logo */
 .trybewarts-logo-aside {
   display: flex;
-  justify-self: end;
 }
 
 .trybewarts-logo {
-  width: 650px;
+  width: 400px;
+}
+
+.label-rate {
+  display: flex;
+  flex-flow: column row;
 }
 
 footer {
   display: flex;
   width: 100%;
+  height: 50px;
   background-color: rgb(50, 167, 145);
   order: 6;
   position: fixed;
