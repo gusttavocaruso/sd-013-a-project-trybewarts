@@ -15,7 +15,6 @@
 .trybewarts-header-logo{
   display: flex;
   width:7%;
-  /* text-align: left; */
 }
 
 .trybewarts-login{
@@ -45,10 +44,38 @@ input{
   color:white;
 }
 
-main, #evaluation-form{
+main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form{
   width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  justify-content:right;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-top: 180px;
+}
+
+.evaluation-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-evaluation-form {
+  border:#4e2c83 1px solid;
+  width: 200px;
+}
+
+#nome-sobrenome {
+  display: flex;
+  margin-left: 50px;
 }
