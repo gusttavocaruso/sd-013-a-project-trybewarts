@@ -50,3 +50,13 @@ h1 {
 #entrar-button:hover {
   background-color: rgb(62, 18, 102);
 }
+
+#container {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
