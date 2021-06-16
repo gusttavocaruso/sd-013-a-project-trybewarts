@@ -25,15 +25,13 @@ body {
 main {
   display: flex;
   width: 100vw;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 main #evaluation-form {
   display: flex;
-  flex-direction: column;
   width: 675px;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 #input-container input {
@@ -60,10 +58,9 @@ main #trybewarts-forms-logo {
 
 #label-family {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   width: 100%;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 h2 {
