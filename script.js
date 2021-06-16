@@ -15,6 +15,18 @@ function submitLogin() {
 
 submitLogin();
 
-const submitButton = document.querySelector('#submit-btn')
-submitButton.disabled = true;
-submitButton.classList.add('disable');
+// const submitButton = document.querySelector('#submit-btn')
+// submitButton.disabled = true;
+// submitButton.classList.add('disable');
+
+const submitButton = document.querySelector('#submit-btn');
+const input = document.querySelector('#agreement');
+function prevent() {
+  submitButton.disabled = true;
+  submitButton.addEventListener('click', (event) => {
+    if (input.checked) {
+      submitButton.disabled = false;
+    }
+  });
+}
+prevent();
