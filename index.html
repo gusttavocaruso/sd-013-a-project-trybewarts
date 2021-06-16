@@ -44,8 +44,8 @@
       <!-- SEÇÃO JUNTANDO RADIO E CHECKBOX -->
       <section class="input-radio-checkbox">
         <!-- SEÇÃO COM RADIOS DAS FAMÍLIAS -->
-        <label for="family" id="label-family">
-          Qual a sua família?
+        <section class="input-radio">
+          <label for="#" id="label-family">Qual sua família?</label>
           <label for="radio-frontend">
             <input type="radio" name="family" id="radio-frontend" value="Frontend">
             Família Frontend
@@ -58,10 +58,12 @@
             <input type="radio" name="family" id="radio-fullstack" value="FullStack">
             Família FullStack
           </label>
-        </label>
+        </section>
         <!-- SEÇÃO COM LISTA DE CONTEÚDOS -->
-        <label for="conteudo" id=label-content>
-          Qual conteúdo você está com mais vontade de aprender?
+        <section class="input-checkbox">
+          <label for="conteudo" id=label-content>
+            Qual conteúdo você está com mais vontade de aprender?
+          </label>
           <label for="checkbox-hofs">
             <input type="checkbox" name="conteudo" id="checkbox-hofs" value="HoFs">
             HoFs
@@ -71,7 +73,7 @@
             Jest
           </label>
           <label for="checkbox-promises">
-            <input type="checkbox" name="conteudo" id="checkbox-promises">
+            <input type="checkbox" name="conteudo" id="checkbox-promises" value="Promises">
             Promises
           </label>
           <label for="checkbox-react">
@@ -86,12 +88,13 @@
             <input type="checkbox" name="conteudo" id="checkbox-python" value="Python">
             Python
           </label>
-        </label>
+        </section>
       </section>
-
     </form>
+  
 
     <img src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts" id="trybewarts-forms-logo">
   </main>
 </body>
 </html>
+

@@ -10,7 +10,7 @@ main {
   align-items: center;
 }
 
-main input, select {
+main input , select {
   margin-bottom: 10px;
   margin-top: 5px;
   margin-right: 5px;
@@ -32,13 +32,13 @@ hr {
   display: flex;
 }
 
-#label-family {
+.input-radio {
   display: flex;
-  flex-direction: column;
-  margin-right: 80px;
+  flex-flow: row wrap;
+  width: 230px;
 }
 
-#label-content {
+.input-checkbox {
   display: flex;
   flex-flow: row wrap;
   width: 230px;
