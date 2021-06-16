@@ -31,17 +31,74 @@
         <input type="text" name="name" id="input-name" placeholder="Nome">
         <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <input type="email" name="email" id="input-email" placeholder="Email">
+      <div class="name-last-name-container">
+        <input type="email" name="email" id="input-email" placeholder="Email">
+        <select name="casa" id="house">
+          <option label="Gitnória" value="Gitnória" id="gitnoria-house"></option>
+          <option label="Reactpuff" value="Reactpuff" id="reactpuff-house"></option>
+          <option label="Corvinode" value="Corvinode" id="corvinode-house"></option>
+          <option label="Pytherina" value="Pytherina" id="pytherina-house"></option>
+        </select>
+      </div>
+        
+      <div class="radio-buttons">
+        <label for="" id="label-family">Qual sua família?</label>
+
+        <label for="Frontend">Frontend</label>
+        <input type="radio" value="Frontend" name="family">
+
+        <label for="Backend">Backend</label>
+        <input type="radio" value="Backend" name="family">
+
+        <label for="FullStack">FullStack</label>
+        <input type="radio" value="FullStack" name="family">
+
+      </div>
+
+      <div class="checkboxes">
+
+        <div id="teste1">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        </div>
+
+        <div id="teste2">
+
+          <div class="itens">
+            <label for="Hofs">HoFs</label>
+            <input class="subject" value="HoFs" type="checkbox" name="HoFs" id="Hofs">
+          </div>
+
+          <div class="itens">
+            <label for="Jest">Jest</label>
+            <input class="subject" value="Jest" type="checkbox" name="Jest" id="Jest">
+          </div>
+
+          <div class="itens">
+            <label for="Promises">Promises</label>
+            <input class="subject" value="Promises" type="checkbox" name="Promises" id="Promises">
+          </div>
+
+          <div class="itens">
+            <label for="React">React</label>
+            <input class="subject" value="React" type="checkbox" name="React" id="React">
+          </div>
+
+          <div class="itens">
+            <label for="SQL">SQL</label>
+            <input class="subject" value="SQL" type="checkbox" name="SQL" id="SQL">
+          </div>
+
+          <div class="itens">
+            <label for="Python">Python</label>
+            <input class="subject" value="Python" type="checkbox" name="Python" id="Python">
+          </div>
+
+        </div>
+      </div>
     </form>
     <div class="imagem-main">
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-trybe">
     </div>
-    <select name="casa" id="mouse">
-      <option label="Gitnória" value="Gitnória" id="gitnoria-house"></option>
-      <option label="Reactpuff" value="Reactpuff" id="reactpuff-house"></option>
-      <option label="Corvinode" value="Corvinode" id="corvinode-house"></option>
-      <option label="Pytherina" value="Pytherina" id="pytherina-house"></option>
-    </select>
   </main>
 
   <script src="script.js"></script>
