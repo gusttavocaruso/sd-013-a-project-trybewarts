@@ -1,4 +1,4 @@
-const buttonForm = document.getElementById('login-button')
+const buttonForm = document.getElementById('login-button');
 buttonForm.addEventListener('click', () => {
   const loginValue = document.getElementById('form-login').value;
   const passwordValue = document.getElementById('form-password').value;
