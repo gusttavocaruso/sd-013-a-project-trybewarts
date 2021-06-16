@@ -43,7 +43,7 @@ function createRates() {
     rateBtn.type = 'radio';
     rateBtn.name = 'rate';
     rateBtn.value = i;
-    label.innerHTML += `${i} `;
+    label.innerHTML += `${i}`;
     label.appendChild(rateBtn);
     rate.appendChild(label);
   }
