@@ -17,3 +17,23 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-evaluation {
+  display: flex;
+}
+
+.evaluation-form {
+  display: flex;
+  width: 675px;
+}
