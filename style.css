@@ -71,13 +71,9 @@ main {
   display: flex;
 }
 
-/* #div1 {
-  width: 50vw;
-  height: 90vh;
-  align-items: center;
-  display: flex;
-  flex-flow: column wrap;
-} */
+#div1 {
+  width: 675px;
+}
 
 #evaluation-form {
   display: flex;
@@ -103,4 +99,15 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  width: 190px;
+}
+
+select:focus {
+  box-shadow: none;
+  outline: none;
 }
