@@ -4,6 +4,7 @@
   height: 100px;
   justify-content: space-between;
   margin-bottom: 80px;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
@@ -12,6 +13,7 @@
 
 .trybewarts-login {
   display: flex;
+  justify-content: space-between;
 }
 
 .form-principal {
