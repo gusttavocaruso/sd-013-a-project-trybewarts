@@ -1,15 +1,12 @@
 const botaoLogar = document.querySelector('.logar');
 
-function funcionaBotaoLogar() {
-  botaoLogar.addEventListener('click', function () {
-    const loginDigitado = document.querySelector('.login').value;
-    const senhaDigitada = document.querySelector('.senha').value;
-    if (loginDigitado === 'tryber@teste.com'
-    && senhaDigitada === '123456') {
-      alert('Olá, Tryber!');
-    } else {
-      alert('Login ou senha inválidos.');
-    }
-  });
-}
-funcionaBotaoLogar();
+botaoLogar.addEventListener('click', () => {
+  const loginDigitado = document.querySelector('.login').value;
+  const senhaDigitada = document.querySelector('.senha').value;
+  if (loginDigitado === 'tryber@teste.com'
+  && senhaDigitada === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
+  }
+});
