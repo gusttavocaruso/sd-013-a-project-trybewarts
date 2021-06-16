@@ -10,8 +10,27 @@ html, body {
   font-weight: normal;
 }
 
-.header {
+.container {
   display: flex;
+  justify-content: center;
   background-color: rgb(50, 167, 145);
-  height: 100px;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1080px;
+}
+
+
+.trybewarts-header-logo {
+  display: flex;
+  width: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
 }
