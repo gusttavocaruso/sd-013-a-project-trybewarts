@@ -49,3 +49,8 @@ h1 {
 .house-row {
   display: flex;
 }
+
+.family-field {
+  display: flex;
+  flex-direction: column;
+}
