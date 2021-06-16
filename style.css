@@ -1,9 +1,33 @@
-.forms-container, .family-container, .content-container, .comments-container {
+.main-form {
   display: flex;
   flex-direction: column;
 }
 
-.rate-container {
-  display: flex;  
+.forms-container, .family-container, .content-container, .vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+}
+
+.checkbox-container, .agreement-container {
+  margin: 1em;
+  gap: 0.5em;
+  align-self: center;
+}
+
+.rate-container, .container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  gap: 0.5em;
 }
 
