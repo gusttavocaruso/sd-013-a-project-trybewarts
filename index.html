@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TrybeWarts</title>
+</head>
+<body>
+  <main class="flex-container">
+    <form class="flex-container" id="evaluation-form">
+      
+      <label for="nome">Nome:</label>
+      <input type="text" id="input-name" name="nome" placeholder="Nome"><br>
+      
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" id="input-lastname" name="sobrenome" placeholder="Sobrenome"><br>
+      
+      <label for="email">E-mail</label>
+      <input type="text" id="input-email" name="email" placeholder="Email""><br>
+
+      <label for="house">Escolha uma casa:</label>
+      <select id="house" name="house">
+        <option text="Gitnória" value="Gitnória" id="gitnoria-house">Gitnória</option>
+        <option text="Reactpuff" value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+        <option text="Corvinode" value="Corvinode" id="corvinode-house">Corvinode</option>
+        <option text="Pytherina" value="Pytherina" id="pytherina-house">Pytherina</option>
+
+      </select>
+
+    </form>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
