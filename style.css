@@ -31,6 +31,7 @@ body {
   width: 50px;
 }
 
+
 .trybewarts-login {
   display: flex;
   height: 20px;
@@ -38,31 +39,25 @@ body {
   align-content: center;
 }
 
+
 .forms {
   display: flex;
   width: 675px;
   flex-flow: wrap column;
-  align-self: flex-start;
-}
-
-#input-name, #input-lastname, #input-email {
-  width: 300px;
-}
-
-#house {
-  width: 269px;
+  justify-content: space-between;
+  height: 20px;
+  order: 1;
 }
 
 .div-family {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  order: 0;
 }
 
-.div-conteudo{
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
+.div-conteudo {
+  order: 0;
 }
 
 .div-check-box {
@@ -74,28 +69,21 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
 }
 
 /* Aside Logo */
 .trybewarts-logo-aside {
   display: flex;
-  justify-content: space-between;
 }
 
 .trybewarts-logo {
-  width: 600px;
+  width: 400px;
 }
 
 .label-rate {
   display: flex;
-  width: 100%;
+  flex-flow: column row;
+  box-sizing: border-box;
 }
 
 footer {
@@ -105,10 +93,4 @@ footer {
   order: 6;
   position: fixed;
   bottom: 0;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
