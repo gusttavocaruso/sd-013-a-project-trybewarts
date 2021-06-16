@@ -3,7 +3,9 @@
     }
 .header{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(50, 167, 145);
     }
 
