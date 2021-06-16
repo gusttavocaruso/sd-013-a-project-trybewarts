@@ -49,7 +49,15 @@ footer {
   flex-direction: column;
 }
 
+#label-content {
+  margin-top: 20px;
+}
+
 #future-learn {
   display: flex;
   flex-wrap: wrap;
+}
+
+#trybewarts-rate {
+  margin-top: 20px;
 }
