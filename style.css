@@ -37,3 +37,8 @@ main {
 .nome-sobrenome {
   display: flex;
 }
+
+.div-checkbox {
+  display: flex;
+  flex-direction: column;
+}
