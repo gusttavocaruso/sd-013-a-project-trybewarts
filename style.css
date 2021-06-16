@@ -12,4 +12,9 @@
   height: 13vh;
 }
 
-
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
