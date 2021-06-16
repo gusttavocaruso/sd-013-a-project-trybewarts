@@ -1,5 +1,6 @@
 #main {
   display: flex;
+  flex-direction: column;
 }
 
 #evaluation-form {
@@ -8,15 +9,18 @@
   flex-direction: column;
 }
 
-#fullName {
+#fullName, #email-house, #label-rate {
   display: flex;
+  align-items: center;
 }
 
 #name, #last-name, #e-mail {
   display: flex;
   margin: 5px;
+  height: 30px;
 }
 
-#email-house {
-  display: flex;
+select {
+  height: 30px;
+  margin: 5px;
 }
