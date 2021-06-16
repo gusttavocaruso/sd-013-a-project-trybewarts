@@ -7,6 +7,17 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 30px;
+  display: flex;
+}
+
+.trybewarts-login {
+  display: flex;
 }
 
 form {
@@ -21,4 +32,8 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.nome-sobrenome {
+  display: flex;
 }

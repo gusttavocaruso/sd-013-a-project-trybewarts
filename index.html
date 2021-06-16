@@ -10,14 +10,22 @@
 <body>
   <!-- Header -->
   <header class="header">
-    
+    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form action="" class="trybewarts-login">
+      <input id="input_login" type="email" placeholder="Login">
+      <input id="input_passw" type="password" placeholder="Senha">
+      <button id="login_btn">Entrar</button>
+    </form>
   </header>
   <!-- Forms -->
   <main>
  
 <form id="evaluation-form">Formulario
-  <input type="text" id="input-name" name="input-name" placeholder="Nome"><br>
-  <input type="text" id="input-lastname" name="input-lastname" placeholder="Sobrenome">
+  <div class="nome-sobrenome">
+    <input type="text" id="input-name" name="input-name" placeholder="Nome"><br>
+    <input type="text" id="input-lastname" name="input-lastname" placeholder="Sobrenome">
+  </div>
   <input type="text" id="input-email" name="input-email" placeholder="Email">
 </form>
 <select name="Casa" id="house">Casa
