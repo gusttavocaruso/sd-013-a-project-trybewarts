@@ -39,7 +39,7 @@
   border: none;
   width: 170px;
   color: white;
-  background-color: #4E2C82;
+  background-color: rgb(78, 44, 130);
   font-weight: bold;
 }
 
@@ -153,4 +153,19 @@
 
 #textarea {
   width: 100%;
+}
+
+#submit-btn {
+  background-color: rgb(78, 44, 130);
+  width: 100%;
+  margin: 20px 0;
+  color: white;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.disable {
+  background-color: gray;
 }

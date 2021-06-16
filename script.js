@@ -1,7 +1,7 @@
-const submitButton = document.querySelector('.login-button');
+const loginButton = document.querySelector('.login-button');
 
 function submitLogin() {
-  submitButton.addEventListener('click', (event) => {
+  loginButton.addEventListener('click', (event) => {
     event.preventDefault();
     const senha = document.querySelector('#senha-usuario');
     const login = document.querySelector('#login-usuario');
@@ -14,3 +14,7 @@ function submitLogin() {
 }
 
 submitLogin();
+
+const submitButton = document.querySelector('#submit-btn')
+submitButton.disabled = true;
+submitButton.classList.add('disable');
