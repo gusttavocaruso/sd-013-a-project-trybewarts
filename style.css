@@ -64,3 +64,11 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+footer {
+  background-color: rgb(83, 87, 95);
+  margin-bottom: 20px;
+  color: white;
+  height: 30px;
+  text-align: center;
+}
