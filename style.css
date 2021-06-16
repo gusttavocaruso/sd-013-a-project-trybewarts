@@ -66,31 +66,47 @@ input:focus {
 }
 
 main {
-  width: 90vh;
+  width: 100vw;
   height: 90vh;
   display: flex;
 }
 
-/* #div1 {
-  align-items: center;
-  width: 50vw;
-  display: flex;
-  flex-flow: column wrap;
-} */
-
+#div1 {
+  width: 675px;
+}
 
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
   margin-top: 10px;
-  width: 675px;
   margin-left: 20px;
 }
 
 #evaluation-form input {
   width: 18vw;
   height: 35px;
-  background-color: rgb(50, 167, 145);
   margin-top: 20px;
   margin-right: 20px;
+  border: 2px solid black;
+}
+
+#image {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  width: 190px;
+}
+select:focus {
+  box-shadow: none;
+  outline: none;
 }
