@@ -8,7 +8,6 @@
 
 .trybewarts-header-logo {
   display: flex;
-  margin-left: 30px;
 }
 
 #trybewarts-header-title {
@@ -28,6 +27,7 @@ input {
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
@@ -43,4 +43,24 @@ main {
 aside {
   display: flex;
   justify-content: flex-end;
+}
+
+#evaluation-form {
+  display: flex;
+  border: 2px solid red;
+  width: 50%;
+}
+
+#input-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 80px;
+  margin: 20px;
+}
+
+#input-lastname {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 80px;
+  margin: 20px;
 }
