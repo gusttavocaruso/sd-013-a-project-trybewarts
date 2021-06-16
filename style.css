@@ -1,3 +1,10 @@
+/* resetando css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* estilo do requisito 1 */
 .header {
   display: flex;
@@ -9,4 +16,27 @@
   display: flex;
   justify-content: space-between;
   min-width: 450px;
+}
+/* estilo do logo do requesito 2 */
+.trybewarts-header-logo {
+  align-self: flex-start;
+  width: 40px;
+  height: 40px;
+}
+
+/* estilo do requisito 4 */
+#trybewarts-header-title {
+  text-align: center;
+}
+
+/* estilo do requisito 5 e 6 */
+.flex-container {
+  display: flex;
+}
+
+.form-size {
+  justify-self: flex-start;
+  align-self: center;
+  width: 675px;
+  flex-direction: column;
 }
