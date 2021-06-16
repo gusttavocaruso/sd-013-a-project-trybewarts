@@ -35,7 +35,7 @@ h1 {
   margin: 5px;
 }
 
-#login-button {
+#entrar-button {
   background-color: blueviolet;
   color: white;
   width: 80px;
@@ -47,6 +47,6 @@ h1 {
   cursor: pointer;
 }
 
-#login-button:hover {
+#entrar-button:hover {
   background-color: rgb(62, 18, 102);
 }
