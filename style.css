@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-/*css do cabeçalho, requisitos de 1 a 4*/
+/* css do cabeçalho, requisitos de 1 a 4 */
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -40,9 +41,10 @@
   color: white;
 }
 
-/*Aqui vai o CSS do main*/
+/* Aqui vai o CSS do main */
 
-/*css do rodapé*/
+/* css do rodapé */
+
 footer {
   display: flex;
   background-color: gray;
