@@ -69,7 +69,11 @@ form {
   background-color: blueviolet;
 }
 
-
+.debaixin {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
 
 
 
