@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+  color: white;
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-evenly;
@@ -45,9 +46,9 @@ main #trybewarts-forms-logo {
   height: 500px;
 }
 
-#div-family {
+#div-family-tecnologies-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #input-container {
@@ -67,4 +68,17 @@ main #trybewarts-forms-logo {
 
 h2 {
   display: block;
+}
+
+#label-family {
+  width: 40%;
+}
+
+#checkboxes {
+  display: flex;
+}
+
+#tecnologies {
+  display: flex;
+  flex-direction: column;
 }
