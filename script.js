@@ -4,20 +4,17 @@ const loginButton = document.getElementById('login-bt');
 
 const dataLogin = {
   login: 'tryber@teste.com',
-  pass: '123456'
-}
+  pass: '123456',
+};
 
 function loginAuthentication() {
-
   const loginText = loginInput.value;
   const passText = passInput.value;
-
   if (dataLogin.login === loginText && dataLogin.pass === passText) {
-    alert('Olá, Tryber!')
+    alert('Olá, Tryber!');
   } else {
-    alert('Login ou senha inválidos.')
+    alert('Login ou senha inválidos.');
   }
 }
 
 loginButton.onclick = loginAuthentication;
-
