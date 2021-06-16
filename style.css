@@ -31,3 +31,8 @@
   display: flex;
   flex-direction: row;
 }
+
+.evaluation-form-email-house {
+  display: flex;
+  flex-direction: row;
+}
