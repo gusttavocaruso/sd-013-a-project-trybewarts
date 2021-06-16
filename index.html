@@ -8,7 +8,108 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+      <input type="login" placeholder="Login">Login
+      <input type="password" placeholder="Senha">Password 
+      <button id="topBar" type="button">Entrar</button>
+    </form>
+  </header>
+  <main>
+    <form id="evaluation-form">
+      <div id="imputName">
+        <input type="text" placeholder="Nome"id="input-name">
+        <input type="text" placeholder="Sobrenome"id="input-lastname">
+      </div>
+      <div id="imput-casa">
+        <input type="email" placeholder="Email"id="input-email">
+        <select id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <label id="label-family">Qual sua família?</label>
+      <div id="familias">
+        <label for="frontEnd">Front Eend
+          <input type="radio" id="frontEnd" value="Frontend" name="family">
+        </label>
+        <label for="backEnd">Back End
+          <input type="radio" id="backEnd" value="Backend" name="family">
+        </label>
+        <label for="FullStack">Full Stack
+          <input type="radio" id="FullStack" value="FullStack" name="family">
+        </label>  
+      </div>
+      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div id="conteudos">
+        <label for="HoFs">HoFs
+          <input type="checkbox" id="HoFs" value="HoFs" class="subject">
+        </label>
+        <label for="Jest">Jest
+          <input type="checkbox" id="Jest" value="Jest" class="subject">
+        </label>
+        <label for="promises">Promises
+          <input type="checkbox" id="promises" value="Promises" class="subject">
+        </label>
+        <label for="react">React
+          <input type="checkbox" id="react" value="React" class="subject">
+        </label>
+        <label for="sql">SQL
+          <input type="checkbox" id="sql" value="SQL" class="subject">
+        </label>
+        <label for="python">Python
+          <input type="checkbox" id="python" value="Python" class="subject">
+        </label>
+      </div>
+      <div id="score">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <div id="avaliacao">
+          <label for="1">1
+            <input type="radio" id="1" value="1" name="rate">
+          </label>
+          <label for="2">2
+            <input type="radio" id="2" value="2" name="rate">
+          </label>
+          <label for="3">3
+            <input type="radio" id="3" value="3" name="rate">
+          </label>
+          <label for="4">4
+            <input type="radio" id="4" value="4" name="rate">
+          </label>
+          <label for="5">5
+            <input type="radio" id="5" value="5" name="rate">
+          </label>
+          <label for="6">6
+            <input type="radio" id="6" value="6" name="rate">
+          </label>
+          <label for="7">7
+            <input type="radio" id="7" value="7" name="rate">
+          </label>
+          <label for="8">8
+            <input type="radio" id="8" value="8" name="rate">
+          </label>
+          <label for="9">9
+            <input type="radio" id="9" value="9" name="rate">
+          </label>
+          <label for="10">10
+            <input type="radio" id="10" value="10" name="rate">
+          </label>
+        </div>
+      </div>
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea id="textarea" maxlength="500"></textarea>
+      <div id="infos">
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement">      
+      </div>
+      <button type="submit" id="submit-btn">Enviar</button>
+    </form>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+  </main>
 </body>
 <script src="script.js"></script>
 </html>
