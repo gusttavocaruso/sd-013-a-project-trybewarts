@@ -9,9 +9,8 @@ const checkboxAgreement = document.querySelector('#agreement');
 const enviarFormEvaluation = document.querySelector('#submit-btn');
 // const counterTextArea = document.querySelector('#counter');
 const textArea = document.querySelector('#textarea');
-const labelDoContador = document.querySelector('#label-do-contador');
+const labelDoContador = document.querySelector('#counter');
 let count = 500;
-// let lenghtDoText;
 
 // Verifica o email e a senha
 buttonEntrar.addEventListener('click', () => {
@@ -38,12 +37,13 @@ function inserirContador() {
 
 inserirContador();
 
-textArea.addEventListener('keypress', (event) => {
-  if (event.keyCode === 8) {
-    console.log('oi');
-    count += 2;
-  }
-});
+// textArea.addEventListener('keydown', (event) => {
+//   if (textArea.value !== '') {
+//     if ((event.keyCode === 8 || event.keyCode === 46)) {
+//       count += 2;
+//     }
+//   }
+// });
 
 textArea.addEventListener('input', () => {
   count -= 1;
