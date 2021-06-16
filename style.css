@@ -7,10 +7,35 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 70px;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  border: 1px solid red;
 }
 
 .trybewarts-header-logo {
   border: 1px solid red;
   height: 60px;
+  display: flex;
+  align-self: center;
+  justify-content: start;
+  align-items: flex-start;
 }
+
+.trybewarts-login {
+  display: flex;
+  align-self: center;
+  /* width: 50px;
+  height: 20px; */
+  border-radius: 4px;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+#Button-Logar {
+  background-color: rgb(3, 107, 82);
+}
+
+#trybewarts-header-title {
+  align-self: center;
+}
+
