@@ -21,9 +21,15 @@
   height: 50px;
 }
 
+.body {
+  display: flex;
+  align-items: flex-start;
+}
+
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 main form {
@@ -40,12 +46,30 @@ main form {
   flex-direction: column;
 }
 
-.content-Learn {
-  display: flex;
-  flex-direction: column;
-}
 
 .checkbox {
   display: flex;
   flex-direction: row;
+}
+
+.label-check {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratio-tech {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratio {
+  display: inline;
+}
+
+.label-aside {
+  display: inline;
+}
+
+.forms {
+  margin: 10px auto;
 }
