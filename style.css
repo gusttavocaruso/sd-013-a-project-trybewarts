@@ -9,10 +9,27 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   width: 100%;
+  flex-flow: wrap row;
+  align-content: center;
+  text-align: center;
+  order: 0;
 }
+
+.header-logo {
+  width: 10px;
+  display: flex;
+  order: 0 ;
+}
+.trybewarts-header-logo {
+  width: 50px;
+}
+
 
 .trybewarts-login {
   display: flex;
+  height: 20px;
+  justify-content: center;
+  align-content: center;
 }
 
 
@@ -22,12 +39,18 @@
   flex-flow: wrap column;
   justify-content: space-between;
   height: 20px;
+  order: 1;
 }
 
 .div-family {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  order: 0;
+}
+
+.div-conteudo {
+  order: 0;
 }
 
 .div-check-box {
@@ -44,6 +67,10 @@ main {
 /* Aside Logo */
 .trybewarts-logo-aside {
   display: flex;
+}
+
+.trybewarts-logo {
+  width: 400px;
 }
 
 .label-rate {
