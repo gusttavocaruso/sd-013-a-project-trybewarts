@@ -8,4 +8,3 @@ buttonForm.addEventListener('click', () => {
     alert('Login ou senha inválidos.')
   }
 })
-
