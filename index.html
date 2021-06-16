@@ -51,9 +51,30 @@
         <form class="family-radio forms">
           <label for="" id="label-family"> Qual sua família? </label>
           <div class="ratio-tech">
-            <input type="radio" name="family" value="Frontend" />Frontend
-            <input type="radio" name="family" value="Backend" />Backend
-            <input type="radio" name="family" value="FullStack" />FullStack
+            <label for="front">
+              <input
+                type="radio"
+                name="family"
+                value="Frontend"
+                id="front"
+              />Frontend
+            </label>
+            <label for="back">
+              <input
+                type="radio"
+                name="family"
+                value="Backend"
+                id="back"
+              />Backend
+            </label>
+            <label for="full">
+              <input
+                type="radio"
+                name="family"
+                value="FullStack"
+                id="full"
+              />FullStack
+            </label>
           </div>
         </form>
         <form class="label-check forms">
@@ -125,9 +146,11 @@
         </form>
         <form action="" class="agreements">
           <div class="agreements">
-          <label for="concorda" id="label-infos">Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" name="concorda" id="agreement">
-        </div>
+            <label for="concorda" id="label-infos"
+              >Você concorda com o uso das informações acima?</label
+            >
+            <input type="checkbox" name="concorda" id="agreement" />
+          </div>
         </form>
         <button type="submit" id="submit-btn">Enviar</button>
       </main>
