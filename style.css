@@ -4,6 +4,22 @@
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .trybewarts-login{
+=======
+.trybewarts-header-logo{
+
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
+#check-conteudos{
+    display: flex;
+}
+
+#buttons-rate{
+>>>>>>> 2880ca3abcdd6f134ba84f6426a0d78ea9f612d3
     display: flex;
 }
