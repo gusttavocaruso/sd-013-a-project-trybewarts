@@ -13,6 +13,15 @@
   display: flex;
 }
 
+.container {
+  display: flex;
+}
+
+.container form {
+  width: 675px;
+  flex-direction: column;
+}
+
 footer {
   position: fixed;
   bottom: 0;
