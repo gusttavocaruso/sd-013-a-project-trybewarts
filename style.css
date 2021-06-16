@@ -44,7 +44,16 @@ main form {
   display: flex;
 }
 
+.radio-checkbox {
+  display: flex;
+}
+
 .families {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
   display: flex;
   flex-direction: column;
 }
