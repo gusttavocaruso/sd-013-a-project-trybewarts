@@ -62,3 +62,8 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#rodape {
+  text-align: center;
+  background-color: gray;
+}

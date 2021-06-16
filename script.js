@@ -1,11 +1,23 @@
+const botaoLogar = document.getElementById('logar');
 const login = document.getElementById('login');
 const password = document.getElementById('password');
 
-const validar = () => {
+botaoLogar.addEventListener('click', () => {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
     return alert('Olá, Tryber!');
   }
   return alert('Login ou senha inválidos.');
-};
+});
 
-validar();
+const checker = document.getElementById('agreement');
+const sendbtn = document.getElementById('submit-btn');
+
+function ativar() {
+  if (checker.checked) {
+    sendbtn.disabled = false;
+  } else {
+    sendbtn.disabled = true;
+  }
+}
+
+ativar();
