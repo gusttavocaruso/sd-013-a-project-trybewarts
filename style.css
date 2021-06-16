@@ -71,36 +71,36 @@ main {
   display: flex;
 }
 
-#div1 {
+/* #div1 {
   width: 50vw;
+  height: 90vh;
   align-items: center;
-  width: 50vw;
   display: flex;
   flex-flow: column wrap;
-}
-
-#div1 h1 {
-  font-size: x-large;
-}
+} */
 
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
-<<<<<<< HEAD
-  align-items: center;
-  margin-top: 10px;
-=======
-  margin-top: 10px;
-  align-items: center;
-  justify-content: center;
->>>>>>> 06dd47dd0b42b14a17b1908d12b72b3e2302477c
+  margin-left: 20px;
   width: 675px;
 }
 
 #evaluation-form input {
   width: 18vw;
   height: 35px;
-  background-color: rgb(50, 167, 145);
   margin-top: 20px;
   margin-right: 20px;
+  border: 2px solid black;
+}
+
+#image {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
