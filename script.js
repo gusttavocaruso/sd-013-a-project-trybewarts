@@ -23,5 +23,6 @@ checkbox.addEventListener('change', () => {
     btnSubmit.style.color = 'white';
   } else {
     btnSubmit.disabled = true;
+    btnSubmit.style.color = 'rgb(141, 163, 156)';
   }
 });
