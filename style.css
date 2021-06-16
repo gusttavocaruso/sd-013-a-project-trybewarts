@@ -23,6 +23,7 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   color: white;
+  align-items: center;
 }
 
 .trybewarts-login {
@@ -41,4 +42,13 @@
 
 .trybewarts-header-logo {
   width: 50px;
+}
+
+#submit-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: teal;
+  box-shadow: 3px 3px 5px rgb(0, 56, 56);
+  color: white;
 }
