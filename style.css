@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
 .header {
   display: flex;
@@ -24,13 +25,14 @@
 input[type="email"],
 input[type="password"] {
   padding: 8px 1px;
-  margin: px 0;
   box-sizing: border-box;
   border-radius: 5px;
 }
-
+.trybewarts-login {
+  display: flex;
+}
 .container1 h1 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 .container1 button {
   border-radius: 10px;
@@ -39,18 +41,17 @@ input[type="password"] {
   background-color: rgb(78, 45, 130);
   color: white;
 }
-=======
-main{
+
+main {
   display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
->>>>>>> 931b4d4f42520d7d87d656b0092e86469d949f0d
