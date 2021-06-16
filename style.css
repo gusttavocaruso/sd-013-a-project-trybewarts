@@ -46,7 +46,6 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  /* border: 1px solid red; */
   flex-direction: column;
 }
 
