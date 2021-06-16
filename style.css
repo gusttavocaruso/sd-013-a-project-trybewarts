@@ -53,3 +53,8 @@
 .input-name-lastname {
   display: flex;
 }
+
+/* tamanho da logo (requisito 12) */
+.container-direction {
+  flex-direction: column;
+}
