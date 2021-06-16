@@ -104,6 +104,18 @@
   margin-left: 9px;
 }
 
+.section-rate {
+  margin: 20px 0;
+}
+
 .rate {
   margin-left: 16px;
+}
+
+.section-textarea label {
+  
+}
+
+#textarea {
+  width: 100%;
 }
