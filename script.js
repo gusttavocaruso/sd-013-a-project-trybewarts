@@ -1,13 +1,13 @@
-let botaoLogin = document.querySelector("#botaoLogin");
+const botaoLogin = document.querySelector('#botaoLogin');
 
 function verificaLogin() {
-  let campoUser = document.querySelector("#email").value;
-  let campoSenha = document.querySelector("#senha").value;
-  if ((campoUser !== "tryber@teste.com") || (campoSenha != "123456")) {
-    window.alert("Login ou senha inválidos.");
+  const campoUser = document.querySelector('#email').value;
+  const campoSenha = document.querySelector('#senha').value;
+  if ((campoUser !== 'tryber@teste.com') || (campoSenha !== '123456')) {
+    window.alert('Login ou senha inválidos.');
   } else {
-    window.alert("Olá, Tryber!");
+    window.alert('Olá, Tryber!');
   }
 }
 
-botaoLogin.addEventListener("click", verificaLogin);
+botaoLogin.addEventListener('click', verificaLogin);
