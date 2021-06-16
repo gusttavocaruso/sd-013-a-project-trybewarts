@@ -25,3 +25,13 @@ header h1 {
   color: white;
   font-size: 35px;
 }
+
+main {
+  display: flex;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
