@@ -118,11 +118,6 @@ h2 {
   align-self: flex-start;
 }
 
-.container-title {
-  display: flex;
-  align-self: center;
-}
-
 #tecnologies {
   display: flex;
   flex-direction: column;
