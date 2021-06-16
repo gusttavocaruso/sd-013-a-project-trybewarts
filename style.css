@@ -47,18 +47,64 @@
 /*CSS do main*/
 .main-conteiner {
   display: flex;
+  background-color: rgb(233, 233, 233);
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 675px;
-  background-color: yellowgreen;
+  width: 675px
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* css dos requisitos de 8 a 11*/
+.first-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  display: flex;
+  width: 70%;
+  align-items:center;
+  justify-content: space-around;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#input-name, #input-lastname, #input-email, #casa, #house {
+  flex: 1;
+  padding: 10px 2px;
+  margin: 2px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#casa {
+  display: flex;
+  align-items: center;
+}
+
+#casa label {
+  padding-right: 5px;
+}
+
+#house {
+  width: 100%;
+  background-color: white;
+  margin-right: 0;
+}
+
+
+.first-form hr {
+  width: 100%;
+}
+
 
 /* css do rodapé*/
 footer {
