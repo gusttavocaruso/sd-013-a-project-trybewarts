@@ -8,7 +8,6 @@
 	display: flex;
 	background-color: rgb(50, 167, 145);
 	padding: 10px;
-	position: fixed;
 	width: 100%;
 	justify-content: space-around;
 	align-items: center;
@@ -30,9 +29,28 @@ input {
 	padding: 8px 8px;
 }
 
-button {
+#button-submit-header {
 	color: rgb(246, 248, 250);
 	background-color: rgb(94, 93, 88);
 	padding: 7px 15px;
 	border-radius: 9px;
+}
+
+.main-container {
+  display:flex;
+}
+.container {
+  display: flex;
+}
+.form-container {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+.input-main {
+  width: 200px;
+}
+.img-trybewarts {
+  width: 500px;
+  height: 500px;
 }
