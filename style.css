@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-/* estilo do requisito 5 */
+/* estilo do requisito 5 e 6 */
 .flex-container {
   display: flex;
 }
@@ -32,6 +32,7 @@
   justify-self: flex-start;
   align-self: center;
   width: 675px;
+  flex-direction: column;
 }
 
 /* tamanho da logo (requisito 7) */
