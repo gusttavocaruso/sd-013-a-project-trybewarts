@@ -61,8 +61,9 @@ main h2 {
 #evaluation-form {
   display: flex;
   width: 675px;
+flex-direction: column;
 }
 
 #trybewarts-forms-logo {
-  width: 300px;
+height: 500px;
 }
