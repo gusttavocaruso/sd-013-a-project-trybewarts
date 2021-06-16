@@ -8,59 +8,35 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <img
-        src="images/trybewarts-header-logo.svg"
-        alt=""
-        class="trybewarts-header-logo"
-      />
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <div class="trybewarts-login">
-        <form action="" class="trybewarts-login">
-          <label for="login">
-            <input type="email" placeholder="Login" id="login" name="login" />
-          </label>
-          <label for="senha">
-            <input
-              type="password"
-              placeholder="Senha"
-              id="senha"
-              name="login"
-            />
-          </label>
-          <button>Entrar</button>
-        </form>
-      </div>
-    </header>
-  </body>
-</html>
-=======
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Trybewarts</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="" alt="" class="trybewarts-header-logo" />
-        <h1></h1>
-        <form action="" class="trybewarts-login"></form>
-      </nav>
       <main>
-        <form action="" method="GET" id="evaluation-form"></form>
-
-        <div>
-          <img
-            src="images/trybewarts-colored.svg"
-            alt="brasão-trybe"
-            id="trybewarts-forms-logo"
-          />
+        <label for="'input-name'">
+          <input type="text"  placeholder="Nome" id = 'input-name' name = 'signup'>
+        </label>
+        <label for="'input-lastname'">
+          <input type="text"  placeholder="Sobrenome" id = 'input-name' name = 'signup'>
+        </label>
+        <label for="'input-email'">
+          <input type="text" placeholder = "Email" id = 'input-name' name = 'signup'>
+        </label>
+        <div id = 'label-rate'>
+          <p>Como você avalia a Trybewarts?</p>
+          <label for="">
+            <input type="radio" value = '1' name = 'rate'> 1
+            <input type="radio" value = '2' name = 'rate'> 2
+            <input type="radio" value = '3' name = 'rate'> 3
+            <input type="radio" value = '4' name = 'rate'> 4
+            <input type="radio" value = '5' name = 'rate'> 5
+            <input type="radio" value = '6' name = 'rate'> 6
+            <input type="radio" value = '7' name = 'rate'> 7
+            <input type="radio" value = '8' name = 'rate'> 8
+            <input type="radio" value = '9' name = 'rate'> 9
+            <input type="radio" value = '10' name = 'rate'> 10
+          </label>
         </div>
-      </main>
-    </header>
+        <div><label for="textarea" class = 'textarea'>
+          <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        </label>
+        </div>
+      </main>  
   </body>
 </html>
