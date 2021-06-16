@@ -37,14 +37,6 @@ function inserirContador() {
 
 inserirContador();
 
-// textArea.addEventListener('keydown', (event) => {
-//   if (textArea.value !== '') {
-//     if ((event.keyCode === 8 || event.keyCode === 46)) {
-//       count += 2;
-//     }
-//   }
-// });
-
 textArea.addEventListener('input', () => {
   count = 500 - textArea.value.length;
   inserirContador();
