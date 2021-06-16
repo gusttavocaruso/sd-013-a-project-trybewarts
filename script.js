@@ -7,6 +7,8 @@ function VerificaLogin() {
   const senha = inpuSenha.value;
   if (login === 'tryber@teste.com' && senha === '123456') {
     alert('Olá, Tryber!');
-  } else {alert('Login ou senha inválidos.')}
+  } else {
+    alert('Login ou senha inválidos.');
+  }
 }
-buttonEnviar.addEventListener('click',VerificaLogin)
+buttonEnviar.addEventListener('click', VerificaLogin);
