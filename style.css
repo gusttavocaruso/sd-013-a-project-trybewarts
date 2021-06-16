@@ -27,7 +27,7 @@ html , body {
   width: 50px;
 }
 
-h1#trybewarts-header-title {
+#trybewarts-header-title {
   color: white;
 }
 
@@ -35,10 +35,12 @@ h1#trybewarts-header-title {
   display: flex;
   align-items: center;
 }
+
 .main {
   display: flex;
   justify-content: center;
 }
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -47,11 +49,11 @@ h1#trybewarts-header-title {
 }
 
 .flex-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-form#evaluation-form{
+#evaluation-form {
   width: 675px;
 }
 
@@ -59,7 +61,7 @@ form#evaluation-form{
   display: flex;
 }
 
-img#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
 
