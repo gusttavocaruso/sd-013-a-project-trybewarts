@@ -1,0 +1,28 @@
+.header{
+    background-color: rgb(50, 167, 145);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.header img{
+    height:50px;
+    margin-top: 20px;
+}
+.trybewarts-login{
+    margin-top: 20px;
+}
+
+#trybewarts-header-title{
+    text-align: center;
+}
+
+#evaluation-form{
+    width: 675px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+
