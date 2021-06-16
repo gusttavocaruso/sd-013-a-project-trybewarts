@@ -1,13 +1,13 @@
-*, *:after, *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* , *:after , *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    font-size: 100%;
-    list-style-type: none;
+  font-size: 100%;
+  list-style-type: none;
 }
 
 main {
@@ -39,7 +39,7 @@ main {
   align-self: end;
 }
 
-.login, .senha, .logar {
+.login , .senha , .logar {
   height: 30px;
   border: none;
   text-indent: 10px;
@@ -77,4 +77,11 @@ main {
 
 .second-section-main {
   display: flex;
+}
+footer {
+  background-color: rgb(83, 87, 95);
+  margin-bottom: 20px;
+  color: white;
+  height: 30px;
+  text-align: center;
 }

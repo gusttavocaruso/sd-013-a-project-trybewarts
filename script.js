@@ -1,6 +1,6 @@
 const botaoLogar = document.querySelector('.logar');
 
-botaoLogar.addEventListener('click', function() {
+botaoLogar.addEventListener('click', () => {
   const loginDigitado = document.querySelector('.login').value;
   const senhaDigitada = document.querySelector('.senha').value;
   if (loginDigitado === 'tryber@teste.com'
