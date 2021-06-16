@@ -2,8 +2,15 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.trybewarts-header-logo {
-  align-self: flex-start;
+.trybewarts-login {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 50px;
 }
