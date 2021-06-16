@@ -31,13 +31,15 @@ main {
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
+  max-height: 50px;
   width: 675px;
 }
 
-/* #evaluation-form:nth-child(1) {
-  max-width: 20%;
-} */
-
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#evaluation-form #family-label {
+  display: flex;
+  flex-direction: column;
 }
