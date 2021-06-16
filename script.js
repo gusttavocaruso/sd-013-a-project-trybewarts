@@ -30,3 +30,19 @@ function buttonSubmit() {
 }
 
 checkbox.addEventListener('input', buttonSubmit);
+
+// ===============================================================
+//     REQUISITO 20 - CONTADOR
+// ===============================================================
+
+const maxLength = 500;
+const area = document.getElementById('textarea');
+
+function countTextArea() {
+  const span = document.getElementById('counter');
+  const textarea = document.getElementById('textarea');
+  const count = textarea.value.length;
+  span.innerText = maxLength - count;
+}
+
+area.addEventListener('input', countTextArea);
