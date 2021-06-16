@@ -9,12 +9,12 @@
   flex-direction: column;
 }
 
-#fullName, #email-house, #label-rate, #label-infos {
+#fullName , #email-house , #label-rate , #label-infos {
   display: flex;
   align-items: center;
 }
 
-#name, #last-name, #e-mail {
+#name , #last-name , #e-mail {
   display: flex;
   margin: 5px;
   height: 30px;
