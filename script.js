@@ -16,7 +16,7 @@ const check = document.getElementById('agreement');
 const send = document.getElementById('submit-btn');
 send.disabled = true;
 
-function validarEnviar () {
+function validarEnviar() {
   if (check.checked) {
     send.disabled = false;
   } else {
