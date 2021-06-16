@@ -44,9 +44,15 @@ body {
   display: flex;
   width: 675px;
   flex-flow: wrap column;
-  justify-content: space-between;
-  height: 20px;
+  justify-content: space-around;
+  height: 500px;
   order: 1;
+  flex-shrink: px;
+}
+
+.primeiro-form {
+  display: flex;
+  order: 0;
 }
 
 .div-family {
@@ -83,7 +89,6 @@ main {
 .label-rate {
   display: flex;
   flex-flow: column row;
-  box-sizing: border-box;
 }
 
 footer {

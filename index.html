@@ -22,7 +22,7 @@
   <main>
     
     <form action="" class="forms" id="evaluation-form">
-      <div class="primeiro-form">
+      <section class="primeiro-form">
       <input type="text" name="" id="input-name" placeholder="Nome">
       <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
       <input type="text" name="" id="input-email" placeholder="Email">
@@ -32,8 +32,8 @@
         <option id="corvinode-house">Corvinode</option>
         <option id="pytherina-house">Pytherina</option>
       </select>
-    </div>
-    <div class="label-rate">
+      </section>
+    <section class="label-rate">
   <label id="label-rate"> Como você avalia a Trybewarts? </label>
   <input type="radio" name = "rate" value="1"> 1
   <input type="radio" name = "rate" value="2"> 2
@@ -46,13 +46,13 @@
   <input type="radio" name = "rate" value="9"> 9
   <input type="radio" name = "rate" value="10"> 10
 
-    </div>
-
-    </form>
+    </section>
 
 
 
-    <div class="div-family">
+
+
+    <section class="div-family">
       <label id="label-family">Qual sua família?</label>
       <label for="front-end">
         <input id="front-end" type="radio" name="family" value="Frontend">Frontend
@@ -63,11 +63,11 @@
       <label for="fullstack">
         <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
       </label>
-    </div>
+    </section>
 
-    <div class="div-conteudo">
+    <section class="div-conteudo">
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-      <div class="div-check-box">
+      <section class="div-check-box">
         <label for="hofs">
           <input id="hofs" type="checkbox" value="HoFs">HoFs
         </label>
@@ -86,14 +86,24 @@
         <label for="python">
           <input id="python" type="checkbox" value="Python">Python
         </label>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div>
-      <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
-    </div>
+    <section>
+    <label class="textarea" for="">Deixe seu comentário:</label>
+    <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
+    </section>
 
+    <section>
+    <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+    <input type="checkbox" id="agreement">
+    </section>
+
+    <section>
+      <button id="submit-btn" type="submit" disabled>Enviar</button>
+  </section>
+
+  </form>
   <aside class="trybewarts-logo-aside">
     <img id="trybewarts-forms-logo" class="trybewarts-logo" src="images/trybewarts-colored.svg" alt="">
   </aside>
