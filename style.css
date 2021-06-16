@@ -49,6 +49,11 @@
   height: 500px;
 }
 
+/* Alinhamento horizontal requisito 10 */
+.input-name-lastname {
+  display: flex;
+}
+
 /* tamanho da logo (requisito 12) */
 .container-direction {
   flex-direction: column;
