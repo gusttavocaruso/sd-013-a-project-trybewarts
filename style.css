@@ -9,15 +9,50 @@ body {
     background-color: rgb(50, 167, 145);
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    padding: 0 50px;
 }
 
 .trybewarts-header-logo {
     width: 60px;
-    
 }
 
 .trybewarts-login {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+#login, #senha {
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#botao-login {
+    padding: 8px;
+    border: none;
+    background-color: rgb(173, 19, 173);
+    border-radius: 8px;
+    color: white;
+}
+
+/* footer */
+
+
+footer {
+    display: flex;
+    border: 1px solid black;
+    height:20px;
+    justify-content: center;
+    align-content: center;
+    background-color: #333;
+}
+
+footer p {
+    margin: 0;
+    color: white;
 }
