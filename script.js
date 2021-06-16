@@ -14,7 +14,7 @@ bLogin.addEventListener('click', () => {
 const checker = document.getElementById('agreement');
 const sendBtn = document.getElementById('submit-btn');
 
-checker.onchange = function () {
+checker.onchange = () => {
   if (this.checked) {
     sendBtn.disabled = false;
   } else {
