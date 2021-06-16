@@ -23,14 +23,16 @@
       <button>Login</button>
     </form>
   </header>
-  <!-- criando formulario centralizado (requisito 5 e 6) -->
+  <!-- criando formulario centralizado (requisitos 5 e 6) -->
   <main class="flex-container">
     <form id="evaluation-form" class="flex-container form-size">
       <!-- Requisito 8 -->
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <div class="input-name-lastname">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
       <!-- criando div para alinhar como flex -->
-      <div id="casa">
+      <div class="input-email-house">
         <input type="text" id="input-email" placeholder="Email">
         <!-- Requisito 9 -->
         <label for="house">Casa:</label>
@@ -41,9 +43,21 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
+      <!-- Crie um campo de entrada para qual família a pessoa estudante se identifica (requisito 12) -->
+      <div class="flex-container container-direction">
+        <label for="family" id="label-family">Qual sua família?</label>
+        <input type="radio" name="family" value="Frontend">Frontend
+        <input type="radio" name="family" value="Backend">Backend
+        <input type="radio" name="family" value="FullStack">FullStack
+      </div>
     </form>
     <!-- logo da trybewarts (requisito 7) -->
     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    <!-- criando uma text area de tamanho 500 (requisito 15) -->
+    <label for="textarea" class="textarea">Deixe seu comentário:</label>
+    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+    <!-- criando botão pra envio do formulário (requisito 17) -->
+    <button type="submit" id="submit-btn">Enviar</button>
   </main>
   <script src="script.js"></script>
 </body>

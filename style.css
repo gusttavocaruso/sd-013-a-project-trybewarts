@@ -49,7 +49,17 @@
   height: 500px;
 }
 
-/* alinhando nome e sobrenome (requisito 10) */
-#casa {
+/* Alinhamento horizontal requisito 10 */
+.input-name-lastname {
   display: flex;
+}
+
+/* alinhando email e casa (requisito 11) */
+.input-email-house {
+  display: flex;
+}
+
+/* tamanho da logo (requisito 12) */
+.container-direction {
+  flex-direction: column;
 }
