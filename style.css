@@ -48,3 +48,8 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* tamanho da logo (requisito 12) */
+.container-direction {
+  flex-direction: column;
+}
