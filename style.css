@@ -32,6 +32,6 @@ main {
   flex-direction: row;
 }
 
-#input-name, #input-lastname, #input-email, #house {
-  width: 50%
+#input-name , #input-lastname , #input-email , #house {
+  width: 50%;
 }
