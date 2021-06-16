@@ -41,3 +41,16 @@ h1#trybewarts-header-title {
 img#trybewarts-forms-logo{
   height: 500px;
 }
+
+main {
+  height: 100vh;
+}
+
+footer {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
