@@ -22,17 +22,42 @@
           <input id="input-name" type="text" placeholder="Nome">
           <input id="input-lastname" type="text" placeholder="Sobrenome">
         </div>
-        <input id="input-email" type="text" placeholder="Email">
-        <select name="house" id="house">
-          <option id="gitnoria-house" value="gitnoria-house">Gitnória</option>
-          <option id="reactpuff-house" value="reactpuff-house">Reactpuff</option>
-          <option id="corvinode-house" value="corvinode-house">Corvinode</option>
-          <option id="pytherina-house" value="pytherina-house">Pytherina</option>
-        </select>
+        <div id="email-select">
+          <input id="input-email" type="text" placeholder="Email">
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="gitnoria-house">Gitnória</option>
+            <option id="reactpuff-house" value="reactpuff-house">Reactpuff</option>
+            <option id="corvinode-house" value="corvinode-house">Corvinode</option>
+            <option id="pytherina-house" value="pytherina-house">Pytherina</option>
+          </select>
+        </div>
         <label id="label-family" for="label-family">Qual sua família?</label>
-        <label for="frontend"><input name="family" type="radio" value="Frontend">Família Frontend</label>
-        <label for="backend"></label><input name="family" type="radio" value="Backend">Família Backend</label>
-        <label for="fullstack"></label><input name="family" type="radio" value="FullStack">Família FullStack</label>
+        <div id="familys">
+          <label><input name="family" type="radio" value="Frontend">Família Frontend</label>
+          <label><input name="family" type="radio" value="Backend">Família Backend</label>
+          <label><input name="family" type="radio" value="FullStack">Família FullStack</label>
+        </div>
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div id="future-learn">
+          <div>
+            <input type="checkbox" class="subject" value="HoFs"><label>HoFs</label>
+          </div>
+          <div>
+            <input type="checkbox" class="subject" value="Jest"><label>Jest</label>
+          </div>
+          <div>
+            <input type="checkbox" class="subject" value="Promises"><label>Promises</label>
+          </div>
+          <div>
+            <input type="checkbox" class="subject" value="React"><label>React</label>
+          </div>
+          <div>
+            <input type="checkbox" class="subject" value="SQL"><label>SQL</label>
+          </div>
+          <div>
+            <input type="checkbox" class="subject" value="Python"><label>Python</label>
+          </div>
+        </div>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>

@@ -23,6 +23,7 @@
 }
 
 #name-lastname {
+  display: flex;
   flex-direction: row;
 }
 
@@ -33,4 +34,22 @@ footer {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#email-select {
+  display: flex;
+}
+
+#house {
+  width: 185px;
+}
+
+#familys {
+  display: flex;
+  flex-direction: column;
+}
+
+#future-learn {
+  display: flex;
+  flex-wrap: wrap;
 }
