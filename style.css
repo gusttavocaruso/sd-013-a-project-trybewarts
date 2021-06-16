@@ -48,3 +48,8 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* Alinhamento horizontal requisito 10 */
+.input-name-lastname {
+  display: flex;
+}
