@@ -92,3 +92,8 @@ main {
 .label-subject {
   flex-basis: 33%;
 }
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
