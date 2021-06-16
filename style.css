@@ -7,8 +7,21 @@
 .header{
   background-color: rgb(50, 167, 145);
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
-.trybewarts-header-logo{
-  
+
+.header img {
+  height: 80px;
+  align-self: flex-start;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+header h1{
+  color: white;
+  font-size: 35px;
 }
