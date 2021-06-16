@@ -11,20 +11,24 @@
   width: 100%;
   height: 54px;
   display: flex;
-  /* justify-content: end; */
   align-items: center;
+}
+
+form {
+  position: absolute;
+  right: 0;
 }
 
 .input , .btn-logar {
   width: 100px;
   border: 1px solid rgb(93, 231, 255);
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .trybewarts-header-logo {
   width: 42px;
   height: 44px;
   border: 1px solid black;
-  float: left;
+  position: absolute;
+  left: 0;
 }
