@@ -1,12 +1,12 @@
-let formButton = document.querySelector('.btn-submit');
-let inputLogin = document.querySelector('#login');
-let inputSenha = document.querySelector('#senha');
+const formButton = document.querySelector('.btn-submit');
+const inputLogin = document.querySelector('#login');
+const inputSenha = document.querySelector('#senha');
 
 function validadeHeaderForm() {
-  let login = inputLogin.value;
-  let senha = inputSenha.value;
+  const login = inputLogin.value;
+  const senha = inputSenha.value;
 
-  if (login === "tryber@teste.com" && senha === "123456") {
+  if (login === 'tryber@teste.com' && senha === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
@@ -14,5 +14,3 @@ function validadeHeaderForm() {
 }
 
 formButton.addEventListener('click', validadeHeaderForm);
-
-
