@@ -1,58 +1,72 @@
 body {
     margin: 0%;
-}
-
-/* área dedicada à header! */
-
+  }
+  
+  /* área dedicada à header! */
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    padding: 0 50px;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 
 .trybewarts-header-logo {
-    width: 60px;
+  width: 60px;
 }
 
 .trybewarts-login {
-    display: flex;
-    align-items: center;
-    margin-right: 100px;
+  display: flex;
+  align-items: center;
 }
 
-#login, #senha {
-    margin-right: 10px;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
+#login , #senha {
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 #botao-login {
-    padding: 8px;
-    border: none;
-    background-color: rgb(173, 19, 173);
-    border-radius: 8px;
-    color: white;
+  padding: 8px;
+  border: none;
+  background-color: rgb(173, 19, 173);
+  border-radius: 8px;
+  color: white;
 }
 
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#evaluation-form input {
+  flex-flow: column;
+  width: 300px;
+}
+
+
 /* footer */
-
-
 footer {
-    display: flex;
-    border: 1px solid black;
-    height:20px;
-    justify-content: center;
-    align-content: center;
-    background-color: #333;
+  display: flex;
+  border: 1px solid black;
+  height: 20px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(48, 47, 47);
 }
 
 footer p {
-    margin: 0;
-    color: white;
+  margin: 0;
+  color: white;
 }
