@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
@@ -26,6 +25,21 @@
   width: 675px;
   flex-direction: column;
   background-color: aqua;
+}
+
+#evaluation-form input {
+  margin: 20px;
+  padding: 5px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+#house {
+  margin: 20px;
+  flex-basis: 200px;
 }
 
 #trybewarts-forms-logo {

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <title>Trybewarts</title>
 </head>
 <body>
@@ -16,10 +15,26 @@
   </header>
     
   <main class="container" id="main">
-    <form action="" method="GET" class="container" id="evaluation-form">
-   </form>
-  <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo trybewarts">
-  </main>
 
+    <form action="" method="GET" class="container" id="evaluation-form">
+      <div class="input-group">
+        <input type="text" id="input-name" name="Nome" placeholder="Nome">
+        <input type="text" id="input-lastname" name="Sobrenome" placeholder="Sobrenome">
+      </div>
+      <div class="input-group">
+        <input type="text" id="input-email" name="Email" placeholder="Email">
+        <select name="Casa" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+    </form>
+  <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo trybewarts">
+ 
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
