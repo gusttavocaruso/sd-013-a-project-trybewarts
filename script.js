@@ -9,6 +9,6 @@ function verificarFormHeader() {
     if (senha === "123456" & login === "tryber@teste.com") {
       alert("Olá, Tryber!");
     } else {
-      alert("Login ou senha inválidos");
+      alert("Login ou senha inválidos.");
     }
 }

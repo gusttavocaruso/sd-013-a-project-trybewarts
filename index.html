@@ -9,12 +9,8 @@
 </head>
 <body>
   <header class="header">
-    <div>
-      <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts" class="trybewarts-header-logo">
-    </div>
-    <div>
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-    </div>
+    <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form method="GET" class="trybewarts-login">
       <input type="text" placeholder="Login" name="login" id="login-input">
       <input type="password" placeholder="Senha" name="senha" id="senha-input">
@@ -22,32 +18,30 @@
     </form>
   </header>
   <main class="main-container">
-      <!-- div form -->
-    <div class="container">
-      <form class="form-container" id="evaluation-form">
-				<h2 id="title-forms">Forms</h2>
-				<div id="name-sobrenome-container">
-					<input type="text" class="input-main" id="input-name" placeholder="Nome">
-					<input type="text" class="input-main" id="input-lastname" placeholder="Sobrenome">
-				</div>
-				<div id="email-casa-container">
-       	 	<input type="text" class="input-main" id="input-email" placeholder="Email">
-					<label for="house">Casa:</label>
-					<select id="house">
-						<option value="Gitnória" id="gitnoria-house">Gitnória</option>
-						<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-						<option value="Corvinode" id="corvinode-house">Corvinode</option>
-						<option value="Pytherina" id="pytherina-house">Pytherina</option>
-					</select>
-				</div>
-				<label for="" id="label-family">Qual sua família?</label>
-				<div id="input-radios-container">
-					<input type="radio" name="family" id="frontend-radio"><label for="frontend-radio">Frontend</label>
-					<input type="radio" name="family" id="backend-radio"><label for="backend-radio">Backend</label>
-					<input type="radio" name="family" id="fullstack-radio"><label for="fullstack-radio">FullStack</label>
-				</div>
+    <!-- div form -->
+    <form class="form-container" id="evaluation-form">
+			<h2 id="title-forms">Forms</h2>
+			<div id="name-sobrenome-container">
+				<input type="text" class="input-main" id="input-name" placeholder="Nome">
+				<input type="text" class="input-main" id="input-lastname" placeholder="Sobrenome">
+			</div>
+			<div id="email-casa-container">
+				<input type="text" class="input-main" id="input-email" placeholder="Email">
+				<label for="house">Casa:</label>
+				<select id="house">
+					<option value="Gitnória" id="gitnoria-house">Gitnória</option>
+					<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+					<option value="Corvinode" id="corvinode-house">Corvinode</option>
+					<option value="Pytherina" id="pytherina-house">Pytherina</option>
+				</select>
+			</div>
+			<label for="" id="label-family">Qual sua família?</label>
+			<div id="input-radios-container">
+				<label for="frontend-radio"><input type="radio" name="family" id="frontend-radio" value="Frontend">Frontend</label>
+				<label for="backend-radio"><input type="radio" name="family" id="backend-radio" value="Backend">Backend</label>
+				<label for="fullstack-radio"><input type="radio" name="family" id="fullstack-radio" value="FullStack">FullStack</label>
+			</div>
       </form>
-    </div>
     <!-- div imagem -->
     <div class="container">
       <img id="trybewarts-forms-logo" class="img-trybewarts" src="images/trybewarts-colored.svg">

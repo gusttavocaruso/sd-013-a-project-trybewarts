@@ -13,7 +13,7 @@ body {
   background-color: rgb(50, 167, 145);
   padding: 10px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -33,15 +33,21 @@ input {
   padding: 8px;
 }
 
+.trybewarts-login {
+  display: flex;
+  margin-right: 30px;
+}
+
 #button-submit-header {
   color: rgb(246, 248, 250);	
   background-color: rgb(94, 93, 88);
   padding: 7px 15px;
-  border-radius: 9px;
+  border-radius: 9px;#input-radios-container
 }
 
 .main-container {
   display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -82,4 +88,9 @@ input {
 #title-forms {
 	font-size: 1.6em;
 	padding: 15px;
+}
+
+#input-radios-container {
+  display: flex;
+  flex-direction: column;
 }
