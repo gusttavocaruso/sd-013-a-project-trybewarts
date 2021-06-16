@@ -10,3 +10,12 @@ loginButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+const submitButton = document.getElementById('submit-btn');
+const checkAgree = document.getElementById('agreement');
+checkAgree.addEventListener('click', () => {
+  if (checkAgree.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
