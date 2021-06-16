@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
+
+.container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+}
+
+#trybewarts-header-tille {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
