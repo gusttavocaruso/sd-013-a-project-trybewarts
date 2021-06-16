@@ -1,10 +1,10 @@
-const header = document.querySelector('.header');
-const logoHeader = document.querySelector('.trybewarts-header-logo');
-const formLogin = document.querySelector('.trybewarts-login');
+// const header = document.querySelector('.header');
+// const logoHeader = document.querySelector('.trybewarts-header-logo');
+// const formLogin = document.querySelector('.trybewarts-login');
 const login = document.querySelector('#email');
 const password = document.querySelector('#password');
 const buttonEntrar = document.querySelector('#entrar');
-const formEvaluation = document.querySelector('#evaluation-form');
+// const formEvaluation = document.querySelector('#evaluation-form');
 
 // Verifica o email e a senha
 buttonEntrar.addEventListener('click', () => {
