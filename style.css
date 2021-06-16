@@ -50,3 +50,9 @@
 .align-form {
   display: flex;
 }
+
+.form4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
