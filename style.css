@@ -26,11 +26,12 @@
 /* Main */
 main {
   display: flex;
+  flex-direction: column;
 }
 
 #evaluation-form {
-  display: flex;
-  flex-flow: column wrap;
+  /* display: flex; */
+  /* flex-flow: column wrap; */
   max-height: 50px;
   width: 675px;
 }
@@ -40,6 +41,6 @@ main {
 }
 
 #evaluation-form #family-label {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
