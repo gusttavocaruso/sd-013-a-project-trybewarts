@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+h1 {
+  font-size: 2em;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -22,10 +34,12 @@
 
 .trybewarts-header-logo {
   height: 70px;
+  /* margin-left: 10px; */
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 10px;
 }
 
 .name-row {
