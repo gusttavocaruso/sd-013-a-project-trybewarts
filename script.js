@@ -3,9 +3,9 @@ const password = document.querySelector('.senha');
 const bntLogin = document.querySelector('#buttonLogin');
 
 bntLogin.addEventListener('click', function check() {
-  if(email.value == 'tryber@teste.com' && password.value == '123456') {
+  if (email.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
   } else { 
     alert('Login ou senha inválidos.');
-  };
+  }
 });
