@@ -9,17 +9,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>Trybewarts</title>
 </head>
-<body>
-  <header class="header">
-    <div class="container">
+<body id="reset-body">
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Imagem Trybewarts logo">
-      <h1 id="trybewarts-header-tille">Trybewarts</h1>
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
-        <input type="text" placeholder="Login">
-        <input type="password" placeholder="Senha">
-        <input type="submit" placeholder="Logar">
+        <input type="text" placeholder="Login" class="form-control" id="input-login">
+        <input type="password" placeholder="Senha" class="form-control" id="input-password">
+        <button type="submit" class="btn" id="login-btn">Logar</button>
       </form>
     </div>
   </header>
+  <main>
+    <form action="" id="evaluation-form">
+
+    </form>
+    <img src="images/trybewarts-colored.svg" alt="Logo do Forms" id="trybewarts-forms-logo">
+  </main>
 </body>
+<script src="script.js"></script>
 </html>
