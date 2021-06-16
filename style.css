@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Montserrat';
+}
+
 .main-content {
   display: flex;
 }
@@ -22,15 +29,25 @@
   display: flex;
 }
 
-#logo {
-  height: 90px
+.trybewarts-header-logo {
+  display: flex;
+  justify-content: flex-start;
+  height: 90px;
+  margin-left: 10px;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
 }
