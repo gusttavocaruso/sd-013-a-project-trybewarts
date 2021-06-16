@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(239,239,239);
+  background-color: rgb(239, 239, 239);
 }
 
 hr {
-  width: 432px;
+  width: 520px;
 }
 
 /** Header **/
@@ -16,10 +16,12 @@ hr {
   align-items: center;
   height: 100px;
 }
+
 .trybewarts-header-logo {
   order: 1;
   width: 70px;
 }
+
 #trybewarts-header-title {
   order: 2;
   text-align: center;
@@ -40,7 +42,7 @@ hr {
   box-shadow: 1px 1px 15px 1px rgba(34, 34, 34, 0.05);
 }
 #input-login-button {
-  background-color: rgb(79,58,131);
+  background-color: rgb(79, 58, 131);
   color: white;
   border-radius: 10px;
   border: none;
@@ -73,8 +75,12 @@ hr {
   margin-left: 100px;
 }
 
+.input-container {
+  width: 520px;
+}
+
 #input-name, #input-lastname {
-  width: 200px;
+  width: 230px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -84,7 +90,7 @@ hr {
 }
 #input-email, #house {
   background-color: white;
-  width: 200px;
+  width: 230px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -101,7 +107,7 @@ hr {
 }
 
 #house {
-  width: 165.41px;
+  width: 195px;
 }
 
 .family {
@@ -111,14 +117,14 @@ hr {
 #frontend-family,
 #backend-family,
 #fullstack-family
-{
+ {
   display: block;
 }
 
 .frontend-container,
 .backend-container,
 .fullstack-container
-{
+ {
   display: flex;
 }
 
@@ -129,7 +135,7 @@ hr {
 }
 
 .input-options-container {
-  width: 432px;
+  width: 520px;
 }
 
 .content-container {
@@ -137,10 +143,23 @@ hr {
   float: right;
 }
 
-.conteudos{
+.conteudos {
   margin-top: 10px;
 }
 
-#label-content{
+#label-content {
   line-height: 1.5;
+}
+
+.rating-container {
+  width: 520px;
+}
+
+#textarea {
+  display: block;
+}
+
+.comment-container {
+  margin-top: 10px;
+  width: 520px;
 }
