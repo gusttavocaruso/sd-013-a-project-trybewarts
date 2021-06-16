@@ -3,7 +3,6 @@
   margin: 0;
 }
 
-/* Header */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -27,7 +26,11 @@ main {
   flex-wrap: wrap;
 }
 
-/* Aside Logo*/
+.div-family {
+  display: flex;
+  flex-direction: column;
+}
+
 .trybewarts-logo-aside {
   display: flex;
 }
