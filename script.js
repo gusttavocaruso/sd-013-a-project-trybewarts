@@ -10,3 +10,17 @@ loginButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+function count() {
+  const maxCharacters = 500;
+  const textArea = document.getElementById('textarea').value;
+  document.getElementById('counter').textContent = maxCharacters - textArea.length;
+}
+
+function countCharacter() {
+  document.getElementById('counter').textContent = 500;
+  const timeInMs = 10;
+  const textArea = document.getElementById('textarea');
+  textArea.addEventListener('keyup', () => { setTimeout(count, timeInMs); });
+}
+countCharacter();
