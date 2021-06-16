@@ -1,14 +1,11 @@
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-<<<<<<< HEAD
 .trybewarts-login{
-=======
-.trybewarts-header-logo{
-
+    display: flex;
 }
 
 #trybewarts-forms-logo {
@@ -20,6 +17,5 @@
 }
 
 #buttons-rate{
->>>>>>> 2880ca3abcdd6f134ba84f6426a0d78ea9f612d3
     display: flex;
 }
