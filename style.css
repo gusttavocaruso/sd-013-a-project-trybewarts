@@ -32,6 +32,15 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+
+}
+
+#evaluation-form:nth-child(1) {
+  flex-direction: row;
+  max-height: 50px;
 }
 
 #trybewarts-forms-logo {
