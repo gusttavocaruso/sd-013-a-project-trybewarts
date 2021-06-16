@@ -4,7 +4,7 @@ const btnLogin = document.getElementById('btn-logar');
 const loginResister = 'tryber@teste.com';
 const passwordResister = '123456';
 const msgValidate = 'Olá, Tryber!';
-const msgNoValidate = 'Login ou senha inválidos';
+const msgNoValidate = 'Login ou senha inválidos.';
 
 function showAlert(msg) {
   alert(msg);
