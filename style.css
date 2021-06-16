@@ -18,17 +18,16 @@
 }
 
 .trybewarts-login {
-  margin: 8px 0;
   display: flex;
 }
 
-.trybewarts-header-title {
+#trybewarts-header-title {
   display: flex;
   color: #fff;
 }
 
-#login,
-#password {
+#login, #password {
+  margin-left: 10px;
   width: 30%;
   border: none;
   padding: 12px 30px;
@@ -37,8 +36,28 @@
 }
 
 .logar {
+  margin-left: 10px;
   border: none;
   padding: 5px 30px;
   border-radius: 5px;
   box-shadow: 0 0px 4px 0;
+  transition-duration: 0.4s;
+}
+.logar:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+main {
+  display: flex
+}
+
+#evaluation-form{
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height:500px
 }
