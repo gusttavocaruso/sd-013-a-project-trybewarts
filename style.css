@@ -4,11 +4,35 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-}
-
-.header {
+ }
+  
+ .header {
   width: 100vw;
   height: 80px;
   background-color: rgb(50, 167, 145);
   display: flex;
-}
+  justify-content: space-around;
+ }
+  
+ .header div {
+  display: flex;
+ }
+  
+ .trybewarts-header-logo {
+  width: 80px;
+  height: 80px;
+ }
+  
+ #trybewarts-header-title {
+  color: #fff;
+ }
+  
+ .itens-menu {
+  align-items: center;
+ }
+  
+ .itens-menu input {
+  height: 30px;
+  border-radius: 5px;
+ }
+ 
