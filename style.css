@@ -23,15 +23,15 @@
 
 #trybewarts-header-title {
   display: flex;
-  color: #fff;
+  color: white;
 }
 
-#login, #password {
+#login , #password {
   margin-left: 10px;
   width: 30%;
   border: none;
   padding: 12px 30px;
-  box-shadow: 0 0px 4px 0;
+  box-shadow: 0 0 4px;
   border-radius: 5px;
 }
 
@@ -40,24 +40,25 @@
   border: none;
   padding: 5px 30px;
   border-radius: 5px;
-  box-shadow: 0 0px 4px 0;
+  box-shadow: 0 0 4px 0;
   transition-duration: 0.4s;
 }
+
 .logar:hover {
-  background-color: #4CAF50;
+  background-color: rgb(16, 777, 216);
   color: white;
 }
 
 main {
-  display: flex
+  display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
 #trybewarts-forms-logo {
-  height:500px
+  height: 500px;
 }
