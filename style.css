@@ -30,8 +30,21 @@ main {
 .side-by-side {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 
-#input-name , #input-lastname , #input-email , #house {
+.side-by-side input , select {
   width: 50%;
+}
+
+.family-radio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.content-checkbox {
+  display: flex;
+  flex-direction: column;
 }
