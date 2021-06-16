@@ -3,3 +3,7 @@
   display: flex;
   width: 100%;
 }
+
+.trybewarts-header-logo {
+  align-self: flex-start;
+}
