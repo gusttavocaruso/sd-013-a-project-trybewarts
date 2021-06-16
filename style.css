@@ -14,7 +14,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 1000px;
   background-color: rgb(50, 167, 145);
 }
 
@@ -54,12 +54,19 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  border: 1px solid black;
 }
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#form-container1 {
+  display: flex;
+  flex-wrap: wrap;
 }
