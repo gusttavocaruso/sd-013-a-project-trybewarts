@@ -10,3 +10,18 @@ formButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+// Faça com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada (requesito 18)
+const sendButtom = document.getElementById('submit-btn');
+const checkAgree = document.getElementById('agreement');
+sendButtom.disabled = true;
+
+function sendForm() {
+  console.log(checkAgree.checked);
+  if (checkAgree.checked === true) {
+    sendButtom.disabled = false;
+  } else {
+    sendButtom.disabled = true;
+  }
+}
+checkAgree.addEventListener('click', sendForm);
