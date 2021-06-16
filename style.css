@@ -11,12 +11,10 @@
   height: 80px;
   align-items: center;
 }
-
 .trybewarts-header-logo {
   width: 80px;
   align-items: flex-start;
 }
-
 input[type="email"],
 input[type="password"] {
   padding: 8px 1px;
@@ -38,17 +36,14 @@ input[type="password"] {
   background-color: rgb(78, 45, 130);
   color: white;
 }
-
 main {
   display: flex;
 }
-
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
-
 #trybewarts-forms-logo {
   height: 500px;
 }
