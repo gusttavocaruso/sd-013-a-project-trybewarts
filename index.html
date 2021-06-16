@@ -9,8 +9,9 @@
 </head>
 <body>
   <main>
-
+    
     <form action="" class="forms" id="evaluation-form">
+      <div class="primeiro-form">
       <input type="text" name="" id="input-name" placeholder="Nome">
       <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
       <input type="text" name="" id="input-email" placeholder="Email">
@@ -20,10 +21,36 @@
         <option id="corvinode-house">Corvinode</option>
         <option id="pytherina-house">Pytherina</option>
       </select>
+    </div>
+    <div class="label-rate">
+  <label id="label-rate">Como você avalia a Trybewarts?</label>
+  <label for="1">1</label>
+  <input type="radio" name="rate" id="1" class=>
+  <label for="2">2</label>
+  <input type="radio" name="rate" id="2">
+  <label for="3">3</label>
+  <input type="radio" name="rate" id="3">
+  <label for="4">4</label>
+  <input type="radio" name="rate" id="4">
+  <label for="5">5</label>
+  <input type="radio" name="rate" id="5">
+  <label for="6">6</label>
+  <input type="radio" name="rate" id="6">
+  <label for="7">7</label>
+  <input type="radio" name="rate" id="7">
+  <label for="8">8</label>
+  <input type="radio" name="rate" id="8">
+  <label for="9">9</label>
+  <input type="radio" name="rate" id="9">
+  <label for="10">10</label>
+  <input type="radio" name="rate" id="10">
+
+    </div>
+
     </form>
 
     <header class="header">
-      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts logo">
+      <div class="header-logo"><img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts logo"></div>
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form id="form-login" class="trybewarts-login">
         <input id="login" type="text" placeholder="Login">
@@ -69,15 +96,13 @@
       </div>
     </div>
 
-    <div class="div-textarea">
-      <div class="div-textarea">
-        <label class="textarea" for="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" class="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      </div>
+    <div>
+      <label class="textarea" for="">Deixe seu comentário:</label>
+      <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
     </div>
 
-  <aside class="trybewarts-logo">
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+  <aside class="trybewarts-logo-aside">
+    <img id="trybewarts-forms-logo" class="trybewarts-logo" src="images/trybewarts-colored.svg" alt="">
   </aside>
 
   </main>
