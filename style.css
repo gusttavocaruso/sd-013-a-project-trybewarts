@@ -10,6 +10,10 @@ body {
     list-style-type: none;
 }
 
+main {
+  display: flex;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -51,10 +55,6 @@ body {
   text-indent: 0;
 }
 
-main {
-  display: flex;
-}
-
 #evaluation-form {
   display: flex;
   flex-direction: column;
@@ -65,16 +65,16 @@ main {
   height: 500px;
 }
 
-main {
-  display: flex;
+.line-content {
+  display: flex;  
 }
 
-#evaluation-form {
+.family-choice, .wish-to-learn {
   display: flex;
   flex-direction: column;
-  width: 675px;
+  /* border: 1px solid red; */
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.second-section-main {
+  display: flex;
 }
