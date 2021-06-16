@@ -11,6 +11,7 @@
 }
 .trybewarts-login{
     margin-top: 20px;
+    display: flex;
 }
 
 #trybewarts-header-title{
@@ -28,6 +29,11 @@
     margin-top: 10px;
 }
 
+main{
+    display: flex;
+}
 
-
+#trybewarts-forms-logo{
+    height: 500px;
+}
 
