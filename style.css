@@ -6,12 +6,12 @@
 
 header {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: rgb(50, 167, 145);
   justify-content: space-evenly;
   padding: 10px 0;
   color: white;
-align-items: center;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
@@ -23,37 +23,46 @@ header h1 {
 }
 
 header input {
-padding: 10px;
-border-radius: 5px;
-border: none;
-margin-right: 5px;
-font-family: "Playfair Display", serif;
-width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  font-family: "Playfair Display", serif;
+  width: 130px;
 }
 
 header button {
-background-color: #4E2B83;
-width: 120px;
-padding: 10px;
-border: none;
-border-radius: 5px;
-color: white;
-font-family: "Playfair Display", serif;
-width: 100px;
+  background-color: #4e2b83;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  width: 100px;
 }
 
 header form {
-display: flex;
-flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 main {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main h2 {
-font-family: "Playfair Display", serif;
-font-size: 18px;
-font-weight: bolder;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  width: 300px;
 }
