@@ -5,7 +5,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(50 , 167 , 145);
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-login {
@@ -27,7 +27,7 @@ main {
   display: flex;
   flex-direction: row;
 }
-  
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -52,7 +52,7 @@ main {
   flex-direction: column;
 }
 
-#label-content{
+#label-content {
   display: flex;
   flex-direction: column;
 }
