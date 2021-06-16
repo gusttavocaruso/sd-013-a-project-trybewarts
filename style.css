@@ -17,3 +17,8 @@
   width: 40px;
   height: 40px;
 }
+
+/* estilo do requisito 4 */
+#trybewarts-header-title {
+  text-align: center;
+}
