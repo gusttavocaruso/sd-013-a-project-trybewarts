@@ -66,15 +66,15 @@ input:focus {
 }
 
 main {
-  width: 90vh;
+  width: 100vw;
   height: 90vh;
   display: flex;
 }
 
 #div1 {
+  width: 50vw;
   align-items: center;
   display: flex;
-  width: 675px;
   flex-flow: column wrap;
 }
 
@@ -84,9 +84,10 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  align-items: center;
   margin-top: 10px;
-  justify-content: center;
+  width: 675px;
 }
 
 #evaluation-form input {
