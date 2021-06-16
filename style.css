@@ -34,3 +34,18 @@
 #trybewarts-header-title {
   color: white;
 }
+
+.main-conteiner {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  background-color: yellowgreen;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
