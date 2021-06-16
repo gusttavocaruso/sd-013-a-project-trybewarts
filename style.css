@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -30,6 +31,45 @@ input {
   padding: 7px 15px;
   border-radius: 9px;
 }
+=======
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.header {
+	display: flex;
+	background-color: rgb(50, 167, 145);
+	padding: 10px;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.trybewarts-header-logo {
+	width: 50px;
+	height: 50px;
+}
+
+#trybewarts-header-title {
+	font-size: 2em;
+	color: aliceblue;
+	font-family:Verdana, Tahoma, sans-serif;
+}
+
+input {
+	border-radius: 9px;
+	padding: 8px 8px;
+}
+
+#button-submit-header {
+	color: rgb(246, 248, 250);
+	background-color: rgb(94, 93, 88);
+	padding: 7px 15px;
+	border-radius: 9px;
+}
+
+>>>>>>> a78a2078578744c1d9c1b53dad91d1913299d297
 .main-container {
   display:flex;
 }
