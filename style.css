@@ -58,3 +58,8 @@
 .container-direction {
   flex-direction: column;
 }
+
+/* Alinhamento dos radio-buttons (requisito 14) */
+.radio-buttons-rate {
+  display: flex;
+}
