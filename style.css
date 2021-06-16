@@ -18,8 +18,9 @@
 .header-logo {
   width: 10px;
   display: flex;
-  order: 0 ;
+  order: 0;
 }
+
 .trybewarts-header-logo {
   width: 50px;
 }
