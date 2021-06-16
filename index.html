@@ -25,9 +25,27 @@
       <!-- div form -->
     <div class="container">
       <form class="form-container" id="evaluation-form">
-        <input type="text" class="input-main" id="input-name" placeholder="Nome">
-        <input type="text" class="input-main" id="input-lastname" placeholder="Sobrenome">
-        <input type="text" class="input-main" id="input-email" placeholder="Email">
+				<h2 id="title-forms">Forms</h2>
+				<div id="name-sobrenome-container">
+					<input type="text" class="input-main" id="input-name" placeholder="Nome">
+					<input type="text" class="input-main" id="input-lastname" placeholder="Sobrenome">
+				</div>
+				<div id="email-casa-container">
+       	 	<input type="text" class="input-main" id="input-email" placeholder="Email">
+					<label for="house">Casa:</label>
+					<select id="house">
+						<option value="Gitnória" id="gitnoria-house">Gitnória</option>
+						<option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+						<option value="Corvinode" id="corvinode-house">Corvinode</option>
+						<option value="Pytherina" id="pytherina-house">Pytherina</option>
+					</select>
+				</div>
+				<label for="" id="label-family">Qual sua família?</label>
+				<div id="input-radios-container">
+					<input type="radio" name="family" id="frontend-radio"><label for="frontend-radio">Frontend</label>
+					<input type="radio" name="family" id="backend-radio"><label for="backend-radio">Backend</label>
+					<input type="radio" name="family" id="fullstack-radio"><label for="fullstack-radio">FullStack</label>
+				</div>
       </form>
     </div>
     <!-- div imagem -->

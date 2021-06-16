@@ -1,56 +1,85 @@
 * {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+	background-color: rgb(226, 210, 191);
 }
 
 .header {
-	display: flex;
-	background-color: rgb(50, 167, 145);
-	padding: 10px;
-	width: 100%;
-	justify-content: space-around;
-	align-items: center;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
-	width: 50px;
-	height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 #trybewarts-header-title {
-	font-size: 2em;
-	color: aliceblue;
-	font-family:Verdana, Tahoma, sans-serif;
+  font-size: 2em;
+  color: aliceblue;
+	font-family: Verdana, Tahoma, sans-serif;
 }
 
 input {
-	border-radius: 9px;
-	padding: 8px 8px;
+  border-radius: 9px;
+  padding: 8px;
 }
 
 #button-submit-header {
-	color: rgb(246, 248, 250);
-	background-color: rgb(94, 93, 88);
-	padding: 7px 15px;
-	border-radius: 9px;
+  color: rgb(246, 248, 250);	
+  background-color: rgb(94, 93, 88);
+  padding: 7px 15px;
+  border-radius: 9px;
 }
 
 .main-container {
-  display:flex;
+  display: flex;
 }
+
 .container {
   display: flex;
 }
+
 .form-container {
   display: flex;
   width: 675px;
   flex-direction: column;
+	align-items: center;
 }
+
 .input-main {
-  width: 200px;
+  width: 250px;
 }
+
 .img-trybewarts {
   width: 500px;
   height: 500px;
+}
+
+#name-sobrenome-container {
+	flex-direction: row;
+}
+
+#email-casa-container {
+	flex-direction: row;
+}
+
+#house {
+	width: 218px;
+	padding: 7px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#title-forms {
+	font-size: 1.6em;
+	padding: 15px;
 }
