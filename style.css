@@ -33,3 +33,8 @@
   align-self: center;
   width: 675px;
 }
+
+/* tamanho da logo (requisito 7) */
+#trybewarts-forms-logo {
+  height: 500px;
+}
