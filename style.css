@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+html , body {
   font-family: sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .container {
@@ -27,7 +27,7 @@ html, body {
 
 .trybewarts-header-logo {
   display: flex;
-  width: 100px;
+  width: 50px;
 }
 
 .trybewarts-login {
