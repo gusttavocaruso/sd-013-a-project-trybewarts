@@ -34,6 +34,10 @@
 
 main {
   display: flex;
+<<<<<<< HEAD
+  margin: 50px
+=======
+>>>>>>> c8693095a0e9e969b25fc4399b9200fadcbf55d3
 }
 
 #evaluation-form {
@@ -44,4 +48,17 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.informations {
+  width: 500px;
+}
+
+#family input {
+  display: flex;
+  flex-direction: column; 
+}
+
+.checkbox input {
+  display: flex;  
 }
