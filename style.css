@@ -24,13 +24,20 @@ html , body {
   max-width: 1080px;
 }
 
-
 .trybewarts-header-logo {
   display: flex;
   width: 50px;
 }
 
+h1#trybewarts-header-title {
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
   align-items: center;
+}
+
+img#trybewarts-forms-logo{
+  height: 500px;
 }
