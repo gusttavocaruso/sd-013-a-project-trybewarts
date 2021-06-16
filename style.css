@@ -4,7 +4,6 @@
 }
 
 /* css do cabeçalho, requisitos de 1 a 4 */
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -44,7 +43,7 @@
   color: white;
 }
 
-/*CSS do main*/
+/* CSS do main */
 .main-conteiner {
   display: flex;
   background-color: rgb(233, 233, 233);
@@ -60,7 +59,7 @@
   height: 500px;
 }
 
-/* css dos requisitos de 8 a 11*/
+/* css dos requisitos de 8 a 11 */
 .first-form {
   display: flex;
   flex-wrap: wrap;
@@ -100,13 +99,38 @@ h2 {
   margin-right: 0;
 }
 
-
 .first-form hr {
   width: 100%;
 }
 
 
-/* css do rodapé*/
+/* CSS req12 */
+#label-family {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* CSS req13 */
+#label-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* CSS req17 */
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 5px;
+  background-color: slateblue;
+  color: whitesmoke;
+  width: 80%;
+  padding: 5px;
+}
+
+/* css do rodapé */
 footer {
   display: flex;
   background-color: gray;
