@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Trybewarts</title>
-  </head>
-  <body>
-    <header class="header">
-      <div>
-        <img
-          src="images/trybewarts-header-logo.svg"
-          alt="logo-trybewarts"
-          class="trybewarts-header-logo"
-        />
-      </div>
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form action="" class="trybewarts-login">
-        <input class="login" type="text" placeholder="Login" required />
-        <input class="senha" type="password" placeholder="Senha" required />
-        <button id="buttonLogin" type="submit">Logar</button>
-      </form>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Trybewarts</title>
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <img src="images/trybewarts-header-logo.svg" alt="logo-trybewarts" class="trybewarts-header-logo" />
+    </div>
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form action="" class="trybewarts-login">
+      <input class="login" type="text" placeholder="Login" required />
+      <input class="senha" type="password" placeholder="Senha" required />
+      <button id="buttonLogin" type="submit">Logar</button>
+    </form>
+  </header>
+  <div class="body">
     <main>
-      <h1>Forms</h1>
-      <form action="" id="evaluation-form">
-        <input type="text" placeholder="Nome" name="" id="input-name" />
+      <form class="forms" action="" id="evaluation-form">
+        <div class="names">
+        <input type="text" placeholder="Nome" name="nome" id="input-name" />
         <input
           type="text"
           placeholder="Sobrenome"
-          name=""
+          name="lastname"
           id="input-lastname"
         />
-        <input type="text" placeholder="Email" name="" id="input-email" />
+        </div>
+        <div class="email">
+        <input type="text" placeholder="Email" name="email" id="input-email" />
         <label for="">Casa: </label>
         <select name="" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -41,29 +42,51 @@
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+      </div>
       </form>
       <!--Requisito 12 em diante-->
-      <div class="family-radio">
-        <label for="" id="label-family"> Qual sua família? </label>
-        <input type="radio" name="family" value="Frontend" />
-        <input type="radio" name="family" value="Backend" />
-        <input type="radio" name="family" value="FullStack" />
-      </div>
-      <div class="content-Learn">
-        <div class="label-content">
-          <label for="" id=""
-            >Qual conteúdo você está com mais vontade de aprender?</label
-          >
+      <form class="family-radio forms">
+        <label for="" id="label-family">
+          Qual sua família?
+        </label>
+        <div class="ratio-tech">
+          <input type="radio" name="family" value="Frontend">Frontend
+          <input type="radio" name="family" value="Backend">Backend
+          <input type="radio" name="family" value="FullStack">FullStack
         </div>
-        <div class="checkbox">
-          <input class="subject" type="checkbox" value="Hofs" />Hofs
-          <input class="subject" type="checkbox" value="Jest" />Jest
-          <input class="subject" type="checkbox" value="Promises" />Promises
-          <input class="subject" type="checkbox" value="React" />React
-          <input class="subject" type="checkbox" value="SQL" />SQL
-          <input class="subject" type="checkbox" value="Python" />Python
+      </form>
+      <form class="label-check forms">
+        <div>
+          <label for="cBox" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         </div>
-      </div>
+        <div>
+          <input class="subject" type="checkbox" name="cBox" value="HoFs">HoFs
+          <input class="subject" type="checkbox" name="cBox" value="Jest">Jest
+          <input class="subject" type="checkbox" name="cBox" value="Promises">Promises
+          <input class="subject" type="checkbox" name="cBox" value="React">React
+          <input class="subject" type="checkbox" name="cBox" value="SQL">SQL
+          <input class="subject" type="checkbox" name="cBox" value="Python">Python
+        </div>
+      </form>
+      <form class="label-aside forms" action="">
+        <label id="label-rate" for="name">Como você avalia a Trybewarts?</label>
+        <div class="ratio">
+          <input name="rate" type="radio" value="1">1
+          <input name="rate" type="radio" value="2">2
+          <input name="rate" type="radio" value="3">3
+          <input name="rate" type="radio" value="4">4
+          <input name="rate" type="radio" value="5">5
+          <input name="rate" type="radio" value="6">6
+          <input name="rate" type="radio" value="7">7
+          <input name="rate" type="radio" value="8">8
+          <input name="rate" type="radio" value="9">9
+          <input name="rate" type="radio" value="10">10
+        </div>
+      </form>
+      <form action="" class="textArea">
+        <label for="" class="textarea">Deixe seu comentário:</label>
+        <textarea name="" maxlength="500" id="textarea" cols="30" rows="10"></textarea>
+      </form>
     </main>
     <aside>
       <img
@@ -72,6 +95,7 @@
         alt="imagem trybewarts"
       />
     </aside>
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

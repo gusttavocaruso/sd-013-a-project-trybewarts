@@ -29,8 +29,14 @@
 
 .body {
   display: flex;
+  align-items: flex-start;
+}
+
+main {
+  display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-direction: column;
 }
 
 main {
@@ -50,7 +56,6 @@ main form {
 }
 
 #evaluation-form {
-  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -72,12 +77,29 @@ main form {
   flex-direction: column;
 }
 
-.content-Learn {
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-check {
   display: flex;
   flex-direction: column;
 }
 
-.checkbox {
+.ratio-tech {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.ratio {
+  display: inline;
+}
+
+.label-aside {
+  display: inline;
+}
+
+.forms {
+  margin: 10px auto;
 }
