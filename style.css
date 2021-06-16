@@ -48,3 +48,8 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* alinhando nome e sobrenome (requisito 10) */
+#casa {
+  display: flex;
+}
