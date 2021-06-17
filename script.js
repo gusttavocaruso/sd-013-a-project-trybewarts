@@ -21,6 +21,6 @@ bntAgreement.addEventListener('click', (el) => {
 });
 
 bntTextarea.addEventListener('keyup', (el) => {
-  let counter = document.getElementById('counter');
-  counter.innerText = 500 - el.target.value.length
-})
+  const counter = document.getElementById('counter');
+  counter.innerText = 500 - el.target.value.length;
+});
