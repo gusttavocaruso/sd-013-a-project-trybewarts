@@ -87,7 +87,7 @@ function rateChecked() {
 function formSubmit() {
   form.innerHTML = '';
   form.style.backgroundImage = 'none';
-  form.innerHTML += `<h2 style='margin-bottom:20px;'>Resultados</h2>`;
+  form.innerHTML += '<h2 style="margin-bottom:20px;">Resultados</h2>';
   form.innerHTML += `<p>Nome: ${inputName.value} ${surname.value}</p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
   form.innerHTML += `<p>Casa: ${house.value}</p>`;
