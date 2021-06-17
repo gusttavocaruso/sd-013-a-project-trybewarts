@@ -24,34 +24,36 @@ bntTextarea.addEventListener('keyup', (el) => {
   const counter = document.getElementById('counter');
   counter.innerText = 500 - el.target.value.length;
 });
-const paramts = new URLSearchParams(window.location.search);
-const listmateria = [
-  paramts.get('hofs'),
-  paramts.get('jest'),
-  paramts.get('promises'),
-  paramts.get('react'),
-  paramts.get('sql'),
-  paramts.get('python'),
-];
-let textMat = '';
-listmateria.forEach((el) => {
-  textMat += el || ' ';
-});
 
-bntSubmit.addEventListener('click', () => {
+function ultimate(el) {
+  el.preventDefault();
+  const paramts = new FormData(document.getElementById('evaluation-form'));
+  const listmateria = [
+    paramts.get('hofs'),
+    paramts.get('jest'),
+    paramts.get('promises'),
+    paramts.get('react'),
+    paramts.get('sql'),
+    paramts.get('python'),
+  ];
+  let textMat = '';
+  listmateria.forEach((item) => {
+    textMat += item || ' ';
+  });
   const section = document.createElement('div');
   const p = document.createElement('p');
   const elment = document.querySelector('main');
   elment.removeChild(elment.firstElementChild);
   section.classList.add('subject');
-  p.innerText = `Nome: ${paramts.get('name')} ${paramts.get('lastname')}.
-  Email: ${paramts.get('email')}.
-  Casa: ${paramts.get('casa')}.
-  Família: ${paramts.get('family')}.
-  Matérias: ${textMat}
-  Avaliação:  ${paramts.get('rate')}.
-  Observações: ${paramts.get('textarea')}.
-  `;
+  p.innerText = `Nome: ${paramts.get('name')} ${paramts.get('lastname')}
+    Email: ${paramts.get('email')}
+    Casa: ${paramts.get('casa')}
+    Família: ${paramts.get('family')}
+    Matérias: ${textMat}
+    Avaliação:  ${paramts.get('rate')}
+    Observações: ${paramts.get('textarea')}`;
   section.appendChild(p);
   elment.prepend(section);
-});
+}
+
+bntSubmit.addEventListener('click', ultimate);
