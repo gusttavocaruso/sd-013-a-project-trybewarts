@@ -11,3 +11,10 @@ getButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+function enableButton() {
+  const getAgreement = document.getElementById('agreement');
+  console.log(getAgreement);
+
+}
+enableButton();
