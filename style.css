@@ -4,21 +4,46 @@
   box-sizing: border-box;
 }
 
+.div-container {
+  background-color: rgb(50, 167, 145);
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
 }
 
 .header img {
-  height: 80px;
+  height: 60px;
   align-self: flex-start;
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 100px;
+}
+
+.trybewarts-login input {
+  margin: 0 10px;
+  width: 200px;
+}
+
+.trybewarts-login button {
+  margin: 0 10px;
+  width: 100px;
+  background-color: rgb(145, 47, 236);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 0 1px rgb(58, 58, 58);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 header h1 {
@@ -26,8 +51,21 @@ header h1 {
   font-size: 35px;
 }
 
+#btn-login:hover {
+  opacity: 1;
+}
+
+#btn-login:active {
+  box-shadow: 0 0 0 0 rgb(58, 58, 58), inset 3px 3px 3px rgb(58, 58, 58);
+  transform: translate(3px, 3px);
+}
+
 main {
   display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
 }
 
 main form {
@@ -46,6 +84,7 @@ main form {
 
 .radio-checkbox {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .rate-container {
@@ -60,5 +99,18 @@ main form {
 
 .skills {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.container div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
