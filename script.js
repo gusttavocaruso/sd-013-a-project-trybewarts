@@ -41,3 +41,5 @@ textArea.addEventListener('input', () => {
   count = 500 - textArea.value.length;
   inserirContador();
 });
+
+// Vamos ver se o merge funciona
