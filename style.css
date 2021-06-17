@@ -13,7 +13,7 @@
 
 .trybewarts-header-logo {
   width: 70px;
-  align-self: flex-end;
+  margin-left: 200px;
 }
 
 #trybewarts-header-title {
