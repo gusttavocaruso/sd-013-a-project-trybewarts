@@ -14,12 +14,26 @@
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo-trybewarts">
     </div>
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="">
-      <input id="login" class="form-control" type="text" placeholder="Login">
-      <input id="password" class="form-control" type="password" placeholder="Senha">
-      <button id="loginBtn" class="btn">Logar</button>
+    <div id="login-container">
+      <form class="trybewarts-login" action="">
+        <input id="login" class="form-control" type="text" placeholder="Login">
+        <input id="password" class="form-control" type="password" placeholder="Senha">
+        <button id="loginBtn" class="btn">Logar</button>
     </form>
+    <div class="menu-btn">
+      <div class="menu-btn__burger"> </div>
+    </div>
+  </div>
   </header>
+  <div id="mobile-login" class="hide-mobile-login">
+    <form class="trybewarts-login-mobile" action="">
+      <div>
+        <input id="login-mobile" class="form-control" type="text" placeholder="Login">
+        <input id="password-mobile" class="form-control" type="password" placeholder="Senha">
+      </div>
+      <button id="loginBtn-mobile" class="btn">Logar</button>
+    </form>
+  </div>
   <main>
     <form id="evaluation-form" action="">
       <section id="form-title">
@@ -77,8 +91,6 @@
           <textarea id="textarea" class="form-control" rows="5" maxlength="500"></textarea>
           <p id="counter">500</p>
         </div>
-        
-        
       </section>
       <section id="section4">
         <label id="label-infos" for="agreement"><input id="agreement" type="checkbox"> Você concorda com o uso das informações acima?</label>

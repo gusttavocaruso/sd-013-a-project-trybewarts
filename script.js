@@ -1,6 +1,9 @@
 const login = document.getElementById('login');
 const password = document.getElementById('password');
 const loginBtn = document.getElementById('loginBtn');
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+const mobileLogin = document.getElementById('mobile-login');
 const selectHouse = document.getElementById('house');
 const rate = document.getElementById('rates');
 const textArea = document.getElementById('textarea');
@@ -98,7 +101,32 @@ function req21(e) {
   req21Aux2(infos);
 }
 
+// Mobile login
+const hide = 'hide-mobile-login';
+function mobile() {
+  if (!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+    mobileLogin.classList.remove(hide);
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+    mobileLogin.classList.add(hide);
+  }
+}
+
+const desktop = window.matchMedia('(min-width: 1001px)');
+function hideMobileLogin() {
+  if (desktop.matches) {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+    mobileLogin.classList.add(hide);
+  }
+}
+
 loginBtn.addEventListener('click', checkLogin);
+menuBtn.addEventListener('click', mobile);
+desktop.addEventListener('change', hideMobileLogin);
 houseOptions();
 createRates();
 textArea.addEventListener('keyup', counter);
