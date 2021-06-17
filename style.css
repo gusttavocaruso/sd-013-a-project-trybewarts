@@ -43,3 +43,7 @@ main , #evaluation-form{
 #trybewarts-forms-logo {
     height: 500px;
 }
+
+input {
+  width:50%;
+}
