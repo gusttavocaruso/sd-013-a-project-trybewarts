@@ -25,8 +25,11 @@
 
     <div class="main-container">
       <main id="container">
-        <h2>Forms</h2>
+        
         <form action="" id="evaluation-form">
+          <div id="form">
+            <h2>Forms</h2>
+          </div>
           <div class="half-box spacing">
             <input type="text" placeholder="Nome" id="input-name" />
           </div>
@@ -48,23 +51,12 @@
 
           <div class="half-box">
             <label id="label-family" for="">Qual sua família?</label>
-            <input
-              type="radio"
-              name="family"
-              id="Frontend"
-              value="Frontend"
-              checked
-            />
             <label for="Frontend">Frontend</label>
-            <input type="radio" name="family" id="Backend" value="Backend" />
+            <input type="radio" name="family" id="Frontend" value="Frontend" checked/>
             <label for="Backend">Backend</label>
-            <input
-              type="radio"
-              name="family"
-              id="FullStack"
-              value="FullStack"
-            />
+            <input type="radio" name="family" id="Backend" value="Backend" />
             <label for="FullStack">FullStack</label>
+            <input type="radio" name="family" id="FullStack" value="FullStack"/>
           </div>
           <div class="half-box">
             <label id="label-content" for=""
@@ -73,7 +65,7 @@
             <input
               type="checkbox"
               name="family"
-              class=""
+              class="subject"
               value="HoFs"
               checked
             />
@@ -105,7 +97,7 @@
             <label for="FullStack">Python</label>
           </div>
 
-          <div class="full-box">
+          <div class="box">
             <label id="label-rate" for="rate"
               >Como você avalia a Trybewarts?</label
             >
