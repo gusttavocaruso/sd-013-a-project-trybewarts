@@ -136,7 +136,7 @@ hr {
   display: flex;
   width: 470px;
   border: 0;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-flow: row nowrap;
 }
 
@@ -148,7 +148,7 @@ hr {
 }
 
 .textarea {
- margin-top: 10px;
+  margin-top: 10px;
 }
 
 #textarea {
