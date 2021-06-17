@@ -134,9 +134,8 @@ hr {
 
 #coment {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  flex-flow: column wrap; 
+  flex-flow: column wrap;
 }
 
 .textarea {
