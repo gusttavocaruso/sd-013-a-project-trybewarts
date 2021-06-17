@@ -121,10 +121,6 @@ hr {
   width: 30%;
 }
 
-#label-family label {
-  /* margin-top: 15px; */
-}
-
 /* CSS req13 */
 #label-content {
   display: flex;
