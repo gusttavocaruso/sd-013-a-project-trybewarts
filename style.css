@@ -40,3 +40,15 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#family{
+  display: flex;
+}
+
+#linha-1{
+  display: flex;
+}
+
+#linha-2{
+  display: flex;
+}
