@@ -3,8 +3,7 @@ const senha = document.querySelector('input[name=senha');
 const pressButton = document.querySelector('button[name=button');
 const submitBtn = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
-submitBtn.disabled= true;
-
+submitBtn.disabled = true;
 pressButton.addEventListener('click', () => {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
