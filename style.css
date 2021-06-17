@@ -48,6 +48,15 @@ input {
   width:50%;
 }
 
-#fullName {
+#fullName , #email-houses {
   display: flex;
+
+}
+#casas {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 2px;
+  margin-left: 7px;
+
 }
