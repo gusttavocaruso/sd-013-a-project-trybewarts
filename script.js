@@ -14,12 +14,12 @@ function validationLogin() {
 
 // Criação de labels contendo radio inputs.
 function rateRank() {
-  let rateNumber = document.getElementById('rate-numbers');
-  for (let i = 1; i <= 10; i+= 1) {
-    let labelElement = document.createElement('label');
+  const rateNumber = document.getElementById('rate-numbers');
+  for (let i = 1; i <= 10; i += 1) {
+    const labelElement = document.createElement('label');
     labelElement.classList.add('label-rate-numbers');
     labelElement.innerText = i;
-    let radioInput = document.createElement('input');
+    const radioInput = document.createElement('input');
     radioInput.type = 'radio';
     radioInput.name = 'rate';
     radioInput.value = i.toString();
