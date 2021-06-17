@@ -8,7 +8,7 @@
   <title>Trybewarts</title>
 </head>
 
-<body>
+<body onload="couter()">
   <!-- Cabeçalho e formulário de Login -->
   <div class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="#">        
@@ -82,6 +82,7 @@
       <!-- Textarea comentário -->
       <label for="" class="textarea">Deixe seu comentário:</label>
       <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <label id="displayCounter"></label>
 
       <!-- Concorda com informaçõe -->
       <div>
