@@ -14,14 +14,3 @@ function validadeHeaderForm() {
 }
 
 formButton.addEventListener('click', validadeHeaderForm);
-
-// window.onload = function() {
-//   const satisfacao = document.querySelector('.form4');
-//   for (let i = 1; i <= 10; i += 1) {
-//     const markup = `<label for="rate-${i}">
-//     <input type="radio" name="rate" id="rate-${i}" value="${i}">
-//     ${i}
-//   </label>`;
-//     satisfacao.appendChild(markup);
-//   }
-// }
