@@ -70,23 +70,21 @@ main {
   padding: 10px;
   height: 50px ;
   flex-wrap: wrap;
- 
-  
 }
 
 #input-name{
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
 #input-lastname{
   margin-bottom: 10px;
 }
-label{
-  
-}
+
 #input-email{
  margin-right: 10px;
 }
+
 #house{
   width: 130px;
 }
