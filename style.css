@@ -16,7 +16,7 @@ body {
 
 .trybewarts-login {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 #trybewarts-header-title {
@@ -27,6 +27,12 @@ body {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+.firstform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 main {
