@@ -25,3 +25,15 @@ function validarEnviar() {
 }
 
 check.addEventListener('click', validarEnviar);
+
+const textArea = document.getElementById('textarea');
+const counterShow = document.getElementById('counter');
+
+function counterRun() {
+  const charsLength = textArea.value.length;
+  const maxLength = textArea.getAttribute('maxlength');
+
+  counterShow.innerText = `${maxLength - charsLength} caracteres restantes`;
+}
+
+textArea.addEventListener('input', counterRun);
