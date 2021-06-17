@@ -1,3 +1,9 @@
+window.onload = function carregarPagina() {
+  document.getElementById('submit-btn').disabled = true;
+};
+
+// Função formulário de Login/Senha
+
 const getButton = document.getElementById('btn-enter');
 const getLogin = document.getElementById('input-login');
 const getSenha = document.getElementById('input-password');
@@ -12,9 +18,15 @@ getButton.addEventListener('click', () => {
   }
 });
 
-function enableButton() {
-  const getAgreement = document.getElementById('agreement');
-  console.log(getAgreement);
+// Função habilitar botão de Enviar para
 
-}
-enableButton();
+const getEnviar = document.getElementById('submit-btn');
+const checkBox = document.getElementById('agreement');
+
+checkBox.addEventListener('click', () => {
+  if (checkBox.checked === true) {
+    getEnviar.disabled = false;
+  } else {
+    getEnviar.disabled = true;
+  }
+});
