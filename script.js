@@ -1,6 +1,11 @@
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
 
+
+const campoTexto = document.querySelector("#textarea");
+
+
+
 function verificaLogin() {
   const campoUser = document.querySelector('#email').value;
   const campoSenha = document.querySelector('#senha').value;
@@ -19,6 +24,18 @@ function habilitaBotao() {
     botaoTemp.disabled = true;
   }
 }
+function contaDigitos(){
+  const counterConst = document.querySelector('#counter');
+  const inputLength = campoTexto.value.length;
+  const maxChars = 500;
+  let calculo = maxChars - inputLength;
+  counterConst.innerHTML = calculo
+  console.log(calculo);
+
+}
+
+
 
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
+campoTexto.addEventListener('keyup', contaDigitos);
