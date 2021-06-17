@@ -15,12 +15,17 @@ function loginAlert() {
 
 loginButton.addEventListener('click', loginAlert);
 
+function creatSelected () {
+  let creatClass = document.createElement('.selected');
+  agreement.creatClass
+}
+
 function disableBtn () {
-  if () {
+  if (agreement ) {
     
   }
 }
 
-disableBtn();
+agreement.addEventListener('click', creatSelected);
 
 
