@@ -1,5 +1,6 @@
 const btnlogin = document.getElementById('btnLogin');
 const bntAgreement = document.getElementById('agreement');
+const bntTextarea = document.getElementById('textarea');
 
 btnlogin.addEventListener('click', () => {
   const login = document.getElementById('login').value;
@@ -18,3 +19,8 @@ bntAgreement.addEventListener('click', (el) => {
   const bntSubmit = document.getElementById('submit-btn');
   bntSubmit.disabled = !el.target.checked;
 });
+
+bntTextarea.addEventListener('keyup', (el) => {
+  let counter = document.getElementById('counter');
+  counter.innerText = 500 - el.target.value.length
+})
