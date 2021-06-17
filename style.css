@@ -29,6 +29,7 @@ main {
   height: 500px;
 }
 
-.inline {
+.family {
   display: flex;
+  flex-flow: column;
 }
