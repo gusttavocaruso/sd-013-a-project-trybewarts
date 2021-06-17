@@ -25,8 +25,7 @@ function validateBtn() {
       btn.setAttribute('disabled');
     }
   });
-};
-
+}
 window.onload = () => {
-  validateBtn ();
+  validateBtn();
 };
