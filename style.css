@@ -21,9 +21,22 @@ main {
   align-items: center;
 }
 
-.family {
+.check-form {
+  /* border: 1px solid black; */
+  width: 300px;
   display: flex;
-  flex-direction: column;
+  padding: 10px;
+  flex-flow: row wrap;
+}
+
+.check {
+  display: flex;
+  padding: 10px; 
+}
+
+.note {
+  display: flex;
+  padding: 10px;
 }
 
 .header {
