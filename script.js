@@ -25,8 +25,18 @@ function rateRank() {
     radioInput.value = i.toString();
     labelElement.appendChild(radioInput);
     rateNumber.appendChild(labelElement);
-    console.log(i);
   }
-  console.log('ols');
 }
 rateRank();
+
+// Cria contador com valor maximo de 500 caracteres.
+function characterCounter() {
+  const counterElement = document.getElementById('counter');
+  const textareaElement = document.getElementById('textarea');
+  counterElement.innerText = 500;
+  textareaElement.addEventListener('keyup', () => {
+    const decreaseNumber = textareaElement.value.length;
+    counterElement.innerText = 500 - decreaseNumber;
+  });
+}
+characterCounter();
