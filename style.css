@@ -47,7 +47,7 @@
 main {
   display: flex;
   justify-content: center;
-  background-color: wheat;
+  background-color: hsl(0, 0%, 90%);
 }
 
 #evaluation-form {
@@ -142,6 +142,7 @@ hr {
   margin: 0;
   width: 465px;
   height: 74px;
+  border-radius: 10px;
 }
 
 #check {
@@ -156,4 +157,19 @@ hr {
 #agreement {
   margin-left: 5px;
   margin-top: 3px;
+}
+
+
+#btn-send {
+  display: flex;
+  width: 465px;
+  border: 0;
+}
+
+#submit-btn {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
 }
