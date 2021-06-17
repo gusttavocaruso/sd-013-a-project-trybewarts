@@ -10,3 +10,17 @@ function verificacao() {
 }
 
 document.getElementById('botao-login').addEventListener('click', verificacao);
+
+const submit = document.getElementById('submit-btn');
+const checkbox = document.getElementById('agreement');
+submit.disabled = true;
+
+function check() {
+  if (checkbox.checked === true) {
+    submit.disabled = false;
+  } else {
+    submit.disabled = true;
+  }
+}
+
+checkbox.addEventListener('click', check);
