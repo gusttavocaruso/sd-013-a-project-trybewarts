@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -11,16 +9,20 @@
   height: 80px;
   align-items: center;
 }
+
 .trybewarts-header-logo {
   width: 80px;
+  margin-right: 10px;
   align-items: flex-start;
 }
+
 input[type="email"],
 input[type="password"] {
   padding: 8px 1px;
   box-sizing: border-box;
   border-radius: 5px;
 }
+
 .trybewarts-login {
   display: flex;
   margin-right: 10px;
@@ -38,12 +40,40 @@ input[type="password"] {
 }
 main {
   display: flex;
+  justify-content: space-between;
 }
-#evaluation-form {
+#evaluation-form{
   display: flex;
   width: 675px;
   flex-direction: column;
+  border: black solid 2px;
+}
+#imgdiv {
+  border: black solid 2px;
 }
 #trybewarts-forms-logo {
-  height: 500px;
+  height: 700px;
 }
+#input-name, #input-lastname, #input-email, #house {
+    font-size: 25px;
+    padding: 8px 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h2 {
+  text-align: center;
+}
+#label-family label {
+  font-size: x-large;
+}
+fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+#label-content .subject {
+  font-size: large;
+}
+#label-rate{
+  display: flex;
+  align-items: center;
