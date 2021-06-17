@@ -12,9 +12,9 @@
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="">
-      <input type="text" placeholder="Login" name="uname" required>
-      <input type="password" placeholder="Senha" name="psw" required>
-      <button>Logar</button>
+      <input id="login-input" type="text" placeholder="Login" name="uname" required>
+      <input id="password-input" type="password" placeholder="Senha" name="psw" required>
+      <button id="login-button">Logar</button>
     </form>
   </header>
   <main class="flex-main">
@@ -43,25 +43,26 @@
         <input type="radio" name="family" value="FullStack">FullStack
       </div>
       <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-      <input type="checkbox" value="HoFs" class="subject">HoFs
-      <input type="checkbox" value="Jest" class="subject">Jest
-      <input type="checkbox" value="Promises" class="subject">Promises
-      <input type="checkbox" value="React" class="subject">React
-      <input type="checkbox" value="SQL" class="subject">SQL
-      <input type="checkbox" value="Python" class="subject">Python
       <div>
-        <label id="label-rate" for="">Como você avalia a Trybewarts?
-        </label>
-          <input type="radio" name="rate" value="1">1
-          <input type="radio" name="rate" value="2">2
-          <input type="radio" name="rate" value="3">3
-          <input type="radio" name="rate" value="4">4
-          <input type="radio" name="rate" value="5">5
-          <input type="radio" name="rate" value="6">6
-          <input type="radio" name="rate" value="7">7
-          <input type="radio" name="rate" value="8">8
-          <input type="radio" name="rate" value="9">9
-          <input type="radio" name="rate" value="10">10
+        <input type="checkbox" value="HoFs" class="subject">HoFs
+        <input type="checkbox" value="Jest" class="subject">Jest
+        <input type="checkbox" value="Promises" class="subject">Promises
+        <input type="checkbox" value="React" class="subject">React
+        <input type="checkbox" value="SQL" class="subject">SQL
+        <input type="checkbox" value="Python" class="subject">Python
+      </div>
+      <div>
+        <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+        <input type="radio" name="rate" value="1">1
+        <input type="radio" name="rate" value="2">2
+        <input type="radio" name="rate" value="3">3
+        <input type="radio" name="rate" value="4">4
+        <input type="radio" name="rate" value="5">5
+        <input type="radio" name="rate" value="6">6
+        <input type="radio" name="rate" value="7">7
+        <input type="radio" name="rate" value="8">8
+        <input type="radio" name="rate" value="9">9
+        <input type="radio" name="rate" value="10">10
       </div>
       <label class="textarea" for="">Deixe seu comentário:</label>
       <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
@@ -77,5 +78,7 @@
   <footer>
     Direitos reservados à Trybewarts©
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
