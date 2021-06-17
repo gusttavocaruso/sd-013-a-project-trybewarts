@@ -1,25 +1,50 @@
 * {
-  margin: 0;
-  padding: 0;
   border: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  display: flex;
   background-color: rgb(50, 167, 145);
-  height: 100px;
-  padding: 10px;
-  justify-content: space-between;
   color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .trybewarts-login {
-  display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 #trybewarts-header-title {
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+#button {
+  align-items: center;
+  appearance: button;
+  background-color: rgb(78, 44, 131);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 7px;
+  padding: 0 7px;
+  text-decoration: none;
+  width: 150px;
+}
+
+#login , #pwd {
+  width: 160px;
+  height: 45px;
+  margin: 6px;
+  padding: 0 9px;
+  border-radius: 8px;
 }
