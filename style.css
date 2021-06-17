@@ -6,12 +6,13 @@
 body{
 }
 
-.header {
+header{
   display: flex;
   background-color: rgb(50, 167, 145);
-  width: 100%;
   height: 60px;
+  width: 100%;
   justify-content: space-around;
+
 }
 
 img .trybewarts-header-logo {
@@ -20,6 +21,7 @@ img .trybewarts-header-logo {
 
 #trybewarts-header-title{
   align-self: center;
+
 }
 
 main {
