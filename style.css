@@ -23,9 +23,8 @@
   width: 675px;
   display: flex;
   flex-flow: column;
-  
+
   /*align-items: center;*/
-  
 }
 
 .family {
@@ -41,18 +40,16 @@ main {
   display: flex;
 }
 
-label{
-    margin-top: 10px;
-    height: 20px;
+label {
+  margin-top: 10px;
+  height: 20px;
 }
-
-
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.checkbox{
+.checkbox {
   display: flex;
   flex-flow: wrap;
   margin-top: 10px;
@@ -61,16 +58,16 @@ label{
   width: 30%;
 }
 
-.test{
-    display: flex;
+.test {
+  display: flex;
 }
 
-.textarea{
-    display: flex;
-    flex-flow: column;
+.textarea {
+  display: flex;
+  flex-flow: column;
 }
-footer{
-    bottom: 0;    
-    text-align: center;    
-    margin-top: 180px;
+footer {
+  bottom: 0;
+  text-align: center;
+  margin-top: 180px;
 }
