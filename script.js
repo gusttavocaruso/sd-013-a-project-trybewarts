@@ -1,13 +1,13 @@
 //requirement 18 
-let sendBtt = document.querySelector('#submit-b');
-sendBtt.disabled = true;
+var sendButton = document.querySelector('#submit-btn');
+sendButton.disabled = true;
 
 function submitChecked(){
 const checkedAgreement = document.querySelector('#agreement');  
   if(checkedAgreement.checked){    
-    sendBtt.disabled = false
+   sendButton.disabled = false
   }else{
-    sendBtt.disabled = true
+   sendButton.disabled = true
   }
 
 }
