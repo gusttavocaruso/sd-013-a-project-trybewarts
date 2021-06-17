@@ -5,9 +5,9 @@ function check() {
   const senhaDefault = '123456';
 
   if ( login === emailDefault && senha === senhaDefault) {
-      alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-      alert('Login ou senha inválidos.');
+    alert('Login ou senha inválidos.');
   }
 }
 
