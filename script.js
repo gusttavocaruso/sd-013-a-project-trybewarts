@@ -37,7 +37,7 @@ const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 
 function apareceInfo() {
-  let familia = document.querySelector('input[name=family]:checked');
+  const familia = document.querySelector('input[name=family]:checked');
   document.querySelector('#evaluation-form').remove();
   document.querySelector('#trybewarts-forms-logo').remove();
   const main = document.querySelector('main');
