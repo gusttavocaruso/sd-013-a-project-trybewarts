@@ -20,10 +20,10 @@
 
 .trybewarts-login {
   display: flex;
-  justify-content: flex-end;  
+  justify-content: flex-end;
 }
 
-#trybewarts-header-title{
+#trybewarts-header-title {
   display: flex;
   color: white;
 }
@@ -68,7 +68,7 @@ h1 {
   color: white;
 }
 
-#label-family, #label-content {
+#label-family , #label-content {
   margin-bottom: 5px;
 }
 
