@@ -1,7 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(239, 239, 239);
+  min-height: 100%;
 }
 
 hr {
@@ -9,11 +14,12 @@ hr {
 }
 
 /** Header **/
-.header-container {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+.header{
+  position: static;
   align-items: center;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
   height: 100px;
 }
 
@@ -80,7 +86,7 @@ hr {
 }
 
 #input-name, #input-lastname {
-  width: 230px;
+  width: 244px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -90,7 +96,7 @@ hr {
 }
 #input-email, #house {
   background-color: white;
-  width: 230px;
+  width: 244px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -107,7 +113,7 @@ hr {
 }
 
 #house {
-  width: 195px;
+  width: 210px;
 }
 
 .family {
@@ -155,11 +161,71 @@ hr {
   width: 520px;
 }
 
-#textarea {
-  display: block;
-}
-
 .comment-container {
   margin-top: 10px;
   width: 520px;
 }
+
+#counter {
+  opacity: 50%;
+  font-size: small;
+}
+
+.checkbox-container {
+  width: 520px;
+}
+
+.form-input-button {
+  width: 520px;
+}
+
+#submit-btn {
+  width: 520px;
+  background-color: rgb(79,58,131);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 30px;
+}
+
+footer {
+  clear:both;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(60,64,74);
+  display: flex;
+  font-family: 'Special Elite', cursive;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  margin-top: 14px;
+  height: 45px;
+  width: 100%;
+}
+
+.input-results {
+  align-content: flex-end;
+  display:flex;
+  flex-direction: column;
+  background: rgb(255,221,87);
+  background: linear-gradient(180deg, rgba(187,10,33,1) 7%, rgba(202,58,45,1) 17%, rgba(212,88,53,1) 28%, rgba(215,96,55,1) 37%, rgba(219,110,59,1) 42%, rgba(233,153,70,1) 49%, rgba(255,221,87,1) 62%, rgba(249,203,82,1) 71%, rgba(243,184,77,1) 78%);
+  margin-top: 10px;
+  width: 30%;
+  margin-left: 7%;
+  border-color: rgb(255,221,87);
+  border-style: solid;
+  border-radius: 2%;
+  border-width: 3px;
+}
+
+.result {
+  text-align: justify;
+  font-family: 'Mate SC', serif;
+  margin-left: 15px;
+  color: rgb(85,35,11);
+  font-weight: bold;
+}
+  

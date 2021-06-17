@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-container">
+  <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="GET">
@@ -81,14 +83,38 @@
       </div>
 
       <div class="comment-container">
-        <label for="textarea" id="textarea-label">Deixe seu comentário:</label>
-        <textarea name="comment" id="textarea" cols="61" rows="7" maxlength="500">
-        </textarea>
-        <label for="textarea" class="textarea">500</label>
+        <label for="textarea" class="textarea" id="textarea-label">Deixe seu comentário:</label>
+        <div class="textarea-counter-container">
+          <textarea 
+          name="comment" 
+          id="textarea" 
+          maxlength="500"
+          cols="50" 
+          rows="5" 
+          ></textarea>
+          <span id="counter">500</span>
+        </div>
+      </div>
+
+      <div class="checkbox-container">
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement" value="agree">
+      </div>
+
+      <div class="form-input-button">
+        <button type="submit" id="submit-btn" value="Submit" disabled>Enviar</button>
       </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
   </main>
+
+  <section id="result-section">
+    
+  </section>
+  
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 
