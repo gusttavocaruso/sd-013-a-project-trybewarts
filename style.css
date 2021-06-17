@@ -94,7 +94,7 @@ main {
 }
 
 hr {
-  width: 450px;
+  width: 470px;
   padding: 1px;
   border: 0;
   background-color: gray;
@@ -132,16 +132,28 @@ hr {
   margin-top: 5px;
 }
 
-#coment {
+#nota {
+  display: flex;
+  width: 470px;
+  border: 0;
+  justify-content:space-between;
+  flex-flow: row nowrap;
+}
+
+#area {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
+  width: 470px;
 }
 
 .textarea {
-  margin: 0;
-  width: 465px;
-  height: 74px;
+ margin-top: 10px;
+}
+
+#textarea {
+  width: 474px;
+  height: 65px;
   border-radius: 10px;
 }
 
@@ -159,14 +171,13 @@ hr {
   margin-top: 3px;
 }
 
-
-#btn-send {
+#submit-btn {
   display: flex;
-  width: 465px;
+  width: 470px;
   border: 0;
 }
 
-#submit-btn {
+#send {
   background-color: rebeccapurple;
   color: white;
   padding: 10px;

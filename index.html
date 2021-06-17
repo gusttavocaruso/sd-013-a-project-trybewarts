@@ -61,27 +61,30 @@
         </div>
       </div>
       <hr>
-         <div id="label-rate">Como você avalia a Trybewarts?
-           <input class="nota" type="radio" value="1" name="rate">1
-           <input class="nota" type="radio" value="2" name="rate">2
-           <input class="nota" type="radio" value="3" name="rate">3
-           <input class="nota" type="radio" value="4" name="rate">4
-           <input class="nota" type="radio" value="5" name="rate">5
-           <input class="nota" type="radio" value="6" name="rate">6
-           <input class="nota" type="radio" value="7" name="rate">7
-           <input class="nota" type="radio" value="8" name="rate">8
-           <input class="nota" type="radio" value="9" name="rate">9
-           <input class="nota" type="radio" value="10" name="rate">10
-        </div>
-        <div id="coment">
-           <h3>Deixe seu comentário:</h3>
-           <textarea class="textarea" name="textarea" cols="40" rows="10" maxlength="500"></textarea>
-        </div>
+      <fieldset id="nota">
+         <label for="label-rate" id="label-rate">Como você avalia a Trybewarts?</label>
+         <div id="rates">
+            <input class="nota" type="radio" value="1" name="rate">1
+            <input class="nota" type="radio" value="2" name="rate">2
+            <input class="nota" type="radio" value="3" name="rate">3
+            <input class="nota" type="radio" value="4" name="rate">4
+            <input class="nota" type="radio" value="5" name="rate">5
+            <input class="nota" type="radio" value="6" name="rate">6
+            <input class="nota" type="radio" value="7" name="rate">7
+            <input class="nota" type="radio" value="8" name="rate">8
+            <input class="nota" type="radio" value="9" name="rate">9
+            <input class="nota" type="radio" value="10" name="rate">10
+          </div>
+      </fieldset>
+      <div id="area">
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" name="textarea" cols="40" rows="10" maxlength="500"></textarea>
+      </div>
         <div id="check">
           <label for="info" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement" required>
         </div>
-       <button id="btn-send"><input type="submit" id="submit-btn" text="Enviar"></button>
+       <button id="submit-btn"><input type="submit" id="send" text="Enviar"></button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts-forms-logo">
 
