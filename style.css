@@ -52,10 +52,11 @@ h1 {
 }
 
 #container {
+  background-color: blue;
   display: flex;
+  justify-content: flex-start;
   margin-top: 20px;
   margin-left: 30px;
-  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -63,4 +64,20 @@ h1 {
   width: 675px;
   flex-direction: column;
   text-align: center;
+}
+
+.conteiner div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#full-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#evaluation-form input[type='text'] {
+    padding: 7px;
+    width: 30%;
 }
