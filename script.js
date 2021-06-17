@@ -21,3 +21,10 @@ function ativar() {
 }
 
 ativar();
+
+const textArea = document.querySelector('#textarea');
+const counter = document.getElementById('counter');
+
+textArea.onkeyup = function piak() {
+  counter.innerHTML = `${500 - this.value.length} restantes`;
+};
