@@ -26,7 +26,6 @@
     <form action="" id="evaluation-form">
       <h2>Forms</h2>
       <div class="first-form">
-
         <!-- requisitos 8 a 11 -->
         <input type="text" placeholder="Nome" id="input-name">
         <input type="text" placeholder="Sobrenome" id="input-lastname">
@@ -44,18 +43,26 @@
       </div>
 
       <div class="second-form">
-        <label for="" id="label-family">
-          Qual sua família?
-          <label for="front">
-            <input id="front" type="radio" name="family" value="Frontend">Família Frontend
-          </label>
-          <label for="back">
-            <input id="back" type="radio" name="family" value="Backend">Família Backend
-          </label>
-          <label for="full">
-            <input id="full" type="radio" name="family" value="FullStack">Família FullStack
-          </label>
-        </label>
+        
+          <div id="label-family"> Qual sua família?
+
+            <div class="div-label-family">
+              <label for="front"> Família Frontend</label>
+              <input id="front" type="radio" name="family" value="Frontend"> 
+            </div>
+
+            <div class="div-label-family">
+              <label for="back"> Família Backend</label>
+              <input id="back" type="radio" name="family" value="Backend">
+            </div>
+
+            <div class="div-label-family">
+              <label for="full"> Família FullStack</label>
+              <input id="full" type="radio" name="family" value="FullStack">
+            </div>
+          
+          </div>
+        
 
         <label for="" id="label-content">
           Qual conteúdo você está com mais vontade de aprender?

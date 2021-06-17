@@ -122,7 +122,7 @@ hr {
 }
 
 #label-family label {
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 /* CSS req13 */
@@ -177,4 +177,12 @@ footer {
   padding: 8px 0;
   bottom: 0;
   width: 100%;
+}
+
+/* Tentando concertar erro de Cypress req13, 14 */
+.div-label-family {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+  padding: 4px;
 }
