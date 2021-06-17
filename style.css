@@ -107,17 +107,17 @@ input {
 }
 
 .conteiner div {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
 }
 
 #full-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-#evaluation-form input[type='text'] {
-    padding: 7px;
-    width: 30%;
+#evaluation-form input[type="text"] {
+  padding: 7px;
+  width: 30%;
 }
