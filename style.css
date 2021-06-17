@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -61,10 +62,11 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 0 4px 0;
   transition-duration: 0.4s;
+  background-color: white;
 }
 
 .logar:hover {
-  background-color: rgb(16, 777, 216);
+  background-color: rgb(16, 777, 216);  
   color: white;
 }
 
@@ -78,6 +80,7 @@ main {
 }
 
 form {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }

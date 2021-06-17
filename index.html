@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css ">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
   <title>Trybewarts</title>
 </head>
 <body>
@@ -44,7 +46,7 @@
       <hr id="space"> 
       <section class="input-container">
       <div id="input-radio">
-        <label id="label-family" for="family">Qual sua família?</label>
+        <label id="label-family" for="family"><strong>Qual sua família?</strong></label>
         <div class="radio-button">
           <input type="radio" id="frontend" name="family" value="Frontend">Frontend
         </div>
@@ -56,7 +58,7 @@
         </div>
       </div>
       <div class="input-checkbox">
-        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+        <label id="label-content" for=""><strong>Qual conteúdo você está com mais vontade de aprender?</strong></label>
         <div>
           <input class="subject" value="HoFs" type="checkbox">HoFs
           <input class="subject"  value="Jest" type="checkbox">Jest
@@ -70,27 +72,31 @@
       </div>
       </section>
       <hr id="space">
-      <div>
-        <label id="label-rate" for="rate">Como você avalia a Trybewarts?
-          <input name="rate" type="radio" value="1">1
-          <input name="rate" type="radio" value="2">2
-          <input name="rate" type="radio" value="3">3
-          <input name="rate" type="radio" value="4">4
-          <input name="rate" type="radio" value="5">5
-          <input name="rate" type="radio" value="6">6
-          <input name="rate" type="radio" value="7">7
-          <input name="rate" type="radio" value="8">8
-          <input name="rate" type="radio" value="9">9
-          <input name="rate" type="radio" value="10">10
+      <section class="input-container">
+      <div class="rate-container">
+        <label id="label-rate" for="rate"><strong>Como você avalia a Trybewarts?</strong>
       </div>
-      <div>
-        <label class="textarea" for="">Deixe seu comentário:
+      <div class="input-rate">
+        <input name="rate" type="radio" value="1">1
+        <input name="rate" type="radio" value="2">2
+        <input name="rate" type="radio" value="3">3
+        <input name="rate" type="radio" value="4">4
+        <input name="rate" type="radio" value="5">5
+        <input name="rate" type="radio" value="6">6
+        <input name="rate" type="radio" value="7">7
+        <input name="rate" type="radio" value="8">8
+        <input name="rate" type="radio" value="9">9
+        <input name="rate" type="radio" value="10">10
+      </div>
+      </section>
+      <div> 
+        <label class="textarea" for=""><strong>Deixe seu comentário:</strong>
       </div>
       <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       <p id="counter">500 restantes</p> 
       <div>
-        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" onclick="ativar()">
+        <label id="label-infos" for=""><strong>Você concorda com o uso das informações acima?</strong></label>
+        <input id="agreement" type="checkbox" onclick="ativar()"> 
       </div>
       <div>
         <button id="submit-btn" type="submit" disabled>Enviar</button>
