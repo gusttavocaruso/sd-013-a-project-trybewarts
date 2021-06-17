@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -18,7 +13,6 @@
 
 .trybewarts-header-logo {
   width: 70px;
-  margin-left: 200px;
 }
 
 #trybewarts-header-title {
