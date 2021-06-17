@@ -80,7 +80,7 @@ main {
   padding-bottom: 10px;
 }
 
-.input-info input,
+.input-info input , 
 .input-info2 input {
   width: 330px;
   height: 40px;
@@ -199,4 +199,3 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
