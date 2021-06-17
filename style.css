@@ -64,9 +64,15 @@ input [ type = 'text' ] {
   flex-direction: row;
 }
 
-.suaFamilia {
-  display: flex;
+#label-rate{ 
+  position: absolute;
+  float: left;
+}
 
+.select{ 
+  position: relative;
+  float: right;
+  margin-left: 35%;
 }
 
 /* Desafio 15 */
