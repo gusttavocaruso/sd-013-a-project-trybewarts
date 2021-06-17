@@ -1,45 +1,159 @@
 *{
     margin: 0%;
-    }
+}
+
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(50, 167, 145);
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  margin-bottom: 20px;
+}
 
 .trybewarts-login {
-    display: flex;
-    align-self: center;
-    }
-    
+  display: flex;
+  align-self: center;
+}
+
 #trybewarts-header-title {
-    align-self: center;
-    color: white;
-    }
-    
-#trybewarts-login{
-    display: flex;
-    align-self: center;
-    }
-    
-main{
-    display: flex;
-    flex-direction: row;
-    }
-    
+  align-self: center;
+  color: white;
+}
+
+#trybewarts-login {
+  display: flex;
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #evaluation-form {
-    display: flex;
-    width: 675px;
-    flex-direction: column;
-    }
-    
-#trybewarts-forms-logo{
-    height: 500px;
-    }
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
 
-.trybewarts-header-logo{
-    width: 60px;
-    }
+#trybewarts-forms-logo {
+  height: 500px;
+}
 
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+footer{
+  background-color: rgb(50, 167, 145);
+  text-align: center;
+  color: black;
+  padding: 1%;
+}
+
+footer p{
+  display: flex;
+  color: antiquewhite;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+#form1{
+  margin-bottom: 5px;
+}
+
+#form2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#form3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#form4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#form4 p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#form5{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+hr{
+  width: 500px;
+}
+
+#button-enviar button{
+  padding: 1%;
+  padding-right: 150px;
+  padding-left: 150px;
+  background-color:purple;
+  margin-bottom: 10px;
+  color:white;
+  box-shadow: 5px 5px 10px black;
+}
+
+#email{
+  border: none;
+  margin-right: 5px;
+}
+
+#senha{
+  border: none;
+  margin-right: 5px;
+}
+
+#button1{
+  margin: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+  background-color: purple;
+  box-shadow: 2px 2px 5px black;
+}
+
+#input-name{
+  padding-right: 50px;
+}
+
+#input-lastname{
+  padding-right: 50px;
+}
+
+#input-email{
+  padding-right: 50px;
+}
+
+#house{
+  padding-right: 110px;
+}
