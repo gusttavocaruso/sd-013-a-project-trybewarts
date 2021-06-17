@@ -35,9 +35,9 @@ const nome = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
-const familia = document.querySelector('input[name=family]:checked');
 
 function apareceInfo() {
+  const familia = document.querySelector('input[name=family]:checked');
   document.querySelector('#evaluation-form').remove();
   document.querySelector('#trybewarts-forms-logo').remove();
   const main = document.querySelector('main');
@@ -54,7 +54,7 @@ function apareceInfo() {
   section.appendChild(p2);
   p3.innerHTML = `Casa: ${house.value}`;
   section.appendChild(p3);
-  p4.innerHTML = `Família: ${familia}`;
+  p4.innerHTML = `Família: ${familia.value}`;
   section.appendChild(p4);
 
 
