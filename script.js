@@ -11,7 +11,6 @@ const enviarFormEvaluation = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#textarea');
 const labelDoContador = document.querySelector('#counter');
 let count = 500;
-// let lenghtDoText;
 
 // Verifica o email e a senha
 buttonEntrar.addEventListener('click', () => {
