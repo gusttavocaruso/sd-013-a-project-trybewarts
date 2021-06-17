@@ -169,3 +169,16 @@
 .disable {
   background-color: gray;
 }
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(60,64,74);
+  color: white;
+  
+}
+
+footer p {
+  padding: 10px;
+  margin-right: 100px;
+}
