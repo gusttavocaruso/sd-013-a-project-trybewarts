@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+hr {
+  width: 100%;
+}
 /* css do cabeçalho, requisitos de 1 a 4 */
 .header {
   display: flex;
@@ -55,6 +58,12 @@
   width: 675px
 }
 
+#evaluation-form h2 {
+  align-self: flex-end;
+  width: 70%;
+  text-align: center;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -64,16 +73,9 @@
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
-  display: flex;
   width: 70%;
   align-items:center;
   justify-content: space-around;
-}
-
-h2 {
-  text-align: center;
-  width: 100%;
-  margin: 20px 0;
 }
 
 #input-name, #input-lastname, #input-email, #casa, #house {
@@ -99,34 +101,51 @@ h2 {
   margin-right: 0;
 }
 
-.first-form hr {
-  width: 100%;
+.second-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  width: 70%;
+  justify-content: space-around;
 }
 
-
+.second-form h3 {
+  font-size: 15px;
+}
 /* CSS req12 */
 #label-family {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 5px;
+  width: 30%;
+}
+
+#label-family label {
+  margin-top: 15px;
 }
 
 /* CSS req13 */
 #label-content {
   display: flex;
-  flex-direction: column;
-  margin: 20px;
+  flex-wrap: wrap;
+  margin: 5px;
+  width: 65%;
+}
+
+#label-content label {
+  margin: 5px;
+  padding: 0px 10px;
 }
 
 /* CSS req17 */
 #submit-btn {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-self: flex-end;
   border-radius: 5px;
   background-color: slateblue;
   color: whitesmoke;
-  width: 80%;
+  width: 70%;
   padding: 5px;
 }
 
