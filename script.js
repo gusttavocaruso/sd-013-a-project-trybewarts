@@ -27,8 +27,3 @@ function couter() {
   const x = document.getElementById('textarea').value.lenght;
   document.getElementById('displayCounter').innerHTML = 500 - x;
 }
-
-// Chama as funções a carregar a página
-window.onload = function () {
-  couter();
-}
