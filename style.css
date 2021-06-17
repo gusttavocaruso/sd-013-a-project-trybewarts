@@ -49,3 +49,15 @@ justify-content: right
   height: 20px;
   border: solid 1px purple;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
