@@ -1,3 +1,5 @@
+const btnLogin = document.getElementById('botao');
+const btnOn = document.getElementById('agreement');
 function checkLogin() {
   const login = document.getElementById('login').value;
   const senha = document.getElementById('senha').value;
@@ -7,7 +9,6 @@ function checkLogin() {
     alert('Login ou senha inválidos.');
   }
 }
-checkLogin();
 
 function buttonOn() {
   const button = document.getElementById('submit-btn');
@@ -15,4 +16,5 @@ function buttonOn() {
   button.disabled = false;
 }
 
-buttonOn();
+btnLogin.addEventListener('click', checkLogin);
+btnOn.addEventListener('click', buttonOn);

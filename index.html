@@ -20,7 +20,7 @@
         <form action="" class="trybewarts-login">
           <input type="email" placeholder="Login" id="login" name="login" />
           <input type="password" placeholder="Senha" id="senha" name="login" />
-          <button id="botao" type="button" onclick="checkLogin() ">
+          <button id="botao" type="button" class="entrar">
             Entrar
           </button>
         </form>
@@ -158,6 +158,7 @@
           <input type="radio" value="8" name="rate" /> 8
           <input type="radio" value="9" name="rate" /> 9
           <input type="radio" value="10" name="rate" /> 10
+        </label>
         </div>
         <div class="coment">
           <label for="textarea" class="textarea"> Deixe seu comentário: </label>
@@ -171,7 +172,7 @@
         </div>
         <div id = 'agreement-container'>
           <label for="agreement" id = 'label-infos'> Você concorda com o uso das informações acima?
-            <input type="checkbox" name="agreement" id="agreement" onclick="buttonOn()">
+            <input type="checkbox" name="agreement" id="agreement">
           </label>
         </div>
         <button type="submit"
