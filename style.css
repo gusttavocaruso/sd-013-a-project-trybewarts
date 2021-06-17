@@ -64,12 +64,12 @@ input [ type = 'text' ] {
   flex-direction: row;
 }
 
-#label-rate{ 
+#label-rate {
   position: absolute;
   float: left;
 }
 
-.select{ 
+.select {
   position: relative;
   float: right;
   margin-left: 35%;
