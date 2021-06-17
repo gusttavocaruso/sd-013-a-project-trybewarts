@@ -1,6 +1,5 @@
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
-
 const campoTexto = document.querySelector('#textarea');
 
 function verificaLogin() {
