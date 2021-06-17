@@ -3,7 +3,7 @@
   padding: 0;
   font-size: 100%;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: Montserrat, Helvetica, sans-serif;
 }
 
 h1 {
@@ -34,7 +34,6 @@ h1 {
 
 .trybewarts-header-logo {
   height: 70px;
-  /* margin-left: 10px; */
 }
 
 .trybewarts-login {
