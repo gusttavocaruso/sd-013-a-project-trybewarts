@@ -6,5 +6,5 @@ buttonLogin.addEventListener('click', () => {
   if (inputlogin !== 'tryber@teste.com' || inputPass !== '123456') {
     return alert('Login ou senha inválidos.');
   }
-    return alert('Olá, Tryber!');
-})
+  return alert('Olá, Tryber!');
+});
