@@ -71,3 +71,26 @@
 #label-family label {
   width: 100%;
 }
+
+/* #rate-numbers {
+  max-width: 30px;
+} */
+
+#label-rate {
+  order: -1;
+}
+
+.container-rate {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.label-rate-numbers {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: 30px;
+}

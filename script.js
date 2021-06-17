@@ -11,3 +11,22 @@ function validationLogin() {
     }
   });
 } validationLogin();
+
+function rateRank() {
+  let rateNumber = document.getElementById('rate-numbers');
+  
+  for (let i = 1; i <= 10; i+= 1) {
+    let labelElement = document.createElement('label');
+    labelElement.classList.add('label-rate-numbers');
+    labelElement.innerText = i;
+    let radioInput = document.createElement('input');
+    radioInput.type = 'radio';
+    radioInput.name = 'rate';
+    radioInput.value = i.toString();
+    labelElement.appendChild(radioInput);
+    rateNumber.appendChild(labelElement);
+    console.log(i);
+  }
+  console.log('ols');
+}
+rateRank();
