@@ -41,3 +41,11 @@ select {
 .trybewarts-login{
   display: flex;
 }
+#aside{
+  display: flex;
+  justify-content: flex-end;
+}
+#trybewarts-forms-logo{
+  height: 500px;
+}
+
