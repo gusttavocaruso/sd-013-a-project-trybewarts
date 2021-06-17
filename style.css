@@ -114,19 +114,19 @@ hr {
 }
 
 /* CSS req12 */
-#label-family {
+.label-family {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  width: 30%;
+  width: 35%;
 }
 
 /* CSS req13 */
-#label-content {
+.label-content {
   display: flex;
   flex-wrap: wrap;
   margin: 5px;
-  width: 65%;
+  width: 60%;
 }
 
 #label-content label {
