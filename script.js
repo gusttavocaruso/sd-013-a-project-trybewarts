@@ -1,5 +1,5 @@
 // Chama as funções a carregar a página
-window.onload{
+window.onload {
   couter();
 }
 
