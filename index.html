@@ -23,11 +23,20 @@
 
   <main class="main-content">
     <form action="#" id="evaluation-form">
-      <input type="text" name="name" id="input-name" placeholder="Nome">
-      <input type="text" name="last-name" id="input-lastname" placeholder="Sobrenome">
-      <input type="email" name="email" id="input-email" placeholder="Email">
-      <label for="home">Casa:</label>
-      <input type="text" name="" id="home">
+      <div id="name-container">
+        Nome: <input type="text" name="name" id="input-name" placeholder="Nome">
+        Sobrenome: <input type="text" name="last-name" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div id="email-house-container">
+        Email: <input type="email" name="email" id="input-email" placeholder="Email">
+        <label for="house">Casa: </label>
+        <select name="casa" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </div>
     </form>
     <div id="logo-container">
       <img src="images/trybewarts-colored.svg" alt="logo da trybewarts" id="trybewarts-forms-logo">
