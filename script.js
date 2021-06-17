@@ -10,3 +10,32 @@ botaoLogar.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+// const formEvaluation = document.querySelector('#evaluation-form');
+
+const btnSubmit = document.querySelector('#submit-btn');
+
+const checkAgreement = document.querySelector('#agreement');
+
+window.onload = () => {
+  btnSubmit.disabled = true;
+};
+
+function enableSubmit() {
+  if (checkAgreement.checked) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
+  }
+}
+checkAgreement.addEventListener('click', enableSubmit);
+
+// btnSubmit.addEventListener('click', (evt) => {
+//   evt.preventDefault();
+//   const checkAgreement = document.querySelector('#agreement').checked;
+//   if (checkAgreement) {
+//     formEvaluation.submit();
+//   } else {
+//     alert('O aceite referente ao uso dos dados é obrigatório');
+//   }
+// });
