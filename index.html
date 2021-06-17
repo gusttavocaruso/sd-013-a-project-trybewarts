@@ -21,6 +21,7 @@
         <button id="button">Entrar</button>
       </form>
     </header>
+    <br>
 
     <!-- Requisito 5, 6, 8 e 11(CSS)-->
     <main>
@@ -40,15 +41,14 @@
             <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </div>
+        <br>
     
         <!-- Requisito 12 (Faltando CSS para deixar os button um abaixo do outro)-->
-        <div>
           <label for="familys" id="label-family">Qual sua família?</label>
-          <input type="radio" name="family" id="" value="Frontend">Família Frontend
-          <input type="radio" name="family" id="" value="Backend">Família Backend
-          <input type="radio" name="family" id="" value="FullStack">Família FullStack
-        </div>
-    
+            <input type="radio" name="family" class="suaFamilia" value="Frontend">Família Frontend
+            <input type="radio" name="family" class="suaFamilia" value="Backend">Família Backend
+            <input type="radio" name="family" class="suaFamilia" value="FullStack">Família FullStack
+        <br>
       <!--Requisito 13 -->
         <div>
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
@@ -60,6 +60,7 @@
             <input type="checkbox" value="SQL" id=""> SQL
             <input type="checkbox" value="Python" id=""> Python
         </div>
+        <br>
 
         <div> <!--Requisito 14 / tentar montar via JS (Faltando css para deixar os input ao lado da label)-->
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
@@ -80,12 +81,12 @@
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
         </div>
-
+        <br>
         <div> <!--desafio 16 ok -->
           <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="" id="agreement">
         </div>
-
+        <br>
         <button type="submit" id="submit-btn">Enviar</button> <!-- Requisito 17 -->
         <!-- Requisito 18 faz com que o botao enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada) -->
       </form>

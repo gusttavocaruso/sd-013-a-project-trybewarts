@@ -60,7 +60,13 @@ input [ type = 'text' ] {
 
 /* Desafio 10 */
 #label-family {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+}
+
+.suaFamilia {
+  display: flex;
+
 }
 
 /* Desafio 15 */
