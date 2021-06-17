@@ -49,7 +49,7 @@ body {
   align-content: center;
 }
 
-
+/* Form */
 .forms {
   display: flex;
   max-width: 675px;
