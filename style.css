@@ -1,4 +1,4 @@
-*{
+* {
   margin:0;
 }
 
@@ -12,17 +12,17 @@
   align-items: center;
 }
 
-.trybewarts-header-logo{
+.trybewarts-header-logo {
   display: flex;
   width: 4%;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
   
 }
 
-input{
+input {
   width: 110px;
   height:30px;
   border-radius: 8px;
@@ -30,17 +30,17 @@ input{
   margin: 3px;
 }
 
-#buttonLogin{
+#buttonLogin {
   width: 110px;
   height:30px;
   border-radius: 8px;
   border: none;
   margin: 3px;
-  background-color: #4e2c83 ;
+  background-color: #4e2c83;
   color:white;
 }
 
-#trybewarts-header-title{
+#trybewarts-header-title {
   color:white;
 }
 
@@ -49,7 +49,7 @@ main {
   justify-content: space-between;
 }
 
-#evaluation-form{
+#evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
@@ -80,11 +80,11 @@ main {
   margin-left: 50px;
 }
 
-#casa-email{
+#casa-email {
   display: flex;
 }
 
-#house{
+#house {
   width:115px;
   height:30px;
   border-radius: 8px;
@@ -92,37 +92,37 @@ main {
   margin: 3px;
 }
 
-#casa{
+#casa {
   margin-left: 10px;
 }
 
-#container{
+#container {
   display: flex;
   justify-content: center;
 }
 
-#family{
+#family {
   display: flex;
   flex-direction: column;
   width:40%;
 }
 
-#learn{
+#learn {
   display: flex;
   flex-wrap: wrap;
   width:30%;
 }
 
-.subject{
+.subject {
   width:20px;
 }
 
-#numbers{
+#numbers {
   display: flex;
   width: 60%;
 }
 
-#comment{
+#comment {
   width:70%;
 }
 

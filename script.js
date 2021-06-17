@@ -30,18 +30,17 @@ function submit() {
 button.addEventListener('click', submit);
 checkbox.addEventListener('click', submit);
 
-// Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea, variando de 500 até 0, 
+// Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea, variando de 500 até 0,
 // que deverá ser atualizado a medida que algo for digitado na textarea
 
 const quant = 500;
-const textArea = document.getElementById('comment');
+const textArea = document.getElementById('textarea');
 
 function limiteTextArea() {
   const span = document.getElementById('counter');
-  const textArea1 = document.getElementById('comment');
+  const textArea1 = document.getElementById('textarea');
   const total = textArea1.value.length;
-  const contador = quant - total;
-  span.innerText = contador;
+  span.innerText = quant - total;
 }
 
 textArea.addEventListener('input', limiteTextArea);
