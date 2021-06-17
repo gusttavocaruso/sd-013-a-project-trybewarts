@@ -60,15 +60,13 @@ main {
   width: 50%;
 }
 
-#session3 {
+#session3 , #session5 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
 }
 
 #session3a {
   align-items: center;
 }
-
-#
