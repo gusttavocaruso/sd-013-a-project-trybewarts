@@ -30,7 +30,7 @@ function submit() {
 button.addEventListener('click', submit);
 checkbox.addEventListener('click', submit);
 
-// Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea, variando de 500 até 0,
+// Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea, variando de 500 até 0
 // que deverá ser atualizado a medida que algo for digitado na textarea
 
 const quant = 500;
