@@ -31,6 +31,15 @@ form {
   width: 42px;
 }
 
+#logo-container {
+  width: 50%;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  float: right
+}
+
 main {
   display: flex;
 }
