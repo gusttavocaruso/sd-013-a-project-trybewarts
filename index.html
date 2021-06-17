@@ -59,14 +59,15 @@
         <input type="radio" value="8" name="rate">8
         <input type="radio" value="9" name="rate">9
         <input type="radio" value="10" name="rate">10
-      <div>
+      <div class="conteiner-comment">
         <label class='textarea'>Deixe seu comentário:</label>
-          <textarea maxlength="500" cols="30" rows="6"></textarea>
+          <textarea id="commentArea" maxlength="500" cols="10" rows="10" placeholder="maximo de 500 caracteres"></textarea>
       </div>
       <div>
         <label id='label-infos'>Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id='agreement'>
       </div>
+      <button id="submit-btn" type="submit">Enviar</button>
     </form>
   <img src='images/trybewarts-colored.svg' id='trybewarts-forms-logo'>
   </main>

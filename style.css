@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -54,4 +59,19 @@ main {
 #family input {
   display: flex;
   flex-direction: column;
+}
+
+.radioButtons {
+  margin-top: 20px;
+}
+
+.conteiner-comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#commentArea {
+  width: 250px;
 }
