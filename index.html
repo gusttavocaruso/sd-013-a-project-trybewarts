@@ -18,15 +18,19 @@
   </header>
   <main>
     <form id="evaluation-form">
-      <input id="input-name" type="text" placeholder="Nome" name="name">
-      <input id="input-lastname" type="text" placeholder="Sobrenome" name="lastname">
-      <input id="input-email" type="email" placeholder="Email" name="email">
-      <select name="house" id="house">
-        <option value="gitnoria-house">Gitnoria</option>
-        <option value="reactpuff-house">Reactpuff</option>
-        <option value="corvinode-house">Corvinode</option>
-        <option value="pytherina-house">Pytherina</option>
-      </select>
+      <div class="row">
+        <input id="input-name" type="text" placeholder="Nome" name="name">
+        <input id="input-lastname" type="text" placeholder="Sobrenome" name="lastname">
+      </div>
+      <div class="row">
+        <input id="input-email" type="email" placeholder="Email" name="email">
+        <select name="house" id="house">
+          <option id="gitnoria-house" value="gitnoria">Gitnoria</option>
+          <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="corvinode">Corvinode</option>
+          <option id="pytherina" value="pytherina">Pytherina</option>
+        </select>
+      </div>
     </form>
   </main>
   <script src="script.js"></script>
