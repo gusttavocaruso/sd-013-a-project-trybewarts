@@ -7,6 +7,7 @@ hr {
   width: 100%;
 }
 /* css do cabeçalho, requisitos de 1 a 4 */
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -47,6 +48,7 @@ hr {
 }
 
 /* CSS do main */
+
 .main-conteiner {
   display: flex;
   background-color: rgb(233, 233, 233);
@@ -55,7 +57,7 @@ hr {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  width: 675px
+  width: 675px;
 }
 
 #evaluation-form h2 {
@@ -69,12 +71,13 @@ hr {
 }
 
 /* css dos requisitos de 8 a 11 */
+
 .first-form {
   display: flex;
   flex-wrap: wrap;
   align-self: flex-end;
   width: 70%;
-  align-items:center;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -109,10 +112,8 @@ hr {
   justify-content: space-around;
 }
 
-.second-form h3 {
-  font-size: 15px;
-}
 /* CSS req12 */
+
 #label-family {
   display: flex;
   flex-direction: column;
@@ -125,6 +126,7 @@ hr {
 }
 
 /* CSS req13 */
+
 #label-content {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +139,28 @@ hr {
   padding: 0px 10px;
 }
 
+/* CSS req14 */
+
+.third-form {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 70%;
+  margin: 15px 0;
+}
+
+/* CSS req15 */
+
+.textarea {
+  margin-top: 15px;
+}
+
+.textarea textarea {
+  margin-top: 5px;
+}
+
 /* CSS req17 */
+
 #submit-btn {
   display: flex;
   justify-content: center;
