@@ -4,11 +4,11 @@
   font-family: serif;
 }
 
-body{
-  background-color: #e6ebe0;
+body {
+  background-color: white;
 }
 
-header{
+header {
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 60px;
@@ -34,10 +34,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#trybewarts-header-title {
-  color: aliceblue;
 }
 
 .trybewarts-login {
@@ -78,15 +74,14 @@ main {
   width: 675px;
 }
 
-.all{
+.all {
   width: 560px;
   border-radius: 20px;
-
 }
 
 .all h2 {
   text-align: center;
-  padding: 30px 0 50px 0;
+  padding: 30px 0 50px;
   width: 500px;
 }
 
@@ -138,20 +133,20 @@ hr {
   height: 500px;
 }
 
-.family-content{
+.family-content {
   display: flex;
   width: 560px;
   height: 200px;
 }
 
-.family{
+.family {
   flex-flow: row wrap;
   padding: 30px 30px 30px 0;
   width: 200px;
   height: 150px;
 }
 
-.content{
+.content {
   padding: 30px 30px 30px 0;
   width: 300px;
   height: 150px;
@@ -162,14 +157,14 @@ hr {
   margin-bottom: 20px;
 }
 
-#textarea{
+#textarea {
   font-size: 18px;
   width: 560px;
   height: 100px;
 }
 
 #infos {
-  padding: 20px 0 20px;
+  padding: 20px 0;
 }
 
 #submit-btn {
@@ -183,9 +178,10 @@ hr {
   margin-bottom: 100px;
 }
 
-.getContent{
+.getContent {
   margin: 7px;
 }
+
 #footer {
   text-align: center;
   background-color: cornflowerblue;
