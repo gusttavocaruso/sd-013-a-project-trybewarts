@@ -7,12 +7,13 @@
   <title>TrybeWarts</title>
   <link rel="stylesheet" href="mobile.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
 
     <img src="images/trybewarts-header-logo.svg" width="75px" class="trybewarts-header-logo">  
-    <tr></tr>
+    
 
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
@@ -28,24 +29,37 @@
 
     <form  id="evaluation-form">
       <div class="paraocss">
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
       <div class="paraocss">
-      <input type="text" id="input-email" placeholder="Email">
-
-      <select name="Casa" id="house" >
-        <option value="git" id="gitnoria-house">Gitnoria</option>
-        <option value="react" id="reactpuff-house">Reactpuff</option>
-        <option value="node" id="corvinode-house">Corvinode</option>
-        <option value="python" id="pytherina-house">Pytherina</option>
-      </select>
+        <input type="text" id="input-email" placeholder="Email">
+        <select name="Casa" id="house" >
+          <option value="git" id="gitnoria-house">Gitnoria</option>
+          <option value="react" id="reactpuff-house">Reactpuff</option>
+          <option value="node" id="corvinode-house">Corvinode</option>
+          <option value="python" id="pytherina-house">Pytherina</option>
+        </select>
       </div>
+      <div class="paraocss">
+        <label id="label-family">Qual sua família?</label>
+        <div class="paraocss">
+          <label for="family">Frontend</label>
+          <input type="radio" value="Frontend" name="family">
+        </div><div class="paraocss">
+          <label for="family">Backend</label>
+          <input type="radio" value="Backend" name="family">
+        </div><div class="paraocss">
+          <label for="family">FullStack</label>
+          <input type="radio" value="FullStack" name="family">
+        </div>
+      </div>
+
+      
     </form>
 
-
-    <img id="trybewarts-forms-logo"src="images/trybewarts-colored.svg" width="450px">
-
+    
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" width="450px">
 
 
   </main>
