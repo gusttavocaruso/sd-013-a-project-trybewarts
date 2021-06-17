@@ -4,11 +4,12 @@ const senhaBtn = document.getElementById('senhaBtn');
 const email = 'tryber@teste.com';
 const senha = '123456';
 
-function Eventclick() {
-  if ((loginBtn.value !== email) || (senhaBtn.value !== senha)) {
-    alert('Login ou senha inválidos.');
-  } else {
+function Eventclick(e) {
+  e.preventDefault();
+  if ((loginBtn.value === email) && (senhaBtn.value === senha)) {
     alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
   }
 }
 btnForm.addEventListener('click', Eventclick);
@@ -26,24 +27,10 @@ function oi() {
 
 document.getElementById('agreement').addEventListener('click', oi);
 
-
 // // CONTADOR TEXTAREA
-// function  () {
-//   const areaText = document.querySelector('#story');
-//   const counterText = document.querySelector('#counter');                                                                            
-//   addEventListener(areaText, 'focus', updateCounter);
-//   addEventListener(areaText,'input', updateCounter);
+const storyTextArea = document.querySelector('#story');
+const info = document.querySelector('#counter');
 
-//   addEventListener(areaText,'blur', function() {
-//     if(areaText.nodeValue.lengh <= 500){
-//       counterText.className = 'hide'
-//     }
-//   });
-
-//   function updateCounter(e) {
-//     let target = e.target || e.srcElement;
-//     let contador = 500 - target.value.length;
-//     if(count < 0)
-//   }
-// }
-
+storyTextArea.oninput = function () {
+  info.innerHTML = (500 - this.value.length);
+};
