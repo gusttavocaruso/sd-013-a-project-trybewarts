@@ -9,3 +9,9 @@ function checkLogin() {
   }
 }
 
+function buttonOn() {
+  const button = document.getElementById("submit-btn")
+  
+  button.disabled = false
+  
+}

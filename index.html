@@ -56,31 +56,126 @@
           </select>
         </div>
         <fieldset id="field">
-          <div id="label-family">
-            <h3>Qual sua família?</h3>
-            <label for="frontend">Frontend</label>
-            <input type="radio" id="frontend" name="family" value="Frontend" /><br>
-            <label for="backend">Backend</label>
-            <input type="radio" id="backend" name="family" value="Backend" /><br>
-            <label for="fullstack">FullStack</label>
-            <input type="radio" id="fullstack" name="family" value="FullStack" />
+          <div class="radio-buttons">
+            <label for="" id="label-family">Qual sua família?</label>
+            <label for="Frontend">Frontend</label>
+            <input type="radio" value="Frontend" name="family"
+            id="Frontend" />
+
+            <label for="Backend">Backend</label>
+            <input type="radio" value="Backend" name="family"
+            id="Backend" />
+
+            <label for="FullStack">FullStack</label>
+            <input type="radio" value="FullStack" name="family" 
+            id="FullStack"/>
           </div>
-          <div id="label-content">
-            <h3>Qual conteúdo você está com mais vontade de aprender?</h3>
-            <label class="subject" for="Checkbox1">HoFs</label>
-            <input class="subject" type="checkbox" id="Checkbox1" value="HoFs">
-            <label class="subject" for="Checkbox2">Jest</label>
-              <input class="subject" type="checkbox" id="Checkbox2" value="Jest">
-              <label class="subject" for="Checkbox3">Promises</label>
-              <input class="subject" type="checkbox" id="Checkbox3" value="Promises">
-              <label class="subject" for="Checkbox4">React</label>
-              <input class="subject" type="checkbox" id="Checkbox4" value="React">
-              <label class="subject" for="Checkbox5">SQL</label>
-              <input class="subject" type="checkbox" id="Checkbox5" value="SQL">
-              <label class="subject" for="Checkbox6">Python</label>
-              <input class="subject" type="checkbox" id="Checkbox6" value="Python">
+          <div class="checkbox">
+            <div id="label">
+              <label for="" id="label-content"
+                >Qual conteúdo você está com mais vontade de aprender?</label
+              >
+            </div>
+
+            <div id="checks">
+              <div class="check-itens">
+                <label for="Hofs">HoFs</label>
+                <input
+                  class="subject"
+                  value="HoFs"
+                  type="checkbox"
+                  name="HoFs"
+                  id="Hofs"
+                />
+              </div>
+
+              <div class="check-itens">
+                <label for="Jest">Jest</label>
+                <input
+                  class="subject"
+                  value="Jest"
+                  type="checkbox"
+                  name="Jest"
+                  id="Jest"
+                />
+              </div>
+
+              <div class="check-itens">
+                <label for="Promises">Promises</label>
+                <input
+                  class="subject"
+                  value="Promises"
+                  type="checkbox"
+                  name="Promises"
+                  id="Promises"
+                />
+              </div>
+
+              <div class="check-itens">
+                <label for="React">React</label>
+                <input
+                  class="subject"
+                  value="React"
+                  type="checkbox"
+                  name="React"
+                  id="React"
+                />
+              </div>
+
+              <div class="check-itens">
+                <label for="SQL">SQL</label>
+                <input
+                  class="subject"
+                  value="SQL"
+                  type="checkbox"
+                  name="SQL"
+                  id="SQL"
+                />
+              </div>
+
+              <div class="check-itens">
+                <label for="Python">Python</label>
+                <input
+                  class="subject"
+                  value="Python"
+                  type="checkbox"
+                  name="Python"
+                  id="Python"
+                />
+              </div>
+            </div>
           </div>
         </fieldset>
+        <div class="aval">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <input type="radio" value="1" name="rate" /> 1
+          <input type="radio" value="2" name="rate" /> 2
+          <input type="radio" value="3" name="rate" /> 3
+          <input type="radio" value="4" name="rate" /> 4
+          <input type="radio" value="5" name="rate" /> 5
+          <input type="radio" value="6" name="rate" /> 6
+          <input type="radio" value="7" name="rate" /> 7
+          <input type="radio" value="8" name="rate" /> 8
+          <input type="radio" value="9" name="rate" /> 9
+          <input type="radio" value="10" name="rate" /> 10
+        </div>
+        <div class="coment">
+          <label for="textarea" class="textarea"> Deixe seu comentário: </label>
+            <textarea
+              name=""
+              id="textarea"
+              cols="30"
+              rows="10"
+              maxlength="500"
+            ></textarea>
+        </div>
+        <div id = 'agreement-container'>
+          <label for="agreement" id = 'label-infos'> Você concorda com o uso das informações acima?
+            <input type="checkbox" name="agreement" id="agreement" onclick="buttonOn()">
+          </label>
+        </div>
+        <button type="submit"
+        id="submit-btn" disabled="true">Enviar</button>
       </form>
       <div id="imgdiv">
         <img
@@ -90,5 +185,8 @@
         />
       </div>
     </main>
+    <footer>
+      <p>Direitos reservados à Trybewarts©</p>
+    </footer>
   </body>
 </html>
