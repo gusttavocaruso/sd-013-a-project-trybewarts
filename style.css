@@ -47,6 +47,7 @@
 main {
   display: flex;
   justify-content: center;
+  background-color: wheat;
 }
 
 #evaluation-form {
@@ -55,7 +56,6 @@ main {
   width: 675px;
   align-items: center;
   flex-flow: column wrap;
-  margin: auto;
 }
 
 #trybewarts-forms-logo {
@@ -66,19 +66,28 @@ main {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  border: 0;
+  border-radius: 5px;
 }
 
 #input-lastname {
   margin-bottom: 10px;
   padding: 10px;
+  border: 0;
+  border-radius: 5px;
 }
 
 #input-email {
   margin-right: 10px;
   padding: 10px;
+  border: 0;
+  border-radius: 5px;
 }
 
 #house {
-  width: 130px;
+  width: 160px;
   padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: white;
 }
