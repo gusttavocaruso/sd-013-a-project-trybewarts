@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trybewarts</title>
+  </head>
+
+  <body>
+    <!-- 1 - Crie uma barra verde na parte superior da página -->
+    <header class="header">
+      
+      <!-- 2 - Adicione o logotipo da Trybewarts com a classe `trybewarts-header-logo` no canto esquerdo da barra superior -->      
+      <img src="images/trybewarts-header-logo.svg" alt="Trybewarts logo" class="trybewarts-header-logo">
+      
+      <!-- 4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header' -->
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      
+      <!-- 3 - Acrescente um formulário de autenticação no canto direito da barra superior contendo os inputs de login, de senha e um botão de entrar -->
+      <form class="trybewarts-login">    
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="pwd">
+        <button id="login-button">Entrar</button>
+      </form>
+    </header>
+
+    <!--5 - Adicione um formulário no corpo da página, posicionado ao lado esquerdo -->
+    <!--8 - Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:' -->
+    <!--9 - Crie um select 'Casa' contendo quatro options -->
+    <main>
+      <form id="evaluation-form" action= "">
+        <input id="input-name" type="text" placeholder="Nome">
+        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-email" type="text" placeholder="Email">
+        <select name="" id="house">
+          <option id="gitnoria-house" value="Gitnória"></option>
+          <option id="reactpuff-house" value="Reactpuff"></option>
+          <option id="corvinode-house" value="Corvinode"></option>
+          <option id="pytherina-house" value="Pytherina"></option>
+        </select>
+      </form>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
+    </main>
+
+    <!-- 19 - Crie um rodapé no final da página -->
+    <footer class="footer">Direitos reservados à Trybewarts©</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

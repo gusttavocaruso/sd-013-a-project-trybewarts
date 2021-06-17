@@ -1,0 +1,87 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 1 - Crie uma barra verde na parte superior da página */
+.header {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* 3 - Acrescente um formulário de autenticação com login, senha e um botão de entrar */
+.trybewarts-login {
+  align-items: center;
+  display: flex;
+}
+
+#login , #pwd {
+  width: 160px;
+  height: 45px;
+  margin: 6px;
+  padding: 0 9px;
+  border-radius: 8px;
+}
+
+#login-button {
+  align-items: center;
+  appearance: button;
+  background-color: rgb(78, 44, 131);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 7px;
+  padding: 0 7px;
+  text-decoration: none;
+  width: 150px;
+}
+
+/* 4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header' */
+#trybewarts-header-title {
+  align-items: center;
+  display: flex;
+}
+
+/* 19 - Crie um rodapé no final da página
+  Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
+  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  flex-flow: wrap;
+  width: 675px;
+}
+
+#evaluation-form input, select {
+  width: 50%;
+}
