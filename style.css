@@ -51,8 +51,11 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   width: 675px;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: auto;
 }
 
 #trybewarts-forms-logo {
@@ -66,9 +69,24 @@ main {
   border-radius: 10px;
   padding: 10px;
   height: 50px ;
+  flex-wrap: wrap;
+ 
   
 }
 
 #input-name{
   margin-right: 10px;
+  margin-bottom: 10px;
+}
+#input-lastname{
+  margin-bottom: 10px;
+}
+label{
+  
+}
+#input-email{
+ margin-right: 10px;
+}
+#house{
+  width: 130px;
 }
