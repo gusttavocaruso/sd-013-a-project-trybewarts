@@ -9,6 +9,7 @@ function checkLogin() {
     alert('Login ou senha inválidos.');
   }
 }
+
 function buttonOn() {
   const button = document.getElementById('submit-btn');
 
@@ -21,7 +22,9 @@ btnOn.addEventListener('click', buttonOn);
 const textArea = document.getElementById('textarea');
 function characterCount() {
   const contador = document.getElementById('counter');
-  const aux = 500 - textArea.value.length;
-  contador.innerHTML = aux;
+  let aux = 500 - textArea.value.length 
+  contador.innerHTML = aux
+  
 }
 textArea.addEventListener('keyup', characterCount);
+
