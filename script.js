@@ -9,4 +9,5 @@ btnLogin.addEventListener('click', () => {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
-  }});
+  }
+});
