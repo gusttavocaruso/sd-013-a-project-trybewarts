@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div>
@@ -19,52 +19,43 @@
       </form>  
     </header>
     <main>
-      <fieldset class="firstForm">
-          <form action="#" method="GET" id="evaluation-form">
-            <div class="allingNames">
-              <input type="text" name="Nome" placeholder="Nome" id="input-name">
-              <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
-            </div>
-            <div class="allingEmailHouse">
-              <input type="email" name="Email" placeholder="Email" id="input-email">
-                  <select name="" id="house">
-                    <option value="0">Casa:</option>
-                    <option value="1" id="gitnoria-house">Gitnória</option>
-                    <option value="2" id="reactpuff-house">Reactpuff</option>
-                    <option value="3" id="corvinode-house">Corvinode</option>
-                    <option value="4" id="pytherina-house">Pytherina</option>
-                  </select>
-              </div>
-
-              <label for="family" id="label-family">Qual sua família?</label>
-                <input type="radio" name="family" value="Frontend">Frontend
-                <input type="radio" name="family" value="Backend">Backend
-                <input type="radio" name="family" value="FullStack">FullStack 
-
-              <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                <input class="subject" type="checkbox" value="HoFs">HoFs
-                <input class="subject" type="checkbox" value="Jest">Jest
-                <input class="subject" type="checkbox" value="Promises">Promises
-                <input class="subject" type="checkbox" value="React">React
-                <input class="subject" type="checkbox" value="SQL">SQL
-                <input class="subject" type="checkbox" value="Python">Python
-                            
-              <div class="allingSatisfaction">
-                <label id="label-rate">Como você avalia a Trybewarts?</label>
-                <section id="radioButtons"></section>
-              </div>
-
-              <label for="textarea" class="textarea">Deixe seu comentário:</label>
-              <textarea maxlength="500"></textarea>
-          </form>
-      </fieldset>
-      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
-    </main>
-  </div>        
-  
-  <div>
-    
-  </div>
+      <form action="#" method="GET" id="evaluation-form">
+        <fieldset class="firstForm">
+        <div class="allingNames">
+          <input type="text" name="Nome" placeholder="Nome" id="input-name">
+          <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+        </div>
+        <div class="allingEmailHouse">
+          <input type="email" name="Email" placeholder="Email" id="input-email">
+            <select name="" id="house">
+              <option value="0">Casa:</option>
+              <option value="1" id="gitnoria-house">Gitnória</option>
+              <option value="2" id="reactpuff-house">Reactpuff</option>
+              <option value="3" id="corvinode-house">Corvinode</option>
+              <option value="4" id="pytherina-house">Pytherina</option>
+            </select>
+        </div>
+          <label for="family" id="label-family">Qual sua família?</label>
+            <input type="radio" name="family" value="Frontend">Frontend
+            <input type="radio" name="family" value="Backend">Backend
+            <input type="radio" name="family" value="FullStack">FullStack 
+          <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <input class="subject" type="checkbox" value="HoFs">HoFs
+            <input class="subject" type="checkbox" value="Jest">Jest
+            <input class="subject" type="checkbox" value="Promises">Promises
+            <input class="subject" type="checkbox" value="React">React
+            <input class="subject" type="checkbox" value="SQL">SQL
+            <input class="subject" type="checkbox" value="Python">Python                   
+        <div class="allingSatisfaction">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+            <section id="radioButtons"></section>
+        </div>
+          <label for="textarea" class="textarea">Deixe seu comentário:</label>
+          <textarea maxlength="500"></textarea>
+      </form>
+  </fieldset>
+  <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    </main> 
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
