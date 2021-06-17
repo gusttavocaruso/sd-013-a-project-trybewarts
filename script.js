@@ -8,6 +8,8 @@ const checkedAgreement = document.querySelector('#agreement');
    sendButton.disabled = false
   }else{
    sendButton.disabled = true
+  }
+}
 const btnLogin = document.getElementById('botao');
 const btnOn = document.getElementById('agreement');
 function checkLogin() {
