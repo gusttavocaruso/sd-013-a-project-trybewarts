@@ -2,7 +2,7 @@ const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
 const campoTexto = document.querySelector('#textarea');
 const botaoSubmit = document.querySelector('#submit-btn');
-const form = document.querySelector('#submit-btn');
+//const form = document.querySelector('#submit-btn');
 
 function verificaLogin() {
   const campoUser = document.querySelector('#email').value;
