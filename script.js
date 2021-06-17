@@ -1,5 +1,4 @@
 const formLogin = document.querySelector('#form-login');
-
 function verificaLogin() {
   const login = document.querySelector('#login');
   const senha = document.querySelector('#senha');
@@ -10,3 +9,14 @@ function verificaLogin() {
   }
 }
 formLogin.addEventListener('submit', verificaLogin);
+
+const checkboxConcorda = document.querySelector('#agreement');
+function checkConcorda(event) {
+  const submitBtn = document.querySelector('#submit-btn');
+  if (event.srcElement.checked === true) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+}
+checkboxConcorda.addEventListener('click', checkConcorda);
