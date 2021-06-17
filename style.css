@@ -47,3 +47,7 @@ main , #evaluation-form{
 input {
   width:50%;
 }
+
+#fullName {
+  display: flex;
+}

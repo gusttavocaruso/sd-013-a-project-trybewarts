@@ -24,13 +24,14 @@
 
     <main >
         <form class="form-group" id="evaluation-form" action="" method="get">
-            <input placeholder="Nome" class="form-control" type="text" id="input-name" name="name">
-
-            <input placeholder="Sobrenome" class="form-control" type="text" id="input-lastname" name="lastname">
+            <div id="fullName">
+                <input  placeholder="Nome" class="form-control" type="text" id="input-name" name="name">
+                <input placeholder="Sobrenome" class="form-control" type="text" id="input-lastname" name="lastname">
+            </div>
 
             <input placeholder="Email" class="form-control" type="email" id="input-email" name="email">
 
-            <select id="house">
+            <select class="form-select" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
