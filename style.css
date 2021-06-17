@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: ghostwhite;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -38,6 +42,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  align-items: center;
+  margin: 50px;
 }
 
 #trybewarts-forms-logo {
@@ -47,6 +53,11 @@ main {
 .name-lastname {
   display: flex;
   flex-direction: row;
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 35px;
 }
 
 #label-container {
@@ -56,6 +67,126 @@ main {
 
 #levelSatisfaction {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
+.container2 h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+#levelSatisfaction h1 {
+  font-size: 25px;
+}
+
+.container-dados {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.container-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-email {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#casa {
+  font-size: 20px;
+}
+
+#house {
+  padding: 2px;
+  width: 200px;
+}
+
+hr {
+  width: 35%;
+}
+
+.container2 {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-2 {
+  width: 50%;
+}
+
+.container-family {
+  margin-bottom: 20px;
+}
+
+.family-form {
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+.learn-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  margin-left: 18px;
+}
+
+.learn {
+  font-size: 18px;
+  margin-left: 18px;
+}
+
+.container-learning {
+  display: flex;
+}
+
+.container-comments {
+  width: 100%;
+}
+
+#textarea {
+  width: 100%;
+  margin: 20px 0;
+
+}
+
+.textarea {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.container-info {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(50, 167, 145);
+  border: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  height: 40px;
+  color: white;
+}
