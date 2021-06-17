@@ -112,7 +112,7 @@ main form {
 }
 
 #trybewarts-forms-logo {
-  height: 700px;
+  height: 500px;
 }
 
 .quesito12 {
@@ -162,6 +162,10 @@ main form {
   width: fit-content;
 }
 
+.ratio-tech label input {
+  margin-right: 3px;
+}
+
 .ratio {
   display: inline;
 }
@@ -172,6 +176,10 @@ main form {
 
 .forms {
   margin: 10px auto;
+}
+
+#textarea {
+  padding: 10px;
 }
 
 .agreements {
@@ -186,16 +194,17 @@ main form {
   border: none;
   color: white;
   font-size: 18px;
+  cursor: pointer;
 }
 
 #submit-btn:hover {
   background-color: rgb(159, 47, 252);
-  cursor: pointer;
 }
 
 footer {
+  margin-top: 59px;
   display: flex;
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: rgb(80, 78, 77);
   width: 100%;
