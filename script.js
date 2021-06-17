@@ -1,6 +1,7 @@
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
 const campoTexto = document.querySelector("#textarea");
+const botaoSubmit = document.querySelector('#submit-btn');
 
 
 
@@ -31,6 +32,12 @@ function contaDigitos() {
   counterConst.innerHTML = calculo;
 }
 
+
+function requisito21() {
+
+}
+
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
 campoTexto.addEventListener('keyup', contaDigitos);
+botaoSubmit.addEventListener('click', requisito21);
