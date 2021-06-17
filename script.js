@@ -20,3 +20,11 @@ function checkConcorda(event) {
   }
 }
 checkboxConcorda.addEventListener('click', checkConcorda);
+
+const textarea = document.querySelector('#textarea');
+function contadorCaracter(event) {
+  const counter = document.querySelector('#counter');
+  let contador = 500;
+  counter.innerHTML = contador - event.target.value.length;
+}
+textarea.addEventListener('keyup', contadorCaracter);
