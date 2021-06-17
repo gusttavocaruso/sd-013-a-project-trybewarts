@@ -3,7 +3,6 @@ body {
 }
 
 /* área dedicada à header! */
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -54,10 +53,11 @@ main {
   width: 675px;
   flex-direction: column;
   /* temporario */
+
   border: 1px solid black;
 }
 
-.nome-sobrenome, .email-select {
+.nome-sobrenome , .email-select {
   display: flex;
   justify-content: space-between;
 }
@@ -111,8 +111,7 @@ footer p {
   color: white;
 }
 
-/* text area*/
-
+/* text area */
 .text-area {
   display: flex;
   justify-content: center;
@@ -124,7 +123,6 @@ footer p {
 }
 
 /* avaliador */
-
 .avaliador {
   display: flex;
   justify-content: center;
