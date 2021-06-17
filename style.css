@@ -67,7 +67,6 @@ main #evaluation-form {
 
 #radio-rate-textarea-agree div {
   display: flex;
-  align-items: center;
 }
 
 #radio-rate-textarea-agree div input {
@@ -79,7 +78,6 @@ main #evaluation-form {
 }
 
 main #trybewarts-forms-logo {
-  width: 400px;
   display: flex;
   height: 500px;
 }
@@ -170,3 +168,15 @@ h2 {
   width: 100%;
   height: 145px;
 }
+
+#btn {
+  margin: 25px;
+  color: white;
+  background-color: rgb(103, 9, 197);
+}
+
+#agree {
+  display: flex;
+  justify-content: flex-start;
+}
+

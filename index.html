@@ -33,7 +33,7 @@
 
         <input type="email" class="form-control" placeholder="Email" name="name" id="input-email">
 
-        CASA <select name="" class="form-select" id="house">
+        CASA<select name="" class="form-select" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house" selected>Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -89,8 +89,12 @@
           <textarea name="" id="form-text-area" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
           <label for="floatingTextarea">Deixe seu cometário:</label>
         </div>
+        <div id="agree">
+          <p>Voce concorda com as informações acima?</p>
+          <input type="checkbox" id="agreement" class="form-check-input">
+        </div>
       </div>
-
+      <button type="submit" id="btn" class="btn btn-success">ENVIAR</button>
     </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="Logo Grande Trybewarts">
   </main>
