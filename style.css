@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -66,7 +65,7 @@ h1 {
 }
 
 .logar:hover {
-  background-color: rgb(16, 777, 216);  
+  background-color: rgb(16, 777, 216);
   color: white;
 }
 
