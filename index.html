@@ -24,9 +24,11 @@
         <button id="buttonLogin" type="submit">Logar</button>
       </form>
     </header>
+
     <div class="body">
       <main>
         <form class="forms" action="" id="evaluation-form">
+          <h1 class="title-forms">Forms</h1>
           <div>
             <input type="text" placeholder="Nome" name="" id="input-name" />
             <input
@@ -48,75 +50,100 @@
           </div>
         </form>
         <!--Requisito 12 em diante-->
-        <form class="family-radio forms">
-          <label for="" id="label-family"> Qual sua família? </label>
-          <div class="ratio-tech">
-            <label for="front">
-              <input
-                type="radio"
-                name="family"
-                value="Frontend"
-                id="front"
-              />Frontend
-            </label>
-            <label for="back">
-              <input
-                type="radio"
-                name="family"
-                value="Backend"
-                id="back"
-              />Backend
-            </label>
-            <label for="full">
-              <input
-                type="radio"
-                name="family"
-                value="FullStack"
-                id="full"
-              />FullStack
-            </label>
-          </div>
-        </form>
-        <form class="label-check forms">
-          <div>
-            <label for="cBox" id="label-content"
-              >Qual conteúdo você está com mais vontade de aprender?</label
-            >
-          </div>
-          <div>
-            <input
-              class="subject"
-              type="checkbox"
-              name="cBox"
-              value="HoFs"
-            />HoFs
-            <input
-              class="subject"
-              type="checkbox"
-              name="cBox"
-              value="Jest"
-            />Jest
-            <input
-              class="subject"
-              type="checkbox"
-              name="cBox"
-              value="Promises"
-            />Promises
-            <input
-              class="subject"
-              type="checkbox"
-              name="cBox"
-              value="React"
-            />React
-            <input class="subject" type="checkbox" name="cBox" value="SQL" />SQL
-            <input
-              class="subject"
-              type="checkbox"
-              name="cBox"
-              value="Python"
-            />Python
-          </div>
-        </form>
+        <div class="quesito12">
+          <form class="family-radio forms">
+            <label for="" id="label-family"> Qual sua família? </label>
+            <div class="ratio-tech">
+              <label for="front">
+                <input
+                  type="radio"
+                  name="family"
+                  value="Frontend"
+                  id="front"
+                />Frontend
+              </label>
+              <label for="back">
+                <input
+                  type="radio"
+                  name="family"
+                  value="Backend"
+                  id="back"
+                />Backend
+              </label>
+              <label for="full">
+                <input
+                  type="radio"
+                  name="family"
+                  value="FullStack"
+                  id="full"
+                />FullStack
+              </label>
+            </div>
+          </form>
+          <form class="label-check forms">
+            <div>
+              <label for="cBox" id="label-content"
+                >Qual conteúdo você está com mais vontade de aprender?</label
+              >
+            </div>
+            <div class="items-form">
+              <label for="HoFs">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="HoFs"
+                  id="HoFs"
+                />HoFs</label
+              >
+              <label for="Jest">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="Jest"
+                  id="Jest"
+                />Jest</label
+              >
+              <label for="Promises">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="Promises"
+                  id="Promises"
+                />Promises</label
+              >
+              <label for="React">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="React"
+                  id="React"
+                />React</label
+              >
+              <label for="SQL">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="SQL"
+                  id="SQL"
+                />SQL</label
+              >
+              <label for="Python">
+                <input
+                  class="subject"
+                  type="checkbox"
+                  name="cBox"
+                  value="Python"
+                  id="Python"
+                />Python</label
+              >
+            </div>
+          </form>
+        </div>
         <form class="label-aside forms" action="">
           <label id="label-rate" for="name"
             >Como você avalia a Trybewarts?</label
@@ -162,6 +189,9 @@
         />
       </aside>
     </div>
+    <footer>
+      <p>Direitos reservados à Trybewarts©</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
