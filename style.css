@@ -53,3 +53,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#levelSatisfaction {
+  display: flex;
+  justify-content: right;
+}
+

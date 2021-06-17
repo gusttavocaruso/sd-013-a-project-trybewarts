@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Trybewarts</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo-trybewarts" width="50px">
@@ -14,8 +16,8 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
     <form class="trybewarts-login">
-      <input class="forms"type="email" name="login" id="input-login" placeholder=" Login">
-      <input class="forms"type="password" name="password" id="input-password" placeholder=" Senha">
+      <input class="forms" type="email" name="login" id="input-login" placeholder=" Login">
+      <input class="forms" type="password" name="password" id="input-password" placeholder=" Senha">
       <button type="submit" id="btn-enter">Entrar</button>
     </form>
   </header>
@@ -37,7 +39,6 @@
         </label>
       </div>
 
-
       <div id="label-container">
         <h1 id="label-family">Qual sua família?</h1>
         <label for="radio1">Família Frontend
@@ -48,12 +49,7 @@
         </label>
         <label for="radio3">Família Fullstack
           <input type="radio" name="family" id="radio3" value="FullStack">
-        </div>
-
-
-
-
-
+      </div>
 
       <div>
         <h1 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h1>
@@ -80,12 +76,66 @@
     <div>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-trybewarts2" height="500px">
     </div>
+
   </main>
 
+  <hr>
+
+  <div id="levelSatisfaction">
+    <p id="label-rate">Como você avalia a Trybewarts?</p>
+
+    <label for="number1">1
+      <input type="radio" name="rate" id="number1" value="1">
+    </label>
+    <label for="number2">2
+      <input type="radio" name="rate" id="number2" value="2">
+    </label>
+    <label for="number3">3
+      <input type="radio" name="rate" id="number3" value="3">
+    </label>
+    <label for="number4">4
+      <input type="radio" name="rate" id="number4" value="4">
+    </label>
+    <label for="number5">5
+      <input type="radio" name="rate" id="number5" value="5">
+    </label>
+    <label for="number6">6
+      <input type="radio" name="rate" id="number6" value="6">
+    </label>
+    <label for="number7">7
+      <input type="radio" name="rate" id="number7" value="7">
+    </label>
+    <label for="number8">8
+      <input type="radio" name="rate" id="number8" value="8">
+    </label>
+    <label for="number9">9
+      <input type="radio" name="rate" id="number9" value="9">
+    </label>
+    <label for="number10">10
+      <input type="radio" name="rate" id="number10" value="10">
+    </label>
+  </div>
+
+  <hr>
+
+  <div>
+    <label for="" class="textarea">Deixe seu comentário:</label>
+    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+  </div>
+
+
+  <div>
+    <label for="" id="label-infos">Você concorda com o uso das informações acima?
+      <input type="checkbox" name="" id="agreement" value="teste">
+    </label>
+  </div>
+
+  <button type="submit" id="submit-btn">Enviar</button>
 
 
 
-
+  
   <script src="script.js"></script>
 </body>
+
 </html>
