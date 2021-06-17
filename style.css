@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 
-body{ 
-  margin-left: 
-}
-
-main { 
+main {
   display: flex;
 }
 
@@ -46,9 +42,10 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-} 
+}
 
-input[type="text"] { 
+/* Desafio 9 e 10 */
+input [ type = 'text' ] {
   background-color: white;
   border: 1px solid rgb(214, 217, 220);
   border-radius: 3px;
@@ -60,4 +57,12 @@ input[type="text"] {
   margin-bottom: 5px;
 }
 
+/* Desafio 10 */
+#label-family {
+  display: inline;
+}
 
+/* Desafio 15 */
+textarea {
+  resize: none;
+}
