@@ -1,5 +1,5 @@
 * {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: cursive, sans-serif;
@@ -59,22 +59,11 @@ main h1 {
   height: 70px;
 }
 
-.body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
 main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-
-main form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
+  flex-grow: 1;
+  flex-flow: row wrap;
 }
 
 .title-forms {
@@ -83,24 +72,31 @@ main form {
 }
 
 #evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-flow: column wrap;
   align-items: flex-start;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: solid 1px gray;
 }
 
-.items-form label input {
-  margin-right: 3px;
-}
-
-#evaluation-form input {
+.input-info input,
+.input-info2 input {
   width: 330px;
   height: 40px;
   margin: 2px;
   justify-content: space-around;
   border-radius: 10px;
   border: none;
+}
+
+.items-form label input {
+  margin-right: 3px;
+}
+
+.input-info2 {
+  padding-bottom: 15px;
+  border-bottom: solid 1px gray;
 }
 
 #house {
@@ -111,32 +107,38 @@ main form {
   background-color: white;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.label-aside {
+  display: flex;
+  padding-top: 15px;
 }
 
-.quesito12 {
+.label-aside label {
+  margin-right: 60px;
+}
+
+.radio-tech {
   display: flex;
-  padding-bottom: 10px;
-  border-bottom: solid 1px gray;
+  flex-flow: column;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.radio-tech label {
+  width: fit-content;
+  margin-top: 10px;
+}
+
+#trybewarts-forms-logo {
+  height: 800px;
 }
 
 .family-radio {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 200px;
-}
-
-.checkbox {
-  display: flex;
-  flex-direction: row;
-}
-
-.label-check {
-  display: flex;
-  flex-direction: column;
-  width: 470px;
+  flex-flow: row;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
 }
 
 .items-form {
@@ -145,6 +147,7 @@ main form {
   width: 400px;
   justify-content: space-around;
   flex-flow: row wrap;
+  margin-bottom: 10px;
 }
 
 .items-form label {
@@ -153,29 +156,12 @@ main form {
   margin-right: 50px;
 }
 
-.ratio-tech {
-  display: flex;
-  flex-direction: column;
+.ratio label {
+  margin-right: 5px;
 }
 
-.ratio-tech label {
-  width: fit-content;
-}
-
-.ratio-tech label input {
-  margin-right: 3px;
-}
-
-.ratio {
-  display: inline;
-}
-
-.label-aside {
-  display: inline;
-}
-
-.forms {
-  margin: 10px auto;
+.textarea {
+  margin-top: 20px;
 }
 
 #textarea {
@@ -189,6 +175,7 @@ main form {
 #submit-btn {
   margin-top: 15px;
   height: 50px;
+  width: 100%;
   background-color: rgb(142, 36, 228);
   border-radius: 10px;
   border: none;
