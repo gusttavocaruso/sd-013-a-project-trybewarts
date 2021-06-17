@@ -64,6 +64,12 @@ input [ type = 'text' ] {
   display: inline;
 }
 
+/* Desafio 12 */
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Desafio 15 */
 textarea {
   resize: none;
