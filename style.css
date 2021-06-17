@@ -97,3 +97,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#submit-btn {
+  border-radius: 2px;
+  border: none;
+  margin: 5px;
+  height: 22px;
+  background-color: indigo;
+  color: whitesmoke;
+}
