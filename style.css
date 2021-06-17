@@ -26,20 +26,49 @@
 /* Main */
 main {
   display: flex;
+  flex-flow: column;
+  align-content: space-around;
 }
 
 #evaluation-form {
   display: flex;
   flex-flow: column wrap;
-  max-height: 50px;
   width: 675px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  /* align-self: flex-end; */
 }
 
 #evaluation-form #family-label {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+#session1 {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+#session1 #input-name {
+  width: 50%;
+}
+
+#session1 #input-lastname {
+  width: 50%;
+}
+
+#session1 #input-email {
+  width: 50%;
+}
+
+#session2 {
+  display: flex;
+  flex-flow: column;
+}
+
+#session2a {
+  display: flex;
+  flex-flow: column;
 }
