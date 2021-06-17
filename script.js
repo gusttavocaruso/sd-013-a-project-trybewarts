@@ -12,9 +12,9 @@ function validationLogin() {
   });
 } validationLogin();
 
+// Criação de labels contendo radio inputs.
 function rateRank() {
   let rateNumber = document.getElementById('rate-numbers');
-  
   for (let i = 1; i <= 10; i+= 1) {
     let labelElement = document.createElement('label');
     labelElement.classList.add('label-rate-numbers');

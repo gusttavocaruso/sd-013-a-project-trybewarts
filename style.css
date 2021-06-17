@@ -94,3 +94,8 @@
   align-items: center;
   max-width: 30px;
 }
+
+.comment-area {
+  flex-flow: column wrap;
+  margin: 20px;
+}
