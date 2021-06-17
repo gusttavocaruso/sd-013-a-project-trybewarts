@@ -1,9 +1,9 @@
 body {
-    margin: 0%;
-    box-sizing: border-box;
-  }
-  
-  /* área dedicada à header! */
+  margin: 0%;
+}
+
+/* área dedicada à header! */
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -45,19 +45,56 @@ body {
 /* main */
 main {
   display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  /* temporario */
+  border: 1px solid black;
 }
 
-#evaluation-form input {
-  flex-flow: column;
-  width: 300px;
+.nome-sobrenome, .email-select {
+  display: flex;
+  justify-content: space-between;
 }
 
+.input-style {
+  padding: 10px 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(139, 233, 236);
+}
+
+.select-style {
+  padding: 10px 100px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.label-main {
+  display: flex;
+  border-top: 1px solid black;
+  height: 90px;
+  justify-content: space-around;
+}
+
+#label-content {
+  display: flex;
+}
 
 /* footer */
 footer {
@@ -72,4 +109,28 @@ footer {
 footer p {
   margin: 0;
   color: white;
+}
+
+/* text area*/
+
+.text-area {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+
+#text-area {
+  margin: 5px;
+}
+
+/* avaliador */
+
+.avaliador {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+
+.avaliador label {
+  margin-right: 5px;
 }

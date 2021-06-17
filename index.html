@@ -26,29 +26,98 @@
 
   <main>
     <form action="" id="evaluation-form">
-      <div>
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <div class="nome-sobrenome">
+        <input type="text" id="input-name" placeholder="Nome" class="input-style">
+        <input type="text" id="input-lastname" placeholder="Sobrenome" class="input-style">
       </div>
-      <div>
-        <input type="text" id="input-email" placeholder="Email">
-        <select id="house">
-          <option id="gitnoria-house"></option>
-          <option id="reactpuff-house"></option>
-          <option id="corvinode-house"></option>
-          <option id="pytherina-house"></option>
+      <div class="email-select">
+        <input type="text" id="input-email" placeholder="Email" class="input-style">
+        <label for="house"> Casa: 
+          <select id="house" class="select-style">
+            <option id="gitnoria-house" value="gitnoria">gitnoria</option>
+            <option id="reactpuff-house" value="reactpuff">reactpuff</option>
+            <option id="corvinode-house" value="corvinode">corvinode</option>
+            <option id="pytherina-house" value="pytherina">pytherina</option>
         </select>
+        </label>
       </div>
+      
+      <div class="label-main">
       <div class="label">
         <label id="label-family">Qual sua família?</label>
-        <input type="radio" value="Frontend" name="family" id="Front">
-        <input type="radio" value="Backend" name="family" id="Back">
-        <input type="radio" value="FullStack" name="family" id="Full">
+        <div>
+          <input type="radio" value="Frontend" name="family" id="Front">
+          <label for="Front">Frontend</label>
+        </div>
+        <div>
+          <input type="radio" value="Backend" name="family" id="Back">
+          <label for="Back">Backend</label>
+        </div>
+        <div>
+          <input type="radio" value="FullStack" name="family" id="Full">
+          <label for="Full">FullStack</label>
+        </div>
       </div>
-      <div class="check">
-        <input type="checkbox">
+      
+      <div>
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <input type="checkbox" value="HoFs" id="HoFs">
+        <label for="HoFs">HoFs</label>
+        <input type="checkbox" value="Jest" id="Jest">
+        <label for="Jest">Jest</label>
+        <input type="checkbox" value="Promises" id="Promises">
+        <label for="Promises">Promises</label>
+        <input type="checkbox" value="React" id="React">
+        <label for="React">React</label>
+        <input type="checkbox" value="SQL" id="SQL">
+        <label for="SQL">SQL</label>
+        <input type="checkbox" value="Python" id="Python">
+        <label for="Python">Python</label>
       </div>
-    </form>
+    </div>
+    <!--rate-->
+    <div class="avaliador">
+      <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
+      
+      <label for="1">1</label>
+      <input type="radio" name="rate" value="1" id="1">
+      
+      <label for="2">2</label>
+      <input type="radio" name="rate" value="2" id="2">
+      
+      <label for="3">3</label>
+      <input type="radio" name="rate" value="3" id="3">
+      
+      <label for="4">4</label>
+      <input type="radio" name="rate" value="4" id="4">
+      
+      <label for="5">5</label>
+      <input type="radio" name="rate" value="5" id="5">
+      
+      <label for="6">6</label>
+      <input type="radio" name="rate" value="6" id="6">
+      
+      <label for="7">7</label>
+      <input type="radio" name="rate" value="7" id="7">
+      
+      <label for="8">8</label>
+      <input type="radio" name="rate" value="8" id="8">
+      
+      <label for="9">9</label>
+      <input type="radio" name="rate" value="9" id="9">
+      
+      <label for="10">10</label>
+      <input type="radio" name="rate" value="10" id="10">
+    </div>
+    
+    <!--text area-->
+    <div class="text-area">
+      <label for="text-area" class="textarea">Deixe seu comentário:
+      <textarea name="text-area" id="text-area" cols="80" rows="4" maxlength="500"></textarea>
+      </label>
+    </div>
+
+  </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
   </main>
   
