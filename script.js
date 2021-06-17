@@ -28,9 +28,15 @@ function oi() {
 document.getElementById('agreement').addEventListener('click', oi);
 
 // // CONTADOR TEXTAREA
-const storyTextArea = document.querySelector('#story');
-const info = document.querySelector('#counter');
+// const storyTextArea = document.querySelector('#textarea');
+// // const info = document.querySelector('#counter');
 
-storyTextArea.oninput = function () {
-  info.innerHTML = (500 - this.value.length);
-};
+// function validar(e) {
+//   const inputLength = storyTextArea.value.length;
+//   const maxChars = 500;
+//   if (inputLength >= maxChars) {
+//     e.preventDefault();
+//   }
+// }
+
+// storyTextArea.addEventListener('keypress', validar);
