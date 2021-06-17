@@ -113,14 +113,18 @@
 
 .family-items {
   display: inline-block;
-  align-items: center;
+  text-align: center;
   font-size: 1.2em;
   width: 100%;
   margin-top: 12px;
 }
 
-.family-p {
+.family-label {
+  display: flex;
+  justify-content: center;
   font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .input-family {
@@ -134,6 +138,7 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  height: 100%;
   flex-basis: 100%;
 }
 
@@ -144,6 +149,7 @@ footer p {
 
 #label-content p {
   text-align: center;
+  font-weight: 700;
   margin-bottom: 18px;
 }
 
