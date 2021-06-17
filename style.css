@@ -1,11 +1,22 @@
 * {
   margin: 0%;
+  font-family: 'Inria Serif', serif;
 }
 
+body {
+  background-color: rgba(239,239,239,255);
+}
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(50, 167, 145);
+  margin-bottom: 50px;
+}
+
+.div-header {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
@@ -13,25 +24,69 @@
   align-self: center;
 }
 
+.trybewarts-login input {
+  width: 120px;
+  padding: 7px;
+  margin-right: 7px;
+  border-radius: 7px;
+  border: none;
+}
+
+.trybewarts-login button {
+  width: 120px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: rgba(78,44,131,255);
+}
+
 #trybewarts-header-title {
   align-self: center;
   color: white;
 }
 
-#trybewarts-login {
-  display: flex;
-  align-self: center;
-}
-
 main {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
 }
 
 #evaluation-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 675px;
   flex-direction: column;
+  border: 1px solid red;
+}
+
+#evaluation-form h2 {
+  margin-bottom: 20px;
+}
+
+#evaluation-form input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid rgba(239,239,239,255);
+  background-color: white;
+  border-radius: 7px;
+  margin: 10px 5px;
+}
+
+#labelSelect option{
+  width: 300px;
+  padding: 8px;
+  border: 1px solid rgba(239,239,239,255);
+  background-color: white;
+  border-radius: 7px;
+  margin: 10px 5px;
 }
 
 #trybewarts-forms-logo {
@@ -42,15 +97,26 @@ main {
   width: 60px;
 }
 
+#family {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid black
+}
+
+#family div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rebeccapurple;
+  width: 60%;
+}
+
 #label-family {
   display: flex;
   flex-direction: column;
 }
 
-#family {
-  display: flex;
-  flex-direction: column;
-}
+
 
 #label-content {
   display: flex;

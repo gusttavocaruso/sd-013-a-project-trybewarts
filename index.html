@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Escola de Tecnomagia TrybeWarts</title>
 </head>
@@ -11,160 +13,171 @@
 <body>
 
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo header trybewarts">
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="GET">
-      <input id="email" value="" type="email" name="email" placeholder="Login" required>
-      <input id="senha" value="" type="password" name="senha" placeholder="Senha" required>
-      <button id="button1">Logar</button>
-    </form>
+    <div class="div-header">
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo header trybewarts">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login" action="GET">
+        <input id="email" value="" type="email" name="email" placeholder="Login" required>
+        <input id="senha" value="" type="password" name="senha" placeholder="Senha" required>
+        <button id="button1">Logar</button>
+      </form>
+    </div>
   </header>
 
-  <main>
-    <form id="evaluation-form">
-      <div id="form">
+  <main class='main'>
+    <div class='container'>
+      <form id="evaluation-form">
+        <h2>Forms</h2>
+        <div id="form">
+          <div>
+            <label>
+              <input id="input-name" type="text" name="nome" placeholder="Nome">
+            </label>
 
-        <div>
-          <label>
-            <input id="input-name" type="text" name="nome" placeholder="Nome">
-          </label>
+            <label>
+              <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
+            </label>
+          </div>
+        
+          <div>
+            <label>
+              <input id="input-email" type="text" name="e-mail" placeholder="Email">
+            </label>
 
-          <label>
-            <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
-          </label>
+            <label id="labelSelect">Casa:
+              <select name="Casa" id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </label>
+          </div>
         </div>
 
-        <div>
-          <label>
-            <input id="input-email" type="text" name="e-mail" placeholder="Email">
-          </label>
+        <hr>
 
-          <label>Casa:
-            <select name="Casa" id="house">
-              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
-          </label>
+        <!-- --------------Requisito 12 ------------------------->
+        <div id="family">
+          <div>
+            <label id="label-family">Qual sua família?</label>
+              <label for="frontend"> Família Frontend 
+                <input type="radio" name="family" value="Frontend" id="frontend"> 
+              </label>
+
+              <label for="backend"> Família Backend
+                <input type="radio" name="family" value="Backend" id="backend"> 
+              </label>
+
+              <label for="fullStack">Família FullStack
+                <input type="radio" name="family" value="FullStack" id="fullStack"> 
+              </label> 
+          </div>
+
+          <!-- --------------Requisito 13 ------------------------->
+          <div>
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+
+            <label for="hofs"> HoFs
+              <input type="checkbox" value="HoFs" class="subject" id="hofs">
+            </label>
+
+            <label for="jest">Jest
+              <input type="checkbox" value="Jest" class="subject" id="jest">
+            </label>
+
+            <label for="promises">Promises
+              <input type="checkbox" value="Promises" class="subject" id="promises">
+            </label>
+
+            <label for="react">React
+              <input type="checkbox" value="React" class="subject" id="react">
+            </label>
+
+            <label for="sql">SQL
+              <input type="checkbox" value="SQL" class="subject" id="sql">
+            </label>
+
+            <label for="python">Python
+              <input type="checkbox" value="Python" class="subject" id="python">
+            </label>
+          </div>
         </div>
-      </div>
-    </form>
+        <hr>
 
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo trybewarts">
+        <!-- --------------Requisito 14 ------------------------->
+        <div>
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+            <label for="1">
+              <input type="radio" value="1" id="1" name="rate">1
+            </label>
 
+            <label for="2">
+              <input type="radio" value="2" id="2" name="rate">2
+            </label>
+
+            <label for="3">
+              <input type="radio" value="3" id="3" name="rate">3
+            </label>
+
+            <label for="4">
+              <input type="radio" value="4" id="4" name="rate">4
+            </label>
+
+            <label for="5">
+              <input type="radio" value="5" id="5" name="rate">5
+            </label>
+
+            <label for="6">
+              <input type="radio" value="6" id="6" name="rate">6
+            </label>
+
+            <label for="7">
+              <input type="radio" value="7" id="7" name="rate">7
+            </label>
+
+            <label for="8">
+              <input type="radio" value="8" id="8" name="rate">8
+            </label>
+
+            <label for="9">
+              <input type="radio" value="9" id="9" name="rate">9
+            </label>
+
+            <label for="10">
+              <input type="radio" value="10" id="10" name="rate">10
+            </label>
+        </div>
+
+        <!-- --------------Requisito 15 ------------------------->
+        <div>
+          <label class="textarea">Deixe seu comentário:</label>
+            <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <span id='counter'>500</span>
+        
+          </div>
+        
+          <!-- --------------Requisito 16 ------------------------->
+          <div>
+            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
+              <input type="checkbox" id="agreement">
+            </label>
+          </div>
+        
+          <!-- --------------Requisito 17 ------------------------->
+          <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </form>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo trybewarts">
+    </div>
   </main>
 
-<!-- --------------Requisito 12 ------------------------->
-  <section id="family">
-    <label id="label-family">Qual sua família?</label>
-      <label for="frontend"> Família Frontend 
-        <input type="radio" name="family" value="Frontend" id="frontend"> 
-      </label>
 
-      <label for="backend"> Família Backend
-        <input type="radio" name="family" value="Backend" id="backend"> 
-      </label>
 
-      <label for="fullStack">Família FullStack
-        <input type="radio" name="family" value="FullStack" id="fullStack"> 
-      </label> 
   
-  </section>
 
-  <!-- --------------Requisito 13 ------------------------->
-  <section>
-    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+  
 
-    <label for="hofs"> HoFs
-      <input type="checkbox" value="HoFs" class="subject" id="hofs">
-    </label>
 
-    <label for="jest">Jest
-      <input type="checkbox" value="Jest" class="subject" id="jest">
-    </label>
-
-    <label for="promises">Promises
-      <input type="checkbox" value="Promises" class="subject" id="promises">
-    </label>
-
-    <label for="react">React
-      <input type="checkbox" value="React" class="subject" id="react">
-    </label>
-
-    <label for="sql">SQL
-      <input type="checkbox" value="SQL" class="subject" id="sql">
-    </label>
-
-    <label for="python">Python
-      <input type="checkbox" value="Python" class="subject" id="python">
-    </label>
-  </section>
-
-  <hr>
-
-  <!-- --------------Requisito 14 ------------------------->
-  <section>
-    <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-      <label for="1">
-        <input type="radio" value="1" id="1" name="rate">1
-      </label>
-
-      <label for="2">
-        <input type="radio" value="2" id="2" name="rate">2
-      </label>
-
-      <label for="3">
-        <input type="radio" value="3" id="3" name="rate">3
-      </label>
-
-      <label for="4">
-        <input type="radio" value="4" id="4" name="rate">4
-      </label>
-
-      <label for="5">
-        <input type="radio" value="5" id="5" name="rate">5
-      </label>
-
-      <label for="6">
-        <input type="radio" value="6" id="6" name="rate">6
-      </label>
-
-      <label for="7">
-        <input type="radio" value="7" id="7" name="rate">7
-      </label>
-
-      <label for="8">
-        <input type="radio" value="8" id="8" name="rate">8
-      </label>
-
-      <label for="9">
-        <input type="radio" value="9" id="9" name="rate">9
-      </label>
-
-      <label for="10">
-        <input type="radio" value="10" id="10" name="rate">10
-      </label>
-
-  </section>
-
-  <!-- --------------Requisito 15 ------------------------->
-  <section>
-  <label class="textarea">Deixe seu comentário:</label>
-    <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-    <span id='counter'>500</span>
-    
-  </section>
-
-  <!-- --------------Requisito 16 ------------------------->
-  <section>
-    <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
-      <input type="checkbox" id="agreement">
-    </label>
-  </section>
-
-  <!-- --------------Requisito 17 ------------------------->
-  <button type="submit" id="submit-btn" disabled>Enviar</button>
 
   <!-- --------------Requisito 19 ------------------------->
 
