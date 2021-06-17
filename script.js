@@ -6,6 +6,8 @@ const validPassword = '123456';
 const inputLogin = document.getElementById('input-login');
 const inputPassword = document.getElementById('input-password');
 const inputAgree = document.getElementById('agreement');
+const inputTextArea = document.getElementById('textarea');
+const remainingChars = document.getElementById('counter');
 
 /* Botões */
 const loginBtn = document.getElementById('login-btn');
@@ -30,3 +32,12 @@ function enableSubmit() {
   }
 }
 inputAgree.addEventListener('change', enableSubmit);
+
+/* Event listener no input para executar a função de count */
+inputTextArea.addEventListener('input', () => {
+  const remaining = 500 - inputTextArea.value.length;
+  const color = remaining < 500 * 0.1 ? 'red' : null;
+
+  remainingChars.textContent = `${remaining} characters remaining`;
+  remainingChars.style.color = color;
+});
