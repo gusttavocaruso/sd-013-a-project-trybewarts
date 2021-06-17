@@ -85,10 +85,9 @@ main {
   display: flex;
 }
 
-.family-choice, .wish-to-learn {
+.family-choice , .wish-to-learn {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .second-section-main {
