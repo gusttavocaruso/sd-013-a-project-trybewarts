@@ -57,8 +57,8 @@ inputTextArea.addEventListener('input', () => {
 
 /* Retorna a família selecionada (string) */
 function familyChecked() {
-  for(let i = 0; i < family.length; i += 1) {
-    if(family[i].checked) {
+  for (let i = 0; i < family.length; i += 1) {
+    if (family[i].checked) {
       return family[i].value;
     }
   }
@@ -67,8 +67,8 @@ function familyChecked() {
 /* Retorna os conteúdos selecionados (string) */
 function subjectsChecked() {
   let subjectList = '';
-  for(let i = 0; i < subjects.length; i += 1) {
-    if(subjects[i].checked) {
+  for (let i = 0; i < subjects.length; i += 1) {
+    if (subjects[i].checked) {
       subjectList += `${subjects[i].value}, `;
     }
   }
@@ -85,9 +85,9 @@ function rateChecked() {
 }
 
 function formSubmit() {
-  form.innerHTML = "";
+  form.innerHTML = '""';
   form.style.backgroundImage = 'none';
-  form.innerHTML += `<h2 style="margin-bottom:20px;">Resultados</h2>`;
+  form.innerHTML += `<h2 style='margin-bottom:20px;'>Resultados</h2>`;
   form.innerHTML += `<p>Nome: ${inputName.value} ${surname.value}</p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
   form.innerHTML += `<p>Casa: ${house.value}</p>`;

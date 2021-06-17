@@ -211,7 +211,7 @@ main {
 .comment-container #counter {
   color: rgb(26, 26, 26);
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 900;
   margin-top: 8px;
   text-align: right;
 }
@@ -245,13 +245,15 @@ main {
   align-items: center;
 }
 
-@media screen and (max-width: 1134px) {
+@media screen and ( max-width : 1134px ) {
+
   #trybewarts-forms-logo {
     margin-bottom: 3em;
   }
 }
 
-@media screen and (max-width: 521px) {
+@media screen and ( max-width : 521px ) {
+
   #trybewarts-header-title {
     font-size: 0;
   }
