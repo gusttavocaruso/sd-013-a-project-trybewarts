@@ -143,3 +143,17 @@ hr {
   width: 465px;
   height: 74px;
 }
+
+#check {
+  display: flex;
+  justify-content: start;
+  width: 400px;
+  flex-flow: row nowrap;
+  margin-right: 70px;
+  padding: 5px;
+}
+
+#agreement {
+  margin-left: 5px;
+  margin-top: 3px;
+}
