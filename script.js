@@ -3,19 +3,19 @@ const validLogin = 'tryber@teste.com';
 const validPassword = '123456';
 
 /* Elementos */
-const inputLogin = document.getElementById('input-login');
-const inputPassword = document.getElementById('input-password');
-const inputAgree = document.getElementById('agreement');
+const login = document.getElementById('input-login');
+const password = document.getElementById('input-password');
+const agree = document.getElementById('agreement');
 const inputTextArea = document.getElementById('textarea');
 const remainingChars = document.getElementById('counter');
 
 /* Botões */
-const loginBtn = document.getElementById('login-btn');
-const submitBtn = document.getElementById('submit-btn');
+const loginBtn = document.querySelector('#login-btn');
+const submitBtn = document.querySelector('#submit-btn');
 
 /* Função para autenticar login */
 function authLogin() {
-  if (inputLogin.value !== validLogin || inputPassword.value !== validPassword) {
+  if (login.value !== validLogin || password.value !== validPassword) {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
@@ -25,13 +25,13 @@ loginBtn.addEventListener('click', authLogin);
 
 /* Função para habilitar envio de formulário */
 function enableSubmit() {
-  if (inputAgree.checked) {
+  if (agree.checked) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
   }
 }
-inputAgree.addEventListener('change', enableSubmit);
+agree.addEventListener('change', enableSubmit);
 
 /* Event listener no input para executar a função de count */
 inputTextArea.addEventListener('input', () => {

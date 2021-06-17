@@ -41,7 +41,7 @@ input , label , select , textarea , #reset-body , #login-btn , #submit-btn {
   cursor: url('https://cdn.custom-cursor.com/db/pointer/32/Harry_Potter_Pointer.png'), default;
 }
 
-label , span {
+#evaluation-form , header , label , span {
   user-select: none;
 }
 
@@ -118,6 +118,7 @@ main {
 }
 
 .names-container {
+  background-color: none;
   display: flex;
   margin: 10px 0;
 }
