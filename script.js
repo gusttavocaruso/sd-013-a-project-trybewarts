@@ -1,3 +1,15 @@
+//requirement 18 
+var sendButton = document.querySelector('#submit-btn');
+sendButton.disabled = true;
+
+function submitChecked(){
+const checkedAgreement = document.querySelector('#agreement');  
+  if(checkedAgreement.checked){    
+   sendButton.disabled = false
+  }else{
+   sendButton.disabled = true
+  }
+}
 const btnLogin = document.getElementById('botao');
 const btnOn = document.getElementById('agreement');
 function checkLogin() {
@@ -8,8 +20,8 @@ function checkLogin() {
   } else {
     alert('Login ou senha inválidos.');
   }
-}
 
+}
 function buttonOn() {
   const button = document.getElementById('submit-btn');
 

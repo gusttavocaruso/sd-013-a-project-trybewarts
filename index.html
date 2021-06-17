@@ -9,6 +9,36 @@
     <script defer type="text/javascript" src="script.js"></script>
   </head>
   <body>
+      <main>
+        <!-- Requeriment 08 -->
+        <label for="'input-name'">
+          <input type="text"  placeholder="Nome" id = 'input-name' name = 'signup'>
+        </label>
+        <label for="'input-lastname'">
+          <input type="text"  placeholder="Sobrenome" id = 'input-lastname' name = 'signup'>
+        </label>
+        <label for="'input-email'">
+          <input type="text" placeholder = "Email" id = 'input-email' name = 'signup'>
+          <label id = 'label-rate' for = 'rate'>
+            <p>Como você avalia a Trybewarts?</p>
+            
+              <input type="radio" value = '1' name = 'rate'> 1
+              <input type="radio" value = '2' name = 'rate'> 2
+              <input type="radio" value = '3' name = 'rate'> 3
+              <input type="radio" value = '4' name = 'rate'> 4
+              <input type="radio" value = '5' name = 'rate'> 5
+              <input type="radio" value = '6' name = 'rate'> 6
+              <input type="radio" value = '7' name = 'rate'> 7
+              <input type="radio" value = '8' name = 'rate'> 8
+              <input type="radio" value = '9' name = 'rate'> 9
+              <input type="radio" value = '10' name = 'rate'> 10
+           
+          </label>
+        </label>
+        <!-- Requeriment 14 to 15 -->
+        
+        <div><label for="textarea" class = 'textarea'>Deixe seu comentário:
+          <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>          
     <header class="header">
       <img
         src="images/trybewarts-header-logo.svg"
@@ -175,9 +205,19 @@
         </div>
         <div id = 'agreement-container'>
           <label for="agreement" id = 'label-infos'> Você concorda com o uso das informações acima?
-            <input type="checkbox" name="agreement" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement" onclick="submitChecked()">
           </label>
+          <!-- requirement 17 -->
+          <div>
+          <button type = 'submit' id = 'submit-btn'>Enviar</button>
+          <div></div>
         </div>
+      </main>
+          <!-- requirement 19 -->
+      <footer>
+        Direitos reservados à Trybewarts©
+      </footer>
+      <script src = 'script.js'></script>  
         <button type="submit"
         id="submit-btn" disabled="true">Enviar</button>
       </form>
