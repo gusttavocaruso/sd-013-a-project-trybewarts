@@ -45,7 +45,7 @@ main {
   flex-flow: row wrap;
 }
 
-#session1 #input-lastname, #input-email, #input-name {
+#session1 #input-lastname , #input-email , #input-name {
   width: 50%;
 }
 
@@ -58,4 +58,9 @@ main {
   display: flex;
   flex-flow: column;
   width: 50%;
+}
+
+#session3 {
+  display: flex;
+  align-items: center;
 }
