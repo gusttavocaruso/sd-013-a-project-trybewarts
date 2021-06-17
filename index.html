@@ -19,25 +19,39 @@
       </form>  
     </header>
     <main>
-    <fieldset class="firstForm">
-    <form action="#" method="GET" id="evaluation-form">
-        <input type="text" name="Nome" placeholder="Nome" id="input-name">
-        <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
-        <input type="email" name="Email" placeholder="Email" id="input-email">
-    </form>
-  </fieldset>
+      <fieldset class="firstForm">
+          <form action="#" method="GET" id="evaluation-form">
+            <div class="allingNames">
+              <input type="text" name="Nome" placeholder="Nome" id="input-name">
+              <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+            </div>
+            <div class="allingEmailHouse">
+              <input type="email" name="Email" placeholder="Email" id="input-email">
+                  <select name="" id="house">
+                    <option value="0">Casa:</option>
+                    <option value="1" id="gitnoria-house">Gitnória</option>
+                    <option value="2" id="reactpuff-house">Reactpuff</option>
+                    <option value="3" id="corvinode-house">Corvinode</option>
+                    <option value="4" id="pytherina-house">Pytherina</option>
+                  </select>
+              </div>
+              <label for="family" id="label-family">Qual sua família?</label>
+                <input type="radio" name="family" value="Frontend">Frontend
+                <input type="radio" name="family" value="Backend">Backend
+                <input type="radio" name="family" value="FullStack">FullStack 
+            
+          </form>
+      </fieldset>
+      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </main>
   </div>        
-  <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+  
   <div>
-    <label for="house">Casa:</label>
-    <select name="" id="house">
-        <option value="0">Casa:</option>
-        <option value="1" id="gitnoria-house">Gitnória</option>
-        <option value="2" id="reactpuff-house">Reactpuff</option>
-        <option value="3" id="corvinode-house">Corvinode</option>
-        <option value="4" id="pytherina-house">Pytherina</option>
+    
   </div>
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
  <script src="script.js"></script>  
 </body>
 </html>

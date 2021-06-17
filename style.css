@@ -43,3 +43,9 @@ main {
   height: 500px;
 }
 
+.allingNames {
+  display: flex;
+}
+.allingEmailHouse {
+  display: flex;
+}
