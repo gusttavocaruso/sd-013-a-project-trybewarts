@@ -80,7 +80,8 @@ main {
   padding-bottom: 10px;
 }
 
-.input-info input , .input-info2 input {
+.input-info input,
+.input-info2 input {
   width: 330px;
   height: 40px;
   margin: 2px;
@@ -99,7 +100,7 @@ main {
 }
 
 #house {
-  width: 288px;
+  width: 330px;
   height: 40px;
   border-radius: 10px;
   border: none;
