@@ -1,43 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 60px 0;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: rgb(53, 0, 53);
+  width: 100%;
+  color: white;
+  font-size: 20px;
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
+  height: 650px;
+  margin: auto;
 }
 
 .header {
+
+  /* position: absolute; */
+  width: 100%;
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 3px 7px black;
+}
+
+.header h1 {
+  color: white;
+  width: content;
 }
 
 .trybewarts-login {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0 100px;
+  max-width: 1000px;
+  color: white;
+  font-weight: 800;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+}
+
+#login {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+#pass {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+#topBar {
+  padding: 10px;
+  width: 80px;
+  border-radius: 100px;
+  margin: 0 10px;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin: 0 20px 20px 70px;
+}
+
+#input-name {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+  width: 320px;
+}
+
+#input-lastname {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+  width: 320px;
+}
+
+#input-email {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 5px;
+  width: 320px;
+}
+
+#house {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 5px;
+  width: 320px;
+}
+
+#label-family , #label-content , #texto label {
+  font-size: 26px;
+  padding: 10px;
 }
 
 #familias {
   display: flex;
   flex-direction: column;
+  padding: 0 0 20px;
+}
+
+#familias label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+label p {
+  margin-left: 40px;
+}
+
+/* Início da estilização dos radio buttons */
+#familias input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%;
+}
+
+#familias label:hover .checkmark {
+  background-color: rgb(206, 206, 206);
+}
+
+#familias input:checked ~ .checkmark {
+  background-color: gray;
+}
+
+#familias label .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#familias label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Final da estilização dos radio buttons; */
+.switch {
+  appearance: none;
+  height: 20px;
+  width: 50px;
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 7px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.switch:before {
+  content: '';
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  position: absolute;
+  border-radius: 100%;
+  border: rgb(83, 0, 138) solid 1px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.switch:checked {
+  background-color: rgb(95, 0, 119);
+}
+
+.switch:checked:before {
+  border-color: blue;
+  transform: translateX(30px);
 }
 
 #conteudos {
   display: flex;
+  flex-flow: row wrap;
+  font-size: 20px;
+  justify-content: space-between;
+  margin: 10px 0 20px 5px;
+  width: 430px;
 }
+
+#conteudos label {
+  width: 140px;
+  font-weight: 800;
+}
+
 
 #score {
   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#label-rate {
+  font-size: 26px;
+  padding: 0 10px 15px;
+}
+
+#avaliacao {
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 24px;
+  height: 100px;
+}
+
+#avaliacao label {
+  width: 30px;
+  margin-left: 30px;
+}
+
+/* Início da estilização dos radio buttons da avaliacao */
+#avaliacao label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioDois {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%;
+}
+
+#avaliacao label:hover .radioDois {
+  background-color: rgb(207, 207, 207);
+}
+
+#avaliacao input:checked ~ .radioDois {
+  background-color: gray;
+}
+
+#avaliacao label .radioDois:after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#avaliacao label input:checked ~ .radioDois:after {
+  display: block;
+}
+
+
+/* Final da estilização dos radio buttons da avaliacao; */
+#texto {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+
+#textarea {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.3rem;
+  min-height: 60px;
+  resize: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px black;
+  border: none;
+}
+
+#counter {
+  margin-right: 10px;
 }
 
 #infos {
   display: flex;
+  align-items: center;
+}
+
+#label-infos {
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+#submit-btn {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#done {
+  padding: 100px 40px;
+  background-color: rgb(189, 189, 189);
+}
+
+#done h1 {
+  margin-bottom: 15px;
+}
+
+#done p {
+  font-size: 20px;
+  margin-top: 7px;
 }

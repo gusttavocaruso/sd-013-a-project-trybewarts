@@ -35,9 +35,8 @@ function contaCaracteres() {
 
 textArea.addEventListener('keyup', contaCaracteres);
 
+// https://stackoverflow.com/questions/20068487/getting-multiple-selected-checkbox-values-in-a-string-in-javascript-and-php
 function montaString(conteudoNode) {
-  // https://stackoverflow.com/questions/20068487/getting-multiple-selected-checkbox-values-in-a-string-in-javascript-and-php
-
   let vals = '';
 
   for (let i = 0, n = conteudoNode.length; i < n; i += 1) {
@@ -65,10 +64,18 @@ function pegaConteudo(event) {
   const avaliacao = document.querySelector('input[name="rate"]:checked').value;
   const comentario = textArea.value;
   const formCompleto = document.querySelector('#evaluation-form');
-  formCompleto.innerHTML = `<p>Nome: ${nome} ${sobrenome}</p>
-  <p>Email: ${email}</p><p>Casa: ${casa}</p><p>Família: ${familia}</p>
-  <p>Matérias: ${conteudosString}</p><p>Avaliação: ${avaliacao}</p>
-  <p>Observações: ${comentario}</p>`;
+  formCompleto.innerHTML = `<div id="done"><h1>Resultado do Forms</h1><hr>
+  <strong><p>Nome:</strong> ${nome} ${sobrenome}</p>
+  <strong><p>Email:</strong> ${email}</p>
+  <strong><p>Casa:</strong> ${casa}</p><p><strong>Família:</strong> ${familia}</p>
+  <p><strong>Matérias:</strong> ${conteudosString}</p><p><strong>Avaliação:</strong> ${avaliacao}</p>
+  <p><strong>Observações:</strong> ${comentario}</p></div>`;
 }
 
 submitBtn.addEventListener('click', pegaConteudo);
+
+function autosize(event) {
+  event.target.style.cssText = `height:${event.target.scrollHeight}px`;
+}
+
+textArea.addEventListener('keydown', autosize);
