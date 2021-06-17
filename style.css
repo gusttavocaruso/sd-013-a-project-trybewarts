@@ -52,6 +52,10 @@ body {
   flex-shrink: px;
 }
 
+section {
+  margin-right: 20px;
+}
+
 .primeiro-form {
   display: flex;
   flex-flow: nowrap row;

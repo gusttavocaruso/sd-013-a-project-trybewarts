@@ -30,7 +30,7 @@
       </section>
       <section class="segundo-form">
       <input type="text" name="" id="input-email" placeholder="Email" class="input-text">
-      <select name="" id="house"  class="input-select">Casa
+      <select name="" id="house" class="input-select">Casa
         <option id="gitnoria-house">Gitnória</option>
         <option id="reactpuff-house">Reactpuff</option>
         <option id="corvinode-house">Corvinode</option>
@@ -39,16 +39,16 @@
       </section>
     <section class="label-rate">
   <label id="label-rate"> Como você avalia a Trybewarts? </label>
-  <input type="radio" name = "rate" value="1"> 1
-  <input type="radio" name = "rate" value="2"> 2
-  <input type="radio" name = "rate" value="3"> 3
-  <input type="radio" name = "rate" value="4"> 4
-  <input type="radio" name = "rate" value="5"> 5
-  <input type="radio" name = "rate" value="6"> 6
-  <input type="radio" name = "rate" value="7"> 7
-  <input type="radio" name = "rate" value="8"> 8
-  <input type="radio" name = "rate" value="9"> 9
-  <input type="radio" name = "rate" value="10"> 10
+  <input class="radioAvalia" type="radio" name = "rate" value="1"> 1
+  <input class="radioAvalia" type="radio" name = "rate" value="2"> 2
+  <input class="radioAvalia" type="radio" name = "rate" value="3"> 3
+  <input class="radioAvalia" type="radio" name = "rate" value="4"> 4
+  <input class="radioAvalia" type="radio" name = "rate" value="5"> 5
+  <input class="radioAvalia" type="radio" name = "rate" value="6"> 6
+  <input class="radioAvalia" type="radio" name = "rate" value="7"> 7
+  <input class="radioAvalia" type="radio" name = "rate" value="8"> 8
+  <input class="radioAvalia" type="radio" name = "rate" value="9"> 9
+  <input class="radioAvalia" type="radio" name = "rate" value="10"> 10
 
     </section>
 
@@ -59,13 +59,13 @@
     <section class="div-family">
       <label id="label-family">Qual sua família?</label>
       <label for="front-end">
-        <input id="front-end" type="radio" name="family" value="Frontend">Frontend
+        <input class="radioFamilia" id="front-end" type="radio" name="family" value="Frontend">Frontend
       </label>
       <label for="back-end">
-        <input id="back-end" type="radio" name="family" value="Backend">Backend
+        <input class="radioFamilia" id="back-end" type="radio" name="family" value="Backend">Backend
       </label>
       <label for="fullstack">
-        <input id="fullstack" type="radio" name="family" value="FullStack">FullStack
+        <input class="radioFamilia" id="fullstack" type="radio" name="family" value="FullStack">FullStack
       </label>
     </section>
 
@@ -73,22 +73,22 @@
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <section class="div-check-box">
         <label for="hofs">
-          <input id="hofs" type="checkbox" value="HoFs">HoFs
+          <input class="subject checkbosAprender" id="hofs" type="checkbox" value="HoFs">HoFs
         </label>
         <label for="jest">
-          <input id="jest" type="checkbox" value="Jest">Jest
+          <input class="subject checkbosAprender" id="jest" type="checkbox" value="Jest">Jest
         </label>
         <label for="promises">
-          <input id="promises" type="checkbox" value="Promises">Promises
+          <input class="subject checkbosAprender" id="promises" type="checkbox" value="Promises">Promises
         </label>
         <label for="react">
-          <input id="react" type="checkbox" value="React">React
+          <input class="subject checkbosAprender" id="react" type="checkbox" value="React">React
         </label>
         <label for="sql">
-          <input id="sql" type="checkbox" value="SQL">SQL
+          <input class="subject checkbosAprender" id="sql" type="checkbox" value="SQL">SQL
         </label>
         <label for="python">
-          <input id="python" type="checkbox" value="Python">Python
+          <input class="subject checkbosAprender" id="python" type="checkbox" value="Python">Python
         </label>
       </section>
     </section>
@@ -109,6 +109,7 @@
   </section>
 
   </form>
+
   <aside class="trybewarts-logo-aside">
     <img id="trybewarts-forms-logo" class="trybewarts-logo" src="images/trybewarts-colored.svg" alt="">
   </aside>
