@@ -8,5 +8,5 @@ function tryLogin() {
   }
 }
 
-const button = document.getElementById('button');
-button.addEventListener('click', tryLogin, false);
+const loginButton = document.getElementById('login-button');
+loginButton.addEventListener('click', tryLogin, false);

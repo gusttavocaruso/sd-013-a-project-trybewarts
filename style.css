@@ -25,7 +25,15 @@
   display: flex;
 }
 
-#button {
+#login , #pwd {
+  width: 160px;
+  height: 45px;
+  margin: 6px;
+  padding: 0 9px;
+  border-radius: 8px;
+}
+
+#login-button {
   align-items: center;
   appearance: button;
   background-color: rgb(78, 44, 131);
@@ -39,12 +47,4 @@
   padding: 0 7px;
   text-decoration: none;
   width: 150px;
-}
-
-#login , #pwd {
-  width: 160px;
-  height: 45px;
-  margin: 6px;
-  padding: 0 9px;
-  border-radius: 8px;
 }
