@@ -42,43 +42,49 @@
 
       </div>
       <div id="div-family-tecnologies-container">
-        <div for="family" id="label-family">
-          <h5>Qual Sua Família?</h5>
+        <div class="form-control" id="familia-forms">
+          <label for="family" id="label-family">Qual sua família?</label>
           <div>
-            <input type="radio" class="form-check-input" value="Frontend" name="family" id="Frontend">Família Frontend
+            <label for="Frontend">
+              <input type="radio" class="form-check-input" value="Frontend" name="family" id="Frontend">Família Frontend
+            </label>
+            </div>
+          <div>
+            <label for="Backend">
+              <input type="radio" class="form-check-input" value="Backend" name="family" id="Backend">Família Backend
+            </label>
           </div>
           <div>
-            <input type="radio" class="form-check-input" value="Backend" name="family" id="Backend">Família Backend
-          </div>
-          <div>
-            <input type="radio" class="form-check-input" value="FullStack" name="family" id="FullStack">Família FullStack
+            <label for="FullStack">
+              <input type="radio" class="form-check-input" value="FullStack" name="family" id="FullStack">Família FullStack
+            </label>
           </div>
         </div>
         <div id="tecnologies">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div id="checkboxes">
             <div class="checkbox-box">
-              <label for="">
-                <input type="checkbox" value="HoFs" class="form-check-input subject">HoFs
+              <label for="HoFs">
+                <input type="checkbox" id="HoFs" value="HoFs" class="form-check-input subject">HoFs
               </label>
-              <label for=""">
-                <input type="checkbox" value="Jest" class="form-check-input subject">Jest
-              </label>
-            </div>
-            <div class="checkbox-box">
-              <label for="">
-                <input type="checkbox" value="Promises" class="form-check-input subject">Promises
-              </label>
-              <label for="">
-                <input type="checkbox" value="React" class="form-check-input subject">React
+              <label for="Jest">
+                <input type="checkbox" id="Jest" value="Jest" class="form-check-input subject">Jest
               </label>
             </div>
             <div class="checkbox-box">
-              <label for="">
-                <input type="checkbox" value="SQL" class="form-check-input subject">SQL
+              <label for="Promises">
+                <input type="checkbox" id="Promises" value="Promises" class="form-check-input subject">Promises
               </label>
-              <label for="">
-                <input type="checkbox" value="Python" class="form-check-input subject">Python
+              <label for="React">
+                <input type="checkbox" id="React" value="React" class="form-check-input subject">React
+              </label>
+            </div>
+            <div class="checkbox-box">
+              <label for="SQL">
+                <input type="checkbox" id="SQL" value="SQL" class="form-check-input subject">SQL
+              </label>
+              <label for="Python">
+                <input type="checkbox" id="Python" value="Python" class="form-check-input subject">Python
               </label>
             </div>
 
@@ -88,8 +94,7 @@
       <div id="radio-rate-textarea-agree">
 
         <div>
-          <div><label for="" id="label-rate"></label>Como você avalia a Trybewarts?</div>
-          <div id="radio-rating">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
             <input type="radio" class="form-check-input" value="1" name="rating">1
             <input type="radio" class="form-check-input" value="2" name="rating">2
             <input type="radio" class="form-check-input" value="3" name="rating">3
@@ -100,19 +105,16 @@
             <input type="radio" class="form-check-input" value="8" name="rating">8
             <input type="radio" class="form-check-input" value="9" name="rating">9
             <input type="radio" class="form-check-input" value="10" name="rating">10
-          </div>
         </div>
 
         <div class="form-floating">
           <textarea name="" id="form-text-area" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
-          <label class="textarea" for="floatingTextarea">Deixe seu cometário:</label>
+          <label class="textarea" for="floatingTextarea">Deixe seu comentário:</label>
         </div>
-        <div id="agree">
-          <p>Voce concorda com as informações acima?</p>
-          <input type="checkbox" id="agreement" class="form-check-input">
-        </div>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement" class="form-check-input">
       </div>
-      <button type="submit" id="btn" class="btn btn-success">ENVIAR</button>
+      <button type="submit" id="submit-btn" class="btn btn-success" disabled >Enviar</button>
     </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="Logo Grande Trybewarts">
   </main>

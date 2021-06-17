@@ -12,13 +12,17 @@ main {
   flex-flow: row wrap;
 }
 
+#input-name , #input-lastname , #input-email , #house {
+  width: 40%;
+}
+
 .header {
   color: white;
   background-color: rgb(50, 167, 145);
   display: flex;
   width: 100%;
   height: 100px;
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px black;
   justify-content: space-between;
 }
 
@@ -28,7 +32,6 @@ main {
   max-width: 100%;
   border: white 1px solid;
   justify-content: space-evenly;
-  align-items: center;
   width: 100vw;
 }
 
@@ -48,6 +51,10 @@ main #evaluation-form {
 }
 
 #input-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap;
   padding: 25px;
 }
 
@@ -71,7 +78,7 @@ main #evaluation-form {
   margin-left: 7px;
 }
 
-#input-container input {
+#radio-rate-textarea-agree div input {
   width: 40%;
 }
 
@@ -87,26 +94,15 @@ main #trybewarts-forms-logo {
   flex-direction: row;
 }
 
-#input-container {
-  display: flex;
-  width: 100%;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
 #label-family {
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
   align-items: flex-start;
+  width: 40%;
 }
 
 h2 {
   display: block;
-}
-
-#label-family {
-  width: 40%;
 }
 
 #checkboxes {
@@ -124,7 +120,7 @@ h2 {
 
 }
 
-#login-input, #pass-input {
+#login-input , #pass-input {
   max-width: 30%;
   margin-right: 5%;
   padding: 1%;
@@ -173,7 +169,7 @@ h2 {
   height: 145px;
 }
 
-#btn {
+#submit-btn {
   margin: 25px;
   color: white;
   background-color: rgb(103, 9, 197);
@@ -182,4 +178,8 @@ h2 {
 #agree {
   display: flex;
   justify-content: flex-start;
+}
+
+#familia-forms {
+  width: 80%;
 }
