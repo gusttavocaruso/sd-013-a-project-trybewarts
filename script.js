@@ -1,6 +1,8 @@
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
 const campoTexto = document.querySelector('#textarea');
+const botaoSubmit = document.querySelector('#submit-btn');
+const form = document.querySelector('#submit-btn');
 
 function verificaLogin() {
   const campoUser = document.querySelector('#email').value;
@@ -29,6 +31,18 @@ function contaDigitos() {
   counterConst.innerHTML = calculo;
 }
 
+function apareceInfo() {
+  document.querySelector('#evaluation-form').remove();
+  const main = document.querySelector('main');
+  const section = document.createElement('section');
+
+  const nome = document.querySelector('#input-name').value;
+
+  section.innerHTML = `Nome: ${nome}`;
+  main.appendChild(section);
+}
+
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
 campoTexto.addEventListener('keyup', contaDigitos);
+botaoSubmit.addEventListener('click', apareceInfo);
