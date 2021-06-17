@@ -46,6 +46,11 @@ main {
 .allingNames {
   display: flex;
 }
+
 .allingEmailHouse {
+  display: flex;
+}
+
+.allingSatisfaction {
   display: flex;
 }
