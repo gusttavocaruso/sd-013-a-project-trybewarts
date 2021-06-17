@@ -22,15 +22,14 @@ function habilitaBotao() {
     botaoTemp.disabled = true;
   }
 }
-function contaDigitos(){
+
+function contaDigitos() {
   const counterConst = document.querySelector('#counter');
   const inputLength = campoTexto.value.length;
   const maxChars = 500;
   let calculo = maxChars - inputLength;
   counterConst.innerHTML = calculo;
 }
-
-
 
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
