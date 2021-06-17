@@ -60,22 +60,33 @@
     </div>
     <div id="numbers">
       <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-      <input type="radio" name="rate" id="" value="1">1
-      <input type="radio" name="rate" id="" value="2">2
-      <input type="radio" name="rate" id="" value="3">3
-      <input type="radio" name="rate" id="" value="4">4
-      <input type="radio" name="rate" id="" value="5">5
-      <input type="radio" name="rate" id="" value="6">6
-      <input type="radio" name="rate" id="" value="7">7
-      <input type="radio" name="rate" id="" value="8">8
-      <input type="radio" name="rate" id="" value="9">9
-      <input type="radio" name="rate" id="" value="10">10
+      <input type="radio" name="rate" value="1">1
+      <input type="radio" name="rate" value="2">2
+      <input type="radio" name="rate" value="3">3
+      <input type="radio" name="rate" value="4">4
+      <input type="radio" name="rate" value="5">5
+      <input type="radio" name="rate" value="6">6
+      <input type="radio" name="rate" value="7">7
+      <input type="radio" name="rate" value="8">8
+      <input type="radio" name="rate" value="9">9
+      <input type="radio" name="rate" value="10">10
     </div>
-    <label for="" class="textarea">Deixe seu comentário:</label>
-    <textarea name="" id="comment" cols="30" rows="10" maxlength="500" placeholder="500"></textarea>
+
+    <!-- Requisito 20 -->
+    <label for="comment" class="textarea">Deixe seu comentário:</label>
+    <textarea name="textarea" id="comment" cols="30" rows="10" placeholder="500" maxlength="500"></textarea>
+    <span id="counter">500</span>
+    <!-- final Requisito 20 -->
+
+    <div id="agree">
+      <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" name="" id="agreement">
+    </div>
+    <button type="submit" id="submit-btn">Enviar</button>
   </form>
     <img src="images/trybewarts-colored.svg" alt="Um logo da Trybewarts" id="trybewarts-forms-logo">
   </main>
+  <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
 </body>
 </html>

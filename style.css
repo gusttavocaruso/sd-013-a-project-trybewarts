@@ -61,12 +61,12 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin-top: 180px;
+  margin-top: 130px;
 }
 
 .evaluation-form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -124,4 +124,33 @@ main {
 
 #comment{
   width:70%;
+}
+
+#agree {
+  display: flex;
+  align-items: center;
+}
+
+#agreement {
+  width: 20px;
+}
+
+#submit-btn {
+  width: 110px;
+  height:30px;
+  border-radius: 8px;
+  border: none;
+  margin: 3px;
+  background-color: #4e2c83 ;
+  color:white;
+}
+
+footer {
+  bottom: 0;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  color: white;
+  text-align: center;
 }
