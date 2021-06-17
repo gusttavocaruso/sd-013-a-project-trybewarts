@@ -67,8 +67,8 @@ function pegaConteudo(event) {
   formCompleto.innerHTML = `<div id="done"><h1>Resultado do Forms</h1><hr>
   <strong><p>Nome:</strong> ${nome} ${sobrenome}</p>
   <strong><p>Email:</strong> ${email}</p>
-  <strong><p>Casa:</strong> ${casa}</p><p><strong>Família:</strong> ${familia}</p>
-  <p><strong>Matérias:</strong> ${conteudosString}</p><p><strong>Avaliação:</strong> ${avaliacao}</p>
+  <strong><p>Casa:</strong> ${casa}</p><p><strong>Família:</strong> ${familia}</p><p>
+  <strong>Matérias:</strong> ${conteudosString}</p><p><strong>Avaliação:</strong> ${avaliacao}</p>
   <p><strong>Observações:</strong> ${comentario}</p></div>`;
 }
 
