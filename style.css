@@ -4,14 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  user-select: none;
 }
 
 .header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
   width: 100vw;
   height: 10vh;
-  background-color: rgb(50, 167, 145);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -20,8 +21,9 @@
 }
 
 .trybewarts-header-logo {
-  width: 8vw;
-  height: 8vh;
+  height: 50px;
+  width: 50px;
+  margin: 0px 20px 0px 0px;
 }
 
 #trybewarts-header-title {
@@ -35,6 +37,7 @@ input {
 
 .trybewarts-login {
   display: flex;
+  margin-right: 120px;
 }
 
 header input::placeholder {
@@ -66,35 +69,42 @@ input:focus {
 }
 
 main {
-  width: 100vw;
-  height: 90vh;
   display: flex;
+  margin-left: 120px;
 }
 
-#div1 {
-  width: 675px;
-}
 
 #evaluation-form {
   display: flex;
-  flex-flow: column wrap;
-  margin-top: 10px;
-  margin-left: 20px;
+  width: 675px;
+  flex-direction: column;
 }
 
-#evaluation-form input {
-  width: 18vw;
+ .cards input {
+  width: 99%;
   height: 35px;
-  margin-top: 20px;
-  margin-right: 20px;
-  border: 2px solid black;
+  margin-top: 4px;
+  margin-right: 2px;
+  border: 2px solid rgb(131, 120, 120);
+} 
+
+.container-text{
+  text-align: center;
+  margin-top: 15px;
 }
 
-#image {
-  width: 50vw;
+.conatiner-cards{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 675px;
+}
+
+.cards{
+    float: left;
+    width: 49%;
+    margin: 2px;
+    margin: 0;
 }
 
 #trybewarts-forms-logo {
@@ -104,9 +114,112 @@ main {
 select {
   padding: 5px;
   border-radius: 5px;
-  width: 190px;
+  width: 14.7vw;
+  background-color: white;
+  border: 2px solid black;
 }
+
 select:focus {
   box-shadow: none;
   outline: none;
+}
+
+.familia-inputs{
+  border: 1px solid black;
+  width: 675px;
+  background-color: rgb(185, 192, 192);
+  margin-top: 120px;
+  display: flex;
+}
+
+.whats-family{
+  min-width: 268.75px;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+}
+
+.whats-work{
+  min-width: 406.25px;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+}
+
+.familia-inputs input {
+  margin:0 12px 0 0;
+  vertical-align: middle;
+  width: 15px;
+  margin-left: 5px;
+}
+
+/* --------- */
+
+#div2 {
+  margin-top: 50px;
+  display: flex;
+  align-self: stretch;
+  max-width: 38vw;
+  flex-direction: column;
+}
+#textarea {
+  border: 2px solid black;
+  border-radius: 3px;
+}
+#div2 label {
+  margin-top: 20px;
+  width: 40vw;
+  font-size: 18px;
+}
+#div2 label:hover {
+  cursor: pointer;
+}
+#div2 input {
+  margin:0 12px 0 0;
+  vertical-align: middle;
+  width: 15px;
+  margin-left: 5px;
+}
+#submit-btn {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+#submit-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+footer{
+  text-align: center;
+  margin-top: 20px;
+  width: 100vw;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(50, 167, 145);
+}
+
+footer h3 {
+  margin-top: 7px;
+}
+
+.div3 input {
+    margin:0 12px 0 0;
+    vertical-align: middle;
+    width: 15px;
+    margin-left: 1px;
+}
+
+.div3 {
+  display: flex;
+}
+
+#label{
+  width: 15vw;
+  font-size: small;
+  margin-top: 10px;
+}
+
+#radio{
+  width: 35vw;
 }
