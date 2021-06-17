@@ -116,7 +116,15 @@ h2 {
 }
 
 #checkboxes {
+  border: 1px solid red;
   display: flex;
+  flex-direction: column-reverse;
+  flex-flow: wrap;
+  justify-content: flex-end;
+}
+
+#checkboxes input {
+  margin-left: 80px;
 }
 
 #login-input, #pass-input {
