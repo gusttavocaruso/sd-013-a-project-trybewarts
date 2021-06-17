@@ -50,3 +50,25 @@
   align-items: center;
   display: flex;
 }
+
+/* 19 - Crie um rodapé no final da página
+  Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
+  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: center;
+  margin-top: auto;
+}
