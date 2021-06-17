@@ -1,4 +1,6 @@
 const getBtnLogin = document.querySelector('#btn-login');
+const submitbtn = document.getElementById('submit-btn');
+const agreement = document.getElementById('agreement');
 
 getBtnLogin.addEventListener('click', () => {
   const getInputLogin = document.querySelector('#input-login');
@@ -8,4 +10,10 @@ getBtnLogin.addEventListener('click', () => {
   } else {
     alert('Olá, Tryber!');
   }
+});
+
+// codigo refenciado (https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button)
+submitbtn.disabled = true;
+agreement.addEventListener('click', () => {
+  submitbtn.disabled = !submitbtn.disabled;
 });
