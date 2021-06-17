@@ -65,6 +65,15 @@ main {
   height: 500px;
 }
 
+#textarea {
+  display: flex;
+  border: 1px solid rgb(80, 0, 145);
+}
+
+.textarea {
+  display: flex;
+}
+
 footer {
   background-color: rgb(83, 87, 95);
   margin-bottom: 20px;
