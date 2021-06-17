@@ -78,14 +78,15 @@ main {
 }
 
 #input-email {
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 10px;
   padding: 10px;
   border: 0;
   border-radius: 5px;
 }
 
 #house {
-  width: 160px;
+  width: 150px;
   padding: 10px;
   border: 0;
   border-radius: 5px;
