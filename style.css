@@ -91,7 +91,6 @@ h1 {
 }
 
 label {
-  font-weight: bold;
   font-size: 0.8rem;
 }
 
@@ -115,9 +114,4 @@ input {
 #full-container {
   display: flex;
   justify-content: space-around;
-}
-
-#evaluation-form input[type="text"] {
-  padding: 7px;
-  width: 30%;
 }
