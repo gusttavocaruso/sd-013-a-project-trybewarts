@@ -7,6 +7,7 @@
 .header {   
   display: flex;
   background-color: rgb(50, 167, 145);
+  color: white;
   width: 100%;  
   justify-content: space-between;
   align-items: center;
@@ -21,23 +22,29 @@
 }
 
 #formOne {
-  display: flex;
-  
   align-self: right;
+  display: flex;  
 }
 
-#mainId{
+main {
   display: flex;
 }
 
-#evaluation-form{
-  
+#evaluation-form{  
+  display: flex;  
+  flex-direction: column;  
+  width: 675px;    
+}
+
+#fullName {  
   display: flex;
-  width: 675px;
-  flex-direction: column;
+}
+
+#userInfo {  
+  display: flex;
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
   float: right;
+  height: 500px;
 }
