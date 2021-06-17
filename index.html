@@ -33,7 +33,7 @@
 
         <input type="email" class="form-control" placeholder="Email" name="name" id="input-email">
 
-        CASA <select name="" class="form-select" id="house">
+        CASA<select name="" class="form-select" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house" selected>Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -43,7 +43,7 @@
       </div>
       <div id="div-family-tecnologies-container">
         <div for="family" id="label-family">
-          <h4>Qual Sua Família?</h4>
+          <h5>Qual Sua Família?</h5>
           <div>
             <input type="radio" class="form-check-input" value="Frontend" name="family" id="Frontend">Família Frontend
           </div>
@@ -57,12 +57,30 @@
         <div id="tecnologies">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div id="checkboxes">
-            <input type="checkbox" value="HoFs" class="form-check-input subject">HoFs
-            <input type="checkbox" value="Jest" class="form-check-input subject">Jest
-            <input type="checkbox" value="Promises" class="form-check-input subject">Promises
-            <input type="checkbox" value="React" class="form-check-input subject">React
-            <input type="checkbox" value="SQL" class="form-check-input subject">SQL
-            <input type="checkbox" value="Python" class="form-check-input subject">Python
+            <div class="checkbox-box">
+              <label for="">
+                <input type="checkbox" value="HoFs" class="form-check-input subject">HoFs
+              </label>
+              <label for=""">
+                <input type="checkbox" value="Jest" class="form-check-input subject">Jest
+              </label>
+            </div>
+            <div class="checkbox-box">
+              <label for="">
+                <input type="checkbox" value="Promises" class="form-check-input subject">Promises
+              </label>
+              <label for="">
+                <input type="checkbox" value="React" class="form-check-input subject">React
+              </label>
+            </div>
+            <div class="checkbox-box">
+              <label for="">
+                <input type="checkbox" value="SQL" class="form-check-input subject">SQL
+              </label>
+              <label for="">
+                <input type="checkbox" value="Python" class="form-check-input subject">Python
+              </label>
+            </div>
 
           </div>
         </div>
@@ -87,10 +105,14 @@
 
         <div class="form-floating">
           <textarea name="" id="form-text-area" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
-          <label for="floatingTextarea">Deixe seu cometário:</label>
+          <label class="textarea" for="floatingTextarea">Deixe seu cometário:</label>
+        </div>
+        <div id="agree">
+          <p>Voce concorda com as informações acima?</p>
+          <input type="checkbox" id="agreement" class="form-check-input">
         </div>
       </div>
-
+      <button type="submit" id="btn" class="btn btn-success">ENVIAR</button>
     </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="Logo Grande Trybewarts">
   </main>
