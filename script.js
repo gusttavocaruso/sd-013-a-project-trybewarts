@@ -10,8 +10,6 @@ const desafio3 = () => {
     }
 }
 
-
-
 window.onload = () => {
   let btnLogin = document.querySelector('#btn-login');
   btnLogin.addEventListener('click',desafio3);
