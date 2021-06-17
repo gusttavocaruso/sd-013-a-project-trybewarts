@@ -31,14 +31,13 @@ function contaDigitos() {
   counterConst.innerHTML = calculo;
 }
 
+const nome = document.querySelector('#input-name');
 function apareceInfo() {
   document.querySelector('#evaluation-form').remove();
   let main = document.querySelector('main');
   let section = document.createElement('section');
 
-  const nome = document.querySelector('#input-name').value;
-
-  section.innerHTML = `Nome: ${nome}`;
+  section.innerHTML = `Nome: ${nome.value}`;
   main.appendChild(section);
 }
 
