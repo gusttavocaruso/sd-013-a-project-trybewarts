@@ -23,7 +23,7 @@ const submitButton = document.querySelector('#submit-btn');
 const input = document.querySelector('#agreement');
 function prevent() {
   submitButton.disabled = true;
-  submitButton.addEventListener('click', (event) => {
+  input.addEventListener('click', (event) => {
     if (input.checked) {
       submitButton.disabled = false;
     }
