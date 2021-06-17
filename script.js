@@ -13,7 +13,7 @@ logBtn.addEventListener('click', () => {
   }
 });
 
-// Habilita/Desabilita Botão 
+// Habilita/Desabilita Botão
 agreeCheck.addEventListener('click', () => {
   if (agreeCheck.checked === true) {
     sendButton.disabled = false;
