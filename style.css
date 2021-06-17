@@ -106,3 +106,8 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+#submit-btn {
+  background-color: rgb(80, 0, 145);
+  color: white;
+}
