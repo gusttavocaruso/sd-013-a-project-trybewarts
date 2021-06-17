@@ -8,10 +8,22 @@
   <title>TrybeWarts</title>
 </head>
 <body>
+	<header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id = "trybewarts-header-title">Trybewarts</h1>
+      <form action="" method="GET" class="trybewarts-login">
+        <label for="loginBtn">
+          <input id = "loginBtn"type="text" placeholder="Login">
+        </label>
+        <label for="senhaBtn">
+          <input id='senhaBtn' type="password" placeholder="Senha">
+        </label>
+        <button id="btn" >Submit</button>
+      </form>
+  </header>
   <main>
+		
     <form id="evaluation-form" method="POST">
-
-      <img  id = "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
 
        <div>
             <span >
@@ -150,14 +162,16 @@
 
             <div>
               <label for="story" class="textarea">Deixe seu comentário:</label>
+
               <textarea id="story" name="story" rows="5" cols="33" maxlength="500" > </textarea>
               <span id="counter" class = "hide"></span>
+           
             </div>
 
             <div>
               <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
 
-              <input type="checkbox" id="agreement" onchange="oi();">
+              <input type="checkbox" id="agreement">
             </div>
 
             <div>
@@ -168,8 +182,10 @@
               <p>Direitos reservados à Trybewarts©</p>
             </footer>
      </form>
-  </main>
-
+     <div>
+      <img  id = "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
+    </div>
+	</main>
 
   <script src="script.js"></script>
 </body>
