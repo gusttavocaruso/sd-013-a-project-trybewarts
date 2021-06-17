@@ -15,12 +15,13 @@ loginBtn.addEventListener('click', () => {
 
 // REALIZA A VERIFICAÇÃO DO CHECKBOX PARA HABILITAR O BOTÃO ENVIAR
 const checkedAgreement = document.getElementById('agreement');
+const buttonSubmit = document.getElementById('submit-btn');
 
 checkedAgreement.addEventListener('change', function () {
   if (this.checked) {
-    document.getElementById('submit-btn').removeAttribute('disabled');
+    buttonSubmit.removeAttribute('disabled');
   } else {
-    document.getElementById('submit-btn').setAttribute('disabled', '');
+    buttonSubmit.setAttribute('disabled', '');
   }
 });
 
@@ -55,27 +56,6 @@ submitBtn.addEventListener('click', () => {
   evaluationForm.innerHTML = '';
   const text = document.createElement('p');
   evaluationForm.appendChild(text);
-  text.innerHTML = `Nome: ${
-    name.value
-  } ${
-    lastName.value
-  }<br/>`
-    + `Email: ${
-      email.value
-    }<br/>`
-    + `Casa: ${
-      house.value
-    }<br/>`
-    + `Família: ${
-      family.value
-    }<br/>`
-    + `Matérias: ${
-      content
-    }<br/>`
-    + `Avaliação: ${
-      rate.value
-    }<br/>`
-    + `Observações: ${
-      comment.value
-    }<br/>`;
+  text.innerHTML = `Nome: ${name.value} ${lastName.value}<br/>` + `Email: ${email.value}<br/>` + `Casa: ${house.value}<br/>`
+  + `Família: ${family.value}<br/>` + `Matérias: ${content}<br/>` + `Avaliação: ${rate.value}<br/>` + `Observações: ${comment.value}<br/>`; 
 });
