@@ -23,8 +23,8 @@
   width: 675px;
   display: flex;
   flex-flow: column;
-  width: 70%;
-  align-items: center;
+  
+  /*align-items: center;*/
   
 }
 
@@ -43,6 +43,7 @@ main {
 
 label{
     margin-top: 10px;
+    height: 20px;
 }
 
 
@@ -55,11 +56,21 @@ label{
   display: flex;
   flex-flow: wrap;
   margin-top: 10px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  width: 20%;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  width: 30%;
 }
 
 .test{
     display: flex;
+}
+
+.textarea{
+    display: flex;
+    flex-flow: column;
+}
+footer{
+    bottom: 0;    
+    text-align: center;    
+    margin-top: 180px;
 }
