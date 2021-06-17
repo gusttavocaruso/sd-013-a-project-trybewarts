@@ -5,7 +5,7 @@ const btnSubmit = document.getElementById('submit-btn');
 btnSubmit.disabled = true;
 const cBox = document.getElementById('agreement');
 const txtArea = document.getElementById('textarea');
-let counter = document.getElementById('counter');
+const counter = document.getElementById('counter');
 counter.innerText = txtArea.maxLength;
 
 bntLogin.addEventListener('click', () => {
@@ -22,7 +22,7 @@ function agreementChecked() {
   } else {
     btnSubmit.disabled = true;
   }
-};
+}
 
 cBox.addEventListener('click', agreementChecked);
 
@@ -30,6 +30,5 @@ function counterLength() {
   const textSize = txtArea.value.length;
   counter.innerText = txtArea.maxLength - textSize;
 }
-
 
 txtArea.addEventListener('keyup', counterLength);
