@@ -149,18 +149,18 @@
             </div>
 
             <div>
-              <label for="story">Deixe seu comentário:</label>
-              <textarea id="story" name="story" rows="5" cols="33" maxlength="500" class="textarea">  </textarea>
+              <label for="story" class="textarea">Deixe seu comentário:</label>
+              <textarea id="story" name="story" rows="5" cols="33" maxlength="500" > </textarea>
             </div>
 
             <div>
               <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
 
-              <input type="checkbox" id="agreement">
+              <input type="checkbox" id="agreement" onchange="oi();">
             </div>
 
             <div>
-              <input type="submit" id="submit-btn" text="Enviar" onchange="habilitar('sim')">
+              <button type="submit" id="submit-btn" disabled>Enviar</button>
             </div>
             
             <footer>

@@ -1,9 +1,10 @@
-const botao = document.querySelector("#submit-btn")
+const botao = document.querySelector("#submit-btn");
+const checkBox = document.querySelector("#agreement");
 
-function habilitar (valor) {
-  if (botao == 'sim' && !status) {
-    botao.habilitar = true;
+function oi () {
+  if (checkBox.checked) {
+    botao.disabled = false;
   }else {
-    botao.disable
+    botao.disabled = true;
   }
 }
