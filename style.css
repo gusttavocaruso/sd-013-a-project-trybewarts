@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{ 
+  margin-left: 
+}
+
 main { 
   display: flex;
 }
@@ -13,6 +17,7 @@ main {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   height: 60px;
+  width: 100%;
 }
 
 .trybewarts-header-logo {
@@ -42,5 +47,17 @@ main {
   width: 675px;
   flex-direction: column;
 } 
+
+input[type="text"] { 
+  background-color: white;
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 14px;
+  display: inline;
+  width: 30%;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
 
 
