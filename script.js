@@ -8,7 +8,7 @@ const password = document.querySelector('#input-password');
 
 /* Elementos Forms */
 const form = document.querySelector('#evaluation-form');
-const inputName = document.querySelector('#input-name');
+const name = document.querySelector('#input-name');
 const surname = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
@@ -88,7 +88,7 @@ function formSubmit() {
   form.innerHTML = '';
   form.style.backgroundImage = 'none';
   form.innerHTML += '<h2 style="margin-bottom:20px;">Resultados</h2>';
-  form.innerHTML += `<p>Nome: ${inputName.value} ${surname.value}</p>`;
+  form.innerHTML += `<p>Nome: ${name.value} ${surname.value}</p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
   form.innerHTML += `<p>Casa: ${house.value}</p>`;
   form.innerHTML += `<p>Família: ${familyChecked()}</p>`;
