@@ -1,17 +1,35 @@
+* {
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+#agreement-area {
+  margin: 20px 0;
+}
+
 #aside {
   display: flex;
   justify-content: flex-end;
 }
 
+button {
+  background-color: rgb(53, 86, 185);
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+}
+
 #conteudo {
   display: flex;
   justify-content: center;
+  background-color: rgb(202, 202, 202);
 }
 
 #content {
   display: flex;
   flex-wrap: wrap;
   width: 675px;
+  background-color: rgb(202, 202, 202);
 }
 
 #evaluation-form {
@@ -24,19 +42,54 @@
   display: flex;
   flex-direction: column;
   width: 675px;
+  background-color: rgb(202, 202, 202);
+}
+
+#familia label {
+  margin: 5px 0;
 }
 
 footer {
-  text-align: center;
-  background-color: royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: rgb(66, 66, 66);
+}
+
+#fullName {
+  margin-top: 20px;
+}
+
+h1 {
+  color: white;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  padding: 20px 0;
+  padding: 20px 250px;
   justify-content: space-between;
+  align-items: center;
+}
 
+header img {
+  width: 100px;
+}
+
+hr {
+  width: 800px;
+}
+
+input {
+  margin: 0 5px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+#label-rate {
+  margin-right: 10px;
 }
 
 #leave-comment {
@@ -50,13 +103,27 @@ footer {
   flex-direction: column;
 }
 
+#middle-section {
+  display: flex;
+  margin: 20px 0;
+}
+
 select {
   height: 30px;
   margin: 5px;
 }
 
+#submit-btn {
+  width: 675px;
+}
+
+.textarea {
+  background-color: rgb(202, 202, 202);
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+  background-color: rgb(202, 202, 202);
 }
 
 .trybewarts-header-logo {
@@ -71,6 +138,7 @@ select {
 #duvida , #email-house , #fullName , #label-infos {
   display: flex;
   align-items: center;
+  background-color: rgb(202, 202, 202);
 }
 
 #e-mail , #last-name , #name {
