@@ -131,7 +131,7 @@
   margin-right: 5px;
 }
 
-#label-content {
+#area-label {
   font-size: 1.2em;
   margin: 12px;
   width: 50%;
@@ -142,12 +142,7 @@
   flex-basis: 100%;
 }
 
-footer p {
-  padding: 10px;
-  margin-right: 100px;
-}
-
-#label-content p {
+.label-p {
   text-align: center;
   font-weight: 700;
   margin-bottom: 18px;
@@ -189,4 +184,9 @@ footer {
   flex-direction: row-reverse;
   background-color: rgb(60, 64, 74);
   color: white;
+}
+
+footer p {
+  padding: 10px;
+  margin-right: 100px;
 }
