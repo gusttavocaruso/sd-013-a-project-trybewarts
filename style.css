@@ -6,6 +6,7 @@ main {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  color: whitesmoke;
 }
 
 .trybewarts-header-logo {
@@ -15,4 +16,20 @@ main {
 .trybewarts-login {
   display: flex;
   align-self: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.row {
+  flex-direction: row;
+}
+
+#trybewarts-forms-logo {
+  justify-content: end;
+  height: 500px;
 }
