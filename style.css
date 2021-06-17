@@ -60,3 +60,12 @@
 .form6 {
   display: flex;
 }
+
+.submit-form {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  flex-basis: 100%;
+}
