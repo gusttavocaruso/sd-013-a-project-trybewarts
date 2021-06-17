@@ -6,8 +6,8 @@
 hr {
   width: 100%;
 }
-/* css do cabeçalho, requisitos de 1 a 4 */
 
+/* css do cabeçalho, requisitos de 1 a 4 */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -48,7 +48,6 @@ hr {
 }
 
 /* CSS do main */
-
 .main-conteiner {
   display: flex;
   background-color: rgb(233, 233, 233);
@@ -74,7 +73,6 @@ hr {
 }
 
 /* css dos requisitos de 8 a 11 */
-
 .first-form {
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +82,7 @@ hr {
   justify-content: space-around;
 }
 
-#input-name, #input-lastname, #input-email, #casa, #house {
+#input-name , #input-lastname , #input-email , #casa , #house {
   flex: 1;
   padding: 10px 2px;
   margin: 2px 10px;
@@ -116,7 +114,6 @@ hr {
 }
 
 /* CSS req12 */
-
 #label-family {
   display: flex;
   flex-direction: column;
@@ -129,7 +126,6 @@ hr {
 }
 
 /* CSS req13 */
-
 #label-content {
   display: flex;
   flex-wrap: wrap;
@@ -139,11 +135,10 @@ hr {
 
 #label-content label {
   margin: 5px;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 /* CSS req14 */
-
 .third-form {
   display: flex;
   flex-direction: column;
@@ -153,7 +148,6 @@ hr {
 }
 
 /* CSS req15 */
-
 .textarea {
   margin-top: 15px;
 }
@@ -163,7 +157,6 @@ hr {
 }
 
 /* CSS req17 */
-
 #submit-btn {
   display: flex;
   justify-content: center;
