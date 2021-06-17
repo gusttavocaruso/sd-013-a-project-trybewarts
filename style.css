@@ -52,8 +52,6 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-  /* temporario */
-
   border: 1px solid black;
 }
 
