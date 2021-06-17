@@ -99,3 +99,8 @@
   flex-flow: column wrap;
   margin: 20px;
 }
+
+#label-infos {
+  justify-content: space-around;
+  align-items: baseline;
+}
