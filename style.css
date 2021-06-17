@@ -26,7 +26,7 @@
 /* Main */
 main {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-content: space-around;
 }
 
@@ -38,12 +38,6 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-  /* align-self: flex-end; */
-}
-
-#evaluation-form #family-label {
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 #session1 {
@@ -51,24 +45,17 @@ main {
   flex-flow: row wrap;
 }
 
-#session1 #input-name {
-  width: 50%;
-}
-
-#session1 #input-lastname {
-  width: 50%;
-}
-
-#session1 #input-email {
+#session1 #input-lastname, #input-email, #input-name {
   width: 50%;
 }
 
 #session2 {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 }
 
 #session2a {
   display: flex;
   flex-flow: column;
+  width: 50%;
 }
