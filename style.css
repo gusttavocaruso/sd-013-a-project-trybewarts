@@ -34,8 +34,10 @@ main {
   color: white;
 }
 
-#trybewarts-forms-logo {
+main, #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -65,4 +67,15 @@ input [ type = 'text' ] {
 /* Desafio 15 */
 textarea {
   resize: none;
+}
+
+.footer {
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

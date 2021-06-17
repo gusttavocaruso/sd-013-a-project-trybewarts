@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Trybewarts</title>
-</head>
+  </head>
 
   <body>
-      <header class="header"> <!-- Requisito 1 -->
+    <header class="header"> <!-- Requisito 1 -->
 
       <img src="images/trybewarts-header-logo.svg" alt="logo-trybe" class="trybewarts-header-logo" width=100px> <!-- Requisito 2 -->
 
       <h1 id="trybewarts-header-title">Trybewarts</h1> <!-- Requisito 4 -->
 
       <form action="" method="get" class="trybewarts-login"> <!-- Requisito 3 -->
-       <input type="text" placeholder="Login" id="login" value="">
-       <input type="text" placeholder="Senha" id="senha" value="">
-
-      <button id="button">Entrar</button>
+        <input type="text" placeholder="Login" id="login" value="">
+        <input type="text" placeholder="Senha" id="senha" value="">
+        <button id="button">Entrar</button>
       </form>
     </header>
 
@@ -29,67 +28,69 @@
         <input type="text" placeholder="Nome" id="input-name">
         <input type="text" placeholder="Sobrenome" id="input-lastname">
         <input type="text" placeholder="Email" id="input-email">
-      </form>
-
-      <!-- Requisito 9 e 10(Faltando CSS para deixar nome e sobreme em linha, e email e casa em linha)--> 
-      <select id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
-    </main>
-      <!-- Requisito 12 (Faltando CSS para deixar os button um abaixo do outro)-->
-    <div>
-      <label for="familys" id="label-family">Qual sua família?</label>
-        <input type="radio" name="family" id="" value="Frontend">Família Frontend
-        <input type="radio" name="family" id="" value="Backend">Família Backend
-        <input type="radio" name="family" id="" value="FullStack">Família FullStack
-      </div>
+      
+        <!-- Requisito 9 e 10(Faltando CSS para deixar nome e sobreme em linha, e email e casa em linha)--> 
+        <select id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+    
+        <!-- Requisito 12 (Faltando CSS para deixar os button um abaixo do outro)-->
+        <div>
+          <label for="familys" id="label-family">Qual sua família?</label>
+          <input type="radio" name="family" id="" value="Frontend">Família Frontend
+          <input type="radio" name="family" id="" value="Backend">Família Backend
+          <input type="radio" name="family" id="" value="FullStack">Família FullStack
+        </div>
     
       <!--Requisito 13 -->
-        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <br>
-        <input type="checkbox" value="HoFs" id=""> HoFs
-        <input type="checkbox" value="Jest" id=""> Jest
-        <input type="checkbox" value="Promises" id=""> Promises
-        <input type="checkbox" value="React" id=""> React
-        <input type="checkbox" value="SQL" id=""> SQL
-        <input type="checkbox" value="Python" id=""> Python
-      </div>
+        <div>
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <br>
+            <input type="checkbox" value="HoFs" id=""> HoFs
+            <input type="checkbox" value="Jest" id=""> Jest
+            <input type="checkbox" value="Promises" id=""> Promises
+            <input type="checkbox" value="React" id=""> React
+            <input type="checkbox" value="SQL" id=""> SQL
+            <input type="checkbox" value="Python" id=""> Python
+        </div>
 
-      <div> <!--Requisito 14 / tentar montar via JS (Faltando css para deixar os input ao lado da label)-->
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-          <input type="radio" name="rate" id=""> 1
-          <input type="radio" name="rate" id=""> 2
-          <input type="radio" name="rate" id=""> 3
-          <input type="radio" name="rate" id=""> 4
-          <input type="radio" name="rate" id=""> 5
-          <input type="radio" name="rate" id=""> 6
-          <input type="radio" name="rate" id=""> 7
-          <input type="radio" name="rate" id=""> 8
-          <input type="radio" name="rate" id=""> 9
-          <input type="radio" name="rate" id=""> 10
+        <div> <!--Requisito 14 / tentar montar via JS (Faltando css para deixar os input ao lado da label)-->
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+            <input type="radio" name="rate" id=""> 1
+            <input type="radio" name="rate" id=""> 2
+            <input type="radio" name="rate" id=""> 3
+            <input type="radio" name="rate" id=""> 4
+            <input type="radio" name="rate" id=""> 5
+            <input type="radio" name="rate" id=""> 6
+            <input type="radio" name="rate" id=""> 7
+            <input type="radio" name="rate" id=""> 8
+            <input type="radio" name="rate" id=""> 9
+            <input type="radio" name="rate" id=""> 10
           <!--COMENTEI TODOS OS INPUT PARA CASO TENTAR FAZER VIA JS(ou pode deixar assim mesmo)-->
-      </div>
+        </div>
 
-      <div> <!--Requisito 15 ok-->
-        <label for="" class="textarea">Deixe seu comentário:</label>
+        <div> <!--Requisito 15 ok-->
+          <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
-      </div>
+        </div>
 
-      <div> <!--desafio 16 ok -->
-        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <div> <!--desafio 16 ok -->
+          <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="" id="agreement">
-      </div>
+        </div>
 
-      <button type="submit" id="submit-btn">Enviar</button> <!-- Requisito 17 -->
-      <!-- Requisito 18 faz com que o botao enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada) -->
+        <button type="submit" id="submit-btn">Enviar</button> <!-- Requisito 17 -->
+        <!-- Requisito 18 faz com que o botao enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada) -->
+      </form>
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">  <!-- Requisito 7 -->
+    </main>
 
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"> <!-- Requisito 7 -->
-  
+  <div class="footer">
+    <footer>Direitos reservados à Trybewarts©</footer> <!-- Requisito 19 -->
+  </div>
 <script src="script.js"></script>
-  </body>
-
-  <footer>Direitos reservados à Trybewarts©</footer> <!-- Requisito 19 -->
+</body>
 </html>
