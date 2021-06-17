@@ -35,3 +35,6 @@ select {
   background-color: rgb(50, 167, 145);
   padding: 20px 0;
 }
+.trybewarts-header-logo{
+ flex-direction: row;
+}
