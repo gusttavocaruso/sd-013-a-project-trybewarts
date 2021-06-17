@@ -15,9 +15,6 @@ btnlogin.addEventListener('click', () => {
 });
 
 bntAgreement.addEventListener('click', (el) => {
-  const bntSubmit= document.getElementById('submit-btn');
-  bntSubmit.disabled = !el.target.checked
-})
-
-
-
+  const bntSubmit = document.getElementById('submit-btn');
+  bntSubmit.disabled = !el.target.checked;
+});
