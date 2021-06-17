@@ -10,12 +10,12 @@
     display: flex;
     width: 100%;
     height: 10vh;
-
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
 }
-.form-login {
-  justify-content: right;
-}
+
