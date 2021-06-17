@@ -65,6 +65,7 @@ const setNameInput = () => {
   setName.classList.add('result');
   setName.innerText = `Nome: ${getName.value} ${getLastName.value}`;
 
+  getName.innerText = `Nome: ${getName.value} ${getLastName.value}`;
   getInputResults.appendChild(setName);
 };
 
@@ -73,6 +74,7 @@ const setEmailInput = () => {
   setEmail.classList.add('result');
   setEmail.innerText = `Email: ${getEmail.value}`;
 
+  getEmail.innerText = `Email: ${getEmail.value}`;
   getInputResults.appendChild(setEmail);
 };
 
@@ -82,6 +84,7 @@ const setHouseInput = () => {
   setHouse.innerText = `Casa: ${getHouse.value}`;
 
   getInputResults.appendChild(setHouse);
+  getHouse.innerText = setHouse.innerText;
 };
 
 // Ideia para retirar input value de um radio input = https://stackoverflow.com/questions/15839169/how-to-get-value-of-selected-radio-button
@@ -92,11 +95,13 @@ const setFamilyInput = () => {
 
   setFamily.classList.add('result');
   setFamily.innerText = `Família: ${getFamilyInput.value}`;
+
+  getFamilyInput.innerText = `Família: ${getFamilyInput.value}`;
   getInputResults.appendChild(setFamily);
 };
 
 const setContentInput = () => {
-  const getContentInput = document.querySelectorAll('input[name="subs"]:checked');
+  const getContentInput = document.querySelectorAll('input[name="content"]:checked');
   const arr = [];
 
   let result = '';
@@ -108,7 +113,7 @@ const setContentInput = () => {
   const setContent = document.createElement('p');
 
   setContent.classList.add('result');
-  setContent.innerText = `Matérias: ${result}`;
+  setContent.innerHTML = `Matérias: ${result}`;
   getInputResults.appendChild(setContent);
 };
 
@@ -118,6 +123,7 @@ const setEvaluationInput = () => {
 
   setRate.classList.add('result');
   setRate.innerText = `Avaliação: ${getRateInput.value}`;
+  getRateInput.innerText = `Avaliação: ${getRateInput.value}`;
   getInputResults.appendChild(setRate);
 };
 
@@ -127,6 +133,7 @@ const setCommentInput = () => {
 
   setComment.classList.add('result');
   setComment.innerText = `Observações: ${getCommentInput.value}`;
+  getCommentInput.innerText = `Observações: ${getCommentInput.value}`;
   getInputResults.appendChild(setComment);
 };
 
