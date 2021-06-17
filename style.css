@@ -12,6 +12,10 @@ main {
   flex-flow: row wrap;
 }
 
+#input-name , #input-lastname , #input-email , #house {
+width: 40%;
+}
+
 .header {
   color: white;
   background-color: rgb(50, 167, 145);
@@ -166,7 +170,7 @@ h2 {
   height: 145px;
 }
 
-#btn {
+#submit-btn {
   margin: 25px;
   color: white;
   background-color: rgb(103, 9, 197);
