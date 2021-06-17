@@ -15,7 +15,7 @@ body {
 /* Header */
 .header {
   display: flex;
-  background-color: rgb(16, 163, 46);
+  background-color: rgb(50, 167, 145);
   justify-content: space-between;
   width: 100%;
   flex-flow: wrap row;
@@ -23,7 +23,7 @@ body {
   text-align: center;
   position: fixed;
   top: 0;
-  height: 80px;
+  height: 100px;
   box-shadow: black 0 0 100px 4px;
 }
 
@@ -40,10 +40,13 @@ body {
 
 .trybewarts-login {
   display: flex;
-  height: 50px;
+  flex-flow: column;
+  height: 80px;
+  margin-right: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   justify-content: center;
   align-content: center;
-  background-color: white;
 }
 
 
