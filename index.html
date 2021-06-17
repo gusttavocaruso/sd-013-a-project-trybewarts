@@ -8,87 +8,82 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <header class="header">
-<img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
+  <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
 
-<h1 id="trybewarts-header-title">Trybewarts </h1>
+  <h1 id="trybewarts-header-title">Trybewarts </h1>
 
-<form class="trybewarts-login" method="GET" id="trybewarts-login">
+  <form class="trybewarts-login" method="GET" id="trybewarts-login">
 
-  <input type="text" id="Login" placeholder="Login"> 
-  <input type="password" id="Senha" placeholder="Senha">
-  <input type="submit" value="Logar" onclick="validaLogin()">
+    <input type="text" id="Login" placeholder="Login"> 
+    <input type="password" id="Senha" placeholder="Senha">
+    <input type="submit" value="Logar" onclick="validaLogin()">
 
-</form>
-
+  </form>
 </header>
 <body>
-  <main id = "main">
-    <form action = "" method="GET" id = "evaluation-form">
-      <div id = "fullName">
-        <div id = "name">
-          <input id = "input-name" type="text" placeholder="Nome">
+  <div id = "conteudo">
+    <main id = "main">
+      <form action = "" method="GET" id = "evaluation-form">
+        <div id = "fullName">
+          <div id = "name">
+            <input id = "input-name" type="text" placeholder="Nome">
+          </div>
+          <div id = "last-name">
+            <input id = "input-lastname" type="text" placeholder="Sobrenome">
+          </div>
         </div>
-        <div id = "last-name">
-          <input id = "input-lastname" type="text" placeholder="Sobrenome">
+        <div id = "email-house">
+          <div id = "e-mail">
+            <input id = "input-email" type="email" placeholder= "Email">
+          </div>
+          <p>Casa:</p>
+          <select name="house" id="house">
+            <option id = "gitnoria-house">Gitnória</option>
+            <option id = "reactpuff-house">Reactpuff</option>
+            <option id = "corvinode-house">Corvinode</option>
+            <option id = "pytherina-house">Pytherina</option>
+          </select>
         </div>
-      </div>
-      <div id = "email-house">
-        <div id = "e-mail">
-          <input id = "input-email" type="email" placeholder= "Email">
+        <div id = "duvida">
+          <p id = "label-rate">Como você avalia a Trybewarts?</p>
+          <label for="um">1
+          <input type="radio" id ="um" name ="rate"></label>
+          <label for="dois">2
+          <input type="radio" id ="dois" name ="rate"></label>
+          <label for="tres">3
+          <input type="radio" id ="tres" name ="rate"></label>
+          <label for="quatro">4
+          <input type="radio" id ="quatro" name ="rate"></label>
+          <label for="cinco">5
+          <input type="radio" id ="cinco" name ="rate"></label>
+          <label for="seis">6
+          <input type="radio" id ="seis" name ="rate"></label>
+          <label for="sete">7
+          <input type="radio" id ="sete" name ="rate"></label>
+          <label for="oito">8
+          <input type="radio" id ="oito" name ="rate"></label>
+          <label for="nove">9
+          <input type="radio" id ="nove" name ="rate"></label>
+          <label for="dez">10
+          <input type="radio" id ="dez" name ="rate"></label>
         </div>
-        <p>Casa:</p>
-        <select name="house" id="house">
-          <option id = "gitnoria-house">Gitnória</option>
-          <option id = "reactpuff-house">Reactpuff</option>
-          <option id = "corvinode-house">Corvinode</option>
-          <option id = "pytherina-house">Pytherina</option>
-        </select>
-      </div>
-      <div id = "duvida">
-        <p id = "label-rate">Como você avalia a Trybewarts?</p>
-        <label for="um">1
-        <input type="radio" id ="um" name ="rate"></label>
-        <label for="dois">2
-        <input type="radio" id ="dois" name ="rate"></label>
-        <label for="tres">3
-        <input type="radio" id ="tres" name ="rate"></label>
-        <label for="quatro">4
-        <input type="radio" id ="quatro" name ="rate"></label>
-        <label for="cinco">5
-        <input type="radio" id ="cinco" name ="rate"></label>
-        <label for="seis">6
-        <input type="radio" id ="seis" name ="rate"></label>
-        <label for="sete">7
-        <input type="radio" id ="sete" name ="rate"></label>
-        <label for="oito">8
-        <input type="radio" id ="oito" name ="rate"></label>
-        <label for="nove">9
-        <input type="radio" id ="nove" name ="rate"></label>
-        <label for="dez">10
-        <input type="radio" id ="dez" name ="rate"></label>
-      </div>
-      <div id = "leave-comment">
-        <label for="textarea" class="textarea"><p>Deixe seu comentário:</p></label>
-          <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Digite no máximo 500 caracteres"></textarea>
-      </div>
-      <div id = "agreement-area">
-        <label for="agreement" id ="label-infos"><p>Você concorda com o uso das informações acima?</p>
-          <input type="checkbox" id = "agreement">
-        </label>
-      </div>
-      <button type="submit" name = "submit-btn" id = "submit-btn" disabled="disabled">Enviar</button>
-    </form>
-
-
-    <aside id="aside">
+        <div id = "leave-comment">
+          <label for="textarea" class="textarea"><p>Deixe seu comentário:</p></label>
+            <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Digite no máximo 500 caracteres"></textarea>
+        </div>
+        <div id = "agreement-area">
+          <label for="agreement" id ="label-infos"><p>Você concorda com o uso das informações acima?</p>
+            <input type="checkbox" id = "agreement">
+          </label>
+        </div>
+        <button type="submit" name = "submit-btn" id = "submit-btn" disabled="disabled">Enviar</button>
+      </form>
+    </main>
+    <div id="aside">
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
-
-
-    </aside>
-
-
-  </main>
+    </div>
+  </div>
   <footer class = "footer">Direitos reservados à Trybewarts©</footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
