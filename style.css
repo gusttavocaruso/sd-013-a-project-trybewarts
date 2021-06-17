@@ -136,11 +136,11 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  flex-flow: column wrap; 
 }
 
 .textarea {
-  margin: 0px;
+  margin: 0;
   width: 465px;
   height: 74px;
 }
