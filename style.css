@@ -35,7 +35,6 @@ main {
   width: 675px;
   flex-direction: column;
   border: 2px solid red;
-  width: 50%;
 }
 
 #trybewarts-forms-logo {
