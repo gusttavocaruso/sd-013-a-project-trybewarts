@@ -32,25 +32,37 @@
   </div>
 
   <main>
-    
+
     <form id="evaluation-form" action="">
+
       <h1 class="title">Forms</h1>
-      <div class="complete-name">
-        <input id="input-name" type="text" placeholder="Nome" class="form-control" required>
-        <input id="input-lastname" class="form-control" type="text" placeholder="Sobrenome" required>
-      </div>
-      <div class="select-option">
 
-        <input id="input-email" class="form-control" type="text" placeholder="Email" required>
-        <label for="house">Casa:</label>
-        <select name="house" class="form-select" id="house" required>
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
+      <div class="flex-container inputs">
+
+        <div class="input-size">
+          <input id="input-name" type="text" placeholder="Nome" class="form-control" required>
+        </div>
+
+        <div class="input-size">
+          <input id="input-lastname" class="form-control" type="text" placeholder="Sobrenome" required>
+        </div>
+
+        <div class="input-size">
+          <input id="input-email" class="form-control" type="text" placeholder="Email" required>
+        </div>
+
+        <div class="flex-container input-size">
+          <label for="house" class="right-margin">Casa:</label>
+          <select name="house" class="form-select" id="house" required>
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
 
       </div>
+
       <hr>
       <div class="radio-checkbox">
 
@@ -122,15 +134,21 @@
           <input type="radio" name="rate" value="10" class="rate" id="ten" required>
         </div>
       </div>
+
       <label class="textarea" for="">Deixe seu comentário:
-        <textarea name="" id="" cols="60" rows="06" maxlength="500" required></textarea>
+        <textarea name="" id="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
+          id="counter">500</span>
       </label>
+
       <div>
         <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox" required>
       </div>
+
       <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
+
     </form>
+
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
 
   </main>

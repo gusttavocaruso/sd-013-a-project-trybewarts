@@ -3,6 +3,8 @@ const passInput = document.getElementById('pass');
 const loginButton = document.getElementById('login-bt');
 const submitCheck = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
+const counterSpan = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
 
 const dataLogin = {
   login: 'tryber@teste.com',
@@ -27,5 +29,16 @@ function agreeInfos() {
   }
 }
 
+function getTextAreaLength() {
+  const textAreaText = textArea.value;
+  return textAreaText.length;
+}
+
+function setCounterText() {
+  const counterText = 500 - getTextAreaLength();
+  counterSpan.innerText = counterText;
+}
+
 loginButton.onclick = loginAuthentication;
 submitCheck.onclick = agreeInfos;
+textArea.addEventListener('input', setCounterText);
