@@ -29,3 +29,11 @@
 .trybewarts-header-logo {
     order: 1;
 }
+#evaluation-form {
+  border: 1px solid black;
+  width:675px;
+  flex-direction: column;
+}
+main , #evaluation-form{
+  display: flex;
+}
