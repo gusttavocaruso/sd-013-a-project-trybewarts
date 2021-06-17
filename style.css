@@ -40,7 +40,9 @@
   justify-content: left;
 }
 
-.paraocss {
-  flex-direction: row-reverse;
+
+.labelrate {
+  display: flex;
+  justify-content: space-evenly;
 }
 

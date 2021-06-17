@@ -15,4 +15,18 @@ function req3() {
 
 addEventListener('submit',req3);
 
+// function req14 () { 
+//   for (let i = 0; i < 10; i +=1) {
+//     let inputs = document.querySelector('.req14');
+
+//     let checkbox = document.createElement('input');
+//     checkbox.value = [i];
+//     checkbox.rate = 'rate';
+//     checkbox.type = 'radio';
+//     inputs.appendChild('checkbox');
+
+//   }
+// }
+
+// req14();
 
