@@ -208,6 +208,14 @@ main {
   resize: none;
 }
 
+.comment-container #counter {
+  color: rgb(26, 26, 26);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: right;
+}
+
 .agreement-container {
   margin: 10px 0;
 }
@@ -235,4 +243,65 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1134px) {
+  #trybewarts-forms-logo {
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (max-width: 521px) {
+  #trybewarts-header-title {
+    font-size: 0;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .trybewarts-login {
+    width: 0;
+    height: 0;
+  }
+
+  #input-login , #input-password {
+    font-size: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  #login-btn {
+    font-size: 0;
+    opacity: 0;
+  }
+
+  .names-container {
+    flex-direction: column;
+  }
+
+  #input-name {
+    margin-bottom: 1em;
+  }
+
+  .user-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #input-email {
+    margin-bottom: 1em;
+  }
+
+  .choose-options {
+    flex-direction: column;
+  }
+
+  .family-container {
+    margin-bottom: 1em;
+  }
+
+  .rate-container {
+    flex-wrap: wrap;
+  }
 }

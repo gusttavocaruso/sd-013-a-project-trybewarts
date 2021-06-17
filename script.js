@@ -18,6 +18,10 @@ const rating = document.querySelectorAll('.rate');
 const comment = document.querySelector('#textarea');
 const agree = document.querySelector('#agreement');
 
+/* Counter */
+const inputTextArea = document.getElementById('textarea');
+const remainingChars = document.getElementById('counter');
+
 /* Botões */
 const loginBtn = document.querySelector('#login-btn');
 const submitBtn = document.querySelector('#submit-btn');
@@ -41,6 +45,15 @@ function enableSubmit() {
   }
 }
 agree.addEventListener('change', enableSubmit);
+
+/* Event listener no input para executar a função de count */
+inputTextArea.addEventListener('input', () => {
+  const remaining = 500 - inputTextArea.value.length;
+  const color = remaining < 500 * 0.1 ? 'red' : null;
+
+  remainingChars.textContent = `${remaining} characters remaining`;
+  remainingChars.style.color = color;
+});
 
 /* Retorna a família selecionada (string) */
 function familyChecked() {
