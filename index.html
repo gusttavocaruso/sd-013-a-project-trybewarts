@@ -8,10 +8,22 @@
   <title>TrybeWarts</title>
 </head>
 <body>
+	<header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id = "trybewarts-header-title">Trybewarts</h1>
+      <form action="" method="GET" class="trybewarts-login">
+        <label for="loginBtn">
+          <input id = "loginBtn"type="text" placeholder="Login">
+        </label>
+        <label for="senhaBtn">
+          <input id='senhaBtn' type="password" placeholder="Senha">
+        </label>
+        <button id="btn" >Submit</button>
+      </form>
+  </header>
   <main>
+		
     <form id="evaluation-form" method="POST">
-
-      <img  id = "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
 
        <div>
             <span >
@@ -88,9 +100,40 @@
               <label for="python">Python</label>
               <input type="checkbox" value="Python" id="python"class="subject" name="content">
             </div>
-
-          </div>
+						<div>
+							<label id="label-rate">Como você avalia a Trybewarts?</label>
+							1 <input type="radio" name="rate" value="1">
+							2 <input type="radio" name="rate" value="2">
+							3 <input type="radio" name="rate" value="3">
+							4 <input type="radio" name="rate" value="4">
+							5 <input type="radio" name="rate" value="5">
+							6 <input type="radio" name="rate" value="6">
+							7 <input type="radio" name="rate" value="7">
+							8 <input type="radio" name="rate" value="8">
+							9 <input type="radio" name="rate" value="9">
+							10<input type="radio" name="rate" value="10">
+						</div>
+						<div>
+							<label for="textarea" class="textarea">Deixe seu comentário:</label> <br>
+							<textarea id="textarea" maxlength=500 rows="7" cols="40"></textarea>
+						</div>
+						
+						<div>
+						<label id='label-infos'>Você concorda com o uso das informações acima?
+						<input type="checkbox" id="agreement">
+						</label>
+						</div>
+					
+						<div>
+							<button type="submit" id="submit-btn">Enviar</button>
+						</div>
+						<div>
+							<img  id = "trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
+						</div>
      </form>
+
+		
+	</main>
   </main>
 
 
