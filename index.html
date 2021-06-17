@@ -24,8 +24,9 @@
     </form>
   </header>
   <main>
-    <form action="#" id="evaluation-form"> <h1>FORMS</h1>
-      <div id="input-container">
+    <form action="#" id="evaluation-form">
+      <h1>FORMS</h1>
+      <div id="input-forms-container">
 
           <input type="text" class="form-control" name="name" placeholder="Nome" id="input-name">
 
@@ -41,8 +42,9 @@
         </select>
 
       </div>
+      <hr>
       <div id="div-family-tecnologies-container">
-        <div class="form-control" id="familia-forms">
+        <div id="family-forms">
           <label for="family" id="label-family">Qual sua família?</label>
           <div>
             <label for="Frontend">
@@ -91,6 +93,7 @@
           </div>
         </div>
       </div>
+      <hr>
       <div id="radio-rate-textarea-agree">
 
         <div>
@@ -109,10 +112,12 @@
 
         <div class="form-floating">
           <textarea name="" id="form-text-area" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
-          <label class="textarea" for="floatingTextarea">Deixe seu comentário:</label>
+          <label class="textarea" id="text-area-label" for="floatingTextarea">Deixe seu comentário:</label>
         </div>
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement" class="form-check-input">
+        <div>
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement" class="form-check-input">
+        </div>
       </div>
       <button type="submit" id="submit-btn" class="btn btn-success" disabled >Enviar</button>
     </form>
