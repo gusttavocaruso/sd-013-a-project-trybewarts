@@ -23,7 +23,7 @@
 .trybewarts-header-logo {
   height: 50px;
   width: 50px;
-  margin: 0px 20px 0px 0px;
+  margin: 0 20px 0 0;
 }
 
 #trybewarts-header-title {
@@ -80,31 +80,29 @@ main {
   flex-direction: column;
 }
 
- .cards input {
+.cards input {
   width: 99%;
   height: 35px;
   margin-top: 4px;
   margin-right: 2px;
   border: 2px solid rgb(131, 120, 120);
-} 
+}
 
-.container-text{
+.container-text {
   text-align: center;
   margin-top: 15px;
 }
 
-.conatiner-cards{
+.conatiner-cards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 675px;
 }
 
-.cards{
-    float: left;
-    width: 49%;
-    margin: 2px;
-    margin: 0;
+.cards {
+  float: left;
+  width: 49%;
+  margin: 2px;
 }
 
 #trybewarts-forms-logo {
@@ -124,7 +122,7 @@ select:focus {
   outline: none;
 }
 
-.familia-inputs{
+.familia-inputs {
   border: 1px solid black;
   width: 675px;
   background-color: rgb(185, 192, 192);
@@ -132,26 +130,35 @@ select:focus {
   display: flex;
 }
 
-.whats-family{
+.whats-family {
   min-width: 268.75px;
   padding: 3%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
-.whats-work{
+.whats-work {
   min-width: 406.25px;
   padding: 3%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .familia-inputs input {
-  margin:0 12px 0 0;
+  margin: 0 12px 0 0;
   vertical-align: middle;
   width: 15px;
   margin-left: 5px;
 }
 
-/* --------- */
+.div3 input {
+  margin: 0 12px 0 0;
+  vertical-align: middle;
+  width: 15px;
+  margin-left: 1px;
+}
+
+.div3 {
+  display: flex;
+}
 
 #div2 {
   margin-top: 50px;
@@ -160,36 +167,42 @@ select:focus {
   max-width: 38vw;
   flex-direction: column;
 }
+
 #textarea {
   border: 2px solid black;
   border-radius: 3px;
 }
+
 #div2 label {
   margin-top: 20px;
   width: 40vw;
   font-size: 18px;
 }
+
 #div2 label:hover {
   cursor: pointer;
 }
+
 #div2 input {
-  margin:0 12px 0 0;
+  margin: 0 12px 0 0;
   vertical-align: middle;
   width: 15px;
   margin-left: 5px;
 }
+
 #submit-btn {
   padding: 10px;
   margin-top: 20px;
   background-color: greenyellow;
   border-radius: 5px;
 }
+
 #submit-btn:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: 20px;
   width: 100vw;
@@ -203,23 +216,13 @@ footer h3 {
   margin-top: 7px;
 }
 
-.div3 input {
-    margin:0 12px 0 0;
-    vertical-align: middle;
-    width: 15px;
-    margin-left: 1px;
-}
 
-.div3 {
-  display: flex;
-}
-
-#label{
+#label {
   width: 15vw;
   font-size: small;
   margin-top: 10px;
 }
 
-#radio{
+#radio {
   width: 35vw;
 }
