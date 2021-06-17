@@ -2,10 +2,21 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  
 }
 
 .trybewarts-login {
   display: flex;
-  
+  align-items: center;
 }
 
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
