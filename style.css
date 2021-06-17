@@ -1,4 +1,145 @@
+* {
+  margin: 0;
+  padding: 2;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+  margin-right: 10px;
+  align-items: flex-start;
+}
+
+#login , #senha {
+  padding: 8px 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: xx-large;
+}
+
+.header button {
+  border-radius: 10px;
+  padding: 8px 30px;
+  text-align: center;
+  background-color: rgb(78, 45, 130);
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 700px;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  font-size: 25px;
+  padding: 8px 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  justify-content: space-between;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  font-size: large;
+  width: 50%;
+}
+
+.check-itens {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px;
+}
+
+#checks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #label-rate {
 
 }
 
+.aval {
+  display: flex;
+  padding: 20px 0 105px;
+}
+
+.coment {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+#agreement-container {
+  padding: 10px 0;
+}
+
+#submit-btn {
+  font-size: 20px;
+  padding: 8px 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(78, 45, 130);
+  color: white;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+  font-family: Trade Winds, cursive;
+
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(60, 64, 74);
+  color: white;
+  margin-top: 180px;
+  padding: 10px;
+}
