@@ -32,12 +32,17 @@ function contaDigitos() {
 }
 
 const nome = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
 function apareceInfo() {
   document.querySelector('#evaluation-form').remove();
+  document.querySelector('#trybewarts-forms-logo').remove();
   const main = document.querySelector('main');
   const section = document.createElement('section');
+  const p = document.createElement('p');
 
-  section.innerHTML = `Nome: ${nome.value}`;
+  p.innerHTML = `Nome: ${nome.value} ${lastName.value}`;
+  section.appendChild(p);
+
   main.appendChild(section);
 }
 
