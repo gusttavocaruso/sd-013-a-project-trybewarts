@@ -8,7 +8,8 @@ btnForm.addEventListener('click', Eventclick)
 
 function Eventclick() {
   if ((loginBtn.value !== email) || (senhaBtn.value !== senha)) {
-    alert('Login ou senha inválidos.');
+    alert('Olá, Tryber!');
+    // alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
   }
