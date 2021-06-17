@@ -101,3 +101,8 @@ footer {
   height: 30px;
   text-align: center;
 }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
