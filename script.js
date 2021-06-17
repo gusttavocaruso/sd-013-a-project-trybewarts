@@ -1,4 +1,3 @@
-
 const desafio3 = () => {
   let login = document.querySelector('#login');
   let senha = document.querySelector('#senha');
@@ -9,8 +8,6 @@ const desafio3 = () => {
       alert('Olá, Tryber!');
     }
 }
-
-
 
 window.onload = () => {
   let btnLogin = document.querySelector('#btn-login');
