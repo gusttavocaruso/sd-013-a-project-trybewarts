@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<!-- Cabeçalho e formulário de Login -->
+  <!-- Cabeçalho e formulário de Login -->
   <div class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="#">        
         
@@ -22,7 +22,7 @@
     </form>             
   </div>
 
-<!-- Formulário main -->
+  <!-- Evaluation Form -->
   <main id="mainId">
     <form id="evaluation-form">
       <div id="fullName">
@@ -43,7 +43,7 @@
 
       <hr/>
 
-<!-- Seleção da família -->
+      <!-- Seleção da família -->
       <label for="" id="label-family">Qual sua família?</label>
       <label for="front-radio"><input type="radio" value="Frontend" id="front-radio" name="family">Frontend</label>
       <label for="back-raido"><input type="radio" value="Backend" id="back-radio" name="family">Backend</label>
@@ -51,7 +51,7 @@
       
       <hr/>
 
-<!-- Seleção conteúdo -->
+      <!-- Seleção conteúdo -->
       <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id="checkbox-content">        
         <label for="hofs-check"><input type="checkbox" value="HoFs" id="hofs-check" class="subject">HoFs</label>
@@ -64,7 +64,7 @@
 
       <hr/>
 
-<!-- Avaliação Trybewarts -->
+      <!-- Avaliação Trybewarts -->
       <div>
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <label for=""><input type="radio" name="rate" value="1">1</label>
@@ -79,16 +79,28 @@
         <label for=""><input type="radio" name="rate" value="10">10</label>
       </div>
       
-<!-- Textarea comentário -->
+      <!-- Textarea comentário -->
+      <label for="" class="textarea">Deixe seu comentário:</label>
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
 
+      <!-- Concorda com informaçõe -->
+      <div>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="agree" id="agreement">
+      </div>
+
+      <!-- Botão para enviar informações -->
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
+
+      <!-- Footer -->
+      <footer>Direitos reservados à Trybewarts©</footer>
 
     </form>
-  </main>  
 
-  <div id="logoForms">
+    <!-- Logo Trybewarts -->
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
-  </div>
-  
+
+  </main>
   <script src="script.js"></script>
 </body>
 
