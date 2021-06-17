@@ -32,12 +32,32 @@ function contaDigitos() {
 }
 
 const nome = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const email = document.querySelector('#input-email');
+const house = document.querySelector('#house');
+const familia = document.querySelector('input[name=family]:checked');
+
 function apareceInfo() {
   document.querySelector('#evaluation-form').remove();
-  let main = document.querySelector('main');
-  let section = document.createElement('section');
+  document.querySelector('#trybewarts-forms-logo').remove();
+  const main = document.querySelector('main');
+  main.id = 'evaluation-form';
+  const section = document.createElement('section');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
+  const p3 = document.createElement('p');
+  const p4 = document.createElement('p');
 
-  section.innerHTML = `Nome: ${nome.value}`;
+  p1.innerHTML = `Nome: ${nome.value} ${lastName.value}`;
+  section.appendChild(p1);
+  p2.innerHTML = `Email: ${email.value}`;
+  section.appendChild(p2);
+  p3.innerHTML = `Casa: ${house.value}`;
+  section.appendChild(p3);
+  p4.innerHTML = `Família: ${familia}`;
+  section.appendChild(p4);
+
+
   main.appendChild(section);
 }
 
