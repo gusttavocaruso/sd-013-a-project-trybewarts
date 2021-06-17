@@ -5,6 +5,7 @@
 }
 
 #evaluation-form {
+
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@ main {
 }
 
 .check-form {
+
   /* border: 1px solid black; */
   width: 300px;
   display: flex;
@@ -31,7 +33,7 @@ main {
 
 .check {
   display: flex;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .note {

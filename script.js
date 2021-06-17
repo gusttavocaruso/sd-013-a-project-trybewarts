@@ -1,12 +1,12 @@
 const btnForm = document.getElementById('btn');
-const loginBtn = document.getElementById('loginBtn');
-const senhaBtn = document.getElementById('senhaBtn');
+const login = document.getElementById('loginBtn');
+const senhaInput = document.getElementById('senhaBtn');
 const email = 'tryber@teste.com';
 const senha = '123456';
 
 function Eventclick(e) {
   e.preventDefault();
-  if ((loginBtn.value === email) && (senhaBtn.value === senha)) {
+  if ((login.value === email) && (senhaInput.value === senha)) {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
