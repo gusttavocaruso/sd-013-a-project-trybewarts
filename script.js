@@ -8,12 +8,12 @@ const password = document.querySelector('#input-password');
 
 /* Elementos Forms */
 const form = document.querySelector('#evaluation-form');
-const name = document.querySelector('#input-name');
+const inputName = document.querySelector('#input-name');
 const surname = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const family = document.querySelectorAll('.family');
-const subject = document.querySelectorAll('.subject');
+const subjects = document.querySelectorAll('.subject');
 const rating = document.querySelectorAll('.rate');
 const comment = document.querySelector('#textarea');
 const agree = document.querySelector('#agreement');
@@ -41,3 +41,46 @@ function enableSubmit() {
   }
 }
 agree.addEventListener('change', enableSubmit);
+
+/* Retorna a família selecionada (string) */
+function familyChecked() {
+  for(let i = 0; i < family.length; i += 1) {
+    if(family[i].checked) {
+      return family[i].value;
+    }
+  }
+}
+
+/* Retorna os conteúdos selecionados (string) */
+function subjectsChecked() {
+  let subjectList = '';
+  for(let i = 0; i < subjects.length; i += 1) {
+    if(subjects[i].checked) {
+      subjectList += `${subjects[i].value}, `;
+    }
+  }
+  return subjectList;
+}
+
+/* Retorna a avaliação selecionada (int) */
+function rateChecked() {
+  for (let i = 0; i < rating.length; i += 1) {
+    if (rating[i].checked) {
+      return rating[i].value;
+    }
+  }
+}
+
+function formSubmit() {
+  form.innerHTML = "";
+  form.style.backgroundImage = 'none';
+  form.innerHTML += `<h2 style="margin-bottom:20px;">Resultados</h2>`;
+  form.innerHTML += `<p>Nome: ${inputName.value} ${surname.value}</p>`;
+  form.innerHTML += `<p>Email: ${email.value}</p>`;
+  form.innerHTML += `<p>Casa: ${house.value}</p>`;
+  form.innerHTML += `<p>Família: ${familyChecked()}</p>`;
+  form.innerHTML += `<p>Matérias: ${subjectsChecked()}</p>`;
+  form.innerHTML += `<p>Avaliação: ${rateChecked()}</p>`;
+  form.innerHTML += `<p>Observações: ${comment.value}</p>`;
+}
+submitBtn.addEventListener('click', formSubmit);
