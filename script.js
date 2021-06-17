@@ -14,3 +14,21 @@ function validadeHeaderForm() {
 }
 
 formButton.addEventListener('click', validadeHeaderForm);
+
+function validateBtn () {
+  const btn =  document.querySelector('#submit-btn');
+  const checkbox = document.querySelector('#agreement');
+  
+  checkbox.addEventListener('change', function () {
+    if (this.checked) {
+      btn.removeAttribute('disabled');
+    } else {
+      btn.setAttribute('disabled');
+    }
+  })
+}
+
+window.onload = function() {
+  validateBtn();
+};
+
