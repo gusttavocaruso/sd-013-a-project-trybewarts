@@ -35,8 +35,13 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+  /* align-items: center; */
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* #emailHouse{
+  width: 365px
+} */
