@@ -21,11 +21,11 @@
   max-width: 20%;
 }
 
-#email {
+#inputEmail {
   margin-bottom: 5px;
 }
 
-.botao-entrar {
+#inputBtn {
   padding: 5px;
   background-color: blue;
   color: white;

@@ -1,13 +1,13 @@
 // requisito 3
-const btnLogin = document.getElementById('btn-login');
-const login = document.getElementById('login');
-const password = document.getElementById('password');
+const loginButton = document.getElementById('inputBtn');
+const getEmail = document.getElementById('inputEmail');
+const getSenha = document.getElementById('inputSenha');
 
-btnLogin.addEventListener('click', () => {
-  if (login.value === 'tryber@teste.com' && password.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
+loginButton.addEventListener('click', () => {
+  if ((getEmail.value !== 'tryber@teste.com') && (getSenha.value !== '123456')) {
     alert('Login ou senha inválidos.');
+  } else {
+    alert('Olá, Tryber!');
   }
 });
 
