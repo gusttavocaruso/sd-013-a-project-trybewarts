@@ -22,7 +22,7 @@
 #evaluation-form {
   width: 675px;
   display: flex;
-  flex-flow: column; 
+  flex-flow: column;
 }
 
 .family {
