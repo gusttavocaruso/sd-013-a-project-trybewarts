@@ -11,14 +11,15 @@ agreement.onchange = () => {
   }
 };
 
-//validaLogin
-function validaLogin(){
-  let log = document.getElementById('Login');
-  let s = document.getElementById('Senha');
+// validaLogin
+function validaLogin() {
+  const log = document.getElementById('Login');
+  const s = document.getElementById('Senha');
 
-  if(log.value === "tryber@teste.com" && s.value == "123456"){
-    alert("Olá, Tryber!");
-  }else{
-    alert("Login ou senha inválidos.");
-  } 
+  if (log.value === 'tryber@teste.com' && s.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
+  }
 }
+validaLogin();
