@@ -1,4 +1,5 @@
 const botaoLogin = document.querySelector('#botaoLogin');
+const checkBox = document.querySelector('#agreement');
 
 function verificaLogin() {
   const campoUser = document.querySelector('#email').value;
@@ -10,4 +11,14 @@ function verificaLogin() {
   }
 }
 
+function habilitaBotao() {
+  const botaoTemp = document.querySelector('#submit-btn');
+  if (this.checked) {
+    botaoTemp.disabled = false;
+  } else {
+    botaoTemp.disabled = true;
+  }
+}
+
 botaoLogin.addEventListener('click', verificaLogin);
+checkBox.addEventListener('change', habilitaBotao);
