@@ -24,6 +24,7 @@
   width:675px;
   flex-direction: column;
 }
+
 main , #evaluation-form{
   display: flex;
 }
