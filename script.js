@@ -1,7 +1,5 @@
 const botaoLogin = document.querySelector('#botaoLogin');
 const checkBox = document.querySelector('#agreement');
-
-
 const campoTexto = document.querySelector("#textarea");
 
 
@@ -29,9 +27,7 @@ function contaDigitos(){
   const inputLength = campoTexto.value.length;
   const maxChars = 500;
   let calculo = maxChars - inputLength;
-  counterConst.innerHTML = calculo
-  console.log(calculo);
-
+  counterConst.innerHTML = calculo;
 }
 
 
