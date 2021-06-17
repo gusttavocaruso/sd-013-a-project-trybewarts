@@ -76,7 +76,9 @@
 					<input type="radio" name="rate" id="value10" value="10" class="radios"><label for="value1">10</label>
 				</div>
 				<div id="container-textarea">
-					<label class="textarea" for="textarea">Deixe seu comentário:</label>
+					<div class="container-label">
+						<label class="textarea" for="textarea">Deixe seu comentário:</label><label for=""><span id="counter"></span> caracteres restantes.</label>
+					</div>
 					<textarea name="comentario" id="textarea" cols="50" rows="10" maxlength="500" placeholder="Deixe seu comentário"></textarea>
 				</div>
 				<label for="agreement" id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" name="info" id="agreement" value="marcado" required></label>
