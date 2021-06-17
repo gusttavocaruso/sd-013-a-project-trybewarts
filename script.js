@@ -18,3 +18,11 @@ function buttonOn() {
 
 btnLogin.addEventListener('click', checkLogin);
 btnOn.addEventListener('click', buttonOn);
+
+const textArea = document.getElementById('textarea');
+function characterCount() {
+  const contador = document.getElementById('counter');
+  const aux = 500 - textArea.value.length;
+  contador.innerHTML = aux;
+}
+textArea.addEventListener('keyup', characterCount);

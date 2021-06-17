@@ -109,13 +109,12 @@ fieldset {
 
 .aval {
   display: flex;
-  padding: 20px 0 105px;
+  padding: 10px 0 30px;
 }
 
 .coment {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
 }
 
 #agreement-container {
@@ -130,6 +129,7 @@ fieldset {
   background-color: rgb(78, 45, 130);
   color: white;
 }
+
 
 body {
   background-color: rgb(239, 239, 239);
