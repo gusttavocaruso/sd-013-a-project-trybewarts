@@ -33,10 +33,11 @@ function prevent() {
 function textAreaCounter() {
   const textarea = document.querySelector('#textarea');
   const counter = document.querySelector('#counter');
+  counter.innerText = 500;
 
   textarea.addEventListener('keyup', () => {
     const characters = textarea.value.length;
-    counter.innerText = characters;
+    counter.innerText = 500 - characters;
   });
 }
 
