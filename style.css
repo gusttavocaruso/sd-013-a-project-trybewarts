@@ -38,3 +38,6 @@ select {
 .trybewarts-header-logo{
  flex-direction: row;
 }
+.trybewarts-login{
+  display: flex;
+}

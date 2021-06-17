@@ -10,3 +10,15 @@ agreement.onchange = () => {
     submit.disabled = true;
   }
 };
+
+//validaLogin
+function validaLogin(){
+  let log = document.getElementById('Login');
+  let s = document.getElementById('Senha');
+
+  if(log.value === "tryber@teste.com" && s.value == "123456"){
+    alert("Olá, Tryber!");
+  }else{
+    alert("Login ou senha inválidos.");
+  } 
+}
