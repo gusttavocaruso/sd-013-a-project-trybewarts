@@ -2,16 +2,20 @@
   padding: 0;
   margin: 0;
   font-family: Staatliches, cursive;
+  color: rgb(32, 29, 29);
 }
 
 body {
   padding-top: 50px;
+  background-color: rgb(163, 92, 8);
+  margin-top: 50px;
+  margin-bottom: 500px;
 }
 
 /* Header */
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(16, 163, 46);
   justify-content: space-between;
   width: 100%;
   flex-flow: wrap row;
@@ -19,7 +23,8 @@ body {
   text-align: center;
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 80px;
+  box-shadow: black 0 0 100px 4px;
 }
 
 .header-logo {
@@ -35,9 +40,10 @@ body {
 
 .trybewarts-login {
   display: flex;
-  height: 20px;
+  height: 50px;
   justify-content: center;
   align-content: center;
+  background-color: white;
 }
 
 
@@ -130,6 +136,13 @@ main {
 /* Aside Logo */
 .trybewarts-logo-aside {
   display: flex;
+  background-color: rgb(105, 24, 240);
+  padding: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 4px;
+  border-radius: 20px;
+  box-shadow: black 4px 4px 40px 4px;
 }
 
 .trybewarts-logo {
@@ -145,8 +158,9 @@ footer {
   display: flex;
   width: 100%;
   height: 50px;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(1, 240, 49);
   order: 6;
   position: fixed;
   bottom: 0;
+  box-shadow: black 0 0 100px 4px;
 }
