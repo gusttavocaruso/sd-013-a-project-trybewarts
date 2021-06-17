@@ -26,3 +26,14 @@ for (let i = 1; i <= 10; i += 1) {
   label.appendChild(input);
   radioButtons.appendChild(label);
 }
+
+const agree = document.getElementById('agreement');
+const send = document.getElementById('submit-btn');
+function form() {
+  if (agree.checked === true) {
+    send.disabled = false;
+  } else {
+    send.disabled = true;
+  }
+}
+agree.addEventListener('click', form);
