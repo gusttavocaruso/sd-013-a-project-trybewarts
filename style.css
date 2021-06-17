@@ -16,14 +16,3 @@ main {
   display: flex;
   align-self: center;
 }
-
-#evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
-  align-self: flex-start;
-}
-
-.row {
-  flex-direction: row;
-}
