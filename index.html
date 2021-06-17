@@ -10,13 +10,13 @@
 <header class="header">
   <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
 
-  <h1 id="trybewarts-header-title">Trybewarts </h1>
+  <h1 id="trybewarts-header-title">Trybewarts</h1>
 
   <form class="trybewarts-login" method="GET" id="trybewarts-login">
 
     <input type="text" id="Login" placeholder="Login"> 
     <input type="password" id="Senha" placeholder="Senha">
-    <input type="submit" value="Logar" onclick="validaLogin()">
+    <button type="submit" value="Logar" id = "login-button"> OK
 
   </form>
 </header>
@@ -53,7 +53,7 @@
         </div>
 
         <div id="content">
-          <label id="">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <input type="checkbox" value="HoFs">HoFs
           <input type="checkbox" value="Jest">Jest
           <input type="checkbox" value="Promises">Promises
@@ -98,11 +98,11 @@
         <button type="submit" name = "submit-btn" id = "submit-btn" disabled="disabled">Enviar</button>
       </form>
     </main>
-    <div id="aside">
-      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+      <div id="aside">
+        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+      </div>
     </div>
-  </div>
-  <footer class = "footer">Direitos reservados à Trybewarts©</footer>
+    <footer class = "footer">Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
 </html>

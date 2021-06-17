@@ -15,11 +15,14 @@ agreement.onchange = () => {
 function validaLogin() {
   const log = document.getElementById('Login');
   const s = document.getElementById('Senha');
-
-  if (log.value === 'tryber@teste.com' && s.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos.');
-  }
+  // Puxa o botão de login
+  const loginButton = document.getElementById('login-button');
+  loginButton.addEventListener('click', () => {
+    if (log.value === 'tryber@teste.com' && s.value === '123456') {
+      alert('Olá, Tryber!');
+    } else {
+      alert('Login ou senha inválidos.');
+    }
+  });
 }
 validaLogin();
