@@ -22,21 +22,30 @@ checker.onchange = function habilita() {
   }
 };
 
+const textArea = document.getElementById('textarea');
+function contar(event) {
+  const counter = document.getElementById('counter');
+  const contador = 500;
+  counter.innerHTML = contador - event.target.value.length;
+}
+
+textArea.addEventListener('keyup', contar);
+
 function getFamily() {
   const family = document.getElementsByName('family');
-  for (const key in family) {
-    if (family[key].checked) {
-      return family[key].value
+  for (let i = 0; i < family.length; i += 1) {
+    if (family[i].checked) {
+    return family[i].value;
     }
-  }
+} 
 }
 
 function getSubjected() {
   const subjects = document.getElementsByClassName('subject');
-  let selected= '';
-  for (const key in subjects) {
-    if (subjects[key.checked]) {
-      selected += subjects[key].value
+  let selected = '';
+  for (let j = 0; j < subjects.length; j += 1) {
+    if (subjects[j].checked) {
+      selected += `${subjects[j].value}, `
     }
   } 
   return selected;
@@ -44,14 +53,17 @@ function getSubjected() {
 
 function getAvaliation() {
   const avaliacoes = document.getElementsByName('rate');
-  for (const key in avaliacoes) {
-    if (avaliacoes[key].checked) {
-      return avaliacoes[key].value
+  for (let z = 0; z < avaliacoes.length; z += 1) {
+    if (avaliacoes[z].checked) {
+      return avaliacoes[z].value;
     }
   }
 }
 
-const name
+const firstName = document.getElementById('input-name');
+const lastName = document.getElementById('input-lastname');
+const email = document.getElementById('input-email');
+const house = document.getElementById('house');
 
 function preencheForm() {
   const familiaSelecionada = getFamily();
@@ -59,11 +71,13 @@ function preencheForm() {
   const avaliacaoDoUsuario = getAvaliation();
   const form = document.getElementsByTagName('form')[1];
   form.innerHTML = '';
-  form.innerHTML += `Nome: ${inputName.value} ${inputLastN.value} <br>`;
-  form.innerHTML += `Email: ${inputEmail.value} <br>`;
+  form.innerHTML += `Nome: ${firstName.value} ${lastName.value} <br>`;
+  form.innerHTML += `Email: ${email.value} <br>`;
   form.innerHTML += `Casa: ${house.value} <br>`;
   form.innerHTML += `Família: ${familiaSelecionada} <br>`;
   form.innerHTML += `Matérias: ${subObjetoSelecionado} <br>`;
   form.innerHTML += `Avaliação: ${avaliacaoDoUsuario} <br>`;
-  form.innerHTML += `Observações: ${textArea.value}`;
+  form.innerHTML += `Observações: ${textArea.value} <br>`;
 }
+
+sendBtn.addEventListener('click', preencheForm);
