@@ -20,7 +20,6 @@ main {
 }
 
 .trybewarts-login {
-  display: flex;
   align-self: center;
 }
 
@@ -45,6 +44,7 @@ main {
 
 .input-position {
   display: flex;
+  flex-flow: row;
 }
 
 .input-box {
@@ -75,7 +75,7 @@ button {
 }
 
 label {
-  margin: 12px 0px;
+  margin: 12px;
 }
 
 .input-family {
