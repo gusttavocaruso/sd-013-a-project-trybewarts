@@ -5,7 +5,7 @@ const agreementCheck = document.getElementById('agreement');
 const loginButton = document.getElementById('login-button');
 
 // Função para dar o alerta no caso de o login e senha estarem corretos ou não.
-function loginAlert() {
+const loginAlert = () => {
   if ((loginInput.value !== 'tryber@teste.com') || (passwordInput.value !== '123456')) {
     alert('Login ou senha inválidos.');
   } else {
@@ -16,7 +16,7 @@ function loginAlert() {
 loginButton.addEventListener('click', loginAlert);
 
 // Função para abilitar o botão caso o "checkbox" esteja selecionado.
-function enableBtn() {
+const enableBtn = () => {
   if (agreementCheck.checked) { // https://www.w3schools.com/jsref/prop_checkbox_checked.asp checked retirado deste link
     submtitButton.removeAttribute('disabled');
   } else {
