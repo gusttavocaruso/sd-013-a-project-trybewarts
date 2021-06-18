@@ -38,6 +38,6 @@
   display: flex;
 }
 
-#evaluation-form :nth-child(5) {
+#evaluation-form :nth-child( 5 ) {
   display: flex;
 }
