@@ -11,7 +11,7 @@ const loginAlert = () => {
   } else {
     alert('Olá, Tryber!');
   }
-}
+};
 
 loginButton.addEventListener('click', loginAlert);
 
@@ -22,6 +22,6 @@ const enableBtn = () => {
   } else {
     submtitButton.setAttribute('disabled', 'disabled');
   }
-}
+};
 
 agreementCheck.addEventListener('click', enableBtn);
