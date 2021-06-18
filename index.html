@@ -120,9 +120,10 @@
       </div>
       <div>
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <span id="counter" form-label>500 caracteres disponíveis</span>
       </div>
       <div id="comentario">
-        <textarea id="textarea" maxlength="500" class="form-control" rows="20" cols="30"></textarea>
+        <textarea id="textarea" maxlength="500" data-validate-field="textarea" class="form-control" rows="20" cols="30"></textarea>
         <!-- data-validate-field="textarea" -->
       </div>
       <div class="form-check">
@@ -138,6 +139,7 @@
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
+  <script src="libs/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 

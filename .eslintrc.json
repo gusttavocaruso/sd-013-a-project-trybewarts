@@ -10,6 +10,7 @@
     "extends": ["trybe-fundamentals"],
     "parserOptions": { "ecmaVersion": 11 },
     "rules": {
+"no-new": 0,
       "no-console": "off",
       "no-alert": "off",
       "arrow-parens": [2, "always"],
