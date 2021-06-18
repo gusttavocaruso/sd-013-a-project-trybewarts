@@ -69,12 +69,6 @@ input {
   margin-left: -5px;
 }
 
-#divRadio {
-
-  flex-direction: column;
-
-}
-
 #divLabels {
   display: flex;
   flex-direction: column;

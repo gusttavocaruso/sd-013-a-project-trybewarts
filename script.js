@@ -18,9 +18,6 @@ const desafio12 = () => {
   const divRadio = document.createElement('div');
   divRadio.setAttribute('id','divRadio');
   divFamily.appendChild(divRadio);
-  const divLabels = document.createElement('div');
-  divLabels.setAttribute('id','divLabels');
-  divFamily.appendChild(divLabels);
   const languages = ['Frontend','Backend','FullStack'];
 
   for(let i = 0; i < languages.length; i += 1) {
@@ -37,7 +34,7 @@ const desafio12 = () => {
     labels.setAttribute('for',language);
     labels.innerText = language;
     labels.setAttribute('class','languagesLabel')
-    divLabels.appendChild(labels);
+    divRadio.appendChild(labels);
 
   }
 }
