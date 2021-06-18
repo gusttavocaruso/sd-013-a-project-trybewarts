@@ -10,6 +10,10 @@ header {
   justify-content: space-between;
 }
 
+.evaluation-form {
+  display: flex;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -20,6 +24,7 @@ main {
 }
 
 .trybewarts-login {
+  display: flex;
   align-self: center;
 }
 
