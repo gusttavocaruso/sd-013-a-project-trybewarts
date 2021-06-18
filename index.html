@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div>
@@ -19,49 +19,70 @@
       </form>  
     </header>
     <main>
-      <fieldset class="firstForm">
-          <form action="#" method="GET" id="evaluation-form">
-            <div class="allingNames">
-              <input type="text" name="Nome" placeholder="Nome" id="input-name">
-              <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+      <form action="#" method="GET" id="evaluation-form">
+        <fieldset class="firstForm">
+          <div class="allingNames">
+            <input type="text" name="Nome" placeholder="Nome" id="input-name">
+            <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+          </div>
+          <div class="allingEmailHouse">
+            <input type="email" name="Email" placeholder="Email" id="input-email">
+            <label for="house" id="selectCasa">Casa:</label>
+              <select name="" id="house">
+                <option class="casa" value="0" id="gitnoria-house">Gitnória</option>
+                <option class="casa" value="1" id="reactpuff-house">Reactpuff</option>
+                <option class="casa" value="2" id="corvinode-house">Corvinode</option>
+                <option class="casa" value="3" id="pytherina-house">Pytherina</option>
+              </select>
             </div>
-            <div class="allingEmailHouse">
-              <input type="email" name="Email" placeholder="Email" id="input-email">
-                  <select name="" id="house">
-                    <option value="0">Casa:</option>
-                    <option value="1" id="gitnoria-house">Gitnória</option>
-                    <option value="2" id="reactpuff-house">Reactpuff</option>
-                    <option value="3" id="corvinode-house">Corvinode</option>
-                    <option value="4" id="pytherina-house">Pytherina</option>
-                  </select>
-              </div>
+            <section id="selectFamily">
+              <fieldset class="column-organiza">
+                <p id="label-family">Qual sua família?</p>
+                <label for="front">
+                  <input type="radio" name="family" value="Frontend" id="front">Família Frontend
+                </label>
+                <label for="back">
+                <input type="radio" name="family" value="Backend" id="Back">Família Backend
+              </label>
+              <label for="full">
+                <input type="radio" name="family" value="FullStack" id="full">Família FullStack 
+              </label>
+              </fieldset>
+              <fieldset class="check">
+                <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
+              <label for="hof">
+                <input id="hof" class="subject" type="checkbox" value="HoFs">HoFs
+              </label>
+              <label for="jes">
+                <input id="jes" class="subject" type="checkbox" value="Jest">Jest
+              </label>
+              <label for="prom">
+                <input id="prom" class="subject" type="checkbox" value="Promises">Promises
+              </label>
+              <label for="reac">
+                <input id="reac" class="subject" type="checkbox" value="React">React
+              </label>
+              <label for="sql">
+                <input id="sql" class="subject" type="checkbox" value="SQL">SQL
+              </label>
+              <label for="python">
+                <input id="python" class="subject" type="checkbox" value="Python">Python
+              </label>
+              </fieldset>
+            </section>
+            <div class="allingSatisfaction">
+              <label id="label-rate">Como você avalia a Trybewarts?</label>
+              <section id="radioButtons"></section>
+            </div>
 
-              <label for="family" id="label-family">Qual sua família?</label>
-                <input type="radio" name="family" value="Frontend">Frontend
-                <input type="radio" name="family" value="Backend">Backend
-                <input type="radio" name="family" value="FullStack">FullStack 
+            <label for="textarea" class="textarea">Deixe seu comentário:</label>
+            <textarea maxlength="500"></textarea>
 
-              <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                <input class="subject" type="checkbox" value="HoFs">HoFs
-                <input class="subject" type="checkbox" value="Jest">Jest
-                <input class="subject" type="checkbox" value="Promises">Promises
-                <input class="subject" type="checkbox" value="React">React
-                <input class="subject" type="checkbox" value="SQL">SQL
-                <input class="subject" type="checkbox" value="Python">Python
-                            
-              <div class="allingSatisfaction">
-                <label id="label-rate">Como você avalia a Trybewarts?</label>
-                <section id="radioButtons"></section>
-              </div>
+            <input type="checkbox" id="agreement">
+            <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
 
-              <label for="textarea" class="textarea">Deixe seu comentário:</label>
-              <textarea maxlength="500"></textarea>
-
-              <input type="checkbox" id="agreement">
-              <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-
-              <button type="submit" id="submit-btn" disabled>Enviar</button>
-          </form>
+            <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </form>
       </fieldset>
       <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </main>

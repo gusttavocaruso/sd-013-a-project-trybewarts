@@ -17,10 +17,13 @@ body {
 .trybewarts-login {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 #trybewarts-header-title {
   align-self: center;
+  font-size: 60px;
+  color: white;
 }
 
 #evaluation-form {
@@ -41,6 +44,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-left: 50px;
 }
 
 .allingNames {
@@ -53,4 +57,41 @@ main {
 
 .allingSatisfaction {
   display: flex;
+}
+
+#selectCasa {
+  margin: 3px;
+}
+
+#selectFamily {
+  display: flex;
+  flex-direction: row;
+  style: none;
+}
+
+.column-organiza {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.label-family {
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 10px;
+}
+
+#label-rate {
+  margin-top: 10px;
+}
+
+#radioButtons {
+  margin-top: 10px;
+  margin-left: 10px;
 }
