@@ -57,7 +57,6 @@ function apareceInfo() {
   p4.innerHTML = `Família: ${familia.value}`;
   section.appendChild(p4);
 
-
   main.appendChild(section);
 }
 
