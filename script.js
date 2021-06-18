@@ -1,3 +1,4 @@
+const submitBtn = document.getElementById('submit-btn');
 // Faz a validação do Login
 function validateLogin() {
   const x = document.forms.trybeForm.name.value + document.forms.trybeForm.pass.value;
@@ -11,19 +12,31 @@ function validateLogin() {
 document.getElementById('buttonId').addEventListener('click', validateLogin);
 
 // Faz validação do checkbox
-function eula(x) {
-  const y = document.getElementById('submit-btn');
-  if (x.checked === true) {
-    y.disabled = false;
+// Referência: https://thisinterestsme.com/disable-button-checkbox-checked/  - Utilizada para base e entendimento
+function eula(event) {
+  if (event.target.checked === true) {
+    submitBtn.disabled = false;
   } else {
-    y.disabled = true;
+    submitBtn.disabled = true;
   }
 }
 
-document.getElementById('agreement').addEventListerner('click', eula);
+document.getElementById('agreement').addEventListener('click', eula);
 
 // Faz contador para o textbox
-function couter() {
-  const x = document.getElementById('textarea').value.lenght;
-  document.getElementById('displayCounter').innerHTML = 500 - x;
+// Referência: https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea - Utilizada para base e entendimento
+
+function limiteTextarea(event) {
+  const quant = 500;
+  const total = event.target.value.length;
+  if (total <= quant) {
+    const resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
+  } else {
+    document.getElementById('textarea').value = 0;
+  }
 }
+
+document.getElementById('textarea').addEventListener('keyup', limiteTextarea);
+
+// Funcionalidade de clicar e substituir informações

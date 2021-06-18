@@ -8,7 +8,7 @@
   <title>Trybewarts</title>
 </head>
 
-<body onload="couter()">
+<body>
   <!-- Cabeçalho e formulário de Login -->
   <div class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="#">        
@@ -80,14 +80,14 @@
       </div>
       
       <!-- Textarea comentário -->
-      <label for="" class="textarea">Deixe seu comentário:</label>
+      <label for="" class="textarea">Deixe seu comentário:</label>      
       <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <label id="displayCounter"></label>
+      <span id="counter">500</span>
 
       <!-- Concorda com informaçõe -->
       <div>
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="agree" id="agreement">
+        <input type="checkbox" name="agree" id="agreement" />
       </div>
 
       <!-- Botão para enviar informações -->
