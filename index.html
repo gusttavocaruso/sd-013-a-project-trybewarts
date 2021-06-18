@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TrybeWarts</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <header class="header">
@@ -74,18 +73,20 @@
                     Deixe seu comentário:
                     <textarea name="textarea" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
                 </label>
-                <span id="counter"></span>
+                <span id="counter">500</span>
             </div>
             <div class="agreement-container">
-                <label for="" id="label-infos">Você concoda com o uso das informações acima?</label>
-                <input type="checkbox" name="" id="agreement">
+                <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" id="agreement" value="agree">
             </div>
             <button type="submit" id="submit-btn" disabled>Enviar</button>
             </form>
             <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo"></img>
-        </main>
-    ​
+        </main>​
         <hr><br>
-        <footer id="rodape">Direitos reservados à Trybewarts</footer>
+        <footer id="rodape">
+            <p>"Direitos reservados à Trybewarts©"</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
