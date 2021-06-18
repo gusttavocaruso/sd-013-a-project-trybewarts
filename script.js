@@ -11,7 +11,22 @@ const desafio3 = () => {
     }
   });
 }
-
-
 desafio3();
 
+// const desafio13 = () => {
+//   let checkbox = document.querySelector('#checkbox');
+//   checkbox.style.display = 'flex';
+//   let nomes = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+
+//   for(let i = 0; i < nomes.length; i += 1) {
+//     let nome = nomes[i];
+//     let inputs = document.createElement('input');
+//     inputs.setAttribute('type', 'checkbox');
+//     inputs.setAttribute('value',nome);
+//     inputs.innerText = nome;
+//     inputs.classList.add('subject');
+//     inputs.classList.add('form-check-input');
+//     checkbox.appendChild(inputs);
+//   }
+// }
+// desafio13();
