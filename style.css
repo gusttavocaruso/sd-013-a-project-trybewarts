@@ -33,3 +33,11 @@
   width: 675px;
   flex-direction: column;
 }
+
+#evaluation-form div {
+  display: flex;
+}
+
+#evaluation-form :nth-child(5) {
+  display: flex;
+}
