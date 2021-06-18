@@ -28,15 +28,13 @@ function verificaCheck() {
 
 document.getElementById('agreement').addEventListener('input', verificaCheck);
 
-const textArea = document.getElementById('textarea');
-const cont = document.getElementById('counter');
+const textArea = document.querySelector('#textarea');
+const cont = document.querySelector('#counter');
 
 function contadorCaractere() {
-  const value = parseInt(textArea.value.length, 10);
-  let caracteresRestantes = 500;
-  const caracteresDigitados = value;
-  caracteresRestantes -= caracteresDigitados;
-  cont.innerText = caracteresRestantes;
+  const value = textArea.value.length;
+  cont.innerText = 500 - value + ' caracteres restantes.';  
 }
+  
 
-textArea.addEventListener('keydown', contadorCaractere);
+textArea.addEventListener('input', contadorCaractere);
