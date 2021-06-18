@@ -5,11 +5,6 @@ const agreementCheck = document.getElementById('agreement');
 const loginButton = document.getElementById('login-button');
 
 // Função para dar o alerta no caso de o login e senha estarem corretos ou não.
-const loginInput = document.getElementById('login-input');
-const passwordInput = document.getElementById('password-input');
-const disableButton = document.getElementById('submit-btn').disabled;
-const agreement = document.getElementById('agreement');
-
 function loginAlert() {
   if ((loginInput.value !== 'tryber@teste.com') || (passwordInput.value !== '123456')) {
     alert('Login ou senha inválidos.');
@@ -17,8 +12,6 @@ function loginAlert() {
     alert('Olá, Tryber!');
   }
 }
-
-loginAlert();
 
 loginButton.addEventListener('click', loginAlert);
 
