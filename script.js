@@ -25,4 +25,3 @@ function enableBtn() {
 }
 
 agreementCheck.addEventListener('click', enableBtn);
-
