@@ -9,6 +9,7 @@ body {
   background-color: rgb(211, 209, 209);
 }
 
+/* classes do HEADER */
 .flex-container {
   display: flex;
   height: 50px;
@@ -53,17 +54,74 @@ justify-content: right
   height: 20px;
   border: solid 1px purple;
 }
+/* FIM DAS CLASSES DO HEADER */
 
+/* classes do MAIN */
 main {
   display: flex;
 }
 
-#evaluation-form {
+#evaluation-form {   /* Classe do formulário */
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
+.session-one {      /* Sessão 1 do Formulario */
+  display: flex;
+  flex-direction: column;
+}
+
+.session-one h2 {
+  justify-content: center;
+  border: solid 1px purple;
+}
+
+.session-one div {
+  border: solid 1px purple;
+  margin: 5px 5px;
+}
+
+.session-two {      /* Sessão 2 do Formulario */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.family-stacks {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.family-stacks label {
+  padding: 5px;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+}
+
+.session-three {     /* Sessão 3 do Formulario */
+  display: flex;
+  flex-direction: column;
+}
+.textarea-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-content button {
+  width: 100%;
+  padding: 5px;
+  background-color: purple;
+  color: white;
+}
+/* FIM DAS CLASSES DO MAIN */
+
+/* classe do Footer */
 footer {
   width: 100%;
   display: flex;
@@ -75,3 +133,4 @@ footer {
   position: fixed;
   bottom: 0;
 }
+/* FIM DA CLASSE DO FOOTER */
