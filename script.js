@@ -10,16 +10,16 @@ buttonLogin.addEventListener('click', () => {
 });
 
 const sendButton = () => {
-  let getEnviar = document.getElementById('submit-btn');
-  let getCheckbox = document.getElementById('agreement');
+  const getEnviar = document.getElementById('submit-btn');
+  const getCheckbox = document.getElementById('agreement');
 
   getCheckbox.addEventListener('click', () => {
-      if (getCheckbox.checked === false) {
-    getEnviar.disabled = true;
+    if (getCheckbox.checked === false) {
+      getEnviar.disabled = true;
     } else {
       getEnviar.disabled = false;
     }
   });
-}
+};
 
 sendButton();
