@@ -4,6 +4,8 @@ const btnLogin = document.getElementById('btn-logar');
 const notaContainer = document.getElementById('nota-container');
 const agreement = document.getElementById('agreement');
 const btnEnviar = document.getElementById('submit-btn');
+const getCounter = document.querySelector('#counter');
+const getTextArea = document.querySelector('#textarea');
 const loginResister = 'tryber@teste.com';
 const passwordResister = '123456';
 const msgValidate = 'Olá, Tryber!';
@@ -42,9 +44,6 @@ for (let i = 1; i <= 10; i += 1) {
 
 btnEnviar.disabled = true;
 agreement.addEventListener('change', habilitaBtn);
-
-const getCounter = document.querySelector('#counter');
-const getTextArea = document.querySelector('#textarea');
 
 const checkSizeComment = (event) => {
   const getTextLength = event.target.value;
