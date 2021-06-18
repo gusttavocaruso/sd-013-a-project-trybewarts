@@ -52,3 +52,8 @@
 #linha-2 {
   display: flex;
 }
+
+#comentario {
+  display: flex;
+  flex-direction: column;
+}
