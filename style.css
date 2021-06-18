@@ -69,10 +69,17 @@ main {
 #form-container1 {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 #form-container2 {
   display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#form-container3 {
+  padding-top: 10px;
 }
 
 #radio-container {
@@ -96,6 +103,7 @@ main {
 .textarea {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 #submit-btn {
@@ -105,4 +113,14 @@ main {
   height: 22px;
   background-color: indigo;
   color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(66, 65, 65);
+  height: 40px;
 }
