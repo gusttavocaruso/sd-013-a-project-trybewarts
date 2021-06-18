@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <title>Trybewarts Project</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
   </header>
   <main class="main">
     <form id="evaluation-form" method="GET">
+      <h1 id="form-title">Forms</h1>
       <div class="nome-completo">
         <input id="input-name" class="campo" type="text" name="nome" placeholder="Nome">
         <input id="input-lastname" class="campo" type="text" name="sobrenome" placeholder="Sobrenome">
@@ -87,7 +89,7 @@
         <p id="counter">500</p>
       </div>
       <label for="agreement" id="label-infos">
-        <input type="checkbox" id="agreement"> Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" id="agreement" required> Você concorda com o uso das informações acima?</label>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
     <div class="logo-trybewarts">
