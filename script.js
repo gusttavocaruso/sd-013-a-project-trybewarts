@@ -46,9 +46,6 @@ function getRadioValue(language) {
       return language[i].value;
     }
   }
-  // esse if embaixo é para não aparecer undefined quando nada é selecionado.
-  // eu to negando o familyRadio.checked
-  // dizendo: se familyRadio não foi checked
   if (!familyRadio.checked) {
     return '';
   }
