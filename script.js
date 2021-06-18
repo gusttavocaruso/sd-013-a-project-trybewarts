@@ -29,3 +29,11 @@ checkbox.addEventListener('change', () => {
     btnSubmit.style.color = 'rgb(141, 163, 156)';
   }
 });
+
+// Cria contador de caracteres da textarea
+const counter = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
+
+textarea.addEventListener('keyup', () => {
+  counter.innerHTML = 500 - textarea.value.length;
+});
