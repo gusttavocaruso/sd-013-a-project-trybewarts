@@ -11,3 +11,15 @@ btnLogin.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+function botaoCheck () {
+  let botao = document.getElementById("submit-btn")
+  botao.disabled = true;
+  let input = document.getElementById("agreement")
+  input.addEventListener("click", () => {
+    botao.disabled = false;
+    
+  })
+}
+
+botaoCheck ();

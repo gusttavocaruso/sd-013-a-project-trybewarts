@@ -44,11 +44,13 @@
         <option id="pytherina-house" value="Pytherina">Pytherina</option>
       </select>
     </div>
-      <input type="checkbox" name="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+
+      
 
       <fieldset>
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div id="check-conteudos">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        
           <label for="HoFs">HoFs</label>
           <input class="subject" id="HoFs" type="checkbox" name="conteudos" value="HoFs">
           <label for="Jest">Jest</label>
@@ -64,6 +66,18 @@
           <br>
           <input type="submit" value="Submit now" />
         </div>
+        <div id="family-content">
+            <p id="label-family">Qual sua família?</p>
+            <label for="Frontend">Frontend</label>
+          <input id="Frontend" type="checkbox" name="family" value="Frontend">
+          <label for="Backend">Backend</label>
+          <input id="Backend" type="checkbox" name="family" value="Backend">
+          <label for="FullStack">FullStack</label>
+          <input id="FullStack" type="checkbox" name="family" value="FullStack">
+          
+
+        </div>
+        
 
       </fieldset>
 
@@ -103,6 +117,7 @@
     <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
     <input type="checkbox" name="concorda" id="agreement">
   </div>
+  <button id="submit-btn" type="submit">Enviar</button>
 
 
   <footer>
