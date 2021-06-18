@@ -25,7 +25,14 @@ h1 {
   font-size: 35px;
 }
 
-#login, #senha {
+#login {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 7px;
+  text-align: center;
+}
+
+#senha {
   padding: 10px;
   border-radius: 5px;
   margin: 7px;
@@ -57,7 +64,6 @@ h1 {
   margin-bottom: 20px;
   background-color: rgb(204, 204, 204);
   border-radius: 10px;
-  margin-top: 20px;
   padding: 20px;
 }
 
@@ -79,7 +85,7 @@ h2 {
   margin-bottom: -5px;
 }
 
-#input-name, #input-lastname, #input-email, #select {
+.inputs-dados {
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
@@ -116,4 +122,7 @@ h2 {
   color: white;
   height: 60px;
   width: 100%;
+}
+.trybewarts-login {
+  display: flex;
 }

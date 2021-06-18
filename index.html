@@ -21,21 +21,26 @@
         <input type="password" placeholder="Senha" class="input" id="senha" />
         <button type="submit" id="entrar-button">entrar</button>
       </form>
-    </header>
-    <div class="main-container">
+    </header>clear 
       <main id="container">
         <form action="" id="evaluation-form">
           <div id="form">
             <h2>Forms</h2>
           </div>
           <div class="box-1">
-            <input type="text" placeholder="Nome" required id="input-name" />
-            <input type="text" placeholder="Sobrenome" id="input-lastname" />
+            <input
+              type="text"
+              placeholder="Nome"
+              required
+              class="inputs-dados"
+              id="input-name"
+            />
+            <input type="text" placeholder="Sobrenome" class="inputs-dados" id="input-lastname"/>
           </div>
           <div class="box-1">
-            <input type="email" placeholder="Email" id="input-email" />
+            <input type="email" placeholder="Email" class="inputs-dados" id="input-email"/>
             <label id="house" for="casa"></label>
-            <select name="casa" id="select">
+            <select name="casa" class="inputs-dados">
               <option value="Gitnória" id="gitnoria-house">Gitnória</option>
               <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
               <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -43,29 +48,28 @@
             </select>
           </div>
 
-          <label id="label-family" for="">Qual sua família?</label>
+          <label id="label-family">Qual sua família?</label>
           <div class="box-2">
             <label>
               <input
-                type="radio"
                 name="family"
+                type="radio"
                 value="Frontend"
                 class="radio"
               />Frontend</label
             >
             <label>
               <input
-                type="radio"
                 name="family"
+                type="radio"
                 value="Backend"
                 class="radio"
               />Backend</label
             >
-
             <label
               ><input
-                type="radio"
                 name="family"
+                type="radio"
                 value="FullStack"
                 class="radio"
               />FullStack</label
@@ -94,7 +98,6 @@
             <label for="FullStack">Promises</label>
             <input
               type="checkbox"
-              name="family"
               class="subject"
               value="React"
             />
@@ -161,7 +164,6 @@
         height="500px"
         id="trybewarts-forms-logo"
       />
-    </div>
     <footer id="rodape">
       <div id="text-div">Direitos reservados à Trybewarts©</div>
     </footer>
