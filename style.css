@@ -225,4 +225,5 @@ footer h3 {
 
 #radio {
   width: 35vw;
+  flex-grow: 1;
 }
