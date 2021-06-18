@@ -22,3 +22,15 @@ function test() {
   }
 }
 agreement.addEventListener('click', test);
+
+function contaChar(char) {
+  const maxLength = 500;
+  const valorDigi = char.length;
+  let resto;
+  const contador = document.getElementById('counter');
+  if (maxLength >= valorDigi) {
+    resto = maxLength - valorDigi;
+    contador.innerHTML = resto;
+  }
+}
+contaChar();
