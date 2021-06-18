@@ -8,3 +8,18 @@ buttonLogin.addEventListener('click', () => {
   }
   return alert('Olá, Tryber!');
 });
+
+const sendButton = () => {
+  let getEnviar = document.getElementById('submit-btn');
+  let getCheckbox = document.getElementById('agreement');
+
+  getCheckbox.addEventListener('click', () => {
+      if (getCheckbox.checked === false) {
+    getEnviar.disabled = true;
+    } else {
+      getEnviar.disabled = false;
+    }
+  });
+}
+
+sendButton();
