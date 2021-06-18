@@ -11,35 +11,13 @@ buttonL.addEventListener('click', (e) => {
   }
 });
 
-var btn = document.getElementById("submit-btn");
-var agree = document.getElementById("agreement");
+const btn = document.getElementById('submit-btn');
+const agree = document.getElementById('agreement');
 
-agree.addEventListener("change", function (event) {
+agree.addEventListener('change', (event) => {
   if (event.target.checked) {
     btn.disabled = false;
   } else {
     btn.disabled = true;
   }
 }, false);
-
-
-
-
-
-
-
-/*window.onload = function () {
-  const btn = document.getElementById('submit-btn');
-  btn.disable = true
-}
-
-let input = document.getElementById('agreement');
-let btn = document.getElementById('submit-btn');
-btn.disable = true;
-agreement.addEventListener('change', stateHandle);
-function stateHandle() {
-  if (input.value == "") {
-    btn.disable = true;
-  } else {
-    btn.disable = false;
-  }*/
