@@ -30,14 +30,11 @@ checkbox.addEventListener('change', () => {
   }
 });
 
-// Contador de caracteres disponiveis no textarea
-const textArea = document.querySelector('#textarea');
+// Cria contador de caracteres da textarea
+const counter = document.querySelector('#counter');
+const textarea = document.querySelector('#textarea');
 
-function contador() {
-  const counter = document.querySelector('#counter');
-  const limite = 500;
-  const caracteresDigitados = textArea.value;
-  counter.innerHTML = limite - caracteresDigitados.length;
-}
+textarea.addEventListener('keyup', () => {
+  counter.innerHTML = 500 - textarea.value.length;
+});
 
-textArea.addEventListener('keyup', contador);

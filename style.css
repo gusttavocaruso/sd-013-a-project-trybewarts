@@ -23,6 +23,7 @@ body {
   padding: 30px;
   /* background-color: rgb(235, 235, 229); */
   /* box-shadow: 3px 3px 5px rgb(170, 170, 170); */
+
 }
 
 #trybewarts-forms-logo {
@@ -43,16 +44,7 @@ body {
 
 .trybewarts-login {
   display: flex;
-  align-items: flex-start;
-}
-
-.form-evaluation {
-  display: flex;
-}
-
-.evaluation-form {
-  display: flex;
-  width: 675px;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -63,9 +55,9 @@ body {
   width: 100px;
   height: 30px;
   border-radius: 10px;
-  background-color: teal;
-  box-shadow: 3px 3px 5px rgb(0, 56, 56);
-  color: rgb(141, 163, 156);
+  background-color: rgb(78, 44, 131);
+  /* box-shadow: rgb(78, 44, 131); */
+  color: rgb(249, 250, 250);
   margin: 10px auto;
   border: none;
 }
@@ -75,14 +67,69 @@ h5 {
   color: rgb(119, 134, 130);
 }
 
-.family-trybewarts {
+.family-trybewarts , .checkbox , .checkItem {
   display: flex;
   flex-direction: column;
 }
 
-.checkbox {
+#textarea {
+  width: 100%;
+}
+
+#counter {
+  text-align: end;
+  color: rgb(80, 90, 87);
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.checkMain {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.email-casa , .nome-completo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.campo {
+  width: 45%;
+  margin: 5px;
+}
+
+#house {
+  padding: 5px;
+  width: 82%;
+}
+
+#input-name , #input-lastname {
+  padding: 5px;
+}
+
+.houses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+#label-family , #label-content {
+  margin-bottom: 15px;
+}
+
+.assessment {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.assessment label input {
+  margin-left: 5px;
 }
 
 footer {
