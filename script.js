@@ -35,9 +35,9 @@ function getFamily() {
   const family = document.getElementsByName('family');
   for (let i = 0; i < family.length; i += 1) {
     if (family[i].checked) {
-    return family[i].value;
+      return family[i].value;
     }
-} 
+  }
 }
 
 function getSubjected() {
@@ -45,9 +45,9 @@ function getSubjected() {
   let selected = '';
   for (let j = 0; j < subjects.length; j += 1) {
     if (subjects[j].checked) {
-      selected += `${subjects[j].value}, `
+      selected += `${subjects[j].value}, `;
     }
-} 
+  }
   return selected;
 }
 
