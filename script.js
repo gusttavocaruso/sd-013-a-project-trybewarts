@@ -15,26 +15,25 @@ desafio3();
 
 const desafio12 = () => {
   const divFamily = document.querySelector('#divFamily');
-  const divRadio = document.createElement('div');
-  divRadio.setAttribute('id','divRadio');
-  divFamily.appendChild(divRadio);
   const languages = ['Frontend','Backend','FullStack'];
 
   for(let i = 0; i < languages.length; i += 1) {
+    let divRadio = document.createElement('div');
     const language = languages[i];
     const inputs = document.createElement('input');
     inputs.setAttribute('type','radio');
     inputs.setAttribute('value',language);
     inputs.setAttribute('id',language);
     inputs.setAttribute('name','family');
-    inputs.style.marginBottom = '10px'
+    inputs.style.marginBottom = '10px';
     divRadio.appendChild(inputs);
 
     const labels = document.createElement('label');
     labels.setAttribute('for',language);
     labels.innerText = language;
-    labels.setAttribute('class','languagesLabel')
+    labels.setAttribute('class','languagesLabel');
     divRadio.appendChild(labels);
+    divFamily.appendChild(divRadio);
   }
 }
 desafio12();
