@@ -24,9 +24,6 @@ main {
   justify-content: space-between;
 }
 
-.trybewarts-header-logo {
-}
-
 .trybewarts-login {
   display: flex;
   align-items: center;
@@ -41,9 +38,6 @@ main {
 
 .header img {
   height: 100px;
-}
-
-form {
 }
 
 form h1 {
@@ -63,9 +57,9 @@ main #evaluation-form {
   flex-wrap: wrap;
 }
 
-#input-forms-container input {
-  margin-left: ;
-}
+/* #input-forms-container input {
+  margin-left:
+} */
 
 #radio-rate-textarea-agree {
   display: flex;
