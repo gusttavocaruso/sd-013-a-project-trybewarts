@@ -39,8 +39,8 @@ function limiteTextarea(event) {
 
 document.getElementById('textarea').addEventListener('keyup', limiteTextarea);
 
-// Funcionalidade de clicar e substituir informações
-/*function saveCheckBox() {
+/* Funcionalidade de clicar e substituir informações
+function saveCheckBox() {
   const checkedBoxes = [];
   const checkbox = document.querySelectorAll('input[type=checkbox]:checked');
 
