@@ -64,9 +64,9 @@ main #evaluation-form {
   padding: 25px;
 }
 
-#input-forms-container input {
-  margin-left: ;
-}
+/* #input-forms-container input {
+  margin-left:
+} */
 
 #radio-rate-textarea-agree {
   display: flex;
