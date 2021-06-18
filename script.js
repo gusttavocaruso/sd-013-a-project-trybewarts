@@ -10,3 +10,17 @@ function validaEmail() {
 }
 const botaoLogin = document.querySelector('#botao-login');
 botaoLogin.addEventListener('click', validaEmail);
+
+const inputAgree = document.querySelector('#agreement');
+const buttonSubmit = document.querySelector('#submit-btn');
+
+buttonSubmit.disabled = true;
+
+function ativaSubmit() {
+  if (inputAgree.value === null) {
+    buttonSubmit.disabled = true;
+  } else {
+    buttonSubmit.disabled = false;
+  }
+}
+inputAgree.addEventListener('click', ativaSubmit);
