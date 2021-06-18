@@ -25,6 +25,10 @@ form {
   border-radius: 5px;
 }
 
+#submit-btn {
+  width: 100px;
+}
+
 .trybewarts-header-logo {
   border: 1px solid black;
   height: 44px;
