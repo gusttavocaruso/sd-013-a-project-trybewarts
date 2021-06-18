@@ -33,4 +33,4 @@ function contaChar(char) {
     contador.innerHTML = resto;
   }
 }
-contaChar();
+contaChar('');
