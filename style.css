@@ -3,11 +3,57 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  color: rgb(26, 26, 26);
+}
+
+.input-style {
+  height: 30px;
+  font-size: 10px;
+  padding: 8px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  background-color: rgb(77, 48, 140);
+  color: white;
+  padding: 5px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  min-height: 50px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.width-input {
+  width: 50%;
+  margin: 5px;
 }
 
 /* estilo do requisito 1 */
 .header {
   display: flex;
+  padding: 10px 50px;
+  height: 8vh;
+  min-height: 70px;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
 }
@@ -16,24 +62,46 @@
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
-  min-width: 450px;
-  margin-right: 50px;
+  width: 350px;
+  min-height: 40px;
+}
+
+.login-style {
+  width: 40%;
+  height: 60%;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.btn-login {
+  width: 20%;
+  min-width: 40px;
+  font-size: 10px;
 }
 
 /* estilo do logo do requesito 2 */
 .trybewarts-header-logo {
-  align-self: flex-start;
+  align-self: center;
   width: 40px;
   height: 40px;
 }
 
 /* estilo do requisito 4 */
-#trybewarts-header-title {
+.trybewarts-header-title {
+  font-size: 30px;
+  align-self: center;
+}
+
+.title {
+  font-size: 70px;
+  padding: 20px;
   text-align: center;
+  min-height: 50px;
 }
 
 /* estilo do requisito 5 e 6 */
-.flex-container {
+.container-flex {
+  width: 100%;
   display: flex;
 }
 
@@ -49,13 +117,8 @@
   height: 500px;
 }
 
-/* Alinhamento horizontal requisito 10 */
-.input-name-lastname {
-  display: flex;
-}
-
-/* alinhando email e casa (requisito 11) */
-.input-email-house {
+/* Alinhamento horizontal (requisito 10 e 11) */
+.input-name-lastname , .input-email-house {
   display: flex;
 }
 
@@ -63,3 +126,143 @@
 .container-direction {
   flex-direction: column;
 }
+
+/* Alinhamento dos radio-buttons (requisito 14) */
+.rate-container , .radio-buttons-rate {
+  display: flex;
+}
+
+@media screen and ( max-width : 1200px ) {
+
+  body {
+    height: 150vh;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 10px 40px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .form-size {
+    width: 95%;
+    order: 2;
+  }
+
+  #trybewarts-forms-logo {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .trybewarts-header-title {
+    font-size: 25px;
+  }
+
+  .trybewarts-header-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and ( max-width : 992px ) {
+
+  .header {
+    padding: 10px 30px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .input-email-house , .input-name-lastname {
+    flex-direction: column;
+  }
+
+  .width-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #trybewarts-forms-logo {
+    height: 350px;
+  }
+
+  .trybewarts-login {
+    width: 250px;
+  }
+
+  .trybewarts-header-title {
+    font-size: 20px;
+  }
+
+  .trybewarts-header-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+@media screen and ( max-width : 768px ) {
+
+  .header {
+    padding: 10px 20px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  #trybewarts-forms-logo {
+    height: 300px;
+  }
+
+  .trybewarts-login {
+    width: 225px;
+  }
+
+  .trybewarts-header-title {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and ( max-width : 576px ) {
+
+  main {
+    min-height: 1050px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .container-flex-sm {
+    flex-direction: column;
+  }
+
+  #trybewarts-forms-logo {
+    height: 250px;
+  }
+
+  .trybewarts-login {
+    width: 200px;
+  }
+
+  .trybewarts-header-logo {
+    width: 25px;
+    height: 25px;
+  }
+
+}
+

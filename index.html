@@ -13,29 +13,33 @@
   <!-- criando barra superior (requisito 1) -->
   <header class="header">
     <!-- adicionando imagem trybewarts no canto superior do header (requesito 2) -->
-    <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" >
     <!-- criando titulo centralizado (requisito 4) -->
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <h1 class="trybewarts-header-title" id="trybewarts-header-title">Trybewarts</h1>
     <!-- Requisito 3 -->
     <form action="" class="trybewarts-login">
-      <input id="email" type="email" placeholder="Login">
-      <input id="password" type="password" placeholder="Senha">
-      <button>Login</button>
+      <input class="login-style input-style"  id="email" type="email" placeholder="Login">
+      <input class="login-style input-style"  id="password" type="password" placeholder="Senha">
+      <button class="login-style btn-login">Login</button>
     </form>
   </header>
+
+  <h1 class="title">Form Trybewarts</h1>
   <!-- criando formulario centralizado (requisitos 5 e 6) -->
-  <main class="flex-container">
-    <form id="evaluation-form" class="flex-container form-size">
+
+
+  <main class="container-flex" style="justify-content: center;">
+    <form id="evaluation-form" class="container-flex form-size" style="padding: 10px;">
       <!-- Requisito 8 -->
       <div class="input-name-lastname">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input class="width-input input-style" type="text" id="input-name" placeholder="Nome">
+        <input class="width-input input-style" type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
       <!-- criando div para alinhar como flex (requisito 10)-->
       <div class="input-email-house">
-        <input type="text" id="input-email" placeholder="Email">
+        <input class="width-input input-style" type="text" id="input-email" placeholder="Email">
         <!-- Requisito 9 -->
-        <select name="" id="house">
+        <select class="width-input input-style" name="" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -45,39 +49,72 @@
       <!-- Crie um campo de entrada para qual família a pessoa estudante se identifica (requisito 12) -->
 
       <!-- Editei os radio box para que o texto ficasse ao lado do radio select (requisito 12) -->
-      <div class="flex-container container-direction">
-        <label for="family" id="label-family" class="container-direction">Qual sua família?</label>
-        <input type="radio" name="family" value="Frontend">Frontend
-        <input type="radio" name="family" value="Backend">Backend
-        <input type="radio" name="family" value="FullStack">FullStack
+      <div class="container-flex container-flex-sm">
+        <div class="container-flex container-direction" style="margin: 10px; width: 100%;">
+          <label style="text-align: center" for="family" id="label-family" class="container-direction">Qual sua família?</label>
+          <div class="container-flex container-direction">
+            <div class="container-flex">
+              <input type="radio" name="family" value="Frontend">
+              <label for="">Frontend</label>
+            </div>
+            <div class="container-flex">
+              <input type="radio" name="family" value="Backend">
+              <label for="">Backend</label>
+            </div>
+            <div class="container-flex">
+              <input type="radio" name="family" value="FullStack">
+              <label for="">FullStack</label>
+            </div>
+          </div>
+        </div>
+        <!-- Crie campos de entrada do tipo 'checkbox' contendo seis opções (requisito 13) -->
+        <div class="container-flex container-direction" style="align-self: center; margin: 10px; width: 100%;">
+          <label style="text-align: center" for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="container-flex">
+            <div style="width: 50%; margin: 10px;">
+              <div class="container-flex">
+                <input type="checkbox" value="HoFs">
+                <label for="">HoFs</label>
+              </div>
+              <div class="container-flex">
+                <input  type="checkbox" value="Jest">
+                <label for="">Jest</label>
+              </div>
+              <div class="container-flex">
+                <input  type="checkbox" value="Promises">
+                <label for="">Promises</label>
+              </div>
+            </div>
+            <div style="width: 50%; margin: 10px;">
+              <div class="container-flex">
+                <input type="checkbox" value="React">
+                <label for="">React</label>
+              </div>
+              <div class="container-flex">
+                <input type="checkbox" value="SQL">
+                <label for="">SQL</label>
+              </div>
+              <div class="container-flex">
+                <input type="checkbox" value="Python">
+                <label for="">Python</label>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Crie campos de entrada do tipo 'checkbox' contendo seis opções (requisito 13) -->
-      <div class="flex-container container-direction">
-        <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <div class="flex-container">
-          <input type="checkbox" value="HoFs">HoFs
-        </div>
-        <div class="flex-container">
-          <input type="checkbox" value="Jest">Jest
-        </div>
-        <div class="flex-container">
-          <input type="checkbox" value="Promises">Promises
-        </div>
-        <div class="flex-container">
-          <input type="checkbox" value="React">React
-        </div>
-        <div class="flex-container">
-          <input type="checkbox" value="SQL">SQL
-        </div>
-        <div class="flex-container">
-          <input type="checkbox" value="Python">Python
+ 
+      <!-- Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts (requisito 14) -->
+      <div class="rate-container" style="align-self: center; margin: 10px 0px;">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <div class="radio-buttons-rate">
         </div>
       </div>
       <!-- criando uma text area de tamanho 500 (requisito 15) -->
       <label for="textarea" class="textarea">Deixe seu comentário:</label>
-      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <textarea class="input-style" style="resize: none; height: 150px;" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <span id="counter" style="font-weight: bold;">0</span>
       <!-- Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações (requisito 16) -->
-      <div>
+      <div class="container-flex" style="margin: 10px 0px;">
         <input type="checkbox" name="" id="agreement">
         <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
       </div>
