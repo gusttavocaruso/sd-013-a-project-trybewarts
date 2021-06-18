@@ -39,13 +39,13 @@ const house = document.querySelector('#house');
 function apareceInfo() {
   const familia = document.querySelector('input[name=family]:checked');
   const materias = document.querySelectorAll('.subject:checked');
-    
+
   document.querySelector('#evaluation-form').remove();
   document.querySelector('#trybewarts-forms-logo').remove();
   const main = document.querySelector('main');
   main.id = 'evaluation-form';
   const section = document.createElement('section');
-  
+
   let tempMaterias = ''
   for (let i = 0; i < materias.length; i+= 1){
     tempMaterias += `${materias[i].value}, `
@@ -55,7 +55,7 @@ function apareceInfo() {
   const p3 = document.createElement('p');
   const p4 = document.createElement('p');
   const p5 = document.createElement('p');
-  
+
   p1.innerHTML = `Nome: ${nome.value} ${lastName.value}`;
   section.appendChild(p1);
   p2.innerHTML = `Email: ${email.value}`;
@@ -70,7 +70,6 @@ function apareceInfo() {
 
   main.appendChild(section);
 }
-  
 
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
