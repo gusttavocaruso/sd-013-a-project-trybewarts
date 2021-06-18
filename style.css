@@ -25,8 +25,7 @@ h1 {
   font-size: 35px;
 }
 
-#login,
-#senha {
+#login, #senha {
   padding: 10px;
   border-radius: 5px;
   margin: 7px;
@@ -45,6 +44,7 @@ h1 {
 #entrar-button:hover {
   background-color: rgb(62, 18, 102);
 }
+
 .main-container {
   display: flex;
 }
@@ -79,10 +79,7 @@ h2 {
   margin-bottom: -5px;
 }
 
-#input-name,
-#input-lastname,
-#input-email,
-#select {
+#input-name, #input-lastname, #input-email, #select {
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
