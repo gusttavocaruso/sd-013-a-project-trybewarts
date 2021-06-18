@@ -38,16 +38,24 @@ const house = document.querySelector('#house');
 
 function apareceInfo() {
   const familia = document.querySelector('input[name=family]:checked');
+  const materias = document.querySelectorAll('.subject:checked');
+    
   document.querySelector('#evaluation-form').remove();
   document.querySelector('#trybewarts-forms-logo').remove();
   const main = document.querySelector('main');
   main.id = 'evaluation-form';
   const section = document.createElement('section');
+  
+  let tempMaterias = ''
+  for (let i = 0; i < materias.length; i+= 1){
+    tempMaterias += `${materias[i].value}, `
+  }
   const p1 = document.createElement('p');
   const p2 = document.createElement('p');
   const p3 = document.createElement('p');
   const p4 = document.createElement('p');
-
+  const p5 = document.createElement('p');
+  
   p1.innerHTML = `Nome: ${nome.value} ${lastName.value}`;
   section.appendChild(p1);
   p2.innerHTML = `Email: ${email.value}`;
@@ -55,10 +63,14 @@ function apareceInfo() {
   p3.innerHTML = `Casa: ${house.value}`;
   section.appendChild(p3);
   p4.innerHTML = `Família: ${familia.value}`;
-  section.appendChild(p4);
+  section.appendChild(p4); 
+
+  p5.innerHTML = `Matérias: ${tempMaterias}`;
+  section.appendChild(p5); 
 
   main.appendChild(section);
 }
+  
 
 botaoLogin.addEventListener('click', verificaLogin);
 checkBox.addEventListener('change', habilitaBotao);
