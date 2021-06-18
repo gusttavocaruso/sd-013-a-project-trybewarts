@@ -42,12 +42,7 @@
   height: 500px;
 }
 
-<<<<<<< HEAD
-/* #emailHouse{
-  width: 365px
-} */
-=======
-#family {
+#container-familia-conteudo{
   display: flex;
 }
 
@@ -58,4 +53,3 @@
 #linha-2 {
   display: flex;
 }
->>>>>>> 9025720f4f5a9281ffcfa05ee7e094e1dfcea0ef
