@@ -178,6 +178,7 @@ h2 {
 
 #text-area-label {
   transform: none;
+  top: 20px;
   padding: 0;
 }
 
