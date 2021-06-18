@@ -42,3 +42,14 @@ for (let i = 1; i <= 10; i += 1) {
 
 btnEnviar.disabled = true;
 agreement.addEventListener('change', habilitaBtn);
+
+const getCounter = document.querySelector('#counter');
+const getTextArea = document.querySelector('#textarea');
+
+const checkSizeComment = (event) => {
+  const getTextLength = event.target.value;
+  const setCharactersLeft = getTextArea.maxLength - getTextLength.length;
+  getCounter.innerText = setCharactersLeft;
+};
+
+getTextArea.addEventListener('keyup', checkSizeComment);
