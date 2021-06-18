@@ -19,7 +19,7 @@ header {
 }
 
 header h1 {
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
 }
 
 header input {
@@ -27,18 +27,17 @@ header input {
   border-radius: 5px;
   border: none;
   margin-right: 5px;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   width: 130px;
 }
 
 header button {
-  background-color: #4e2b83;
-  width: 120px;
+  background-color: rgb(78, 43, 131);
   padding: 10px;
   border: none;
   border-radius: 5px;
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   width: 100px;
 }
 
@@ -53,9 +52,8 @@ main {
 }
 
 main h2 {
-  font-family: "Playfair Display", serif;
+  font-family: Playfair Display, serif;
   font-size: 18px;
-  font-weight: bolder;
 }
 
 #evaluation-form {
@@ -73,10 +71,7 @@ main h2 {
   flex-direction: column;
 }
 
-.forms-container,
-.family-container,
-.content-container,
-.vertical {
+.forms-container , .family-container , .content-container , .vertical {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
@@ -90,15 +85,13 @@ main h2 {
   gap: 0.5em;
 }
 
-.checkbox-container,
-.agreement-container {
+.checkbox-container , .agreement-container {
   margin: 1em;
   gap: 0.5em;
   align-self: center;
 }
 
-.rate-container,
-.container {
+.rate-container , .container {
   display: flex;
   justify-content: space-around;
   margin: 1em;

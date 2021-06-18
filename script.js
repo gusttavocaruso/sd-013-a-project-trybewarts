@@ -15,26 +15,26 @@ loginBtn.addEventListener('click', () => {
 
 // REALIZA A VERIFICAÇÃO DO CHECKBOX PARA HABILITAR O BOTÃO ENVIAR
 const checkedAgreement = document.getElementById('agreement');
-const submitBtn = document.getElementById('submit-btn');
+const buttonSubmit = document.getElementById('submit-btn');
 
 checkedAgreement.addEventListener('change', function checkBtn() {
   if (this.checked) {
-    submitBtn.removeAttribute('disabled');
+    buttonSubmit.removeAttribute('disabled');
   } else {
-    submitBtn.setAttribute('disabled', '');
+    buttonSubmit.setAttribute('disabled', '');
   }
 });
 
 // CONTADOR TEXTAREA
 const comments = document.getElementById('textarea');
-const counter = document.getElementById('counter');
 
+const counter = document.getElementById('counter');
 comments.addEventListener('keyup', function countChar() {
   counter.innerText = 500 - this.value.length;
 });
 
 // ENVIAR CONTEÚDOS DO FORMULÁRIO
-
+const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click', () => {
   const evaluationForm = document.getElementById('evaluation-form');
   const name = document.getElementById('input-name');
@@ -45,21 +45,13 @@ submitBtn.addEventListener('click', () => {
   const subjects = document.querySelectorAll('input[name="content"]:checked');
   const rate = document.querySelector('input[name="rate"]:checked');
   const comment = document.getElementById('textarea');
-
   let content = '';
-  for (const i of subjects) {
-    content += (`${i.value}, `);
+  for (let i = 0; i < subjects.length; i += 1) {
+    content += (`${subjects[i].value}, `);
   }
   content = content.slice(0, -2);
-
-  evaluationForm.innerHTML = '';
-  const text = document.createElement('p');
-  evaluationForm.appendChild(text);
-  text.innerHTML = `Nome: ${name.value} ${lastName.value}<br/>`
-    + `Email: ${email.value}<br/>`
-    + `Casa: ${house.value}<br/>`
-    + `Família: ${family.value}<br/>`
-    + `Matérias: ${content}<br/>`
-    + `Avaliação: ${rate.value}<br/>`
-    + `Observações: ${comment.value}<br/>`;
+  evaluationForm.innerHTML = `Nome: ${name.value}
+  ${lastName.value}<br/> Email: ${email.value}<br/>
+  Casa: ${house.value}<br/> Família: ${family.value}<br/> Matérias: ${content}<br/>
+  Avaliação: ${rate.value}<br/> Observações: ${comment.value}<br/>`;
 });
