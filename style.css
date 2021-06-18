@@ -10,7 +10,6 @@ header {
 }
 
 .trybewarts-login {
-  display: flex;
   align-self: center;
 }
 
@@ -33,11 +32,13 @@ header {
   height: 500px;
 }
 
-.input-position {
+#input-name {
   display: flex;
+  flex-flow: row;
 }
 
 #input-lastname {
   display: flex;
   align-content: flex-end;
+  flex-flow: row;
 }
