@@ -29,3 +29,15 @@ checkbox.addEventListener('change', () => {
     btnSubmit.style.color = 'rgb(141, 163, 156)';
   }
 });
+
+// Contador de caracteres disponiveis no textarea
+const textArea = document.querySelector('#textarea');
+
+function contador() {
+  const counter = document.querySelector('#counter');
+  const limite = 500;
+  const caracteresDigitados = textArea.value;
+  counter.innerHTML = limite - caracteresDigitados.length;
+}
+
+textArea.addEventListener('keyup', contador);
