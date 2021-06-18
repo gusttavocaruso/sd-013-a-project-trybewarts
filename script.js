@@ -35,7 +35,6 @@ const desafio12 = () => {
     labels.innerText = language;
     labels.setAttribute('class','languagesLabel')
     divRadio.appendChild(labels);
-
   }
 }
 desafio12();

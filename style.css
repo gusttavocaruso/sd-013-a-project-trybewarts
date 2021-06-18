@@ -74,4 +74,8 @@ input {
   flex-direction: column;
 }
 
+.languagesLabel {
+  flex-wrap: wrap;
+
+}
 
