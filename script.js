@@ -17,7 +17,7 @@ loginButton.addEventListener('click', loginAlert);
 
 // Função para abilitar o botão caso o "checkbox" esteja selecionado.
 function enableBtn() {
-  if (agreementCheck.checked) {
+  if (agreementCheck.checked) { // https://www.w3schools.com/jsref/prop_checkbox_checked.asp checked retirado deste link
     submtitButton.removeAttribute('disabled');
   } else {
     submtitButton.setAttribute('disabled', 'disabled');

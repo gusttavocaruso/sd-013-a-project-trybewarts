@@ -71,7 +71,7 @@ button {
 
 #house {
   padding: 10px;
-  width: 33%;
+  width: 24%;
 }
 
 label {
@@ -81,7 +81,8 @@ label {
 .input-family {
   margin-bottom: 10px;
 }
+ 
 
-#label-rate {
-  margin-bottom: 50px;
+.label-avaliacao {
+  margin-top: 10px;
 }
