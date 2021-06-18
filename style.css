@@ -220,7 +220,7 @@ footer h3 {
 #label {
   width: 15vw;
   font-size: small;
-  margin-top: 10px;
+  text-align: center;
 }
 
 #radio {
