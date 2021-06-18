@@ -12,7 +12,7 @@ getBtnLogin.addEventListener('click', () => {
   }
 });
 
-// codigo refenciado (https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button)
+// codigo referenciado (https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button)
 submitbtn.disabled = true;
 agreement.addEventListener('click', () => {
   submitbtn.disabled = !submitbtn.disabled;

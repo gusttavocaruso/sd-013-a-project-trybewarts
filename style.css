@@ -42,12 +42,11 @@ main {
 }
 
 #evaluation-form {
-  align-content: flex-start;
-  align-items: flex-start;
   display: flex;
-  flex-flow: row wrap;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  align-content: space-around;
   width: 675px;
+  align-items: flex-start;
 }
 
 #evaluation-form input , select {
@@ -56,4 +55,98 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-left: 200px;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  bottom: 0;
+  height: 100px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-inputs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#text-inputs input , select {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(111, 0, 255, 0.377);
+  flex-basis: 40%;
+  margin: 10px;
+}
+
+#div-family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+#div-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+#div-rate {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-around;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+#textarea {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-content: center;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+#label-infos {
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#submit-btn {
+  align-self: center;
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  background-color: rgba(111, 0, 255, 0.397);
 }
