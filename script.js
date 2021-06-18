@@ -44,7 +44,7 @@ function saveCheckBox() {
   const checkedBoxes = [];
   const checkbox = document.querySelectorAll('input[type=checkbox]:checked');
 
-  for (let i = 0; i < checkbox.lenght-1; i++) {
+  for (let i = 0; i < checkbox.lenght - 1; i += 1) {
     checkedBoxes.push(checkbox[i].value);
   }
 
@@ -55,8 +55,8 @@ function saveRadio() {
   const families = document.getElementByName('family');
   let famiglia;
 
-  for (let i = 0; i < families.lenght; i++){
-    if (families[i].checkbox){
+  for (let i = 0; i < families.lenght; i += 1) {
+    if (families[i].checkbox) {
       famiglia = families[i].value;
     }
   }
@@ -64,13 +64,12 @@ function saveRadio() {
   return famiglia;
 }
 
-
 function saveValidation() {
   const rating = document.getElementByName('rate');
   let rate;
 
-  for (let i = 0; i < rating.lenght; i++){
-    if (rating[i].checkbox){
+  for (let i = 0; i < rating.lenght; i += 1) {
+    if (rating[i].checkbox) {
       rate = rating[i].value;
     }
   }
@@ -78,23 +77,22 @@ function saveValidation() {
   return rate;
 }
 
-const name = getElementById('input-name').value;
-const lastname = getElementById('input-lastname').value;
-const email = getElementById('input-email').value;
-const house = getElementById('house').value;
-const obs = getElementById('textarea').value;
+const name = document.getElementById('input-name').value;
+const lastname = document.getElementById('input-lastname').value;
+const email = document.getElementById('input-email').value;
+const house = document.getElementById('house').value;
+const obs = document.getElementById('textarea').value;
 const subjectSelec = saveCheckBox();
 const fmlySelec = saveRadio();
 const valSelec = saveValidation();
-
 
 sessionStorage.setItem('nome', name);
 sessionStorage.setItem('sobrenome', lastname);
 sessionStorage.setItem('email', email);
 sessionStorage.setItem('casa', house);
-sessionStorage.setItem('materia', checkedBoxes);
-sessionStorage.setItem('familia', famiglia);
-sessionStorage.setItem('avaliacao', rate);
+sessionStorage.setItem('materia', subjectSelec);
+sessionStorage.setItem('familia', fmlySelec);
+sessionStorage.setItem('avaliacao', valSelec);
 sessionStorage.setItem('obs', obs);
 
 function applySavedData() {
@@ -102,7 +100,7 @@ function applySavedData() {
   document.getElementById('input-lastname').innerHTML = lastname;
   document.getElementById('input-email').innerHTML = email;
   document.getElementById('house').innerHTML = house;
-  document.getElementById('checkbox-content').innterHTML = subjectSelec
+  document.getElementById('checkbox-content').innterHTML = subjectSelec;
   document.getElementById('label-family').innerHTML = fmlySelec;
   document.getElementById('label-rate').innerHTML = valSelec;
   document.getElementById('textarea').innerHTML = obs;
