@@ -13,8 +13,6 @@ function loginAlert() {
   }
 }
 
-loginAlert();
-
 loginButton.addEventListener('click', loginAlert);
 
 // Função para abilitar o botão caso o "checkbox" esteja selecionado.
