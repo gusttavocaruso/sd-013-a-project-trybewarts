@@ -84,6 +84,7 @@ function rateChecked() {
   }
 }
 
+/* Form area */
 function formSubmit() {
   form.innerHTML = '';
   form.style.backgroundImage = 'none';
