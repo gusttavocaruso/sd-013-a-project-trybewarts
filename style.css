@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+body {
+  background-color: rgb(211, 209, 209);
+}
+
 .flex-container {
   display: flex;
   height: 50px;
@@ -48,6 +52,16 @@ justify-content: right
   width: 100px;
   height: 20px;
   border: solid 1px purple;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
 
 footer {
