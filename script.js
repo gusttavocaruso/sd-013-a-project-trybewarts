@@ -28,6 +28,7 @@ function enableSubmit() {
 checkAgreement.addEventListener('click', enableSubmit);
 
 textarea.addEventListener('keyup', (contagem) => {
-  document.getElementById('counter').
-  innerText = 500 - contagem.target.value.length;
+  
+  const contador = document.getElementById('counter')
+  contador.innerText = 500 - contagem.target.value.length;
 });
