@@ -87,3 +87,18 @@ const inputRadio = () => {
   }
 };
 inputRadio();
+
+const desafio18 = () => {
+  const box = document.getElementById('agreement');
+  const button = document.getElementById('submit-btn');
+  button.disabled = true;
+
+  box.addEventListener('click', () => {
+    if (box.checked === true) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  });
+};
+desafio18();
