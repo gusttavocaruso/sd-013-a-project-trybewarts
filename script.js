@@ -28,7 +28,7 @@ const counterPad = () => {
   const getTextArea = document.getElementById('textarea');
 
   getTextArea.addEventListener('keyup', () => {
-    let getPad = document.getElementById('counter');
+    const getPad = document.getElementById('counter');
     getPad.innerHTML = 500 - getTextArea.value.length;
   });
 };
