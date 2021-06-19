@@ -112,15 +112,14 @@
               <input type="radio" class="form-check-input" value="9" name="rate">9
               <input type="radio" class="form-check-input" value="10" name="rate">10
           </div>
-
-          <div class="form-floating">
-            <textarea name="" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
-            <label class="form-label" id="text-area-label" for="floatingTextarea">Deixe seu comentário:</label>
-          </div>
-          <div>
-            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-            <input type="checkbox" id="agreement" class="form-check-input">
-          </div>
+        <div class="form-floating">
+          <textarea name="" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
+          <label class="textarea" id="text-area-label" for="floatingTextarea">Deixe seu comentário:</label>
+          <span id="counter">500</span>
+        </div>
+        <div>
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement" class="form-check-input">
         </div>
         <button type="submit" id="submit-btn" class="btn btn-success" disabled >Enviar</button>
       </form>

@@ -23,3 +23,12 @@ const sendButton = () => {
 };
 
 sendButton();
+
+const counterPad = () => {
+  const getPad = document.getElementById('counter');
+  const getTextArea = document.getElementsByClassName('textarea');
+
+  getTextArea.addEventListener('keyup', () => {
+    getTextArea
+  })
+}
