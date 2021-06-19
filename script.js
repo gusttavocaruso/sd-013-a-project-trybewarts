@@ -1,7 +1,6 @@
 const ratesTarget = document.getElementById('rates');
 const formLogin = document.forms[0];
 
-
 function handleFormSubmission(e) {
   e.preventDefault();
 
