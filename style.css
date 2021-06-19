@@ -35,7 +35,7 @@ input {
   border-radius: 8px;
   border: none;
   margin: 3px;
-  background-color: rgb(78,44,131);
+  background-color: rgb(78, 44, 131);
   color: white;
 }
 
@@ -46,7 +46,6 @@ input {
 main {
   display: flex;
   justify-content: space-between;
-  justify-content: right;
 }
 
 #evaluation-form {
@@ -67,7 +66,7 @@ main {
 }
 
 .input-evaluation-form {
-  border: rgb(78,44,131) 1px solid;
+  border: rgb(78, 44, 131) 1px solid;
   width: 200px;
 }
 
@@ -84,7 +83,7 @@ main {
   width: 115px;
   height: 30px;
   border-radius: 8px;
-  border: rgb(78,44,131) 1px solid;
+  border: rgb(78, 44, 131) 1px solid;
   margin: 3px;
 }
 
@@ -137,7 +136,7 @@ main {
   border-radius: 8px;
   border: none;
   margin: 3px;
-  background-color: rgb(78,44,131);
+  background-color: rgb(78, 44, 131);
   color: white;
 }
 
@@ -146,7 +145,6 @@ footer {
   background-color: rgb(50, 167, 145);
   width: 100%;
   padding: 10px;
-  position: absolute;
   color: white;
   text-align: center;
 }

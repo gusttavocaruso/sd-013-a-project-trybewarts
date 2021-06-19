@@ -12,7 +12,7 @@
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="logo trybewarts" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title" >Trybewarts</h1>
-    <form action="" method="get" class="trybewarts-login"> 
+    <form action="" method="POST" class="trybewarts-login"> 
       <input type="email" name="login" id="login" placeholder="Login">
       <input type="password" name="senha" id="senha" placeholder="Senha">
       <button id="buttonLogin">Logar 🧙</button>
@@ -21,11 +21,11 @@
   <main>
     <form action="" method="get" id="evaluation-form" class="evaluation-form">
       <div id="nome-sobrenome">
-        <input type="text" name="input-name" id="input-name" class="input-evaluation-form" placeholder="Nome">
-        <input type="text" name="input-lastname" id="input-lastname" class="input-evaluation-form" placeholder="Sobrenome">
+        <input type="text" name="name" id="input-name" class="input-evaluation-form" placeholder="Nome">
+        <input type="text" name="lastname" id="input-lastname" class="input-evaluation-form" placeholder="Sobrenome">
       </div>
       <div id="casa-email">
-      <input type="email" name="input-email" id="input-email" class="input-evaluation-form" placeholder="Email">
+      <input type="email" name="email" id="input-email" class="input-evaluation-form" placeholder="Email">
       <p id="casa">Casa:</p>
       <select name="house" id="house">
         <option value="selecione" id="selecione" selected disabled>Selecione</option>
@@ -50,12 +50,12 @@
       </div>
       <div id="learn">
         <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input type="checkbox" name="HoFs" value="HoFs" class="subject">HoFs
-        <input type="checkbox" name="Jest" value="Jest" class="subject">Jest
-        <input type="checkbox" name="Promises" value="Promises" class="subject">Promises
-        <input type="checkbox" name="React" value="React" class="subject">React
-        <input type="checkbox" name="SQL" value="SQL" class="subject">SQL
-        <input type="checkbox" name="Python" value="Python" class="subject">Python
+        <input type="checkbox" name="subject" value="HoFs" class="subject">HoFs
+        <input type="checkbox" name="subject" value="Jest" class="subject">Jest
+        <input type="checkbox" name="subject" value="Promises" class="subject">Promises
+        <input type="checkbox" name="subject" value="React" class="subject">React
+        <input type="checkbox" name="subject" value="SQL" class="subject">SQL
+        <input type="checkbox" name="subject" value="Python" class="subject">Python
       </div>
     </div>
     <div id="numbers">
@@ -73,8 +73,8 @@
     </div>
 
     <!-- Requisito 20 -->
-    <label for="comment" class="textarea">Deixe seu comentário:</label>
-    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="500" maxlength="500"></textarea>
+    <label for="textarea" class="textarea">Deixe seu comentário:</label>
+    <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="500" maxlength="500"></textarea>
     <span id="counter">500</span>
     <!-- final Requisito 20 -->
 
