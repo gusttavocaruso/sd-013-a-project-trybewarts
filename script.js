@@ -23,3 +23,14 @@ const sendButton = () => {
 };
 
 sendButton();
+
+const counterPad = () => {
+  const getPad = document.getElementById('counter');
+  const getTextArea = document.getElementsByClassName('textarea');
+
+  getTextArea.addEventListener('keypress', () => {
+    for (let i = 0; i <= getTextArea.length; i += 1) {
+      
+    }
+  })
+}
