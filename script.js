@@ -25,12 +25,13 @@ const sendButton = () => {
 sendButton();
 
 const counterPad = () => {
-  const getPad = document.getElementById('counter');
-  const getTextArea = document.getElementsByClassName('textarea');
+  const getTextArea = document.getElementById('textarea');
 
   getTextArea.addEventListener('keypress', () => {
-    for (let i = 0; i <= getTextArea.length; i += 1) {
-      
-    }
+    let getPad = document.getElementById('counter');
+    getPad.innerHTML = - getTextArea.value.length;
+
   })
 }
+
+counterPad()
