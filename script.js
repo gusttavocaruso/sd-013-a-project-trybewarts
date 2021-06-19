@@ -1,6 +1,7 @@
 const ratesTarget = document.getElementById('rates');
 const formLogin = document.forms[0];
 
+
 function handleFormSubmission(e) {
   e.preventDefault();
 
@@ -37,7 +38,19 @@ function createRatesRadios() {
   for (let i = 1; i <= 10; i += 1) createInputRadio(String(i));
 }
 
+function prevent() {
+  const submitButton = document.querySelector('#submit-btn');
+  const inputCheckbox = document.querySelector('#agreement');
+  submitButton.disabled = true;
+  inputCheckbox.addEventListener('click', () => {
+    if (inputCheckbox.checked) {
+      submitButton.disabled = false;
+    }
+  });
+}
+
 window.onload = () => {
   createRatesRadios();
   formLogin.addEventListener('submit', handleFormSubmission);
+  prevent();
 };
