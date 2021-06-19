@@ -3,6 +3,11 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  color: white;
+}
+
+.header button {
+  margin-right: 225px;
 }
 
 .trybewarts-login {
@@ -11,6 +16,9 @@
 
 main {
   display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #evaluation-form {
@@ -19,9 +27,10 @@ main {
   flex-direction: column;
 }
 
-#container-forms {
+.container-forms {
   display: flex;
-  flex-flow: wrap, row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 #trybewarts-forms-logo {
@@ -32,25 +41,44 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 41px;
 }
 
 #label-infos {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 41px 10px 100px;
+}
+
+#submit-btn , #label-infos , .rating-area {
+  margin-left: 100px;
+  margin-right: 41px;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: darkslategray;
   color: aliceblue;
-  text-align: center;
+  height: 50px;
+  margin-top: 10px;
 }
 
 .container-family {
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
+  margin-right: 41px;
 }
 
 .container-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 41px;
+  width: 300px;
+}
+
+#label-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +98,7 @@ footer {
 
 .textarea-box span {
   position: absolute;
+  margin-right: 41px;
   bottom: 2px;
   right: 2px;
 }
@@ -90,4 +119,46 @@ footer {
 
 li {
   list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+hr {
+  display: flex;
+  background-color: darkslategray;
+  width: 530px;
+  margin-left: 100px;
+  margin-right: 41px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.forms {
+  margin-left: 100px;
+  margin-right: 41px;
+}
+
+.header input {
+  height: 25px;
+  width: 125px;
+}
+
+.forms input {
+  height: 30px;
+  width: 225px;
+  margin-top: 10px;
+}
+
+.forms select {
+  height: 30px;
+  width: 190px;
+}
+
+.rating-area input , .rating-area label {
+  margin: 0;
 }

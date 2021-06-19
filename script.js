@@ -61,6 +61,7 @@ function getTxtInformations() {
     Casa: ${casa}
     Família: ${familia}`;
     form.appendChild(posicaoElementos);
+    posicaoElementos.style.marginTop = '100px';
   });
 }
 getTxtInformations();
@@ -81,6 +82,7 @@ function checkBoxInformations() {
     principal.textContent = ' ';
     principal.appendChild(form);
     form.appendChild(posicaoElementos);
+    posicaoElementos.style.marginBottom = '100px';
   });
 }
 checkBoxInformations();
