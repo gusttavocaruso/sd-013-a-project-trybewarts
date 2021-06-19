@@ -17,10 +17,10 @@ const buttonSubmit = document.querySelector('#submit-btn');
 buttonSubmit.disabled = true;
 
 function ativaSubmit() {
-  if (inputAgree.value === null) {
-    buttonSubmit.disabled = true;
-  } else {
+  if (inputAgree.checked) {
     buttonSubmit.disabled = false;
+  } else {
+    buttonSubmit.disabled = true;
   }
 }
 inputAgree.addEventListener('click', ativaSubmit);
