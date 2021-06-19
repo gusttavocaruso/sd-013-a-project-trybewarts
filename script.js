@@ -1,4 +1,6 @@
 const botaoLogar = document.querySelector('.logar');
+const btnSubmit = document.querySelector('#submit-btn');
+const checkAgreement = document.querySelector('#agreement');
 
 botaoLogar.addEventListener('click', () => {
   const loginDigitado = document.querySelector('.login').value;
@@ -10,3 +12,16 @@ botaoLogar.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+window.onload = () => {
+  btnSubmit.disabled = true;
+};
+
+function enableSubmit() {
+  if (checkAgreement.checked) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
+  }
+}
+checkAgreement.addEventListener('click', enableSubmit);
