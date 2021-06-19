@@ -48,8 +48,19 @@ function prevent() {
   });
 }
 
+function maxTextArea() {
+  const textArea = document.querySelector('#textarea');
+  const spanCounter = document.querySelector('#counter');
+  spanCounter.innerText = 500;
+  textArea.addEventListener('keyup', () => {
+    const valor = textArea.value.length;
+    spanCounter.innerText = 500 - valor;
+  });
+}
+
 window.onload = () => {
   createRatesRadios();
   formLogin.addEventListener('submit', handleFormSubmission);
   prevent();
+  maxTextArea();
 };
