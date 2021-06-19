@@ -1,5 +1,15 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color:white;
+}
+
+body {
+  background-color: rgb(95, 141, 210);
 }
 
 .header {
@@ -72,11 +82,12 @@ main {
 
 #nome-sobrenome {
   display: flex;
-  margin-left: 50px;
+  justify-content: center;
 }
 
 #casa-email {
   display: flex;
+  margin-left: -45px;
 }
 
 #house {
@@ -100,6 +111,10 @@ main {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+#label-family{
+  margin-left:32px;
 }
 
 #learn {
