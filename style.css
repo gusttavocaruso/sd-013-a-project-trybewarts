@@ -1,3 +1,4 @@
+/* HTML */
 * {
 box-sizing: border-box;
 border: 0px;
@@ -9,6 +10,7 @@ body {
 background-color: rgb(211, 209, 209);
 }
 
+/* HEADER */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -56,8 +58,7 @@ background-color: rgb(211, 209, 209);
 h1 {
   color: white;
 }
-
-/* FIM DAS CLASSES DO HEADER */
+/* FIM DO HEADER */
 
 /* classes do MAIN */
 main {
