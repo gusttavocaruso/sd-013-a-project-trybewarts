@@ -217,3 +217,15 @@ footer {
 #label-content {
   font-size: larger;
 }
+
+span {
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  height: 100%;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}

@@ -25,10 +25,12 @@ const sendButton = () => {
 sendButton();
 
 const counterPad = () => {
-  const getPad = document.getElementById('counter');
-  const getTextArea = document.getElementsByClassName('textarea');
+  const getTextArea = document.getElementById('textarea');
 
   getTextArea.addEventListener('keyup', () => {
-    getTextArea
-  })
-}
+    let getPad = document.getElementById('counter');
+    getPad.innerHTML = 500 - getTextArea.value.length;
+  });
+};
+
+counterPad();
