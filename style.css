@@ -34,7 +34,6 @@ hr {
   display: flex;
   height: 100px;
   justify-content: center;
-  
 }
 
 #trybewarts-header-title {
@@ -189,7 +188,7 @@ hr {
   background-color: rgba(59, 2, 133, 0.849);
   border-radius: 10px;
   color: white;
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px;
   padding: 10px;
   width: 95%;
 }
