@@ -8,18 +8,41 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+
     </head>
     <body>
         
-        <header style = "background-color: rgb(50, 167, 145);" style = "display: flex;"> 
+        
+        <header class="header"> 
             <img class = "trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
-            <h1 id ='title'  >Trybewars </h1>
+            <h1 id ='trybewarts-header-title'>Trybewarts</h1>
+            <form action="" method="GET" class="trybewarts-login" >
+               <input id="login" type="text" name="login" placeholder="Login" required>
+               <input id="senha" type="password" name="senha" placeholder="Senha" required>
+               <button id="button1" >Logar</button>
+            </form>
         </header>
 
+        <main>
+            <form action="" method="GET" id="evaluation-form">
+                <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+                <input type="text" name="nome" id="input-name" placeholder="Nome">
+                <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+                <input type="text" name="email" id="input-email" placeholder="Email">
+                <select name="casa" id="house">
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+            </form>
+        </main>
         
-
         <!-- Parte Jorge -->
 
+
+        <script src="script.js" defer>
+
+        </script>
     </body>
 </html>
