@@ -2,6 +2,8 @@ const buttonForm = document.getElementById('login-button');
 const rateField = document.querySelector('.rate-field');
 const agreementField = document.querySelector('#agreement');
 const submitButton = document.querySelector('#submit-btn');
+const textAreaField = document.querySelector('#textarea');
+const counterField = document.querySelector('#counter');
 buttonForm.addEventListener('click', () => {
   const loginValue = document.getElementById('form-login').value;
   const passwordValue = document.getElementById('form-password').value;
@@ -32,4 +34,10 @@ agreementField.addEventListener('click', () => {
   } else {
     submitButton.disabled = true;
   }
+});
+
+textAreaField.addEventListener('keyup', () => {
+  const currentValue = textAreaField.value.length;
+  const resultCounter = 500 - currentValue;
+  counterField.innerHTML = resultCounter;
 });

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
@@ -55,7 +53,10 @@
     </div>
     <div>
       <label class="textarea">Deixe seu comentário:</label>
-      <textarea cols="30" rows="10" maxlength="500"></textarea>
+      <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <div>
+        <span>Counter:</span><span id='counter'>500</span>
+      </div>
     </div>
     <div>
       <label id="label-infos">Você concorda com o uso das informações acima?</label>
@@ -70,5 +71,4 @@
 <footer class="footer">Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
 </body>
-
 </html>
