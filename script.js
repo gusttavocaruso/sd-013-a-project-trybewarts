@@ -24,3 +24,15 @@ function check() {
 }
 
 checkbox.addEventListener('click', check);
+
+
+const tamTex = document.querySelector("#textarea")
+function ta(){
+let test = tamTex.value.length;
+let divText = document.querySelector("#counter")
+divText.innerHTML = 500-test
+}
+ta()
+tamTex.addEventListener("keyup",ta)
+
+
