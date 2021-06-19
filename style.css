@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   color: white;
   align-items: center;
-  padding: 5px 40px;
+  padding: 5px 40px 5px 228px;;
 }
 
 #form-title {
@@ -77,7 +77,6 @@ body {
 
 .trybewarts-header-logo {
   width: 50px;
-  margin-left: 188px;
 }
 
 #submit-btn {
