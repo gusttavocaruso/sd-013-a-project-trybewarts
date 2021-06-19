@@ -1,22 +1,22 @@
 * {
-  font-family: 'Benne', serif;
+  font-family: Benne, serif;
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   width: 100%;
 }
+
 main {
   background-color: rgb(216, 216, 216);
   display: flex;
   flex-flow: row wrap;
-  padding:3% 0 0 5%;
+  padding: 3% 0 0 5%;
   width: 100%;
 }
 
@@ -41,9 +41,8 @@ main {
 }
 
 .container-login form input , .container-login form button {
-
   margin-right: 3%;
-  padding: 2% 1% 1% 1%;
+  padding: 2% 1% 1%;
   border-radius: 5px;
   width: 25%;
 }
@@ -57,7 +56,7 @@ main {
   display: flex;
 }
 
-.paragráfo{
+.paragráfo {
   transform: translate(0%, 25%);
   display: flex;
   width: 8%;
@@ -150,8 +149,8 @@ h2 {
 
 .container-login {
   width: 30%;
-  display:flex ;
-  align-self:center;
+  display: flex;
+  align-self: center;
   justify-content: flex-start;
   box-sizing: border-box;
 }
@@ -203,7 +202,7 @@ hr {
 }
 
 footer {
-  padding: 8px 0 0 0;
+  padding: 8px 0 0;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -221,10 +220,10 @@ span {
   bottom: -90px;
   right: 0;
   height: 100%;
-  padding: 1rem .75rem;
+  padding: 1rem 0.75rem;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
-  transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
   opacity: 0.65;
 }
