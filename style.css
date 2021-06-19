@@ -43,7 +43,7 @@ body {
   padding: 5px 40px;
 }
 
-#form-title{
+#form-title {
   display: flex;
   color: black;
   justify-content: center;
@@ -68,8 +68,8 @@ body {
   border: none;
 }
 
-#buttonLogin{
-  background-color:  rgb(78, 44, 131);
+#buttonLogin {
+  background-color: rgb(78, 44, 131);
   color: white;
   width: 80px;
   border-radius: 8px;

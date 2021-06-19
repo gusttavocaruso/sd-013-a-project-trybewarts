@@ -59,11 +59,11 @@ function familyValue() {
 
 function subjectsValues() {
   const materias = document.querySelectorAll('.subject');
-  let materiasChecked = [];
+  let materiasChecked = '';
 
   for (let index of materias) {
     if (index.checked) {
-      materiasChecked.push(index.value);
+      materiasChecked += `${index.value}, `;
     }
   }
   return materiasChecked;
@@ -92,7 +92,7 @@ function title() {
 
 btnSubmit.addEventListener('click', () => {
   const familyResult = familyValue();
-  const subjectsResult = subjectsValues().toString();
+  const subjectsResult = subjectsValues();
   const rateResult = rateValue();
   form.innerHTML = '';
   title();
