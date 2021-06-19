@@ -49,9 +49,9 @@ function familyValue() {
   const familia = document.getElementsByName('family');
   let resultado;
 
-  for (let index of familia) {
-    if (index.checked) {
-      resultado = index.value;
+  for (const index = 0; index < familia.length; index += 1) {
+    if (familia[index].checked) {
+      resultado = familia[index].value;
     }
   }
   return resultado;
@@ -61,9 +61,9 @@ function subjectsValues() {
   const materias = document.querySelectorAll('.subject');
   let materiasChecked = '';
 
-  for (let index of materias) {
-    if (index.checked) {
-      materiasChecked += `${index.value}, `;
+  for (const index = 0; index < materias.length; index += 1) {
+    if (materias[index].checked) {
+      materiasChecked += `${materias[index].value}, `;
     }
   }
   return materiasChecked;
@@ -73,9 +73,9 @@ function rateValue() {
   const avaliacao = document.getElementsByName('rate');
   let resultado;
 
-  for (let index of avaliacao) {
-    if(index.checked) {
-      resultado = index.value;
+  for (const index = 0; index < avaliacao.length; index += 1) {
+    if (avaliacao[index].checked) {
+      resultado = avaliacao[index].value;
     }
   }
   return resultado;
@@ -85,9 +85,9 @@ function title() {
   const h2 = document.createElement('h2');
   h2.className = 'new-title';
   h2.innerText = 'Informações';
-  h2.style.margin = '40px auto 60px'
+  h2.style.margin = '40px auto 60px';
 
-  form.appendChild(h2)
+  form.appendChild(h2);
 }
 
 btnSubmit.addEventListener('click', () => {
