@@ -40,15 +40,15 @@
       <div class="flex-container inputs">
 
         <div class="input-size">
-          <input id="input-name" type="text" placeholder="Nome" class="form-control" required>
+          <input id="input-name" type="text" name="firstname" placeholder="Nome" class="form-control" required>
         </div>
 
         <div class="input-size">
-          <input id="input-lastname" class="form-control" type="text" placeholder="Sobrenome" required>
+          <input id="input-lastname" name="lastname" class="form-control" type="text" placeholder="Sobrenome" required>
         </div>
 
         <div class="input-size">
-          <input id="input-email" class="form-control" type="text" placeholder="Email" required>
+          <input id="input-email" name="email" class="form-control" type="text" placeholder="Email" required>
         </div>
 
         <div class="flex-container input-size">
@@ -84,24 +84,24 @@
           <div class="container">
             <div>
               <label for="hofs">
-                <input type="checkbox" value="HoFs" id="hofs">HoFs
+                <input type="checkbox" value="HoFs" id="hofs" name="skill" class="subject">HoFs
               </label>
               <label for="jest">
-                <input type="checkbox" value="Jest" id="jest">Jest
+                <input type="checkbox" value="Jest" id="jest" name="skill" class="subject">Jest
               </label>
               <label for="promises">
-                <input type="checkbox" value="Promises" id="promises">Promises
+                <input type="checkbox" value="Promises" id="promises" name="skill" class="subject">Promises
               </label>
             </div>
             <div>
               <label for="react">
-                <input type="checkbox" value="React" id="react">React
+                <input type="checkbox" value="React" id="react" name="skill" class="subject">React
               </label>
               <label for="sql">
-                <input type="checkbox" value="SQL" id="sql">SQL
+                <input type="checkbox" value="SQL" id="sql" name="skill" class="subject">SQL
               </label>
               <label for="python">
-                <input type="checkbox" value="Python" id="python">Python
+                <input type="checkbox" value="Python" id="python" name="skill" class="subject">Python
               </label>
             </div>
           </div>
@@ -136,7 +136,7 @@
       </div>
 
       <label class="textarea" for="">Deixe seu comentário:
-        <textarea name="" id="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
+        <textarea id="textarea" name="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
           id="counter">500</span>
       </label>
 
