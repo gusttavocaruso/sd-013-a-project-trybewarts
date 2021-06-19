@@ -23,12 +23,11 @@ body {
   display: flex;
   justify-content: left;
   width: 50px;
-  align-content: flex-start;
 }
 
 .trybewarts-login {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 .trybewarts-login input {
