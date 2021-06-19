@@ -15,7 +15,9 @@
       <div class="container-logo">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo-TrybeWarts">
       </div>
+      <div id="text-header">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
+      </div>
       <div class="container-login">
         <form action="" class="trybewarts-login">
           <input type="text" name="" id="login-input" placeholder="Login">
@@ -111,14 +113,13 @@
               <input type="radio" class="form-check-input" value="10" name="rate">10
           </div>
         <div class="form-floating">
+          <span id="counter">500</span>
           <textarea name="" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
           <label class="textarea" id="text-area-label" for="floatingTextarea">Deixe seu comentário:</label>
-          <span id="counter">500</span>
         </div>
         <div>
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement" class="form-check-input">
-
         </div>
         <button type="submit" id="submit-btn" class="btn btn-success" disabled >Enviar</button>
       </form>

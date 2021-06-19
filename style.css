@@ -24,7 +24,13 @@ main {
   width: 45%;
 }
 
+#text-header {
+  transform: translate(0%, 50%);
+}
+
 .header {
+
+  font-size: larger;
   color: white;
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -127,7 +133,6 @@ h2 {
 }
 
 #checkboxes {
-  margin-top: 5%;
   height: 100%;
   width: 90%;
   display: flex;
@@ -158,7 +163,7 @@ h2 {
   flex-direction: column;
 }
 
-#textareag {
+#textarea {
   height: 80px;
   margin-top: 50px;
   width: 100%;
@@ -172,6 +177,7 @@ h2 {
 }
 
 #submit-btn {
+  width: 100%;
   color: white;
   background-color: rgb(103, 9, 197);
   margin-bottom: 12px;
@@ -199,11 +205,27 @@ hr {
 }
 
 footer {
+  padding: 8px 0 0 0;
   text-align: center;
   bottom: 0;
   width: 100%;
   position: relative;
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   color: white;
 }
 
+#label-content {
+  font-size: larger;
+}
+
+span {
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  height: 100%;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}
