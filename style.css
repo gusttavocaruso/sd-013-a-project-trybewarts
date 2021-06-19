@@ -15,7 +15,7 @@ body {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   height: 65px;
 }
 
@@ -37,7 +37,7 @@ body {
   border-radius: 5px;
   font-size: 9px;
   padding: 8px;
-  margin: 4px
+  margin: 4px;
 }
 
 .trybewarts-login button {
@@ -48,7 +48,7 @@ body {
   border-radius: 5px;
   font-size: 9px;
   padding: 8px;
-  margin: 4px
+  margin: 4px;
 }
 
 .trybewarts-header-title {
@@ -86,7 +86,7 @@ main {
 
 .session-one div {
   border: solid 1px purple;
-  margin: 5px 5px;
+  margin: 5px;
 }
 
 /* Sessão 2 do Formulario */
