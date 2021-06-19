@@ -1,39 +1,65 @@
 * {
+  font-family: 'Benne', serif;
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
 main {
   background-color: rgb(216, 216, 216);
   display: flex;
   flex-flow: row wrap;
+  padding:3% 0 0 5%;
+  width: 100%;
 }
 
 #input-name , #input-lastname , #input-email , #house {
-  width: 40%;
+  width: 45%;
 }
 
 .header {
   color: white;
   background-color: rgb(50, 167, 145);
   display: flex;
-  width: 100%;
   height: 100px;
+  align-items: center;
   justify-content: space-between;
+
+}
+
+.container-login form input , .container-login form button {
+
+  margin-right: 3%;
+  padding: 2% 1% 1% 1%;
+  border-radius: 5px;
+  width: 25%;
+}
+
+#login-button {
+  color: white;
+  background-color: rgb(112, 6, 210);
 }
 
 .trybewarts-login {
+}
+
+.paragráfo{
+  transform: translate(0%, 25%);
   display: flex;
+  width: 8%;
+  justify-content: flex-end;
   align-items: center;
-  max-width: 100%;
-  justify-content: space-evenly;
-  width: 100vw;
 }
 
 #house {
-  width: 34%;
+  width: 37%;
 }
 
 .header img {
@@ -110,37 +136,19 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-
-}
-
-#login-input , #pass-input {
-  max-width: 30%;
-  margin-right: 5%;
-  padding: 1%;
-  border-radius: 5px;
-}
-
-#login-button {
-  max-width: 30%;
-  padding: 2%;
-  border-radius: 5px;
-}
-
-#trybewarts-header-title {
-  display: flex;
-  align-items: center;
-}
-
-.container-login {
-  display: flex;
-  max-width: 40%;
 }
 
 .container-logo {
-  display: flex;
-  max-width: 15%;
-  max-height: 100%;
-  justify-content: left;
+  margin-left: 5%;
+}
+
+.container-login {
+  width: 30%;
+  display:flex ;
+  align-self:center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-right: 5%;
 }
 
 #tecnologies {
@@ -165,6 +173,7 @@ h2 {
 #submit-btn {
   color: white;
   background-color: rgb(103, 9, 197);
+  margin-bottom: 12px;
 }
 
 #agreement {
@@ -187,3 +196,13 @@ hr {
   box-sizing: border-box;
   width: 100%;
 }
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
