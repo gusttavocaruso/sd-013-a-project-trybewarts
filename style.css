@@ -130,12 +130,14 @@ footer p {
 .avaliador label {
   margin-right: 5px;
 }
+
 /* enviar */
-#envio{
+#envio {
   display: flex;
   align-self: center;
   margin-top: 2%;
 }
-#submit-btn{
+
+#submit-btn {
   padding: 10px 100px;
 }
