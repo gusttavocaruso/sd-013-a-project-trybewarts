@@ -11,3 +11,16 @@ function checkLogin() {
 
 const getBtn = document.querySelector('#btn-login');
 getBtn.addEventListener('click', checkLogin);
+
+const input = document.querySelector('#agreement');
+const button = document.querySelector('#submit-btn');
+button.disabled = true;
+function sendButton() {
+  if (input.value === '') {
+    button.disabled = true;
+  } else {
+    button.disabled = false;
+  }
+}
+
+input.addEventListener('change', sendButton);
