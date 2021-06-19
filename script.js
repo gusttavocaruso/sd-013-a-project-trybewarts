@@ -37,3 +37,70 @@ const textarea = document.querySelector('#textarea');
 textarea.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textarea.value.length;
 });
+
+// Deleta tudo do forms e cria paragrafo com valores dos inputs e botões
+const form = document.querySelector('#evaluation-form');
+const nome = document.querySelector('#input-name');
+const sobrenome = document.querySelector('#input-lastname');
+const email = document.querySelector('#input-email');
+const casa = document.querySelector('#house');
+
+function familyValue() {
+  const familia = document.getElementsByName('family');
+  let resultado;
+
+  for (let index of familia) {
+    if (index.checked) {
+      resultado = index.value;
+    }
+  }
+  return resultado;
+}
+
+function subjectsValues() {
+  const materias = document.querySelectorAll('.subject');
+  let materiasChecked = [];
+
+  for (let index of materias) {
+    if (index.checked) {
+      materiasChecked.push(index.value);
+    }
+  }
+  return materiasChecked;
+}
+
+function rateValue() {
+  const avaliacao = document.getElementsByName('rate');
+  let resultado;
+
+  for (let index of avaliacao) {
+    if(index.checked) {
+      resultado = index.value;
+    }
+  }
+  return resultado;
+}
+
+function title() {
+  const h2 = document.createElement('h2');
+  h2.className = 'new-title';
+  h2.innerText = 'Informações';
+  h2.style.margin = '40px auto 60px'
+
+  form.appendChild(h2)
+}
+
+btnSubmit.addEventListener('click', () => {
+  const familyResult = familyValue();
+  const subjectsResult = subjectsValues().toString();
+  const rateResult = rateValue();
+  form.innerHTML = '';
+  title();
+  form.innerHTML += `Nome: ${nome.value} ${sobrenome.value} <br>`;
+  form.innerHTML += `Email: ${email.value} <br>`;
+  form.innerHTML += `Casa: ${casa.value} <br>`;
+  form.innerHTML += `Família: ${familyResult} <br>`;
+  form.innerHTML += `Matérias: ${subjectsResult} <br>`;
+  form.innerHTML += `Avaliação: ${rateResult} <br>`;
+  form.innerHTML += `Observações: ${textarea.value}`;
+});
