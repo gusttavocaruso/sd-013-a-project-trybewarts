@@ -27,11 +27,11 @@ sendButton();
 const counterPad = () => {
   const getTextArea = document.getElementById('textarea');
 
-  getTextArea.addEventListener('keypress', () => {
+  getTextArea.addEventListener('keyup', () => {
     let getPad = document.getElementById('counter');
-    getPad.innerHTML = - getTextArea.value.length;
+    getPad.innerHTML = 500 - getTextArea.value.length;
 
   })
 }
 
-counterPad()
+counterPad();
