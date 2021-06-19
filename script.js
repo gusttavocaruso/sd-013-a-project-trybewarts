@@ -9,6 +9,7 @@ const firstNameInput = document.querySelector('#input-name');
 const lastNameInput = document.querySelector('#input-lastname');
 const emailInput = document.querySelector('#input-email');
 const selectHouse = document.querySelector('#house');
+const subjectInput = document.querySelectorAll('.subject');
 
 buttonForm.addEventListener('click', () => {
   const loginValue = document.getElementById('form-login').value;
@@ -48,6 +49,16 @@ textAreaField.addEventListener('keyup', () => {
   counterField.innerHTML = resultCounter;
 });
 
+const getSubjectSelected = () => {
+  let content = [];
+  for (let i = 0; i < subjectInput.length; i += 1){
+    if (subjectInput[i].checked) {
+      content.push(subjectInput[i].value);
+    }
+  }
+  return content.join(', ');
+}
+
 const createResultDiv = () => {
   const newDiv = document.createElement('div');
   newDiv.id = 'result-form-div';
@@ -56,6 +67,10 @@ const createResultDiv = () => {
   newDiv.innerHTML += `Casa: ${selectHouse.value}`;
   const inputFamily = document.querySelector('input[name="family"]:checked');
   newDiv.innerHTML += `Família: ${inputFamily.value}`;
+  newDiv.innerHTML += `Matérias: ${getSubjectSelected()}`;
+  const inputRate = document.querySelector('input[name="rate"]:checked');
+  newDiv.innerHTML += `Avaliação: ${inputRate.value}`;
+
   return newDiv;
 }
 
