@@ -54,6 +54,7 @@ main {
 }
 
 .trybewarts-login {
+  display: flex;
 }
 
 .paragráfo{
@@ -146,7 +147,6 @@ h2 {
 }
 
 .container-logo {
-  margin-left: 5%;
 }
 
 .container-login {
