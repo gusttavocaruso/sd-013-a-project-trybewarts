@@ -46,7 +46,7 @@ elementoTextArea.addEventListener('keyup', contaString);
 elementoEnviar.addEventListener('click', () => {
   const evaluationForm = document.getElementById('evaluation-form');
   const name = document.getElementById('input-name');
-  const lastName = document.getElementById('input-lastname');
+  const lastName = document.getElementById('input-lastname'); // ok
   const email = document.getElementById('input-email'); // ok
   const house = document.getElementById('house'); // ok
   const family = document.querySelector('input[name="family"]:checked');
