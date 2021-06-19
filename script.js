@@ -24,7 +24,6 @@ const desafio12 = () => {
     inputs.setAttribute('value', language);
     inputs.setAttribute('id', language);
     inputs.setAttribute('name', 'family');
-    inputs.style.marginBottom = '10px';
     divRadio.appendChild(inputs);
     const labels = document.createElement('label');
     labels.setAttribute('for', language);
@@ -43,13 +42,12 @@ const desafio13 = () => {
     const inputs = document.createElement('input');
     inputs.classList.add('subject');
     inputs.setAttribute('type', 'checkbox');
+    inputs.setAttribute('class', 'form-check-input');
     inputs.setAttribute('value', nome);
     inputs.setAttribute('id', nome);
     checkbox.appendChild(inputs);
-
     const label = document.createElement('label');
     label.setAttribute('for', nome);
-    label.style.marginLeft = '-5px';
     label.innerText = nome;
     label.setAttribute('class', 'labels');
     checkbox.appendChild(label);
@@ -66,15 +64,23 @@ const desafio14 = () => {
     input.setAttribute('value', i);
     input.setAttribute('name', 'rate');
     input.setAttribute('id', i);
-    input.style.marginLeft = '7px';
+    input.style.marginLeft = '12px';
     radio.appendChild(input);
-
     const labels = document.createElement('label');
     labels.innerText = i;
-    labels.style.marginRight = '10px';
+    labels.style.marginRight = '2px';
     labels.setAttribute('for', i);
     radio.appendChild(labels);
     divRadio.appendChild(radio);
   }
 };
 desafio14();
+
+const bootstrapRadio = () => {
+  const radios = document.querySelectorAll('[name=rate]');
+
+  for (let i = 0; i <= 10; i += 1) {
+    radios[i].setAttribute('class', 'form-check-input');
+  }
+};
+bootstrapRadio();
