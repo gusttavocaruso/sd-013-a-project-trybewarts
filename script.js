@@ -30,4 +30,4 @@ checkAgreement.addEventListener('click', enableSubmit);
 textArea.addEventListener('keyup', (contagem) => {
   const contador = document.getElementById('counter');
   contador.innerText = 500 - contagem.target.value.length;
-})
+});
