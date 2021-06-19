@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  color:white;
+  color: white;
 }
 
 body {
@@ -113,8 +113,8 @@ main {
   width: 40%;
 }
 
-#label-family{
-  margin-left:32px;
+#label-family {
+  margin-left: 32px;
 }
 
 #learn {
