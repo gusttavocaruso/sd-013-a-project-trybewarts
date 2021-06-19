@@ -11,16 +11,15 @@ botaoLogar.addEventListener('click', () => {
   }
 });
 
-// const formEvaluation = document.querySelector('#evaluation-form');
 // debugger;
 
 function fnFillArrayRefSubjectSelected() {
   // Materias selecionadas
   const arrSubject = [];
   const elAllSubject = document.querySelectorAll('.subject');
-  for (const subject of elAllSubject) {
-    if (subject.checked) {
-      arrSubject.push(` ${subject.value}`);
+  for (let index = 0; index < elAllSubject.length; index += 1) {
+    if (elAllSubject[index].checked) {
+      arrSubject.push(` ${elAllSubject[index].value}`);
     }
   }
   return arrSubject;
@@ -28,6 +27,7 @@ function fnFillArrayRefSubjectSelected() {
 
 // ========================================================
 // Source: https://stackoverflow.com/questions/6533138/javascript-selected-radio/56091858
+
 function getCheckedRadioValue(name) {
   const elements = document.getElementsByName(name);
   for (let i = 0; i <= elements.length; i += 1) {
@@ -36,19 +36,21 @@ function getCheckedRadioValue(name) {
 }
 // =========================================================
 
+// const strName = document.querySelector('#input-name').value;
+// const strLastName = document.querySelector('#input-lastname').value;
+// const strEmail = document.querySelector('#input-email').value;
+// const strHouse = document.querySelector('#house').value;
+
 function fnBuildReport() {
-  const strName = document.querySelector('#input-name').value;
-  const strLastName = document.querySelector('#input-lastname').value;
-  const strEmail = document.querySelector('#input-email').value;
-  const strHouse = document.querySelector('#house').value;
+  const formEvaluation = document.querySelector('#evaluation-form');
   const strfamily = getCheckedRadioValue('family');
   const arrSubjects = fnFillArrayRefSubjectSelected();
   const intRate = getCheckedRadioValue('rate');
   const strTextarea = document.querySelector('#textarea').value;
   const objReport = {
-    name: `Nome: ${strName} ${strLastName}`,
-    email: `Email: ${strEmail}`,
-    house: `Casa: ${strHouse}`,
+    name: `Nome: ${formEvaluation[0].value} ${formEvaluation[1].value}`,
+    email: `Email: ${formEvaluation[2].value}`,
+    house: `Casa: ${formEvaluation[3].value}`,
     family: `Família: ${strfamily}`,
     subject: `Matérias: ${Object.values(arrSubjects)}`,
     rate: `Avaliação: ${intRate}`,
