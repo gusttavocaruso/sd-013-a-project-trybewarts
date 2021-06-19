@@ -45,7 +45,6 @@ body {
 #botao_login {
   background-color: purple;
   color: white;
-  font-weight: bold;
   align-self: center;
 }
 
@@ -136,7 +135,7 @@ main {
   width: 100%;
 }
 
-.segCont_lado_direito p, .segCont_lado_esquerdo p {
+.segCont_lado_direito p , .segCont_lado_esquerdo p {
   margin-bottom: 10px;
 }
 
@@ -150,10 +149,9 @@ main {
   justify-content: space-around;
 }
 
-.container_alinhamento, .skills {
+.container_alinhamento , .skills {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   margin-right: 10px;
 }
 
@@ -164,6 +162,7 @@ main {
 .quarto_container {
   width: 100%;
 }
+
 .quarto_container textarea {
   width: 100%;
 }
@@ -185,7 +184,6 @@ main {
   width: 100%;
   background-color: purple;
   color: white;
-  font-weight: bold;
   align-self: center;
   border-radius: 4px;
 }
