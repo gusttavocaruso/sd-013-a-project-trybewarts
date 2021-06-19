@@ -111,3 +111,8 @@ fieldset {
   background-color: rgb(80, 0, 145);
   color: white;
 }
+
+#counter {
+  display: flex;
+  flex-direction: row-reverse;
+}
