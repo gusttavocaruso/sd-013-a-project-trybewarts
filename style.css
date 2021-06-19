@@ -42,10 +42,6 @@ main , #evaluation-form {
   height: 500px;
 }
 
-input {
-  width: 5%;
-}
-
 #fullName , #email-houses {
   display: flex;
 }
@@ -62,12 +58,20 @@ input {
   display: flex;
 }
 
-.labels {
+.subject {
   margin-right: 10px;
-  margin-left: -5px;
+
+}
+
+.labels {
+  margin-right: 15px;
 }
 
 #divLabels {
   display: flex;
   flex-direction: column;
+}
+
+#divRadio {
+  display: flex;
 }

@@ -38,7 +38,6 @@ desafio12();
 const desafio13 = () => {
   const checkbox = document.querySelector('#checkbox');
   const nomes = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
-
   for (let i = 0; i < nomes.length; i += 1) {
     const nome = nomes[i];
     const inputs = document.createElement('input');
@@ -50,9 +49,32 @@ const desafio13 = () => {
 
     const label = document.createElement('label');
     label.setAttribute('for', nome);
+    label.style.marginLeft = '-5px';
     label.innerText = nome;
     label.setAttribute('class', 'labels');
     checkbox.appendChild(label);
   }
 };
 desafio13();
+
+const desafio14 = () => {
+  const divRadio = document.querySelector('#divRadio');
+  const radio = document.querySelector('#radio');
+  for (let i = 0; i <= 10; i += 1) {
+    const input = document.createElement('input');
+    input.setAttribute('type', 'radio');
+    input.setAttribute('value', i);
+    input.setAttribute('name', 'rate');
+    input.setAttribute('id', i);
+    input.style.marginLeft = '7px';
+    radio.appendChild(input);
+
+    const labels = document.createElement('label');
+    labels.innerText = i;
+    labels.style.marginRight = '10px';
+    labels.setAttribute('for', i);
+    radio.appendChild(labels);
+    divRadio.appendChild(radio);
+  }
+};
+desafio14();
