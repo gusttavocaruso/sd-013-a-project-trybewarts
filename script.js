@@ -47,7 +47,7 @@ elementoEnviar.addEventListener('click', () => {
   const evaluationForm = document.getElementById('evaluation-form');
   const name = document.getElementById('input-name');
   const lastName = document.getElementById('input-lastname');
-  const email = document.getElementById('input-email'); // ok
+  const email = document.getElementById('input-email');
   const house = document.getElementById('house'); // ok
   const family = document.querySelector('input[name="family"]:checked');
   const subjects = document.querySelectorAll('input[name="content"]:checked');
