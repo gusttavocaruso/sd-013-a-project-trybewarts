@@ -29,7 +29,7 @@ main {
 }
 
 .header {
-  padding-left: 5%px;
+  padding-left: 5%;
   font-size: larger;
   color: white;
   background-color: rgb(50, 167, 145);
@@ -152,7 +152,6 @@ h2 {
   align-self:center;
   justify-content: flex-start;
   box-sizing: border-box;
-  margin-right: 5%;
 }
 
 #tecnologies {
