@@ -17,18 +17,22 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 65px;
+  border: 1px solid red;
 }
 
 .trybewarts-header-logo {
   width: 50px;
-  align-items: left;
+  align-content: left;
+  justify-content: flex-start;
+  border: 1px solid orchid;
 }
 
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-content: right;
   margin: 40px;
+  border: 1px solid aqua;
 }
 
 .trybewarts-login input {
