@@ -21,7 +21,7 @@ buttonForm.addEventListener('click', () => {
   }
 });
 
-function setRateField() {
+const setRateField = () => {
   for (let i = 0; i < 10; i += 1) {
     const newRate = document.createElement('input');
     const spanValue = document.createElement('span');
@@ -32,7 +32,7 @@ function setRateField() {
     rateField.appendChild(newRate);
     rateField.appendChild(spanValue);
   }
-}
+};
 setRateField();
 
 agreementField.addEventListener('click', () => {
@@ -50,14 +50,14 @@ textAreaField.addEventListener('keyup', () => {
 });
 
 const getSubjectSelected = () => {
-  let content = [];
-  for (let i = 0; i < subjectInput.length; i += 1){
+  const content = [];
+  for (let i = 0; i < subjectInput.length; i += 1) {
     if (subjectInput[i].checked) {
       content.push(subjectInput[i].value);
     }
   }
   return content.join(', ');
-}
+};
 
 const createResultDiv = () => {
   const newDiv = document.createElement('div');
@@ -70,13 +70,13 @@ const createResultDiv = () => {
   newDiv.innerHTML += `Matérias: ${getSubjectSelected()}`;
   const inputRate = document.querySelector('input[name="rate"]:checked');
   newDiv.innerHTML += `Avaliação: ${inputRate.value}`;
-
+  newDiv.innerHTML += `Observações: ${textAreaField.value}`;
   return newDiv;
-}
+};
 
-submitButton.addEventListener('click', event => {
+submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   const ResultDiv = createResultDiv();
   formField.innerHTML = '';
   formField.appendChild(ResultDiv);
-})
+});
