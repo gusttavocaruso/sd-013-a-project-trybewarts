@@ -75,3 +75,15 @@ const desafio14 = () => {
   }
 };
 desafio14();
+
+const inputRadio = () => {
+  const radios = document.querySelectorAll('input');
+
+  for (let i = 0; i < radios.length; i += 1) {
+    const radio = radios[i];
+    if (radio.type === 'radio') {
+      radio.setAttribute('class', 'form-check-input');
+    }
+  }
+};
+inputRadio();

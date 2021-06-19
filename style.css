@@ -129,8 +129,14 @@ hr {
 #divCheck {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 #agreement {
   margin-left: 10px;
+}
+
+#radio {
+  display: flex;
+  align-items: center;
 }
