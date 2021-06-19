@@ -1,5 +1,7 @@
 const buttonForm = document.getElementById('login-button');
 const rateField = document.querySelector('.rate-field');
+const agreementField = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
 buttonForm.addEventListener('click', () => {
   const loginValue = document.getElementById('form-login').value;
   const passwordValue = document.getElementById('form-password').value;
@@ -23,3 +25,11 @@ function setRateField() {
   }
 }
 setRateField();
+
+agreementField.addEventListener('click', () => {
+  if (agreementField.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});

@@ -12,7 +12,7 @@ h1 {
 
 .form {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   width: 675px;
 }
 
@@ -57,10 +57,6 @@ h1 {
 .content-field {
   display: flex;
   flex-direction: column;
-}
-
-#label-infos {
-  display: flex;
 }
 
 #submit-btn {
