@@ -27,11 +27,11 @@
         <input id="input-lastname" type="text" placeholder="Sobrenome" name="sobrenome">
         <input id="input-email" type="email" placeholder="Email" name="email">
         <label for="house">Casa:
-          <select name="" id="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          <select name="casa" id="house">
+            <option class="casa" id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option class="casa" id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option class="casa" id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option class="casa" id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </label>
       </div>
@@ -112,8 +112,9 @@
             <input type="radio" name="rate" value="10">10
           </label>
         </div>
-        <label for="" class="textarea">Deixe seu comentário:
-          <textarea placeholder="500 caracteres" name="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <label for="" id="text-container" class="textarea">Deixe seu comentário:
+          <textarea id="textarea" placeholder="500 caracteres" name="textarea" cols="30" rows="10" maxlength="500"></textarea>
+          <p id="counter">500</p>
         </label>
         <label for="" id="label-infos">
           Você concorda com o uso das informações acima?

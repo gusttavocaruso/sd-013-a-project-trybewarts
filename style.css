@@ -124,3 +124,14 @@ footer {
   height: 40px;
   margin-top: 45px;
 }
+
+#counter {
+  position: relative;
+  top: -18px;
+  left: 640px;
+}
+
+#final-text {
+  margin-top: 20%;
+  align-self: center;
+}
