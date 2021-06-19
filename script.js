@@ -49,7 +49,7 @@ function familyValue() {
   const familia = document.getElementsByName('family');
   let resultado;
 
-  for (const index = 0; index < familia.length; index += 1) {
+  for (let index = 0; index < familia.length; index += 1) {
     if (familia[index].checked) {
       resultado = familia[index].value;
     }
@@ -61,7 +61,7 @@ function subjectsValues() {
   const materias = document.querySelectorAll('.subject');
   let materiasChecked = '';
 
-  for (const index = 0; index < materias.length; index += 1) {
+  for (let index = 0; index < materias.length; index += 1) {
     if (materias[index].checked) {
       materiasChecked += `${materias[index].value}, `;
     }
@@ -73,7 +73,7 @@ function rateValue() {
   const avaliacao = document.getElementsByName('rate');
   let resultado;
 
-  for (const index = 0; index < avaliacao.length; index += 1) {
+  for (let index = 0; index < avaliacao.length; index += 1) {
     if (avaliacao[index].checked) {
       resultado = avaliacao[index].value;
     }
