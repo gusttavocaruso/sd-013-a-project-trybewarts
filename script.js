@@ -1,7 +1,7 @@
 const botaoLogar = document.querySelector('.logar');
 const btnSubmit = document.querySelector('#submit-btn');
 const checkAgreement = document.querySelector('#agreement');
-const textarea = document.getElementById('textarea');
+const textArea = document.getElementById('textarea');
 
 botaoLogar.addEventListener('click', () => {
   const loginDigitado = document.querySelector('.login').value;
@@ -27,8 +27,7 @@ function enableSubmit() {
 }
 checkAgreement.addEventListener('click', enableSubmit);
 
-textarea.addEventListener('keyup', (contagem) => {
-  
-  const contador = document.getElementById('counter')
+textArea.addEventListener('keyup', (contagem) => {
+  const contador = document.getElementById('counter');
   contador.innerText = 500 - contagem.target.value.length;
-});
+})
