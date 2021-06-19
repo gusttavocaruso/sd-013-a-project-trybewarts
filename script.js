@@ -58,7 +58,7 @@ desafio13();
 const desafio14 = () => {
   const divRadio = document.querySelector('#divRadio');
   const radio = document.querySelector('#radio');
-  for (let i = 0; i <= 10; i += 1) {
+  for (let i = 1; i <= 10; i += 1) {
     const input = document.createElement('input');
     input.setAttribute('type', 'radio');
     input.setAttribute('value', i);
@@ -75,12 +75,3 @@ const desafio14 = () => {
   }
 };
 desafio14();
-
-const bootstrapRadio = () => {
-  const radios = document.querySelectorAll('[name=rate]');
-
-  for (let i = 0; i <= 10; i += 1) {
-    radios[i].setAttribute('class', 'form-check-input');
-  }
-};
-bootstrapRadio();

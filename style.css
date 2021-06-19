@@ -95,6 +95,7 @@ main , #evaluation-form {
 
 #divRadio {
   display: flex;
+  margin-bottom: 25px;
 }
 
 hr {
@@ -120,3 +121,16 @@ hr {
   margin-bottom: 10px;
 }
 
+#divText {
+  display: flex;
+  flex-direction: column;
+}
+
+#divCheck {
+  display: flex;
+  align-items: center;
+}
+
+#agreement {
+  margin-left: 10px;
+}
