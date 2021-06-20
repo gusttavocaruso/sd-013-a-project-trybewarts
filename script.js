@@ -37,4 +37,3 @@ const textarea = document.querySelector('#textarea');
 textarea.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textarea.value.length;
 });
-
