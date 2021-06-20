@@ -24,12 +24,16 @@ main {
   width: 45%;
 }
 
-#text-header {
+#trybewarts-header-title {
   transform: translate(0%, 25%);
 }
 
+.out-header {
+  background-color: rgb(50, 167, 145)
+}
+
 .header {
-  padding-left: 5%;
+  margin: 0 5%;
   font-size: larger;
   color: white;
   background-color: rgb(50, 167, 145);
