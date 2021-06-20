@@ -6,7 +6,6 @@ const radioButtons = 10;
 const checkBtn = document.getElementById('agreement');
 const enviar = document.getElementById('submit-btn');
 
-
 function gerarAlerta() {
   if ((loginUser.value === 'tryber@teste.com') && (passwordUser.value === '123456')) {
     alert('Olá, Tryber!');
@@ -30,7 +29,6 @@ const makeNumRadioBtn = (n) => {
 
     numRadioBtn.appendChild(radioLabel);
     numRadioBtn.appendChild(radioBox);
-
   }
 }; makeNumRadioBtn(radioButtons);
 
