@@ -1,6 +1,7 @@
 const formButton = document.querySelector('.btn-submit');
 const inputLogin = document.querySelector('#login');
 const inputSenha = document.querySelector('#senha');
+let formMessages = [];
 
 function validadeHeaderForm() {
   const login = inputLogin.value;
@@ -15,8 +16,8 @@ function validadeHeaderForm() {
 
 formButton.addEventListener('click', validadeHeaderForm);
 
-function validateBtn() {
-  const btn = document.querySelector('#submit-btn');
+function validateBtn(btn) {
+  // const btn = document.querySelector('#submit-btn');
   const checkbox = document.querySelector('#agreement');
   checkbox.addEventListener('change', () => {
     if (checkbox.checked) {
@@ -34,7 +35,6 @@ function limiteTextarea() {
   const quant = 500;
   let contador = 0;
   spanContador.innerHTML = quant;
-  console.log(spanContador);
 
   textarea.addEventListener('keyup', () => {
     const textLength = textarea.value.length;
@@ -44,7 +44,57 @@ function limiteTextarea() {
   });
 }
 
+function createNameMessage() {
+  const firstName = document.querySelector('[name=input-name]').value.trim();
+  const lastName = document.querySelector('[name=input-lastname]').value.trim();
+  const message = `Nome: ${firstName} ${lastName}`;
+  formMessages.push(message);
+}
+
+function createEmailMessage() {
+  const email = document.querySelector('[name=input-email]').value.trim();
+  const message = `Email: ${email}`;
+  formMessages.push(message);
+}
+
+function createHouseMessage() {
+  const house = document.querySelector('#house');
+  const houseSelected = house.options[house.selectedIndex].text;
+  const message = `Casa: ${houseSelected}`;
+  formMessages.push(message);
+}
+
+function createFamilyMessage() {
+  const family = document.querySelector('input[name="family"]:checked').value;
+  const message = `Familia: ${family}`;
+  formMessages.push(message);
+}
+
+// function renderMessage() {
+//   const form = document.querySelector('#evaluation-form');
+//   form.style.display = "none";
+//   // const messageArea = document.querySelector('.form-data');
+//   // for (let i = 0; i < formMessages; i += 1 ) {
+//   //   const p = document.createElement('p');
+//   //   console.log(p);
+//     // p.innerHTML = formMessages[i];
+//     // messageArea.appendChild(p);
+//   // }
+// }
+
+function handleSubmit(event) {
+  event.preventDefault();
+  createNameMessage();
+  createEmailMessage();
+  createHouseMessage();
+  createFamilyMessage();
+  console.log(formMessages);
+  // renderMessage();
+}
+
 window.onload = () => {
-  validateBtn();
+  const btnSubmit = document.querySelector('#submit-btn');
+  validateBtn(btnSubmit);
   limiteTextarea();
+  btnSubmit.addEventListener('click', handleSubmit);
 };
