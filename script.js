@@ -13,6 +13,7 @@ getBtnLogin.addEventListener('click', () => {
 });
 
 // codigo referenciado (https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button)
+// faz o botao ser habilitado com o checkbox
 submitbtn.disabled = true;
 agreement.addEventListener('click', () => {
   submitbtn.disabled = !submitbtn.disabled;
