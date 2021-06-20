@@ -239,7 +239,7 @@ span {
   opacity: 0.85;
   animation: bounce-1 4s linear 0.5s infinite;
   animation-direction: alternate;
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 
 @keyframes bounce-1 {
@@ -257,6 +257,7 @@ span {
 
   60% { transform: translateX( 2vh) translateY( -2vh)}
 
-  80% { transform: translateX( -2vh) translateY( -2vh)}
+  80% { transform: translateX( -200px) translateY( -80px)}
 
+  90% { transform: translateX( -400px) translateY(0px)}
 }
