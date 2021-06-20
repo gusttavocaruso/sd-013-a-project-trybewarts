@@ -9,13 +9,17 @@
   </head>
 
   <body>
-    <header class="header"> <!-- Requisito 1 -->
-
-      <img src="images/trybewarts-header-logo.svg" alt="logo-trybe" class="trybewarts-header-logo" width=100px> <!-- Requisito 2 -->
-
-      <h1 id="trybewarts-header-title">Trybewarts</h1> <!-- Requisito 4 -->
-
-      <form action="" method="get" class="trybewarts-login"> <!-- Requisito 3 -->
+    <!-- Requisito 1 -->
+    <header class="header"> 
+      
+      <!-- Requisito 2 -->
+      <img src="images/trybewarts-header-logo.svg" alt="logo-trybe" class="trybewarts-header-logo" width=100px> 
+      
+      <!-- Requisito 4 -->
+      <h1 id="trybewarts-header-title">Trybewarts</h1> 
+      
+      <!-- Requisito 3 -->
+      <form action="#" method="get" class="trybewarts-login"> 
         <input type="text" placeholder="Login" id="login" value="">
         <input type="text" placeholder="Senha" id="senha" value="">
         <button id="button">Entrar</button>
@@ -53,48 +57,54 @@
         <div>
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <br>
-            <input type="checkbox" value="HoFs" id=""> HoFs
-            <input type="checkbox" value="Jest" id=""> Jest
-            <input type="checkbox" value="Promises" id=""> Promises
-            <input type="checkbox" value="React" id=""> React
-            <input type="checkbox" value="SQL" id=""> SQL
-            <input type="checkbox" value="Python" id=""> Python
+            <input type="checkbox" value="HoFs" class="subject"> HoFs
+            <input type="checkbox" value="Jest" class="subject"> Jest
+            <input type="checkbox" value="Promises" class="subject"> Promises
+            <input type="checkbox" value="React" class="subject"> React
+            <input type="checkbox" value="SQL" class="subject"> SQL
+            <input type="checkbox" value="Python" class="subject"> Python
         </div>
         <br>
 
-        <div> <!--Requisito 14 / tentar montar via JS (Faltando css para deixar os input ao lado da label)-->
+        <div> <!--Requisito 14 -->
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-            <input type="radio" name="rate" id=""> 1
-            <input type="radio" name="rate" id=""> 2
-            <input type="radio" name="rate" id=""> 3
-            <input type="radio" name="rate" id=""> 4
-            <input type="radio" name="rate" id=""> 5
-            <input type="radio" name="rate" id=""> 6
-            <input type="radio" name="rate" id=""> 7
-            <input type="radio" name="rate" id=""> 8
-            <input type="radio" name="rate" id=""> 9
-            <input type="radio" name="rate" id=""> 10
-          <!--COMENTEI TODOS OS INPUT PARA CASO TENTAR FAZER VIA JS(ou pode deixar assim mesmo)-->
+            <input type="radio" name="rate" value="1"> 1
+            <input type="radio" name="rate" value="2"> 2
+            <input type="radio" name="rate" value="3"> 3
+            <input type="radio" name="rate" value="4"> 4
+            <input type="radio" name="rate" value="5"> 5
+            <input type="radio" name="rate" value="6"> 6
+            <input type="radio" name="rate" value="7"> 7
+            <input type="radio" name="rate" value="8"> 8
+            <input type="radio" name="rate" value="9"> 9
+            <input type="radio" name="rate" value="10"> 10
         </div>
 
-        <div> <!--Requisito 15 ok-->
+        <div> <!--Requisito 15 -->
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
         </div>
         <br>
-        <div> <!--desafio 16 ok -->
+
+        <div> <!--desafio 16 -->
           <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
           <input type="checkbox" name="" id="agreement">
         </div>
         <br>
-        <button type="submit" id="submit-btn">Enviar</button> <!-- Requisito 17 -->
+        
+        <!-- Requisito 17 -->
+        <button type="submit" id="submit-btn">Enviar</button> 
+
         <!-- Requisito 18 faz com que o botao enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada) -->
       </form>
-      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">  <!-- Requisito 7 -->
+
+      <!-- Requisito 7 -->
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     </main>
 
   <div class="footer">
-    <footer>Direitos reservados à Trybewarts©</footer> <!-- Requisito 19 -->
+    <!-- Requisito 19 -->
+    <footer>Direitos reservados à Trybewarts©</footer> 
   </div>
   <script src="script.js"></script>
   </body>

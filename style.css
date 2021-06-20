@@ -8,72 +8,80 @@ main {
   display: flex;
 }
 
+/* Requisito 1 */
 .header {
-  display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  display: flex;
   height: 60px;
+  justify-content: space-between;
   width: 100%;
 }
 
+/* Requisito 2 */
 .trybewarts-header-logo {
   display: flex;
   justify-content: left;
 }
 
+/* Requisito 3 */
 .trybewarts-login {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
 }
 
+/* Requisito 4 */
 #trybewarts-header-title {
-  display: flex;
   align-self: center;
   color: white;
+  display: flex;
 }
 
-main , #trybewarts-forms-logo {
-  height: 500px;
+/* Requisito 5 e 6 */
+#evaluation-form {
   display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+/* Requisito 7 */
+main , #trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
   justify-content: center;
 }
 
-#evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
-}
-
-/* Desafio 9 e 10 */
+/* Requisito 9 e 10 */
 input [ type = 'text' ] {
   background-color: white;
   border: 1px solid rgb(214, 217, 220);
   border-radius: 3px;
-  padding: 8px;
-  font-size: 14px;
   display: inline;
-  width: 30%;
-  margin-right: 30px;
+  font-size: 14px;
   margin-bottom: 5px;
+  margin-right: 30px;
+  padding: 8px;
+  width: 30%;
 }
 
-/* Desafio 10 */
+/* Requisito 12 */
 #label-family {
   display: flex;
   flex-direction: row;
 }
 
+/* Requisito 12 */
 .suaFamilia {
   display: flex;
-
 }
 
-/* Desafio 15 */
+/* Requisito 15 */
 textarea {
   resize: none;
 }
 
+/* Requisito 19 */
 .footer {
   background-color: gray;
   color: white;
