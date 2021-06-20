@@ -21,22 +21,40 @@
   justify-content: flex-end;
 }
 
+button {
+  background-color: rgba(57, 16, 73, 0.795);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+}
 main {
   display: flex;
   flex-flow: row;
   background-color:rgb(228, 255, 192);
+  padding: 0;
+  margin: 0;
 }
 
 #evaluation-form {
   display: flex;
   background-color:rgb(245, 242, 214);
   flex-flow: column wrap;
+  padding: 0;
+  margin: 0;
 
 }
 
 fieldset {
   background-color:aquamarine;
   flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 675px;
+
 
 }
 
@@ -74,4 +92,72 @@ h5 {
 
 body {
   margin: 0;
+}
+
+.campo {
+  flex-grow: 1;
+
+}
+.campo.esquerdo {
+  background-color: lightblue;
+  box-sizing: border-box;
+  width: 30%;
+  padding: 5px;
+}
+.campo.direito {
+  background-color: rgb(184, 184, 184);
+  box-sizing: border-box;
+  width: 70%;
+  padding: 5px;
+}
+
+#field-family-content {
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin: 0;
+}
+
+.email-casa {
+  display: flex;
+  flex-flow: row;
+  /* justify-content: space-between; */
+  padding-top: 15px;
+}
+
+#house {
+  width: 30%;
+}
+
+#personal-info {
+
+}
+
+#ta-maxlength {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+#coment-submit {
+  display:flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+#avaliacao {
+  display: flex;
+  background-color:pink;
+  align-items:baseline;
+  padding: 0;
+  margin: 0;
+}
+#label-rate {
+  background-color:rgb(214, 200, 228);
+  width: 40%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+
 }
