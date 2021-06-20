@@ -29,7 +29,9 @@ main {
 }
 
 .out-header {
-  background-color: rgb(50, 167, 145)
+  box-shadow: 2px 2px 7px black;
+  z-index: 1;
+  background-color: rgb(50, 167, 145);
 }
 
 .header {
@@ -41,7 +43,7 @@ main {
   height: 100px;
   align-items: center;
   justify-content: space-between;
-
+  text-shadow: 1px 1px black;
 }
 
 .container-login form input , .container-login form button {
@@ -92,10 +94,6 @@ main #evaluation-form {
   margin-top: 10px;
   flex-wrap: wrap;
 }
-
-/* #input-forms-container input {
-  margin-left:
-} */
 
 #radio-rate-textarea-agree {
   display: flex;
@@ -257,7 +255,4 @@ span {
 
   60% { transform: translateX( 2vh) translateY( -2vh)}
 
-  80% { transform: translateX( -200px) translateY( -80px)}
-
-  90% { transform: translateX( -400px) translateY(0px)}
 }
