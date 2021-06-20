@@ -228,3 +228,32 @@ span {
   transition: opacity .1s ease-in-out,transform .1s ease-in-out;
   opacity: 0.65;
 }
+
+.selected {
+  position: absolute;
+  top: 200px;
+  right: 580px;
+  opacity: 0.85;
+  animation: bounce-1 4s linear 0.5s infinite;
+  animation-direction: alternate;
+  transform: rotate(180deg);
+}
+
+@keyframes bounce-1 {
+  0% { transform:  translateX(0); }
+
+  5% { transform: translateX(-2vh) translateY(2vh);}
+
+  20% { transform: translateX( 2vh) translateY( -2vh)}
+
+  30% { transform: translateX( -2vh) translateY( 2vh)}
+
+  40% { transform: translateX( 2vh) translateY( -2vh)}
+
+  50% { transform: translateX( -2vh) translateY( 2vh)}
+
+  60% { transform: translateX( 2vh) translateY( -2vh)}
+
+  80% { transform: translateX( -2vh) translateY( -2vh)}
+
+}
