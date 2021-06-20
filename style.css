@@ -84,17 +84,34 @@ main {
   width: 675px;
 }
 
-/*
-  10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha
-  11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha
- */
-
 #evaluation-form {
   display: flex;
+  flex-direction: column;
   width: 675px;
 }
 
 #evaluation-form input , select {
   display: flex;
   width: 50%;
+}
+
+/*
+10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha
+11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha
+*/
+
+#evaluation-form div {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+#label-family div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
