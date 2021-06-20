@@ -48,10 +48,12 @@
         <br>
     
         <!-- Requisito 12 (Faltando CSS para deixar os button um abaixo do outro)-->
+        <div>
           <label for="familys" id="label-family">Qual sua família?</label>
-            <input type="radio" name="family" class="suaFamilia" value="Frontend">Família Frontend
-            <input type="radio" name="family" class="suaFamilia" value="Backend">Família Backend
-            <input type="radio" name="family" class="suaFamilia" value="FullStack">Família FullStack
+            <div><input type="radio" name="family" class="suaFamilia" value="Frontend">Família Frontend</div>
+            <div></div><input type="radio" name="family" class="suaFamilia" value="Backend">Família Backend</div>
+            <div><input type="radio" name="family" class="suaFamilia" value="FullStack">Família FullStack</div>
+        </div>    
         <br>
       <!--Requisito 13 -->
         <div>
@@ -66,6 +68,7 @@
         </div>
         <br>
 
+<<<<<<< HEAD
         <div> <!--Requisito 14 -->
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
             <input type="radio" name="rate" value="1"> 1
@@ -84,6 +87,29 @@
           <label for="" class="textarea">Deixe seu comentário:</label>
           <textarea name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
         </div>
+=======
+        <!--Requisito 14 / tentar montar via JS (Faltando css para deixar os input ao lado da label)-->
+        <div><label for="" id="label-rate">Como você avalia a Trybewarts?</label></div>
+            <div class="select">
+                <input type="radio" name="rate" id=""> 1
+                <input type="radio" name="rate" id=""> 2
+                <input type="radio" name="rate" id=""> 3
+                <input type="radio" name="rate" id=""> 4
+                <input type="radio" name="rate" id=""> 5
+                <input type="radio" name="rate" id=""> 6
+                <input type="radio" name="rate" id=""> 7
+                <input type="radio" name="rate" id=""> 8
+                <input type="radio" name="rate" id=""> 9
+                <input type="radio" name="rate" id=""> 10
+            </div> 
+
+            <div> <!--Requisito 15 ok-->
+              <label for="" class="textarea">Deixe seu comentário:</label>
+            </div>
+            <div> 
+              <textarea name="texto" id="" cols="30" rows="10" maxlength="500"></textarea>
+            </div>
+>>>>>>> d7e0bbc9e512e138bfa9455768e22554abd8c643
         <br>
 
         <div> <!--desafio 16 -->
