@@ -25,24 +25,24 @@ bntTextarea.addEventListener('keyup', (el) => {
   counter.innerText = 500 - el.target.value.length;
 });
 
-function listaMaterial(form, lista) {
-  const paramts = new FormData(form);
+function listaMaterial(formPatamts, lista) {
+  const paramts = formPatamts;
   lista = lista.filter((item) => paramts.get(item));
   return lista.join(', ');
 }
 
-function ultimate(el) {
-  el.preventDefault();
+function ultimate() {
   const form = document.getElementById('evaluation-form');
   const paramts = new FormData(form);
   const listmateria = ['HoFs', 'Jest', 'Promises',
-    'React', 'SQL', 'Python'];
+    'React', 'SQL', 'Python'
+  ];
 
   form.innerHTML = `Nome: ${paramts.get('name')} ${paramts.get('lastname')}<br>
     Email: ${paramts.get('email')}<br>
     Casa: ${paramts.get('casa')}<br>
     Família: ${paramts.get('family')}<br>
-    Matérias: ${listaMaterial(form, listmateria)}<br>
+    Matérias: ${listaMaterial(paramts, listmateria)}<br>
     Avaliação:  ${paramts.get('rate')}<br>
     Observações: ${paramts.get('textarea')}<br>`;
 }
