@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Crete Round', serif;
+  font-family: Crete Round, serif;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   font-size: 18px;
 }
 
-#evaluation-form input {
+.input-form {
   border-radius: 8px;
   border: none;
 }
@@ -40,15 +40,14 @@ body {
   justify-content: space-between;
   color: white;
   align-items: center;
-  padding: 5px 40px;
+  padding: 5px 40px 5px 228px;
 }
 
-#form-title{
+#form-title {
   display: flex;
   color: black;
   justify-content: center;
   margin-bottom: 20px;
-  padding: px;
 
 }
 
@@ -58,7 +57,7 @@ body {
   margin-right: 190px;
 }
 
-.trybewarts-login input {
+.input-login {
   display: flex;
   justify-content: space-around;
   margin-right: 10px;
@@ -68,16 +67,15 @@ body {
   border: none;
 }
 
-#buttonLogin{
-  background-color:  rgb(78, 44, 131);
+#buttonLogin {
+  background-color: rgb(78, 44, 131);
   color: white;
-  width: 80px;
+  width: 150px;
   border-radius: 8px;
 }
 
 .trybewarts-header-logo {
   width: 50px;
-  margin-left: 188px;
 }
 
 #submit-btn {
@@ -94,9 +92,24 @@ h5 {
   color: rgb(119, 134, 130);
 }
 
-.family-trybewarts , .checkbox , .checkItem {
+.family-trybewarts {
   display: flex;
   flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.checkMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 200px;
 }
 
 #textarea {
@@ -110,24 +123,23 @@ h5 {
   font-size: 14px;
 }
 
-.checkMain {
+.email-casa , .nome-completo {
   display: flex;
   justify-content: space-around;
 }
 
-.email-casa , .nome-completo {
-  display: flex;
-  justify-content: space-between;
-}
-
 .campo {
-  width: 45%;
+  width: 50%;
   margin: 5px;
+  height: 30px;
 }
 
 #house {
   padding: 5px;
   width: 82%;
+  height: 30px;
+  border: none;
+  background-color: white;
 }
 
 #input-name , #input-lastname {
@@ -152,10 +164,18 @@ h5 {
 
 .assessment {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.assessment label input {
+.input-rate {
   margin-left: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(186, 190, 189);
+  margin: 12px 0 12px;
 }
 
 footer {
@@ -164,5 +184,5 @@ footer {
   font-size: 20px;
   text-align: center;
   width: 100%;
-  padding: 40px;
+  padding: 30px;
 }
