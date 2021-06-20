@@ -70,26 +70,27 @@ function createFamilyMessage() {
   formMessages.push(message);
 }
 
-// function renderMessage() {
-//   const form = document.querySelector('#evaluation-form');
-//   form.style.display = "none";
-//   // const messageArea = document.querySelector('.form-data');
-//   // for (let i = 0; i < formMessages; i += 1 ) {
-//   //   const p = document.createElement('p');
-//   //   console.log(p);
-//     // p.innerHTML = formMessages[i];
-//     // messageArea.appendChild(p);
-//   // }
-// }
+function renderMessage() {
+  const form = document.querySelector('#evaluation-form');
+  form.style.display = "none";
+  const messageArea = document.querySelector('.form-data');
+  for (let i = 0; i < formMessages.length; i += 1 ) {
+    const p = document.createElement('p');
+    console.log(p);
+    p.innerHTML = formMessages[i];
+    messageArea.appendChild(p);
+  }
+}
 
 function handleSubmit(event) {
   event.preventDefault();
+  formMessages = [];
   createNameMessage();
   createEmailMessage();
   createHouseMessage();
   createFamilyMessage();
   console.log(formMessages);
-  // renderMessage();
+  renderMessage();
 }
 
 window.onload = () => {
