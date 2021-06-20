@@ -71,21 +71,10 @@ input [ type = 'text' ] {
   flex-direction: row;
 }
 
-<<<<<<< HEAD
-/* Requisito 12 */
-.suaFamilia {
-  display: flex;
-=======
-#label-rate {
-  position: absolute;
-  float: left;
-}
-
 .select {
   position: relative;
   float: right;
   margin-left: 35%;
->>>>>>> d7e0bbc9e512e138bfa9455768e22554abd8c643
 }
 
 /* Requisito 15 */
