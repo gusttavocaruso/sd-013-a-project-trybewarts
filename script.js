@@ -14,3 +14,18 @@ function loginAuth() {
 }
 
 loginAuth();
+
+function enableButton() {
+  const agreement = document.querySelector('#agreement');
+  const button = document.querySelector('#submit-btn');
+
+  agreement.addEventListener('click', () => {
+    if (button.disabled === true) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  });
+}
+
+enableButton();
