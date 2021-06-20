@@ -30,17 +30,18 @@ button {
   font-size: 18px;
   color: aliceblue;
 }
+
 main {
   display: flex;
   flex-flow: row;
-  background-color:rgb(228, 255, 192);
+  background-color: rgb(228, 255, 192);
   padding: 0;
   margin: 0;
 }
 
 #evaluation-form {
   display: flex;
-  background-color:rgb(245, 242, 214);
+  background-color: rgb(245, 242, 214);
   flex-flow: column wrap;
   padding: 0;
   margin: 0;
@@ -48,7 +49,7 @@ main {
 }
 
 fieldset {
-  background-color:aquamarine;
+  background-color: aquamarine;
   flex-grow: 1;
   padding: 0;
   margin: 0;
@@ -67,6 +68,7 @@ fieldset {
   margin: 0;
   background-color: gray;
   width: 100%;
+
   /* height: 30px; */
   display: flex;
   align-self: flex-end;
@@ -82,7 +84,7 @@ fieldset {
 h5 {
   text-align: center;
   line-height: 50px;
-  background-color:rgb(83, 79, 80);
+  background-color: rgb(83, 79, 80);
   margin: 0;
   font-style: italic;
   color: aliceblue;
@@ -98,12 +100,14 @@ body {
   flex-grow: 1;
 
 }
+
 .campo.esquerdo {
   background-color: lightblue;
   box-sizing: border-box;
   width: 30%;
   padding: 5px;
 }
+
 .campo.direito {
   background-color: rgb(184, 184, 184);
   box-sizing: border-box;
@@ -121,6 +125,7 @@ body {
 .email-casa {
   display: flex;
   flex-flow: row;
+
   /* justify-content: space-between; */
   padding-top: 15px;
 }
@@ -131,6 +136,7 @@ body {
 
 #personal-info {
 
+  /* Texto para não deixar vazio. */
 }
 
 #ta-maxlength {
@@ -140,20 +146,21 @@ body {
 }
 
 #coment-submit {
-  display:flex;
+  display: flex;
   flex-flow: column;
   justify-content: space-evenly;
 }
 
 #avaliacao {
   display: flex;
-  background-color:pink;
-  align-items:baseline;
+  background-color: pink;
+  align-items: baseline;
   padding: 0;
   margin: 0;
 }
+
 #label-rate {
-  background-color:rgb(214, 200, 228);
+  background-color: rgb(214, 200, 228);
   width: 40%;
   height: 100%;
   padding: 0;
