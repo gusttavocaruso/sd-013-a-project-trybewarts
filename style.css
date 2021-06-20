@@ -134,10 +134,9 @@ body {
   width: 30%;
 }
 
-#personal-info {
+/* #personal-info {
 
-  /* Texto para não deixar vazio. */
-}
+} */
 
 #ta-maxlength {
   position: absolute;
