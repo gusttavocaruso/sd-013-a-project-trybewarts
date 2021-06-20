@@ -31,17 +31,17 @@ const textarea = document.querySelector('#textarea');
 const spanContador = document.querySelector('#counter');
 
 function limiteTextarea() {
-    let quant = 500;
-    let contador = 0;
-    spanContador.innerHTML = quant;
-    console.log(spanContador);
+  let quant = 500;
+  let contador = 0;
+  spanContador.innerHTML = quant;
+  console.log(spanContador);
 
-    textarea.addEventListener('keyup', () => {
-      let textLength = textarea.value.length;
-      contador = quant - textLength;
-      console.log(contador);
-      spanContador.innerHTML = contador;
-    })
+  textarea.addEventListener('keyup', () => {
+    let textLength = textarea.value.length;
+    contador = quant - textLength;
+    console.log(contador);
+    spanContador.innerHTML = contador;
+  })
 };
  
 window.onload = () => {
