@@ -24,3 +24,11 @@ function sendButton() {
 }
 
 input.addEventListener('change', sendButton);
+
+const count = document.querySelector('#counter');
+const text = document.querySelector('#textarea');
+
+function textCounter() {
+  count.innerHTML = (`${500 - text.value.length} caracteres restantes`);
+}
+text.addEventListener('keyup', textCounter);
