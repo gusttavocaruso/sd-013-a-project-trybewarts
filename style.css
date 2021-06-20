@@ -51,9 +51,11 @@
   display: flex;
 }
 
-/* 19 - Crie um rodapé no final da página
+/*
+  19 - Crie um rodapé no final da página
   Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
-  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f
+*/
 
 body {
   display: flex;
@@ -82,9 +84,13 @@ main {
   width: 675px;
 }
 
+/*
+  10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha
+  11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha
+ */
+
 #evaluation-form {
   display: flex;
-  flex-direction: column;
   width: 675px;
 }
 
