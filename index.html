@@ -20,22 +20,22 @@
       <button id="btn-login">Logar</button>
     </form>
   </header>
-    <main>
-      <form id="evaluation-form">
-        <div>
-          <input id= "input-name" type="text" placeholder="Nome">
-          <input id="input-lastname" type="text" placeholder="Sobrenome">
-        </div>
-        <div>
-          <input id= "input-email" type="text" placeholder="Email">
-          <label for="house">Casa:</label>
-              <select id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" valeu="Corvinode">Corvinode</option>
-                <option id="pytherina-house" valeu="Pytherina">Pytherina</option>
-              </select>
-        </div>
+  <main>
+    <form id="evaluation-form">
+      <div>
+        <input id= "input-name" type="text" placeholder="Nome">
+        <input id="input-lastname" type="text" placeholder="Sobrenome">
+      </div>
+      <div class='house'>
+        <input id= "input-email" type="text" placeholder="Email">
+        <label for="house">Casa:</label>
+          <select id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" valeu="Corvinode">Corvinode</option>
+            <option id="pytherina-house" valeu="Pytherina">Pytherina</option>
+          </select>
+      </div>
        <div class="family">
           <label id="label-family">Qual sua família?</label>
           <label for="fronted">
@@ -108,7 +108,7 @@
         <label class="textarea" for="textarea">Deixe seu comentário:
           <textarea name="coment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         </label>
-        <p id="counter">500</p>
+        <p id="counter">500 caracteres restantes</p>
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
           <input type="checkbox" name="" id="agreement">
         </label>
@@ -116,6 +116,7 @@
         <button id="submit-btn" type="submit">Enviar</button>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+
     </main>
 
     <footer>
