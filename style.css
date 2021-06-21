@@ -1,17 +1,21 @@
-body {
+#bg-img {
   margin: 0;
+  background-image: url(/images/Hogwarts-dh2.jpg);
+  background-size: 170%;
 }
 
 .header {
   display: flex;
-  align-items: center;
-  width: 100%;
+  width: 98%;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0% 2%;
 }
 
 .trybewarts-header-logo {
-  float: left;
+  height: 70px;
 }
 
 .trybewarts-login {
@@ -94,4 +98,21 @@ main {
 #radioButtons {
   margin-top: 10px;
   margin-left: 10px;
+}
+ 
+#login {
+  border-radius: 4px;
+  height: 20px;
+}
+
+#senha {
+  border-radius: 4px;
+  height: 20px;
+}
+
+#botao {
+  background-color: rgba(255, 249, 248, 0.479);
+  color:rgb(160, 160, 160);
+  border-radius: 7px;
+  height: 20px;
 }
