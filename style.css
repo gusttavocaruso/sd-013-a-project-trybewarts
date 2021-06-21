@@ -1,5 +1,7 @@
 body {
   background-color: rgb(204, 199, 191);
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -13,16 +15,28 @@ body {
 
 .trybewarts-header-logo {
   width: 50px;
-  margin: 10px 0;
+  margin: 0 50px;
+}
+
+#trybewarts-header-title {
+  font-family: sans-serif;
+  font-size: 40px;
+  padding: 0;
+  margin: 10px;
 }
 
 .trybewarts-login {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center;  
 }
 
-input , textarea {
+#input-login, #input-senha{
+  width: 150px;
+  margin: 5px;
+}
+
+input, textarea {
   border-radius: 4px;
   margin: 2px;
   border: none;
@@ -32,27 +46,105 @@ input , textarea {
 #button-enviar {
   margin-right: 50px;
   margin-left: 15px;
+  padding: 10px 20px;
+  background-color: rgb(106, 41, 167);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 800;
+  opacity: 90%;
+}
+
+#button-enviar:hover {
+  opacity: 100%;
 }
 
 main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  height: auto;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  height: 675px;
+  margin: 0px 50px;
+  padding: 0;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.name {
+  margin-top: 50px;
+  margin-bottom: 5px;  
+}
+
+.email {
+  margin-bottom: 50px;  
+}
+
+#house {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#for-house {
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
 }
 
 .aside {
   display: flex;
+  margin-bottom: 50px;
+}
+
+.family {
+  margin-right: 50px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.family #label-family {
+  margin-bottom: 5px;
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.family input{
+  margin: 10px;
+}
+
+.learn {
+  font-family: sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.learn #label-content {
+  margin-bottom: 10px;
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.checkbox #input {
+  margin-right: 12px;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-right: 50px;
 }
 
 .checkbox {

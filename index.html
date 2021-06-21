@@ -25,7 +25,7 @@
       </div>
       <div class="email">
         <input type="email" name="" id="input-email" placeholder="Email">
-        <label for="house">Casa:</label>
+        <label id="for-house" for="house">Casa:</label>
         <select name="" id="house"> 
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -34,27 +34,27 @@
         </select>
       </div>
       <div class="aside">
-        <div>
+        <div class="family">
         <label id="label-family"> Qual sua família?</label>
-          <div><input type="radio" name="family" value="Frontend">Frontend</div>
-          <div><input type="radio" name="family" value="Backend">Backend</div>
-          <div><input type="radio" name="family" value="FullStack">FullStack</div>
+          <label for="frontend"><input id="frontend"type="radio" name="family" value="frontend">Frontend</label>
+          <label for="backend"><input id="backend"type="radio" name="family" value="backend">Backend</label>
+          <label for="fullstack"><input id="fullstack"type="radio" name="family" value="fullstack">Fullstack</label>
         </div>
-        <div>
+        <div class="learn">
           <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           <div class="checkbox">
-            <input type="checkbox" value="HoFs" class="subject">HoFs
-            <input type="checkbox" value="Jest" class="subject">Jest
-            <input type="checkbox" value="Promises" class="subject">Promises
-            <input type="checkbox" value="React" class="subject">React
-            <input type="checkbox" value="SQL" class="subject">SQL
-            <input type="checkbox" value="Python" class="subject">Python
+            <label id="input" for="hofs"><input id="hofs" type="checkbox" value="HoFs" class="subject">HoFs</label>
+            <label id="input" for="jest"><input id="jest" type="checkbox" value="Jest" class="subject">Jest</label>
+            <label id="input" for="promises"><input id="promises" type="checkbox" value="Promises" class="subject">Promises</label>
+            <label id="input" for="react"><input id="react" type="checkbox" value="React" class="subject">React</label>
+            <label id="input" for="sql"><input id="sql" type="checkbox" value="SQL" class="subject">SQL</label>
+            <label id="input" for="python"><input id="python" type="checkbox" value="Python" class="subject">Python</label>
           </div>
         </div>
       </div>
       <div class="rate">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" value="1" name="rate">1
+        <label for=""><input type="radio" value="1" name="rate">1</label>
         <input type="radio" value="2" name="rate">2
         <input type="radio" value="3" name="rate">3
         <input type="radio" value="4" name="rate">4
