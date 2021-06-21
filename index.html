@@ -37,7 +37,7 @@
             placeholder="Email"
             type="text"
           />
-          <label for="casa"> Casa </label>
+          <label id='house' for="casa"> Casa </label>
           <select>
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Ractpuff">Reactpuff</option>
@@ -86,18 +86,18 @@
             <input type="checkbox" value="Python" /> Python
           </label>
         </div>
-        <div class="nivel-satisfacao">
+          <div class="nivel-satisfacao">
           <label id="label-rate"> Como você avalia a Trybewarts? </label>
-          <label for="nivel-1"> <input type="radio" value="1" /> 1 </label>
-          <label for="nivel-2"> <input type="radio" value="2" /> 2 </label>
-          <label for="nivel-3"> <input type="radio" value="3" /> 3 </label>
-          <label for="nivel-4"> <input type="radio" value="4" /> 4 </label>
-          <label for="nivel-5"> <input type="radio" value="5" /> 5 </label>
-          <label for="nivel-6"> <input type="radio" value="6" /> 6 </label>
-          <label for="nivel-7"> <input type="radio" value="7" /> 7 </label>
-          <label for="nivel-8"> <input type="radio" value="8" /> 8 </label>
-          <label for="nivel-9"> <input type="radio" value="9" /> 9 </label>
-          <label for="nivel-10"> <input type="radio" value="10" /> 10 </label>
+          <label for="nivel-1"> <input name='rate' type="radio" value="1" /> 1 </label>
+          <label for="nivel-2"> <input name='rate' type="radio" value="2" /> 2 </label>
+          <label for="nivel-3"> <input name='rate' type="radio" value="3" /> 3 </label>
+          <label for="nivel-4"> <input name='rate' type="radio" value="4" /> 4 </label>
+          <label for="nivel-5"> <input name='rate' type="radio" value="5" /> 5 </label>
+          <label for="nivel-6"> <input name='rate' type="radio" value="6" /> 6 </label>
+          <label for="nivel-7"> <input name='rate' type="radio" value="7" /> 7 </label>
+          <label for="nivel-8"> <input name='rate' type="radio" value="8" /> 8 </label>
+          <label for="nivel-9"> <input name='rate' type="radio" value="9" /> 9 </label>
+          <label for="nivel-10"> <input name='rate' type="radio" value="10" /> 10 </label>
         </div>
         <div class="comentario">
           <label for="comentario" class="textarea">
@@ -113,6 +113,7 @@
           <input type="checkbox" />
         </div>
       </form>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo">
     </main>
     <script src="script.js"></script>
   </body>

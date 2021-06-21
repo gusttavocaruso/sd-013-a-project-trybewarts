@@ -59,3 +59,8 @@
 .nivel-satisfacao {
   display: flex;
 }
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+}
