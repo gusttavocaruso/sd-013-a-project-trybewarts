@@ -32,7 +32,6 @@ function verifyAgreement() {
   checkbox.addEventListener('input', () => {
     const disabled = submitButton.hasAttribute('disabled');
     if (disabled) submitButton.removeAttribute('disabled');
-    submitButton.setAttribute('disabled', 'true');
   });
 }
 
