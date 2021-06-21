@@ -64,3 +64,7 @@
   display: flex;
   height: 500px;
 }
+
+footer {
+  background-color: rgb(50, 167, 145);
+}
