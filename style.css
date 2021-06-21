@@ -179,9 +179,17 @@ main {
   margin-bottom: 10px;
 }
 
+#submit-btn {
+  margin-bottom: 60px;
+}
+
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: rgb(50, 167, 145);
-  height: 20px;
+  padding: 10px;
   text-align: center;
   font-weight: 600;
 }

@@ -35,7 +35,7 @@ function ultimate() {
   const form = document.getElementById('evaluation-form');
   const paramts = new FormData(form);
   const listmateria = ['HoFs', 'Jest', 'Promises',
-    'React', 'SQL', 'Python'
+    'React', 'SQL', 'Python',
   ];
 
   form.innerHTML = `Nome: ${paramts.get('name')} ${paramts.get('lastname')}<br>
