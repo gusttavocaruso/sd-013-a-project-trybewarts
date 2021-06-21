@@ -8,12 +8,8 @@ const counter = document.querySelector('#counter');
 const txtNome = document.querySelector('#input-name');
 const txtSobrenome = document.querySelector('#input-lastname');
 const txtEmail = document.querySelector('#input-email');
-const listCasa = document.querySelectorAll('#house option');
-const rdbSatisfacao = document.querySelectorAll('.evaluation-form-radios input:checked');
-
 const formulario = document.querySelector('#evaluation-form');
-const imgTrybewarts = document.querySelector('#trybewarts-forms-logo');
-
+const tagMain = document.querySelector('.form-principal');
 
 counter.innerHTML = 500;
 const qtdCharacters = parseInt(counter.textContent, 10);
@@ -46,29 +42,44 @@ comentario.addEventListener('keyup', function comentarioCount() {
   return this;
 });
 
-formulario.addEventListener('submit', function (event) {
+formulario.addEventListener('submit', (event) => {
   event.preventDefault();
 });
 
-btnEnviar.addEventListener('click', function () {
-  formulario.style.display = 'none';
-  imgTrybewarts.style.display = 'none';
+const createUl = () => {
+  const ul = document.createElement('ul');
+  ul.id = 'evaluation-form';
+  tagMain.appendChild(ul);
+};
+
+const createListItemResult = () => {
+  const listItem = document.createElement('li');
+  const ulResult = document.querySelector('.form-principal ul');
+  return ulResult.appendChild(listItem);
+};
+
+const createResult = () => {
   const rdbFamilia = document.querySelector('.evaluation-form-radio input:checked');
   const chkConteudo = document.querySelectorAll('.evaluation-form-checks input:checked');
+  const rdbSatisfacao = document.querySelector('.evaluation-form-radios input:checked');
+  const listCasa = document.querySelector('#house option:checked');
+  const result = createListItemResult();
 
-
-  document.querySelector('#resultado-nome').innerHTML = txtNome.value;
-  document.querySelector('#resultado-email').innerHTML = txtEmail.value;
-  document.querySelector('#resultado-casa').innerHTML = listCasa.value;
-  document.querySelector('#resultado-familia').innerHTML = rdbFamilia.value;
-
-  let string = '';
+  let materias = '';
   for (let index = 0; index < chkConteudo.length; index += 1) {
-    string += chkConteudo[index].value + ',';
+    materias += `${chkConteudo[index].value}, `;
   }
-  document.querySelector('#resultado-materias').innerHTML = string;
+  result.innerText = `Nome: ${txtNome.value} ${txtSobrenome.value}
+  Email: ${txtEmail.value}
+  Casa: ${listCasa.value}
+  Família: ${rdbFamilia.value}
+  Matérias: ${materias}
+  Avaliação: ${rdbSatisfacao.value}
+  Observações: ${comentario.value}`;
+  formulario.remove();
+};
 
-  // formulario.remove();
-  // imgTrybewarts.remove();
-
+btnEnviar.addEventListener('click', () => {
+  createUl();
+  createResult();
 });
