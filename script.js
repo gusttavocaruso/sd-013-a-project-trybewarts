@@ -51,48 +51,12 @@ area.addEventListener('input', countTextArea);
 //                     REQUISITO 21
 // ===============================================================
 
-// const btnSubmit = document.getElementById('submit-btn');
-// const main = document.getElementById('main');
-
-// function button () {
-//   const inputName = document.getElementById('input-name').value;
-//   const inputLastName = document.getElementById('input-lastname').value;
-//   const inputEmail = document.getElementById('input-email').value;
-//   const inputHouse = document.getElementById('house').value;
-
-// }
-
-// function nameAndLastName() {
-//   const inputName = document.getElementById('input-name');
-//   const inputLastName = document.getElementById('input-lastname');
-//   const name = inputName.value;
-//   const lastName = inputLastName.value;
-//   const createP = document.createElement('p');
-//   createP.innerText = `Nome: ${name} ${lastName}`;
-//   main.appendChild(createP);
-// }
-
-// function email() {
-//   const inputEmail = document.getElementById('input-email');
-//   const inputValue = inputEmail.value;
-//   const createPa = document.createElement('p');
-//   createPa.innerText = `Email: ${inputValue}`;
-//   main.appendChild(createPa);
-// }
-
-// function removeForm () {
-//   const form = document.getElementsByTagName('form');
-//   form.remove();
-// }
-
-// btnSubmit.addEventListener('click', nameAndLastName, email, removeForm);
-
-// variaveis
 const button2 = document.getElementById('submit-btn');
 const Form = document.getElementById('evaluation-form');
 const formDiv = document.getElementById('form');
 const newDiv = document.createElement('div');
 Form.appendChild(newDiv);
+
 // criando o nome e sobrenome
 function NomeSobrenome() {
   const nome = document.getElementById('input-name');
