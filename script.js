@@ -30,4 +30,4 @@ function counterTextArea(obj) {
   const counter = document.getElementById('counter');
   counter.innerText = `Restante: ${500 - obj.value.length} caracteres.`;
 }
-counterTextArea();
+counterTextArea(obj);
