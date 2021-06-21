@@ -64,7 +64,7 @@
   flex-grow: 1;
 }
 
-#textArea {
+#textarea {
   resize: none;
   outline: 0;
   padding: 5px;
