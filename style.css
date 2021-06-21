@@ -184,3 +184,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+#counter {
+  text-align: right;
+}

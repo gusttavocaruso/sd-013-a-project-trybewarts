@@ -78,7 +78,8 @@
       </fieldset>
       <div id="area">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" name="textarea" cols="40" rows="10" maxlength="500"></textarea>  
+        <textarea id="textarea" name="textarea" cols="40" rows="10" maxlength="500" onkeyup="counterTextArea(this)"></textarea>
+        <span id="counter">Restante: 500 caracteres.</span>
       </div>
         <div id="check">
           <label for="info" id="label-infos">Você concorda com o uso das informações acima?</label>

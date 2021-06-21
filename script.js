@@ -25,3 +25,8 @@ function habilitarBotao() {
   });
 }
 habilitarBotao();
+
+function counterTextArea(obj) {
+  let counter = document.getElementById('counter');
+  counter.innerText = `Restante: ${500 - obj.value.length} caracteres.`;
+}
