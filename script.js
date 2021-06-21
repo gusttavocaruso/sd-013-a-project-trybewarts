@@ -25,7 +25,6 @@ function switchButtonOnOff() {
   }
 }
 
-
 function changeCounterNum() {
   const textArea = document.querySelector('#textarea');
   const counter = document.querySelector('#counter');
