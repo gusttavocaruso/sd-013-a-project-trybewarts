@@ -1,9 +1,10 @@
 function loginAuth() {
   const submitButton = document.querySelector('#login-button');
-
-  submitButton.addEventListener('click', () => {
+  
+  submitButton.addEventListener('click', (event) => {
     const loginButton = document.querySelector('#login').value;
     const passwordButton = document.querySelector('#password').value;
+    event.preventDefault();
 
     if (loginButton === 'tryber@teste.com' && passwordButton === '123456') {
       alert('Olá, Tryber!');
@@ -29,3 +30,14 @@ function enableButton() {
 }
 
 enableButton();
+
+function limite_textarea(valor) {
+  quant = 50;
+  total = valor.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('cont').innerHTML = resto;
+  } else {
+      document.getElementById('texto').value = valor.substr(0,quant);
+  }
+}

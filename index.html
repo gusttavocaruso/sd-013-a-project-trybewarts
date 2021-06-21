@@ -18,7 +18,7 @@
       <input id="login" type="email" placeholder="Login"></input>
       <label for="password"></label>
       <input id="password" type="password" placeholder="Senha"></input>
-      <button type="submit" id='login-button'>Logar</button>
+      <button id='login-button'>Logar</button>
     </form>
   </header>
   <main>
@@ -121,7 +121,10 @@
           </label>
         </div>
         <div class="textarea-content">
-          <label class="textarea"> Deixe seu comentário:</label>
+          <div>
+            <label class="textarea"> Deixe seu comentário:</label>
+            <input id="counter" type="text" disabled="" value="500"></input>
+          </div>
           <!-- <textarea id="textarea" maxlength="500"></textarea> -->
           <textarea id="textarea" cols="30" rows="7" maxlength="500"></textarea>
         </div>

@@ -123,6 +123,16 @@ main {
   flex-direction: column;
 }
 
+.textarea-content div{
+  display: flex;
+  justify-content:space-between ;
+}
+
+#counter {
+  width: 50px;
+  color: #575757;
+}
+
 .button-content button {
   width: 100%;
   padding: 5px;
