@@ -51,9 +51,11 @@
   display: flex;
 }
 
-/* 19 - Crie um rodapé no final da página
+/*
+  19 - Crie um rodapé no final da página
   Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
-  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f */
+  https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f
+*/
 
 body {
   display: flex;
@@ -62,12 +64,13 @@ body {
   min-height: 100vh;
 }
 
+/* ARRUMAR */
 footer {
   align-items: center;
   background-color: rgb(60, 64, 74);
   color: white;
   display: flex;
-  flex-shrink: 0;
+  flex: 1 0;
   height: 40px;
   justify-content: center;
   margin-top: auto;
@@ -75,13 +78,40 @@ footer {
 
 main {
   display: flex;
-  flex-direction: column;
   align-content: flex-start;
   align-items: center;
-  flex-flow: wrap;
+  flex-flow: column wrap;
   width: 675px;
 }
 
-#evaluation-form input, select {
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#evaluation-form input , select {
+  display: flex;
   width: 50%;
+}
+
+/*
+10 - Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha
+11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha
+*/
+
+#evaluation-form div {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+#label-family div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
