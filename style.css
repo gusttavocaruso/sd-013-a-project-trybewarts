@@ -170,3 +170,7 @@ footer {
   left: -50px;
   z-index: 2;
 }
+
+form .p-info {
+  font-weight: 700;
+}
