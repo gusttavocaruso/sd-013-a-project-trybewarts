@@ -71,9 +71,10 @@ main {
 /* Classe do formulário */
 #evaluation-form {
   display: flex;
-  max-width: 675px;
+  width: 675px;
   flex-direction: column;
   padding: 5px;
+  justify-content: left;
 }
 
 hr {
