@@ -24,3 +24,10 @@ function ativaSubmit() {
   }
 }
 inputAgree.addEventListener('click', ativaSubmit);
+
+const textarea = document.querySelector('#textArea');
+const counter = document.querySelector('#counter');
+textarea.addEventListener('keyup', () => {
+  const caracteres = textarea.value;
+  counter.innerHTML = 500 - caracteres.length;
+});

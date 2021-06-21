@@ -13,8 +13,8 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login">
 
-      <input type="text" id="login" name="login" placeholder="Login">
-      <input type="text" placeholder="Senha" id="senha">
+      <input type="text" id="login" name="login" placeholder="Login" style="outline: 0;">
+      <input type="text" placeholder="Senha" id="senha" style="outline: 0;">
       <button id="botao-login">Logar</button>
 
     </form>
@@ -22,13 +22,13 @@
   <main class="form-evaluation">
     <form id="evaluation-form" action="" method="GET">Forms
       <div id="nomeSobrenome">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" style="outline: 0;">
+        <input id="input-lastname" type="text" placeholder="Sobrenome" style="outline: 0;">
       </div>
       <div id="emailHouse">
-        <input id="input-email" type="text" placeholder="Email">
+        <input id="input-email" type="text" placeholder="Email" style="outline: 0;">
         <label for="house">Casa: </label>
-        <select name="houses" id="house">
+        <select name="houses" id="house" style="outline: 0;" >
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -101,7 +101,8 @@
       </div>
       <div id="comentario">
         <label for="" class="textarea">Deixe seu comentário:</label>
-        <textarea maxlength="500" name="" id="" cols="30" rows="10"></textarea>
+        <textarea maxlength="500" name="" id="textArea" cols="30" rows="10"></textarea>
+        <div id="counter">500</div>
       </div>
       <div>
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
