@@ -1,6 +1,6 @@
 #bg-img {
   margin: 0;
-  background-image: url(/images/Hogwarts-dh2.jpg);
+  background-image: url('/images/Hogwarts-dh2.jpg');
   background-size: 170%;
 }
 
@@ -38,8 +38,7 @@
 
 .firstform {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 main {
@@ -70,7 +69,6 @@ main {
 #selectFamily {
   display: flex;
   flex-direction: row;
-  style: none;
 }
 
 .column-organiza {
@@ -78,6 +76,10 @@ main {
   flex-direction: column;
   width: 40%;
   margin-top: 10px;
+}
+
+.textarea {
+  margin-top: 50%;
 }
 
 .label-family {
@@ -99,7 +101,7 @@ main {
   margin-top: 10px;
   margin-left: 10px;
 }
- 
+
 #login {
   border-radius: 4px;
   height: 20px;
@@ -112,7 +114,19 @@ main {
 
 #botao {
   background-color: rgba(255, 249, 248, 0.479);
-  color:rgb(160, 160, 160);
+  color: rgb(160, 160, 160);
   border-radius: 7px;
   height: 20px;
+}
+
+#input-name {
+  width: 40%;
+}
+
+#input-lastname {
+  width: 40%;
+}
+
+#input-email {
+  width: 40%;
 }
