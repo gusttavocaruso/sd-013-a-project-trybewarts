@@ -113,7 +113,7 @@ main {
 }
 
 #botao {
-  background-color: rgba(255, 249, 248, 0.479);
+  background-color: rgb(255, 249, 248);
   color: rgb(160, 160, 160);
   border-radius: 7px;
   height: 20px;

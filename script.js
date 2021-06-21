@@ -4,7 +4,7 @@ function check() {
   const emailDefault = 'tryber@teste.com';
   const senhaDefault = '123456';
 
-  if ( login === emailDefault && senha === senhaDefault) {
+  if (login === emailDefault && senha === senhaDefault) {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
