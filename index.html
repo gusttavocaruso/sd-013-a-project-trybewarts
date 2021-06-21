@@ -27,7 +27,7 @@
       </header>
     </div>
     <div class="selected"><img src="./abelhafundotransparente.png" alt="abelha" width="50px"></div>
-    <main>
+    <main class="mainClass">
       <form action="#" id="evaluation-form">
         <h1>FORMS</h1>
         <div id="input-forms-container">
@@ -36,9 +36,9 @@
 
             <input type="text" class="form-control" placeholder="Sobrenome" name="name" id="input-lastname">
 
-          <input type="email" class="form-control" placeholder="Email" name="name" id="input-email">
+          <input type="email" class="form-control" placeholder="Email" name="email" id="input-email">
           <div class="paragráfo"><p><b>Casa:</b></p></div>
-          <select name="" class="form-select" id="house">
+          <select name="houses" class="form-select" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house" selected>Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -71,26 +71,26 @@
             <div id="checkboxes">
               <div class="checkbox-box">
                 <label for="HoFs">
-                  <input type="checkbox" id="HoFs" value="HoFs" class="form-check-input subject">HoFs
+                  <input type="checkbox" name="mycheckboxes" id="HoFs" value="HoFs" class="form-check-input subject">HoFs
                 </label>
                 <label for="Jest">
-                  <input type="checkbox" id="Jest" value="Jest" class="form-check-input subject">Jest
+                  <input type="checkbox" name="mycheckboxes" id="Jest" value="Jest" class="form-check-input subject">Jest
                 </label>
               </div>
               <div class="checkbox-box">
                 <label for="Promises">
-                  <input type="checkbox" id="Promises" value="Promises" class="form-check-input subject">Promises
+                  <input type="checkbox" name="mycheckboxes" id="Promises" value="Promises" class="form-check-input subject">Promises
                 </label>
                 <label for="React">
-                  <input type="checkbox" id="React" value="React" class="form-check-input subject">React
+                  <input type="checkbox" name="mycheckboxes" id="React" value="React" class="form-check-input subject">React
                 </label>
               </div>
               <div class="checkbox-box">
                 <label for="SQL">
-                  <input type="checkbox" id="SQL" value="SQL" class="form-check-input subject">SQL
+                  <input type="checkbox" name="mycheckboxes" id="SQL" value="SQL" class="form-check-input subject">SQL
                 </label>
                 <label for="Python">
-                  <input type="checkbox" id="Python" value="Python" class="form-check-input subject">Python
+                  <input type="checkbox" name="mycheckboxes" id="Python" value="Python" class="form-check-input subject">Python
                 </label>
               </div>
 
@@ -114,7 +114,7 @@
           </div>
         <div class="form-floating">
           <span id="counter">500</span>
-          <textarea name="" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
+          <textarea name="textbox" id="textarea" class="form-control" cols="30" rows="10" maxlength="500"></textarea>
           <label class="textarea" id="text-area-label" for="floatingTextarea">Deixe seu comentário:</label>
         </div>
         <div>

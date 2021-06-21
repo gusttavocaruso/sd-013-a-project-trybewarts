@@ -34,3 +34,33 @@ const counterPad = () => {
 };
 
 counterPad();
+
+// const formsComplete = () => {
+//   const sendClick = document.getElementById('submit-btn');
+//   sendClick.addEventListener('click', () => {
+
+//     createNewTags();
+//   })
+
+// formsComplete();
+
+// const createNewTags = () => {
+//   const getMainContent = document.getElementsByClassName('mainClass');
+//   const getCheckboxesValue = document.querySelectorAll('input[name=mycheckboxes]:checked');
+//   const getFamilyValue = document.querySelectorAll('input[name=family]:checked');
+//   const getSiteRate = document.querySelector('input[name="rate"]:checked').value;
+//   const getFullName = document.querySelectorAll('input[name=name]').value;
+//   const getEmail = document.querySelector('input[name=email]').value;
+//   const getComents = document.querySelector('input[name=textbox]').value;
+//   const getHouse = document.querySelector('input[name=houses]').value;
+
+//   const getMainContent = document.getElementsByClassName('mainClass');
+//   let newTag1 = document.createElement('div');
+//   let newTag2 = document.createElement('ul');
+//   for (let i = 0; i < 7; i += 1) {
+//     let newTag2 = document.createElement('li')[i];
+//   }
+
+//   newTag1.innerHTML = 'Formulário'
+//   getMainContent.appendChild()
+// }
