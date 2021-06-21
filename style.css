@@ -68,3 +68,9 @@ aside {
 .namelast {
   display: flex;
 }
+
+#suafamilia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
