@@ -26,8 +26,11 @@ function habilitarBotao() {
 }
 habilitarBotao();
 
-function counterTextArea(obj) {
+function counterTextArea() {
+  const textArea = document.getElementById('textarea');
   const counter = document.getElementById('counter');
-  counter.innerText = `Restante: ${500 - obj.value.length} caracteres.`;
+  textArea.addEventListener('keyup', () => {
+    counter.innerText = `Restante: ${500 - textArea.value.length} caracteres.`;
+  });
 }
-counterTextArea(obj);
+counterTextArea();
