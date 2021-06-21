@@ -35,6 +35,11 @@ const counterPad = () => {
 
 counterPad();
 
+function deletaTodoOForms() {
+  const form = document.querySelector('#evaluation-form');
+  form.parentNode.parentNode.removeChild(form.parentNode);
+}
+
 // const formsComplete = () => {
 //   const sendClick = document.getElementById('submit-btn');
 //   sendClick.addEventListener('click', () => {
