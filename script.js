@@ -17,7 +17,7 @@ buttonHeader.addEventListener('click', verificarFormHeader);
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
-const inputAgreement = document.getElementById('agreement')
+const inputAgreement = document.getElementById('agreement');
 
 function verificaCheck() {
   const conteudo = document.getElementById('agreement').value;
@@ -35,7 +35,7 @@ const conter = document.querySelector('#counter');
 
 function contadorCaractere() {
   const value = textArea.value.length;
-  conter.innerText = 500 - value + ' caracteres restantes.';  
+  conter.innerText = 500 - value + ' caracteres restantes.';
 }
 
 textArea.addEventListener('input', contadorCaractere);
