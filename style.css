@@ -102,7 +102,7 @@ hr {
 #input-name, #input-lastname, #input-email {
   width: 49%;
   padding: 5px;
-  border-radius: 10px;
+  border-radius:10px;
 }
 
 #house {
@@ -156,13 +156,13 @@ hr {
 
 #counter {
   width: 50px;
-  color: #575757;
+  color: rgb(211, 209, 209);
   text-align: center;
 }
 
 .textarea-content div {
   display: flex;
-  justify-content:space-between ;
+  justify-content:space-between;
   width: 100%;
   padding: 5px;
 }
