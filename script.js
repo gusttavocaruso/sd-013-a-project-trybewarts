@@ -25,9 +25,9 @@ function ativaSubmit() {
 }
 inputAgree.addEventListener('click', ativaSubmit);
 
-const textarea = document.querySelector('#textArea');
+const text = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
-textarea.addEventListener('keyup', () => {
-  const caracteres = textarea.value;
+text.addEventListener('keyup', () => {
+  const caracteres = text.value;
   counter.innerHTML = 500 - caracteres.length;
 });
