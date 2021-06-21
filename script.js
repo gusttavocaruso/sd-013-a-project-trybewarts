@@ -114,7 +114,7 @@ const desafio18 = () => {
   button.disabled = true;
 
   box.addEventListener('click', () => {
-    if (box.checked === true) {
+    if (box.checked) {
       button.disabled = false;
     } else {
       button.disabled = true;
@@ -122,3 +122,4 @@ const desafio18 = () => {
   });
 };
 desafio18();
+
