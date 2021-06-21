@@ -24,3 +24,17 @@ function formLogin() {
 }
 
 formLogin();
+
+function verifyAgreement(){
+  const checkbox = document.querySelector('#agreement');
+  const submitButton = document.querySelector('#submit-btn');
+
+  
+  checkbox.addEventListener('input', ()=>{
+    let disabled = submitButton.hasAttribute('disabled')
+    disabled ? submitButton.removeAttribute('disabled'):
+    submitButton.setAttribute('disabled', 'true');
+  });
+}
+
+verifyAgreement();
