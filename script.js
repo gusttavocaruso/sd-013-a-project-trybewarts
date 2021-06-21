@@ -8,3 +8,13 @@ function req3() {
   }
 }
 document.addEventListener('submit', req3);
+
+const agreement = document.getElementById('agreement');
+agreement.addEventListener('click', () => {
+  const submit = document.getElementById('submit-btn');
+  if (agreement.checked === true) {
+    submit.disabled = false;
+  } else {
+    submit.disabled = true;
+  }
+});
