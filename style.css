@@ -99,10 +99,10 @@ hr {
   margin: 5px;
 }
 
-#input-name, #input-lastname, #input-email {
+#input-name,#input-lastname,#input-email {
   width: 49%;
   padding: 5px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 #house {
@@ -139,7 +139,7 @@ hr {
 
 .learn div {
   padding: 5px;
-  border:purple
+  border:purple;
 }
 
 /* Sessão 3 do Formulario */
