@@ -35,7 +35,7 @@ const counterPad = () => {
 
 counterPad();
 
-function deletaTodoOMain() {
+function deleteMain() {
   const form = document.querySelector('#evaluation-form');
   form.parentNode.parentNode.removeChild(form.parentNode);
 }
