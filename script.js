@@ -11,3 +11,12 @@ function validationLogin() {
     }
   });
 } validationLogin();
+
+function alteraAtributo() {
+  const checkbox = document.getElementById('agreement');
+
+  checkbox.addEventListener('click', () => {
+    const buttonDisabled = document.getElementById('submit-btn');
+    buttonDisabled.removeAttribute('disabled');
+  });
+}alteraAtributo();

@@ -10,17 +10,14 @@
 <body>
   
   <header class="header">
-      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt=""> <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo-trybewarts"> <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="GET" enctype="multipart/form-data" >
       <input type="text" id ="input-login"  placeholder="Login" required>
       <input type="password" id="input-senha" placeholder="Senha" required>
       <button type="submit" id="button-login">Entrar</button>
     </form>
   </header>
-  
-  
   <main class="container" id="main">
-
     <form action="" method="GET" class="container" id="evaluation-form">
       <div class="input-group">
         <input type="text" id="input-name" name="Nome" placeholder="Nome">
@@ -37,7 +34,7 @@
       </div>
       <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="div-label-contaneir">
-        <label for="item1"><input class="subject" type="checkbox" name="HoFs" id="item1" value="HoFs">HoFs</label>
+        <label for="item1" ><input class="subject" type="checkbox" name="HoFs" id="item1" value="HoFs">HoFs</label>
 
       <label for="item2"><input class="subject" type="checkbox" name="Jest" id="item2" value="Jest">Jest</label>
 
@@ -49,10 +46,12 @@
 
       <label for="item6"><input class="subject" type="checkbox" name="Python" id="item6" value="Python">Python</label>
     </div>
+    <button type="submit" id="submit-btn" disabled>Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo trybewarts">
- 
+    <footer>Direitos reservados à Trybewarts©</footer>
   </main>
+  
 
 <script src="script.js"></script>
 </body>

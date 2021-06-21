@@ -56,8 +56,6 @@
   display: flex;
 }
 
-.div-label-contaneir {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+footer {
+  align-self: flex-end;
 }
