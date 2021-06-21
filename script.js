@@ -1,6 +1,5 @@
 function loginAuth() {
   const submitButton = document.querySelector('#login-button');
-  
   submitButton.addEventListener('click', (event) => {
     const loginButton = document.querySelector('#login').value;
     const passwordButton = document.querySelector('#password').value;
@@ -31,7 +30,7 @@ function enableButton() {
 
 enableButton();
 
-function limite_textarea(valor) {
+/* function limite_textarea(valor) {
   quant = 50;
   total = valor.length;
   if(total <= quant) {
@@ -40,4 +39,4 @@ function limite_textarea(valor) {
   } else {
       document.getElementById('texto').value = valor.substr(0,quant);
   }
-}
+} */

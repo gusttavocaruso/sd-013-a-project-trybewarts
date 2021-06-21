@@ -81,19 +81,17 @@ hr {
   opacity: 50%;
   max-width: 100%;
   margin: 5px;
-  
 }
 
 /* Sessão 1 do Formulário */
 .session-one {
   display: flex;
   flex-direction: column;
-  
 }
 
 .session-one h2 {
   align-self: center;
-  padding: 20px;
+  padding: 10px;
 
 }
 
@@ -139,7 +137,7 @@ hr {
   padding: 10px;
 }
 
-.learn div  {
+.learn div {
   padding: 5px;
   border: purple
 }
@@ -162,7 +160,7 @@ hr {
   text-align: center;
 }
 
-.textarea-content div{
+.textarea-content div {
   display: flex;
   justify-content:space-between ;
   width: 100%;
@@ -170,13 +168,13 @@ hr {
 }
 
 #textarea {
-  margin: 5px 0px;
+  margin: 5px 1px;
 }
 
 .button-content button {
   width: 100%;
   padding: 5px;
-  margin: 5px 0px;
+  margin: 5px 1px;
   background-color: purple;
   color: white;
 }
