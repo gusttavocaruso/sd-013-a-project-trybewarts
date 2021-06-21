@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 18px;
 }
 
 hr {
@@ -14,6 +13,10 @@ fieldset {
 
 input {
   outline: 0;
+}
+
+span {
+  margin-left: 10px;
 }
 
 .header {
@@ -130,6 +133,42 @@ main {
   width: 50%;
 }
 
+/* Pesquisa Trybewarts */
+#label-rate {
+  font-weight: 600;
+}
+
+#quest span {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/* Comentario */
+.textarea {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: 3px solid rgb(46, 161, 91);
+  border-radius: 5px 5px 0;
+  outline: 0;
+}
+
+#counter {
+  position: relative;
+  text-align: center;
+  width: 20px;
+  top: -23px;
+  background: rgb(46, 161, 91);
+  color: rgb(244, 238, 215);
+  margin-left: 49%;
+  border-radius: 5px 5px 0 0;
+  padding: 0 1%;
+}
+
 /* Css Personalizando */
 .flex {
   display: flex;
@@ -141,6 +180,4 @@ main {
 
 .center {
   align-items: center;
-}
-
 }

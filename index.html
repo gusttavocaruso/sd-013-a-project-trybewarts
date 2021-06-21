@@ -51,42 +51,47 @@
       <fieldset class="flex">
         <section class="family-radio flex column">
           <label id="label-family">Qual sua família?</label>
-          <label><input name="family" type="radio" value="Frontend" checked>Família Frontend</label>
-          <label><input name="family" type="radio" value="Backend">Família Backend</label>
-          <label><input name="family" type="radio" value="FullStack">Família Fullstack</label>
+          <label><input name="family" type="radio" value="Frontend" checked><span>Família Frontend</span></label>
+          <label><input name="family" type="radio" value="Backend"><span>Família Backend</span></label>
+          <label><input name="family" type="radio" value="FullStack"><span>Família Fullstack</span></label>
         </section>
         <section class="content-checkbox">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div class="flex">
-            <label><input type="checkbox" class="subject" name="HoFs" value="HoFs">HoFs</label>
-            <label><input type="checkbox" class="subject" name="Jest" value="Jest">Jest</label>
-            <label><input type="checkbox" class="subject" name="Promises" value="Promises">Promises</label>
-            <label><input type="checkbox" class="subject" name="React" value="React">React</label>
-            <label><input type="checkbox" class="subject" name="SQL" value="SQL">SQL</label>
-            <label><input type="checkbox" class="subject" name="Python" value="Python">Python</label>
+            <label><input type="checkbox" class="subject" name="HoFs" value="HoFs"><span>HoFs</span></label>
+            <label><input type="checkbox" class="subject" name="Jest" value="Jest"><span>Jest</span></label>
+            <label><input type="checkbox" class="subject" name="Promises" value="Promises"><span>Promises</span></label>
+            <label><input type="checkbox" class="subject" name="React" value="React"><span>React</span></label>
+            <label><input type="checkbox" class="subject" name="SQL" value="SQL"><span>SQL</span></label>
+            <label><input type="checkbox" class="subject" name="Python" value="Python"><span>Python</span></label>
           </div>
         </section>
       </fieldset>
       <!-- Familia e Conteudo end -->
       <hr>
-      <!-- Pesquisa Trybewarts start-->
-      <label id="label-rate">Como você avalia a Trybewarts?</label>
-      <label><input name="rate" type="radio" value="1">1</label>
-      <label><input name="rate" type="radio" value="2">2</label>
-      <label><input name="rate" type="radio" value="3">3</label>
-      <label><input name="rate" type="radio" value="4">4</label>
-      <label><input name="rate" type="radio" value="5">5</label>
-      <label><input name="rate" type="radio" value="6">6</label>
-      <label><input name="rate" type="radio" value="7">7</label>
-      <label><input name="rate" type="radio" value="8">8</label>
-      <label><input name="rate" type="radio" value="9">9</label>
-      <label><input name="rate" type="radio" value="10">10</label>
-      <!-- Pesquisa Trybewarts start-->
-
-      <label class="textarea">Deixe seu comentário:</label>
-      <textarea name="textarea" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
-      <label id="counter">500</label>
-
+      <!-- Pesquisa Trybewarts start -->
+      <fieldset id="quest">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <label><input name="rate" type="radio" value="1"><span>1</span></label>
+        <label><input name="rate" type="radio" value="2"><span>2</span></label>
+        <label><input name="rate" type="radio" value="3"><span>3</span></label>
+        <label><input name="rate" type="radio" value="4"><span>4</span></label>
+        <label><input name="rate" type="radio" value="5"><span>5</span></label>
+        <label><input name="rate" type="radio" value="6"><span>6</span></label>
+        <label><input name="rate" type="radio" value="7"><span>7</span></label>
+        <label><input name="rate" type="radio" value="8"><span>8</span></label>
+        <label><input name="rate" type="radio" value="9"><span>9</span></label>
+        <label><input name="rate" type="radio" value="10"><span>10</span></label>
+      </fieldset>
+      <!-- Pesquisa Trybewarts end -->
+      <hr>
+      <!-- Comentario start-->
+      <fieldset>
+        <label class="textarea">Deixe seu comentário:</label>
+        <textarea name="textarea" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+        <label id="counter">500</label>
+      </fieldset>
+      <!-- Comentario end -->
       <label id="label-infos">
         Você concorda com o uso das informações acima?
         <input type="checkbox" id="agreement">
