@@ -178,3 +178,9 @@ hr {
   border-radius: 5px;
   width: 470px;
 }
+
+footer {
+  background-color: gray;
+  text-align: center;
+  padding: 10px;
+}
