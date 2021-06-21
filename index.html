@@ -27,7 +27,7 @@
         <main>
 
             <!-- <div id='forms'> -->
-            <form action="" method="GET" id="evaluation-form">
+            <form action="" id="evaluation-form">
                 <fieldset id="personal-info">
                     <input type="text" name="nome" id="input-name" placeholder="Nome">
                     <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
@@ -45,7 +45,7 @@
                 <fieldset id="field-family-content">
                     <div class="campo esquerdo">
                         <label id="label-family">Qual sua família?</label><br>
-                        <input type="radio"  name="family" value="Frontend">
+                        <input type="radio"  name="family" value="Frontend" required>
                         <label for="Família Frontend">Família Frontend</label><br>
                         <input type="radio"  name="family" value="Backend">
                         <label for="Família Backend">Família Backend</label><br>
@@ -76,10 +76,11 @@
 
                 <fieldset id='coment-submit'>
                     <label class="textarea">Deixe seu comentário:</label>
+                    <span id="counter"></span>
                     <textarea id='textarea' rows="8" cols="60" maxlength="500"></textarea>
                     <div>
                         <label id="label-infos">Você concorda com o uso das informações acima?</label>
-                        <input type="checkbox" id='agreement' name="content" value="agreement">
+                        <input type="checkbox" id='agreement' value="agreement">
                     </div>
                     <button id='submit-btn' type='submit' disabled>Enviar</button>
                 </fieldset>
