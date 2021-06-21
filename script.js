@@ -12,7 +12,7 @@ botaoLogar.addEventListener('click', () => {
 const checker = document.getElementById('agreement');
 const sendbtn = document.getElementById('submit-btn');
 
-const ativar = () => {
+const activate = () => {
   if (checker.checked) {
     sendbtn.disabled = false;
   } else {
@@ -20,7 +20,7 @@ const ativar = () => {
   }
 };
 
-ativar();
+activate();
 
 const textArea = document.querySelector('#textarea');
 const counter = document.getElementById('counter');
