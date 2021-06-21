@@ -35,7 +35,8 @@ const conter = document.querySelector('#counter');
 
 function contadorCaractere() {
   const value = textArea.value.length;
-  conter.innerText = 500 - value + ' caracteres restantes.';
+  const max = 500;
+  conter.innerText = `${max - value} caracteres restantes.`;
 }
 
 textArea.addEventListener('input', contadorCaractere);
@@ -58,23 +59,19 @@ function newContent(event) {
   const sobrenome = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const casa = document.querySelector('#house').value;
-  const familia = document.querySelector("[name='family']:checked").value;
+  const familia = document.querySelector('[name="family"]:checked').value;
   const materias = checkMaterias();
-  const avaliacao = document.querySelector("[name='rate']:checked").value;
+  const avaliacao = document.querySelector('[name="rate"]:checked').value;
   const textAreavalue = document.querySelector('#textarea').value;
 
   form.innerText = '';
 
   const p = document.createElement('p');
   form.appendChild(p);
-  p.classList.add('p-form')
-  p.innerHTML = `Nome: ${nome} ${sobrenome}</br>
-  Email: ${email} </br>
-  Casa: ${casa} </br>
-  Família: ${familia} </br>
-  Matérias: ${Object.values(materias)} </br>
-  Avaliação: ${avaliacao} </br>
-  Observações: ${textAreavalue}`;
+  p.classList.add('p-form');
+  p.innerHTML = `Nome: ${nome} ${sobrenome}</br>Email: ${email}</br>Casa: ${casa}</br>
+  Família: ${familia}</br>Matérias: ${Object.values(materias)}</br>
+  Avaliação: ${avaliacao}</br>Observações: ${textAreavalue}`;
 }
 
 submitBtn.addEventListener('click', newContent);
