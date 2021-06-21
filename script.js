@@ -14,23 +14,23 @@ const desafio3 = () => {
 desafio3();
 
 const desafio9 = () => {
-  const arrayValues = ['Gitnória','Reactpuff','Corvinode','Pytherina'];
-  const arrayIds = ['gitnoria-house','reactpuff-house','corvinode-house','pytherina-house'];
+  const arrayValues = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
+  const arrayIds = ['gitnoria-house', 'reactpuff-house', 'corvinode-house', 'pytherina-house'];
   const select = document.getElementById('house');
 
-  for(let i = 0; i < 4; i += 1) {
+  for (let i = 0; i < 4; i += 1) {
     const arrayId = arrayIds[i];
     const arrayValue = arrayValues[i];
     const option = document.createElement('option');
-    option.setAttribute('value',arrayValue);
-    option.setAttribute('id',arrayId);
-    if(arrayValue === 'Corvinode') {
+    option.setAttribute('value', arrayValue);
+    option.setAttribute('id', arrayId);
+    if (arrayValue === 'Corvinode') {
       option.setAttribute('selected', arrayValue);
     }
     option.innerText = arrayValue;
     select.appendChild(option);
   }
-}
+};
 desafio9();
 
 const desafio12 = () => {
