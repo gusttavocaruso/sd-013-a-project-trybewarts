@@ -43,7 +43,6 @@
 }
 
 #trybewarts-forms-logo {
-  position: absolute;
   height: 500px;
   width: 500px;
   margin-left: 850px;
@@ -68,7 +67,8 @@
   width: 100%;
 }
 
-.avaliacao {
-  display: inline;
-  align-items: center;
+#label-rate {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; 
 }
