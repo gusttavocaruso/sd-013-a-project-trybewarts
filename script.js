@@ -22,7 +22,7 @@ checkbox.addEventListener('click', () => {
 });
 
 
-// requisito 21
+/* // requisito 21
 
 function renameForm() {
   const main = document.getElementById('main');
@@ -31,12 +31,5 @@ function renameForm() {
   const inputLastName = document.querySelector('#input-lastname').value;
   const email = document.getElementById('input-email').value;
   const house = document.querySelector('#house').value;
- 
-form.parentNode.removeChild(form);
-
-const paragraph = document.createElement('p');
-
-creatForm.innerHTML = `Nome: ${inputName} ${inputLastName}`;
-
-main.appendChild(paragraph);
 }
+ */
