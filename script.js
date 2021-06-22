@@ -39,6 +39,5 @@ const log = document.getElementById('counter');
 getChar.addEventListener('input', () => {
   const maximoCaracteres = getChar.maxLength;
   const inputDigitado = getChar.value.length;
-
   log.innerText = `Caracteres restantes: ${(maximoCaracteres - inputDigitado)}`;
 });
