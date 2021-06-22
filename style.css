@@ -11,7 +11,7 @@ body {
 input , select {
   background-color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   width: auto;
 }
 
