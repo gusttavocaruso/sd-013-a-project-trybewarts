@@ -23,3 +23,30 @@
   display: flex;
   align-items: center;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#main {
+  display: flex;
+  width: 50px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#name-lastn {
+  display: flex;
+}
+
+#email-house {
+  display: flex;
+}
+
+#main, #form {
+  width: 675px;
+}
