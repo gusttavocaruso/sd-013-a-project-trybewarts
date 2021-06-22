@@ -272,4 +272,5 @@ ul {
   background-color: red;
   list-style-type: none;
   height: 200px;
+  margin-bottom: 0;
 }

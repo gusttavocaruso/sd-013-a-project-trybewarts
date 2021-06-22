@@ -40,7 +40,7 @@ function checkTrueCheckbox() {
   const arrayExit = [];
   for (let i = 0; i < array.length; i += 1) {
     if (document.getElementById(array[i]).checked === true) {
-      arrayExit.push(array[i]);
+      arrayExit.push(` ${array[i]}`);
     }
   }
   return arrayExit;
@@ -82,14 +82,14 @@ function getContent() {
 }
 
 function deleteMainChilds() {
-  document.querySelector('#evaluation-form').remove();
+  document.querySelector('#evaluation-form').innerHTML = '';
   document.querySelector('#trybewarts-forms-logo').remove();
 }
 
 function addDivOnMain() {
   const div = document.createElement('div');
   div.setAttribute('id', 'resultado-forms');
-  document.querySelector('.mainClass').appendChild(div);
+  document.querySelector('#evaluation-form').appendChild(div);
 }
 
 function writeLines() {
@@ -108,7 +108,7 @@ function writeDivForms(array) {
   ul[1].innerHTML = `Email: ${array[2]}`;
   ul[2].innerHTML = `Casa: ${array[3]}`;
   ul[3].innerHTML = `Família: ${array[4]}`;
-  ul[4].innerHTML = `Matérias: ${array[5]}`;
+  ul[4].innerHTML = `Matérias:${array[5]}`;
   ul[5].innerHTML = `Avaliação: ${array[7]}`;
   ul[6].innerHTML = `Observações: ${array[6]}`;
 }
