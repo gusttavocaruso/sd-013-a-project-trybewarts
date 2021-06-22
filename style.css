@@ -78,9 +78,6 @@ footer {
 
 main {
   display: flex;
-  align-content: flex-start;
-  align-items: center;
-  flex-flow: column wrap;
 }
 
 #evaluation-form {
