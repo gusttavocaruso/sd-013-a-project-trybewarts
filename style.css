@@ -11,12 +11,12 @@
   align-items: center;
 }
 
-.trybewarts-header-logo {
+#main {
   display: flex;
+  width: 675px;
 }
 
-.trybewarts-login {
-  align-items: flex-end;
+.trybewarts-header-logo {
   display: flex;
 }
 
@@ -25,19 +25,27 @@
   align-items: center;
 }
 
+.trybewarts-login {
+  align-items: flex-end;
+  display: flex;
+}
+
+.img-trybyW {
+  display: flex;
+  width: 700px;
+  margin-left: 500px;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-#main {
-  display: flex;
-  width: 675px;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
+  width: 500px;
+  margin-left: 850px;
 }
 
 #name-lastn {
@@ -45,7 +53,9 @@
 }
 
 #email-house {
+  width: 30%;
   display: flex;
+  flex-direction: column;
 }
 
 #form {
@@ -55,4 +65,5 @@
 .segundo-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
