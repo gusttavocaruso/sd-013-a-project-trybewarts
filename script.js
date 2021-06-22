@@ -30,3 +30,18 @@ checkBox.addEventListener('click', () => {
     getEnviar.disabled = true;
   }
 });
+
+// Conta caracteres
+// Fonte: https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event
+const getChar = document.getElementById('textarea');
+const log = document.getElementById('counter');
+
+function logKey() {
+  const num = Number.parseInt(log.textContent, 10);
+  const texto = getChar.value.split('').length;
+
+  if (num >= 0) {
+    log.textContent = 500 - texto;
+  }
+}
+getChar.addEventListener('keyup', logKey);
