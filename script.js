@@ -104,4 +104,3 @@ btnSubmit.addEventListener('click', () => {
   form.innerHTML += `Avaliação: ${rateResult} <br>`;
   form.innerHTML += `Observações: ${textarea.value}`;
 });
-

@@ -99,15 +99,13 @@ h5 {
 
 .checkbox {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 400px;
 }
 
 .checkMain {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 200px;
 }
@@ -175,7 +173,7 @@ h5 {
 hr {
   border: none;
   border-top: 1px solid rgb(186, 190, 189);
-  margin: 12px 0 12px;
+  margin: 12px;
 }
 
 footer {
