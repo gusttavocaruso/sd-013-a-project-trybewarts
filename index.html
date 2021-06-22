@@ -20,7 +20,6 @@
   </header>
   <main>
     <form action="" method="GET" id="evaluation-form">
-      <fieldset>
       <section class="first-section-main">
         <div class="line-content">
           <input type="text" id="input-name" placeholder="Nome">
@@ -49,7 +48,7 @@
           </label>
           <label for="family-fullstack">
             <input type="radio" name="family" id="family-fullstack" value="FullStack">Família FullStack
-          </label>          
+          </label>
         </div>
         <div class="wish-to-learn">
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
@@ -107,21 +106,18 @@
             <input id="rate10" type="radio" name="rate" value="10">10
           </label>
         </div>
-        </fieldset>
-        <fieldset>
-          <label class="textarea">
-            <p>Deixe seu comentário:</p>
-            <textarea id="textarea" maxlength="500"></textarea>
-          </label>
-            <label id="counter">500</label>
-          <label for="" id="label-infos">
-            Você concorda com o uso das informações acima?
-            <input type="checkbox" name="" id="agreement">
-          </label>
-          <button type="submit" id="submit-btn">Enviar</button>
-          <div id="output-report">
-          </div>
-        </fieldset>
+        <label class="textarea">
+          <p>Deixe seu comentário:</p>
+          <textarea id="textarea" maxlength="500"></textarea>
+        </label>
+        <div id="counter">500</div>
+        <label for="" id="label-infos">
+          Você concorda com o uso das informações acima?
+          <input type="checkbox" name="" id="agreement">
+        </label>
+        <button type="submit" id="submit-btn">Enviar</button>
+        <div id="output-report">
+        </div>
       </section>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo trybewarts">
