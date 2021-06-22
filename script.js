@@ -36,12 +36,9 @@ checkBox.addEventListener('click', () => {
 const getChar = document.getElementById('textarea');
 const log = document.getElementById('counter');
 
-function logKey() {
-  const num = Number.parseInt(log.textContent, 10);
-  const texto = getChar.value.split('').length;
+getChar.addEventListener('input', () => {
+  const maximoCaracteres = getChar.maxLength;
+  const inputDigitado = getChar.value.length;
 
-  if (num >= 0) {
-    log.textContent = 500 - texto;
-  }
-}
-getChar.addEventListener('keyup', logKey);
+  log.innerText = `Caracteres restantes: ${(maximoCaracteres - inputDigitado)}`;
+});
