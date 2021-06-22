@@ -12,22 +12,6 @@ function loginOk() {
 }
 botao.addEventListener('click', loginOk);
 
-
-
-// function verifyAgreement() {
-//   const checkbox = document.querySelector('#agreement');
-//   const submitButton = document.querySelector('#submit-btn');
-
-//   checkbox.addEventListener('input', () => {
-//     const disabled = submitButton.hasAttribute('disabled');
-//     if (disabled) submitButton.removeAttribute('disabled');
-//   });
-// }
-
-// verifyAgreement();
-
-
-
 function test() {
   if (agreement.checked) {
     submitBtn.disabled = false;
