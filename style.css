@@ -48,7 +48,7 @@
   display: flex;
 }
 
-#main,
+#main , 
 #form {
   width: 675px;
 }
