@@ -1,3 +1,4 @@
+const ok = document.querySelector('.trybewarts-login');
 function req3() {
   const login = document.querySelector('#login');
   const senha = document.querySelector('#senha');
@@ -7,7 +8,7 @@ function req3() {
     alert('Login ou senha inválidos.');
   }
 }
-document.addEventListener('submit', req3);
+ok.addEventListener('submit', req3);
 
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('click', () => {
