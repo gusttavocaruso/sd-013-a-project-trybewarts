@@ -35,9 +35,9 @@ function textareaCounter() {
   const counter = document.getElementById('counter');
 
   text.addEventListener('keyup', () => {
-    let characterLength = text.value.length;
+    const characterLength = text.value.length;
     counter.setAttribute('value', characterLength);
-    counter.innerText = (counter.getAttribute('value')) + '/500';
+    counter.innerText = `${(counter.getAttribute('value'))}${'/500'}`;
   });
 }
 
