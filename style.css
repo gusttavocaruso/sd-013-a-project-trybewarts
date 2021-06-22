@@ -75,10 +75,15 @@ aside {
   align-items: center;
 }
 
-.label-rate {
+#label-rate {
   display: flex;
+  align-items: center;
 }
 
 .value {
+  display: flex;
+}
+
+#div-radio {
   display: flex;
 }
