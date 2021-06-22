@@ -57,6 +57,7 @@
   display: flex;
 }
 
-#main, #form {
+#main,
+#form {
   width: 675px;
 }
