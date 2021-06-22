@@ -12,7 +12,12 @@ h1 {
 
 .form {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+  flex-flow: column wrap;
+  width: 675px;
+>>>>>>> 4e34cd88121557ceafe05c0acbc9b022561c9cb8
 }
 
 .main-content {
@@ -56,10 +61,6 @@ h1 {
 .content-field {
   display: flex;
   flex-direction: column;
-}
-
-#label-infos {
-  display: flex;
 }
 
 #submit-btn {

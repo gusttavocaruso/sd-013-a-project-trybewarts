@@ -1,5 +1,16 @@
 const buttonForm = document.getElementById('login-button');
 const rateField = document.querySelector('.rate-field');
+const agreementField = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
+const textAreaField = document.querySelector('#textarea');
+const counterField = document.querySelector('#counter');
+const formField = document.querySelector('#evaluation-form');
+const firstNameInput = document.querySelector('#input-name');
+const lastNameInput = document.querySelector('#input-lastname');
+const emailInput = document.querySelector('#input-email');
+const selectHouse = document.querySelector('#house');
+const subjectInput = document.querySelectorAll('.subject');
+
 buttonForm.addEventListener('click', () => {
   const loginValue = document.getElementById('form-login').value;
   const passwordValue = document.getElementById('form-password').value;
@@ -10,7 +21,7 @@ buttonForm.addEventListener('click', () => {
   }
 });
 
-function setRateField() {
+const setRateField = () => {
   for (let i = 0; i < 10; i += 1) {
     const newRate = document.createElement('input');
     const spanValue = document.createElement('span');
@@ -21,5 +32,51 @@ function setRateField() {
     rateField.appendChild(newRate);
     rateField.appendChild(spanValue);
   }
-}
+};
 setRateField();
+
+agreementField.addEventListener('click', () => {
+  if (agreementField.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+});
+
+textAreaField.addEventListener('keyup', () => {
+  const currentValue = textAreaField.value.length;
+  const resultCounter = 500 - currentValue;
+  counterField.innerHTML = resultCounter;
+});
+
+const getSubjectSelected = () => {
+  const content = [];
+  for (let i = 0; i < subjectInput.length; i += 1) {
+    if (subjectInput[i].checked) {
+      content.push(subjectInput[i].value);
+    }
+  }
+  return content.join(', ');
+};
+
+const createResultDiv = () => {
+  const newDiv = document.createElement('div');
+  newDiv.id = 'result-form-div';
+  newDiv.innerHTML += `Nome: ${firstNameInput.value} ${lastNameInput.value}`;
+  newDiv.innerHTML += `Email: ${emailInput.value}`;
+  newDiv.innerHTML += `Casa: ${selectHouse.value}`;
+  const inputFamily = document.querySelector('input[name="family"]:checked');
+  newDiv.innerHTML += `Família: ${inputFamily.value}`;
+  newDiv.innerHTML += `Matérias: ${getSubjectSelected()}`;
+  const inputRate = document.querySelector('input[name="rate"]:checked');
+  newDiv.innerHTML += `Avaliação: ${inputRate.value}`;
+  newDiv.innerHTML += `Observações: ${textAreaField.value}`;
+  return newDiv;
+};
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  const ResultDiv = createResultDiv();
+  formField.innerHTML = '';
+  formField.appendChild(ResultDiv);
+});

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
@@ -37,9 +35,9 @@
     </div>
     <div class="family-field">
       <label id="label-family">Qual sua família?</label>
-      <input type="radio" name="family" value="Frontend"> Família Frontend
-      <input type="radio" name="family" value="Backend"> Família Backend
-      <input type="radio" name="family" value="FullStack"> Família FullStack
+      <input type="radio" name="family" value="Frontend" required> Família Frontend
+      <input type="radio" name="family" value="Backend" required> Família Backend
+      <input type="radio" name="family" value="FullStack" required> Família FullStack
     </div>
     <div class="content-field">
       <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
@@ -55,19 +53,22 @@
     </div>
     <div>
       <label class="textarea">Deixe seu comentário:</label>
-      <textarea cols="30" rows="10" maxlength="500"></textarea>
+      <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <div>
+        <span>Counter:</span><span id='counter'>500</span>
+      </div>
+    </div>
+    <div>
+      <label id="label-infos">Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" id="agreement">
+      <button type="submit" id="submit-btn" disabled>Enviar</button>
     </div>
   </form>
-  <label for="" id="label-infos">Você concorda com o uso das informações acima?
-    <input type="checkbox" id="agreement">
-    <button type="submit" id="submit-btn">Enviar</button>
-  </label>
   <div class="image-container">
     <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
   </div>
-  <footer class="footer">Direitos reservados à Trybewarts©</footer>
 </main>
+<footer class="footer">Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
 </body>
-
 </html>
