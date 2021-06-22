@@ -78,6 +78,8 @@ footer {
 
 main {
   display: flex;
+
+  /* justify-content: center; */
 }
 
 #evaluation-form {
@@ -94,8 +96,6 @@ main {
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
-
-  /* align-self: flex-end; */
 }
 
 /*
@@ -120,10 +120,10 @@ main {
   align-items: flex-start;
 }
 
-/* .family-div {
+.label-family {
   display: flex;
   flex-direction: column;
-} */
+}
 
 #label-content {
   display: flex;

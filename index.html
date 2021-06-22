@@ -49,36 +49,47 @@
       
         <!-- 12. Crie um campo de entrada para qual família a pessoa estudante se identifica -->      
         <label for="family" id="label-family">Qual sua família?</label>
-        <!-- <div class="family-div"> -->
-          <label for="frontend">Frontend</label>
-          <input type="radio" name="family" id="frontend" value="Frontend" checked>
-        
-          <label for="backend">Backend</label>
-          <input type="radio" name="family" id="backend" value="Backend">
-      
-          <label for="fullstack">FullStack</label>
-          <input type="radio" name="family" id="fullstack" value="FullStack">
-        <!-- </div> -->
+        <div class="label-family">
+          <label>Frontend
+            <input type="radio" name="family" value="Frontend" checked>
+          </label>
+                 
+          <label>Backend
+            <input type="radio" name="family" value="Backend">
+          </label>
+                
+          <label>FullStack
+            <input type="radio" name="family" value="FullStack">
+          </label>          
+        </div>
 
         <!-- 13. Crie campos de entrada do tipo 'checkbox' contendo seis opções -->
-        <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>      
-          <label for="hofs">HoFs</label>
-          <input type="checkbox" class="subject" name="hofs" id="hofs" value="HoFs">
-              
-          <label for="jest">Jest</label>
-          <input type="checkbox" class="subject" name="jest" id="jest" value="Jest">
-              
-          <label for="promises">Promises</label>
-          <input type="checkbox" class="subject" name="promises" id="promises" value="Promises">
-              
-          <label for="react">React</label>
-          <input type="checkbox" class="subject" name="react" id="react" value="React">
-              
-          <label for="sql">SQL</label>
-          <input type="checkbox" class="subject" name="sql" id="sql" value="SQL">
-              
-          <label for="python">Python</label>
-          <input type="checkbox" class="subject" name="python" id="python" value="Python">
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>      
+          <!-- <div> -->
+            <label>HoFs
+              <input type="checkbox" class="subject" name="hofs" value="HoFs">
+            </label>
+                        
+            <label>Jest</label>
+            <input type="checkbox" class="subject" name="jest" value="Jest">
+            
+            <label>Promises
+               <input type="checkbox" class="subject" name="promises" value="Promises">
+            </label>
+                       
+            <label>React
+              <input type="checkbox" class="subject" name="react" value="React">
+            </label>
+                        
+            <label>SQL
+              <input type="checkbox" class="subject" name="sql" value="SQL">
+            </label>            
+            
+            <label>Python
+              <input type="checkbox" class="subject" name="python" value="Python">
+            </label>
+                     
+          <!-- </div> -->
           
           <!-- 15. Cria um textarea com o ID 'textarea' e uma label com a classe 'textarea' contendo o num maximo de caracteres igual à 500 -->
         <label class="textarea" for="">Deixe seu comentário:
