@@ -12,7 +12,7 @@
 }
 
 .trybewarts-header-logo {
-  align-items: center;
+  display: flex;
 }
 
 .trybewarts-login {
@@ -50,4 +50,9 @@
 
 #form {
   width: 675px;
+}
+
+.segundo-form {
+  display: flex;
+  flex-direction: column;
 }
