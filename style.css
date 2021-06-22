@@ -260,3 +260,15 @@ span {
 
   100% { transform: translateX( 2vh) translateY( -2vh); }
 }
+
+#resultado-forms {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: grey;
+  color: white;
+}
+
+ul {
+  background-color: red;
+  list-style-type: none;
+}
