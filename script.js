@@ -2,6 +2,7 @@ const botao = document.querySelector('.botao');
 const senha = document.getElementById('senha');
 const login = document.getElementById('login');
 const submitBtn = document.getElementById('submit-btn');
+const agreement = document.getElementById('agreement');
 
 function loginOk() {
   if ((login.value === 'tryber@teste.com') && (senha.value === '123456')) {
