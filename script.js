@@ -1,4 +1,4 @@
-function check() {
+function checks() {
   const login = document.getElementById('login').value;
   const senha = document.getElementById('senha').value;
   const emailDefault = 'tryber@teste.com';
@@ -12,7 +12,7 @@ function check() {
 }
 
 const botao = document.getElementById('botao');
-botao.addEventListener('click', check);
+botao.addEventListener('click', checks);
 
 const radioButtons = document.getElementById('radioButtons');
 for (let i = 1; i <= 10; i += 1) {
