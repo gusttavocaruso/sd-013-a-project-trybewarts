@@ -81,7 +81,6 @@ main {
   align-content: flex-start;
   align-items: center;
   flex-flow: column wrap;
-  width: 675px;
 }
 
 #evaluation-form {
@@ -93,6 +92,13 @@ main {
 #evaluation-form input , select {
   display: flex;
   width: 50%;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
+
+  /* align-self: flex-end; */
 }
 
 /*
@@ -113,10 +119,16 @@ main {
 #label-family div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.family-div {
+/* .family-div {
+  display: flex;
+  flex-direction: column;
+} */
+
+#label-content {
   display: flex;
   flex-direction: column;
 }

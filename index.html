@@ -45,12 +45,10 @@
             <option id="pytherina-house" value="Pytherina"></option>
           </select>
         </div>
-      </form>
-
-      <!-- 12. Crie um campo de entrada para qual família a pessoa estudante se identifica -->
       
+        <!-- 12. Crie um campo de entrada para qual família a pessoa estudante se identifica -->      
         <label for="family" id="label-family">Qual sua família?</label>
-        <div class="family-div">
+        <!-- <div class="family-div"> -->
           <label for="frontend">Frontend</label>
           <input type="radio" name="family" id="frontend" value="Frontend" checked>
         
@@ -59,66 +57,58 @@
       
           <label for="fullstack">FullStack</label>
           <input type="radio" name="family" id="fullstack" value="FullStack">
-        </div>
-      </form>
+        <!-- </div> -->
 
-      <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?
-        <div>
+        <!-- 13. Crie campos de entrada do tipo 'checkbox' contendo seis opções -->
+        <label for="family" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>      
           <label for="hofs">HoFs</label>
           <input type="checkbox" class="subject" name="hofs" id="hofs" value="HoFs">
-        </div>
-        <div>
+              
           <label for="jest">Jest</label>
           <input type="checkbox" class="subject" name="jest" id="jest" value="Jest">
-        </div>
-        <div>
+              
           <label for="promises">Promises</label>
           <input type="checkbox" class="subject" name="promises" id="promises" value="Promises">
-        </div>
-        <div>
+              
           <label for="react">React</label>
           <input type="checkbox" class="subject" name="react" id="react" value="React">
-        </div>
-        <div>
+              
           <label for="sql">SQL</label>
           <input type="checkbox" class="subject" name="sql" id="sql" value="SQL">
-        </div>
-        <div>
+              
           <label for="python">Python</label>
           <input type="checkbox" class="subject" name="python" id="python" value="Python">
+          
+          <!-- 15. Cria um textarea com o ID 'textarea' e uma label com a classe 'textarea' contendo o num maximo de caracteres igual à 500 -->
+        <label class="textarea" for="">Deixe seu comentário:
+          <textarea id="textarea" name="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
+            id="counter">500</span>
+        </label>
+
+        <!-- 16. Crie um campo de entrada do tipo checkbox com o ID 'agreement' para validar as informações -->
+        <div>
+          <label idCrie um botão de Enviar para submeter o formulário="label-infos" for="">Você concorda com o uso das informações acima?</label>
+          <input id="agreement" type="checkbox" required>
         </div>
-      </form>
 
-      <!-- 15. Cria um textarea com o ID 'textarea' e uma label com a classe 'textarea' contendo o num maximo de caracteres igual à 500 -->
-      <label class="textarea" for="">Deixe seu comentário:
-        <textarea id="textarea" name="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
-          id="counter">500</span>
-      </label>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
+  
+        <!-- 17. Crie um botão de Enviar para submeter o formulário -->
+        <div>
+          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+          <input id="agreement" type="checkbox" required>
+        </div>
 
-      <!-- 16. Crie um campo de entrada do tipo checkbox com o ID 'agreement' para validar as informações -->
-      <div>
-        <label idCrie um botão de Enviar para submeter o formulário="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" required>
-      </div>
+        <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
+        <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
 
-      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
- 
-      <!-- 17. Crie um botão de Enviar para submeter o formulário -->
-      <div>
-        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" required>
-      </div>
+        <div>
+          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+          <input id="agreement" type="checkbox" required>
+        </div>
 
-      <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
-      <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
-
-      <div>
-        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" required>
-      </div>
-
-      <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
-
+        <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
+      </form> 
     </main>
 
     <!-- 19 - Crie um rodapé no final da página -->
