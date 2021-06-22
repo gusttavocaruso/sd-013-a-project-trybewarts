@@ -31,11 +31,11 @@ function enableButton() {
 enableButton();
 
 function textareaCounter() {
-  let text = document.getElementById('textarea');
-  let counter = document.getElementById('counter');
+  const text = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
 
   text.addEventListener('keyup', () => {
-    characterLength = text.value.length;
+    let characterLength = text.value.length;
     counter.setAttribute('value', characterLength);
     counter.innerText = (counter.getAttribute('value')) + '/500';
   });
