@@ -112,7 +112,11 @@ main {
 
 #label-family div {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
+.family-div {
+  display: flex;
+  flex-direction: column;
+}
