@@ -21,4 +21,3 @@ function test() {
   }
 }
 agreement.addEventListener('click', test);
-console.log()
