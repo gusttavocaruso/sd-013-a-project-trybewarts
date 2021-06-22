@@ -103,7 +103,7 @@ main {
 11 - Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha
 */
 
-#evaluation-form [div] {
+#evaluation-form div {
   display: flex;
 }
 
