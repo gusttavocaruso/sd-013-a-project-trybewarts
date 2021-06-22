@@ -30,13 +30,15 @@ function enableButton() {
 
 enableButton();
 
-/* function limite_textarea(valor) {
-  quant = 50;
-  total = valor.length;
-  if(total <= quant) {
-      resto = quant - total;
-      document.getElementById('cont').innerHTML = resto;
-  } else {
-      document.getElementById('texto').value = valor.substr(0,quant);
-  }
-} */
+function textareaCounter() {
+  let text = document.getElementById('textarea');
+  let counter = document.getElementById('counter');
+
+  text.addEventListener('keyup', () => {
+    characterLength = text.value.length;
+    counter.setAttribute('value', characterLength);
+    counter.innerText = (counter.getAttribute('value')) + '/500';
+  });
+}
+
+textareaCounter();
