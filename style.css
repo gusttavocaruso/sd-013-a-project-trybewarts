@@ -1,28 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 100px;
+}
+
+.trybewarts-header-logo {
+  height: 80px;
 }
 
 .trybewarts-login {
   display: flex;
+  width: 310px;
+  justify-content: space-between;
+}
+
+#login , #password {
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  width: 100px;
+}
+
+#btn-login {
+  border-radius: 8px;
+  width: 100px;
+  background-color: rgb(72, 4, 121);
+  color: white;
 }
 
 #trybewarts-header-title {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: whitesmoke;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -32,9 +64,98 @@ main {
 .family {
   display: flex;
   flex-flow: column;
+  width: 202.5px;
+  height: 80px;
 }
 
 .field {
   display: flex;
   flex-flow: column;
+  width: 202.5px;
+  height: 80px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: rgb(66, 64, 64);
+  color: antiquewhite;
+  height: 36px;
+}
+
+.house , .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 425px;
+  padding: 5px;
+}
+
+#input-name , #input-lastname , #input-email {
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  width: 200px;
+}
+
+#house {
+  border-radius: 8px;
+  border: none;
+  height: 30px;
+  width: 150px;
+}
+
+.bloco1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 500px;
+}
+
+.bloco2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 500px;
+}
+
+.level {
+  padding: 10px;
+  width: 500px;
+}
+
+.alin-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.bloco3 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 500px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  height: 100px;
+}
+
+h3 {
+  text-align: center;
+}
+
+#submit-btn {
+  color: antiquewhite;
+  background-color: darkslateblue;
+  font-weight: 700;
 }
