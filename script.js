@@ -36,7 +36,7 @@ function textareaCounter() {
 
   text.addEventListener('keyup', () => {
     const characterLength = text.value.length;
-    counter.setAttribute('value', characterLength);
+    counter.setAttribute('value', (500-characterLength));
     counter.innerText = `${(counter.getAttribute('value'))}${'/500'}`;
   });
 }
