@@ -33,7 +33,7 @@
 
 #main {
   display: flex;
-  width: 50px;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -46,10 +46,6 @@
 
 #email-house {
   display: flex;
-}
-
-#main{
-  width: 675px;
 }
 
 #form {
