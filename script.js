@@ -103,7 +103,7 @@ function writeLines() {
 }
 
 function writeDivForms(array) {
-  const ul = document.getElementsByTagName('ul').childNodes;
+  const ul = document.getElementsByTagName('ul')[0].childNodes;
   ul[0].innerHTML = `Nome: ${array[0]} ${array[1]}`;
   ul[1].innerHTML = `Email: ${array[2]}`;
   ul[2].innerHTML = `Casa: ${array[3]}`;
