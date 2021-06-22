@@ -43,6 +43,7 @@
 }
 
 #trybewarts-forms-logo {
+  position: absolute;
   height: 500px;
   width: 500px;
   margin-left: 850px;
@@ -53,7 +54,7 @@
 }
 
 #email-house {
-  display: flex;
+  display: inline;
   flex-direction: column;
 }
 
@@ -68,6 +69,6 @@
 }
 
 .avaliacao {
-  display: flex;
+  display: inline;
   align-items: center;
 }
