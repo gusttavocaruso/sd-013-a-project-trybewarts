@@ -34,3 +34,67 @@ function contaChar(char) {
   }
 }
 contaChar('');
+
+function name1() {
+  const nome = document.getElementById('input-name');
+  const lastName = document.getElementById('input-lastname');
+  nome.innerHTML = `Nome: ${nome.value} ${lastName.value}`;
+}
+function email1() {
+  const email = document.getElementById('input-email');
+  email.innerHTML = `Email: ${email.value}`;
+}
+function house1() {
+  const house = document.getElementById('house');
+  house.innerHTML = house.options[house.selectedIndex].text;
+}
+function comentario1() {
+  const comentario = document.getElementById('textarea');
+  comentario.innerHTML = `Observações: ${comentario.value}`;
+}
+function materia3(checked, textCheck, checkBox, index) {
+  if (index <= checked) {
+    textCheck.innerHTML += `${checkBox[index].value}, `;
+  } else {
+    textCheck.innerHTML += `${checkBox[index].value}`;
+  }
+}
+function materia2(checked, textCheck, checkBox) {
+  for (let index = 0; index < checkBox.length; index += 1) {
+    if (checkBox[index].checked) {
+      materia3(checked, textCheck, checkBox, index);
+    }
+  }
+}
+function materia1() {
+  const checkBox = document.getElementsByClassName('subject');
+  const textCheck = document.getElementById('aaa');
+  textCheck.innerHTML = 'Matérias: ';
+  let checked = 0;
+  for (let index = 0; index < checkBox.length; index += 1) {
+    if (checkBox[index].checked) {
+      checked += 1;
+    }
+  }
+  materia2(checked, textCheck, checkBox);
+}
+function familia1() {
+  const familia = document.querySelector('input[name=family]:checked');
+  const textFamilia = document.getElementById('familia');
+  textFamilia.innerHTML = `Família: ${familia.value}`;
+}
+function avaliacao1() {
+  const avaliacao = document.querySelector('input[name=rate]:checked');
+  const textAvaliacao = document.getElementById('avaliacao');
+  textAvaliacao.innerHTML = `Avaliação: ${avaliacao.value}`;
+}
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  name1();
+  email1();
+  house1();
+  comentario1();
+  materia1();
+  familia1();
+  avaliacao1();
+});
