@@ -48,7 +48,10 @@
   display: flex;
 }
 
-#main , 
-#form {
+#main{
   width: 675px;
 }
+
+#form {
+  width: 675px;
+} 
