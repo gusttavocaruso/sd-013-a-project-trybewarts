@@ -18,70 +18,69 @@
     </form>
   </header>
   <main>
-    <form id='evaluation-form'>
-      <div class='informations'>
-        <input type='text' name='Nome' id='input-name' placeholder='Nome'>
-        <input type='text' name='Sobrenome' id='input-lastname' placeholder='Sobrenome'>
-      </div>
-      <div>
-        <input type='text' name='Email' id='input-email' placeholder='Email'>
-          <select id='house'>
-            <option value='Gitnória' id='gitnoria-house'>Gitnória</option>
-            <option value='Reactpuff' id='reactpuff-house'>Reactpuff</option>
-            <option value='Corvinode' id='corvinode-house'>Corvinode</option>
-            <option value='Pytherina' id='pytherina-house'>Pytherina</option> 
-          </select>
-      </div>
-      <div id='family'>
-          <label for='family' id='label-family'>Qual sua família?</label>
-          <input type='radio' name='family' id='frontend' value='Frontend'>Frontend
-          <input type='radio' name='family' id='backend' value='Backend'>Backend
-          <input type='radio' name='family' id='fullstack' value='FullStack'>FullStack
-      </div>
-      <div class='checkbox'>
-          <label for='content' id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
-          <input type='checkbox' value='HoFs' class='subject'>HoFs
-          <input type='checkbox' value='Jest' class='subject'>Jest
-          <input type='checkbox' value='Promises' class='subject'>Promises
-          <input type='checkbox' value='React' class='subject'>React
-          <input type='checkbox' value='SQL' class='subject'>SQL
-          <input type='checkbox' value='Python' class='subject'>Python
-      </div>
-      <div class="radioButtons">
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" value="1" name="rate">1
-        <input type="radio" value="2" name="rate">2
-        <input type="radio" value="3" name="rate">3
-        <input type="radio" value="4" name="rate">4
-        <input type="radio" value="5" name="rate">5
-        <input type="radio" value="6" name="rate">6
-        <input type="radio" value="7" name="rate">7
-        <input type="radio" value="8" name="rate">8
-        <input type="radio" value="9" name="rate">9
-        <input type="radio" value="10" name="rate">10
-      <div class="conteiner-comment">
-        <label class='textarea'>Deixe seu comentário:</label>
-          <textarea id="commentArea" maxlength="500" cols="10" rows="10" placeholder="maximo de 500 caracteres"></textarea>
-      </div>
-      <div>
-        <label id='label-infos'>Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" id='agreement'>
-      </div>
-      <button id="submit-btn" type="submit" disabled>Enviar</button>
-    </form>
-  <img src='images/trybewarts-colored.svg' id='trybewarts-forms-logo'>
-  <footer class="rodape">Direitos reservados à Trybewarts©</footer>
+    <div class="conteiner-principal">
+      <form id='evaluation-form'>
+        <div class='informations'>
+          <input type='text' name='Nome' id='input-name' placeholder='Nome'>
+          <input type='text' name='Sobrenome' id='input-lastname' placeholder='Sobrenome'>
+        </div>
+        <div>
+          <input type='text' name='Email' id='input-email' placeholder='Email'>
+            <select id='house'>
+              <option value='Gitnória' id='gitnoria-house'>Gitnória</option>
+              <option value='Reactpuff' id='reactpuff-house'>Reactpuff</option>
+              <option value='Corvinode' id='corvinode-house'>Corvinode</option>
+              <option value='Pytherina' id='pytherina-house'>Pytherina</option> 
+            </select>
+        </div>
+        <div id='family'>
+            <label for='family' id='label-family'>Qual sua família?</label>
+            <input type='radio' name='family' id='frontend' value='Frontend'>Frontend
+            <input type='radio' name='family' id='backend' value='Backend'>Backend
+            <input type='radio' name='family' id='fullstack' value='FullStack'>FullStack
+        </div>
+        <div class='checkbox'>
+            <label for='content' id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
+            <input type='checkbox' value='HoFs' class='subject'>HoFs
+            <input type='checkbox' value='Jest' class='subject'>Jest
+            <input type='checkbox' value='Promises' class='subject'>Promises
+            <input type='checkbox' value='React' class='subject'>React
+            <input type='checkbox' value='SQL' class='subject'>SQL
+            <input type='checkbox' value='Python' class='subject'>Python
+        </div>
+        <div class="radioButtons">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <input type="radio" value="1" name="rate">1
+          <input type="radio" value="2" name="rate">2
+          <input type="radio" value="3" name="rate">3
+          <input type="radio" value="4" name="rate">4
+          <input type="radio" value="5" name="rate">5
+          <input type="radio" value="6" name="rate">6
+          <input type="radio" value="7" name="rate">7
+          <input type="radio" value="8" name="rate">8
+          <input type="radio" value="9" name="rate">9
+          <input type="radio" value="10" name="rate">10
+        <div class="conteiner-comment">
+          <label class='textarea'>Deixe seu comentário:</label>
+            <textarea id="textarea" maxlength="500" cols="10" rows="10" placeholder="maximo de 500 caracteres" onkeyup="contarCaracteres(this.value,500,'counter')"></textarea>
+            <span id="counter">500 caracteres faltantes</span>
+        <div>
+          <label id='label-infos'>Você concorda com o uso das informações acima?</label>
+            <input type="checkbox" id='agreement'>
+        </div>
+        <button id="submit-btn" type="submit" disabled>Enviar</button>
+      </form>
+    </div>
+    <img src='images/trybewarts-colored.svg' id='trybewarts-forms-logo'>
+    <footer class="rodape">Direitos reservados à Trybewarts©</footer>
   </main>
   <script src="script.js"></script>
+  <script>
+    const contarCaracteres = (caixa, maxValue, counterspan) => {
+  const faltantes = maxValue - caixa.length;
+
+  document.getElementById(counterspan).innerHTML = `${faltantes} caracteres faltantes.`;
+};
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
