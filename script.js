@@ -18,3 +18,12 @@ agreement.addEventListener('click', () => {
     submit.disabled = true;
   }
 });
+
+const caracteres = document.getElementById('textarea');
+caracteres.addEventListener('keyup', (event) => {
+  const counter = document.getElementById('counter');
+  const caractereesDigitados = caracteres.value.length;
+  const limite = 500;
+  event = limite - caractereesDigitados;
+  counter.innerHTML = event;
+});
