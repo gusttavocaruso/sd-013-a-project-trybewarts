@@ -20,3 +20,23 @@ checkbox.addEventListener('click', () => {
     botaoSubmit.removeAttribute('disabled');
   }
 });
+
+
+// requisito 21
+
+function renameForm() {
+  const main = document.getElementById('main');
+  const form = document.getElementById('evaluation-form');
+  const inputName = document.querySelector('#input-name').value;
+  const inputLastName = document.querySelector('#input-lastname').value;
+  const email = document.getElementById('input-email').value;
+  const house = document.querySelector('#house').value;
+ 
+form.parentNode.removeChild(form);
+
+const paragraph = document.createElement('p');
+
+creatForm.innerHTML = `Nome: ${inputName} ${inputLastName}`;
+
+main.appendChild(paragraph);
+}
