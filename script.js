@@ -8,6 +8,7 @@ const counter = document.querySelector('#counter');
 const txtNome = document.querySelector('#input-name');
 const txtSobrenome = document.querySelector('#input-lastname');
 const txtEmail = document.querySelector('#input-email');
+const formulario = document.querySelector('#evaluation-form');
 const tagMain = document.querySelector('.form-principal');
 
 counter.innerHTML = 500;
@@ -16,13 +17,12 @@ const qtdCharacters = parseInt(counter.textContent, 10);
 btnEnviar.disabled = true;
 
 btnLogar.addEventListener('click', function validarLogin() {
-    if (txtLogin.value === 'tryber@teste.com' && txtSenha.value === '123456') {
-        alert('Olá, Tryber!')
-    } else {
-        alert('Login ou senha inválidos.')
-    }
-
-    return this;
+  if (txtLogin.value === 'tryber@teste.com' && txtSenha.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
+  }
+  return this;
 });
 
 agreement.addEventListener('click', function validateEnviar(event) {
@@ -68,7 +68,6 @@ const createResult = () => {
   for (let index = 0; index < chkConteudo.length; index += 1) {
     materias += `${chkConteudo[index].value}, `;
   }
-
   result.innerText = `Nome: ${txtNome.value} ${txtSobrenome.value}
   Email: ${txtEmail.value}
   Casa: ${listCasa.value}
@@ -83,4 +82,3 @@ btnEnviar.addEventListener('click', () => {
   createUl();
   createResult();
 });
-
