@@ -12,12 +12,9 @@ h1 {
 
 .form {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
-=======
   flex-flow: column wrap;
   width: 675px;
->>>>>>> 4e34cd88121557ceafe05c0acbc9b022561c9cb8
 }
 
 .main-content {
@@ -76,4 +73,5 @@ h1 {
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-direction: column;
 }
