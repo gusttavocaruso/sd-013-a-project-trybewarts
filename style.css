@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: #dadada;
+  background-color: rgb(207, 207, 207);
 }
 
 .header {
@@ -84,6 +84,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+
 .form-2 {
   margin-top: 50px;
   margin-left: 20px;
@@ -114,10 +115,10 @@ hr {
 #botao-login {
   margin-left: 10px;
   width: 100px;
-  border-radius:10px;
+  border-radius: 10px;
   border: 0;
-  background-color: #4E2C83;
-  color: #FFFFFF;
+  background-color: purple;
+  color: white;
 }
 
 #nomeSobrenome {
@@ -151,14 +152,14 @@ hr {
 #house {
   width: 220px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 10px;
   border: 0;
 }
 
 button[id=submit-btn] {
-  background-color: #4E2C83;
-  color: #ffffff;
+  background-color: purple;
+  color: white;
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -168,7 +169,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5px;
-  color: #ffffff;
+  color: white;
 }
 
 #container-labelRate input {
