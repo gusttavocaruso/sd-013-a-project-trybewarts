@@ -145,3 +145,10 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+#divCount {
+  display: flex;
+  align-items: center;
+
+}
+

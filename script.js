@@ -123,3 +123,18 @@ const desafio18 = () => {
 };
 desafio18();
 
+const desafio20 = () => {
+  const divCount = document.querySelector('#divCount');
+  const label = document.createElement('label');
+  label.setAttribute('id', 'counter');
+  const textarea = document.getElementById('textarea');
+  textarea.maxLength = 500;
+  const count = 500;
+  label.innerText = count;
+
+  textarea.addEventListener('keyup', () => {
+    label.innerText = count - textarea.textLength;
+  });
+  divCount.appendChild(label);
+};
+desafio20();
