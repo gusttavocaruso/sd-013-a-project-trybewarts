@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #dadada;
+}
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   align-items: center;
   padding: 0 100px;
 }
@@ -29,6 +32,8 @@
 
 .form-evaluation {
   display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 #evaluation-form {
@@ -43,14 +48,19 @@
 
 #container-familia-conteudo {
   display: flex;
+  justify-content: space-between;
 }
 
 #linha-1 {
+  margin-top: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
 #linha-2 {
+  margin-top: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
 #comentario {
@@ -79,4 +89,88 @@
   margin-left: 20px;
   margin-right: 250px;
   display: none;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#familia {
+  margin-top: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-login input {
+  height: 30px;
+  border-radius:10px;
+  border: 0;
+  padding: 3px;
+  margin-left: 8px;
+}
+
+#botao-login {
+  margin-left: 10px;
+  width: 100px;
+  border-radius:10px;
+  border: 0;
+  background-color: #4E2C83;
+  color: #FFFFFF;
+}
+
+#nomeSobrenome {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nomeSobrenome input {
+  border-radius: 10px;
+  border: 0;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+#emailHouse {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-email {
+  border-radius: 10px;
+  border: 0;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+#house {
+  width: 220px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0;
+}
+
+button[id=submit-btn] {
+  background-color: #4E2C83;
+  color: #ffffff;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #24272e;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+#container-labelRate input {
+  margin-left: 20px;
 }
