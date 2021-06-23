@@ -84,7 +84,7 @@ function renderMessage() {
   form.style.display = 'none';
   const messageArea = document.querySelector('.form-data');
   messageArea.style.display = 'block';
-  for (let i = 0; i < formMessages.length; i += 1 ) {
+  for (let i = 0; i < formMessages.length; i += 1) {
     const p = document.createElement('p');
     console.log(p);
     p.innerHTML = formMessages[i];
