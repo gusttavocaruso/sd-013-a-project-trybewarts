@@ -13,3 +13,11 @@ function validationLogin() {
 }
 
 botao.addEventListener('click', validationLogin);
+
+function checaSubmit() {
+  if (agreement.checked === true) {
+    enviar.disabled = false;
+  } else {
+    enviar.disabled = true;
+  }
+}
