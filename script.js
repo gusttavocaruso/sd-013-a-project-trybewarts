@@ -11,3 +11,33 @@ function tryLogin() {
 
 const loginButton = document.getElementById('login-button');
 loginButton.addEventListener('click', tryLogin, false);
+
+//18.  Faz com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada
+function enableButton() {
+  const agreement = document.querySelector('#agreement');
+  const button = document.querySelector('#submit-btn');
+
+  agreement.addEventListener('click', () => {
+    if (button.disabled === true) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  });
+}
+
+enableButton();
+
+// 20. Adiciona contador ao textarea
+function textareaCounter() {
+  const text = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+
+  text.addEventListener('keyup', () => {
+    const characterLength = text.value.length;
+    counter.setAttribute('value', (500 - characterLength));
+    counter.innerText = `${(counter.getAttribute('value'))}${'/500'}`;
+  });
+}
+
+textareaCounter();
