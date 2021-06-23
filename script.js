@@ -12,7 +12,7 @@ log.addEventListener('click', loginCorreto);
 
 const enviar = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
-checkBox.onChange = function test() {
+checkBox.onChange = function testb() {
   if (this.checked) {
     enviar.disabled = false;
   } else {
