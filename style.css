@@ -64,6 +64,8 @@ h1 {
 /* classes do MAIN */
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Classe do formulário */
@@ -71,22 +73,44 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  padding: 5px;
+  justify-content: left;
 }
 
-/* Sessão 1 do Formulario */
+hr {
+  border: solid 1px gray;
+  opacity: 50%;
+  max-width: 100%;
+  margin: 5px;
+}
+
+/* Sessão 1 do Formulário */
 .session-one {
   display: flex;
   flex-direction: column;
 }
 
 .session-one h2 {
-  justify-content: center;
-  border: solid 1px purple;
+  align-self: center;
+  padding: 10px;
+
 }
 
 .session-one div {
-  border: solid 1px purple;
   margin: 5px;
+}
+
+#input-name , #input-lastname , #input-email {
+  width: 49%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#house {
+  width: 42%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* Sessão 2 do Formulario */
@@ -97,6 +121,7 @@ main {
 
 .family-stacks {
   display: flex;
+  align-self: center;
   flex-direction: column;
   width: 50%;
 }
@@ -109,13 +134,20 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 30px;
+  height: 100%;
+  padding: 10px;
+}
+
+.learn div {
+  padding: 5px;
+  border: purple;
 }
 
 /* Sessão 3 do Formulario */
 .session-three {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .textarea-content {
@@ -123,9 +155,19 @@ main {
   flex-direction: column;
 }
 
+.description-and-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+#textarea {
+  margin: 5px 1px;
+}
+
 .button-content button {
   width: 100%;
   padding: 5px;
+  margin: 5px 1px;
   background-color: purple;
   color: white;
 }
