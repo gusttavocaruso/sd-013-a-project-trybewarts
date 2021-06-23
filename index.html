@@ -93,7 +93,43 @@
             </label>
                      
           <!-- </div> -->
-          
+
+          <!-- 14. Cria campos de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts  -->
+          <section class="session-two">
+            <div class="evaluation">
+              <label id="label-rate">Como você avalia a Trybewarts?</label>
+              <label for="one">
+                <input type="radio" name="rate" id="one" value="1">1
+              </label>
+              <label for="two">
+                <input type="radio" name="rate" id="two" value="2">2
+              </label>
+              <label for="three">
+                <input type="radio" name="rate" id="three" value="3">3
+              </label>
+              <label for="four">
+                <input type="radio" name="rate" id="four" value="4">4
+              </label>
+              <label for="five">
+                <input type="radio" name="rate" id="five" value="5">5
+              </label>
+              <label for="six">
+                <input type="radio" name="rate" id="six" value="6">6
+              </label>
+              <label for="seven">
+                <input type="radio" name="rate" id="seven" value="7">7
+              </label>
+              <label for="eight">
+                <input type="radio" name="rate" id="eight" value="8">8
+              </label>
+              <label for="nine">
+                <input type="radio" name="rate" id="nine" value="9">9
+              </label>
+              <label for="ten">
+                <input type="radio" name="rate" id="ten" value="10">10
+              </label>
+            </div>
+
           <!-- 15. Cria um textarea com o ID 'textarea' e uma label com a classe 'textarea' contendo o num maximo de caracteres igual à 500 -->
         <label class="textarea" for="">Deixe seu comentário:
           <textarea id="textarea" name="textarea" cols="60" rows="06" maxlength="500" required></textarea><span
@@ -107,12 +143,10 @@
         </div>        
   
         <!-- 17. Crie um botão de Enviar para submeter o formulário -->
+        <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
         <div class="button-content">
           <button disabled=true type="submit" id="submit-btn">Enviar</button>
         </div>
-
-        <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
-        <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
       </form>
        
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"

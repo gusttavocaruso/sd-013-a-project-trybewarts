@@ -96,6 +96,34 @@ main {
   margin: 5px;
 }
 
+.session-two {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.textarea-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-and-counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+#textarea {
+  margin: 5px 1px;
+}
+
+.button-content button {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 1px;
+  background-color: purple;
+  color: white;
+}
+
 #input-name , #input-lastname , #input-email {
   width: 49%;
   padding: 5px;
