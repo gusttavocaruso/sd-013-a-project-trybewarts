@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   font-size: 40px;
+  color: white;
 }
 
 .trybewarts-header-logo {
@@ -80,4 +81,8 @@ main {
 
 #commentArea {
   width: 250px;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
 }
