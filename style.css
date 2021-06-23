@@ -103,3 +103,10 @@ footer {
   color: dimgray;
   align-self: flex-end;
 }
+
+#footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-content: flex-end;
+}
