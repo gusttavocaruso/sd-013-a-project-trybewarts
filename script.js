@@ -47,33 +47,43 @@ function limiteTextarea() {
 function createNameMessage() {
   const firstName = document.querySelector('[name=input-name]').value.trim();
   const lastName = document.querySelector('[name=input-lastname]').value.trim();
-  const message = `Nome: ${firstName} ${lastName}`;
+  const message = `Nome:  ${firstName} ${lastName}`;
   formMessages.push(message);
 }
 
 function createEmailMessage() {
   const email = document.querySelector('[name=input-email]').value.trim();
-  const message = `Email: ${email}`;
+  const message = `Email:  ${email}`;
   formMessages.push(message);
 }
 
 function createHouseMessage() {
   const house = document.querySelector('#house');
   const houseSelected = house.options[house.selectedIndex].text;
-  const message = `Casa: ${houseSelected}`;
+  const message = `Casa:  -${houseSelected}-`;
   formMessages.push(message);
 }
 
 function createFamilyMessage() {
   const family = document.querySelector('input[name="family"]:checked').value;
-  const message = `Familia: ${family}`;
+  const message = `Familia:  ${family}`;
   formMessages.push(message);
 }
 
+function createContentMessage() {
+  const content = document.querySelectorAll('.subject');
+  console.log(content);
+  // const message = `Familia: ${family}`;
+  // formMessages.push(message);
+}
+
+createContentMessage();
+
 function renderMessage() {
   const form = document.querySelector('#evaluation-form');
-  form.style.display = "none";
+  form.style.display = 'none';
   const messageArea = document.querySelector('.form-data');
+  messageArea.style.display = 'block';
   for (let i = 0; i < formMessages.length; i += 1 ) {
     const p = document.createElement('p');
     console.log(p);
