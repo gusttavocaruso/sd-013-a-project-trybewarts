@@ -79,6 +79,8 @@ footer {
 main {
   display: flex;
   justify-content: center;
+
+  /* justify-content: center; */
 }
 
 #evaluation-form {
@@ -90,6 +92,11 @@ main {
 #evaluation-form input , select {
   display: flex;
   width: 50%;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
 }
 
 /*
@@ -109,6 +116,17 @@ main {
 
 #label-family div {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
 }
