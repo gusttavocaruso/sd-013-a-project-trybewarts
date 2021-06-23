@@ -30,23 +30,26 @@
     <!--8 - Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:' -->
     <!--9 - Crie um select 'Casa' contendo quatro options -->
     <main>
-      <form id="evaluation-form" action= "">
-        <div>
-          <input id="input-name" type="text" placeholder="Nome">
-          <input id="input-lastname" type="text" placeholder="Sobrenome">
-        </div>
-        
-        <div>
-          <input id="input-email" type="text" placeholder="Email">
-          <label for="house">Casa:</label>
-          <select name="house" id="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
-        </div>
-      
+      <form id="evaluation-form" action="" method="get">
+        <!-- Sessão 1: Nome, Sobrenome, Email, Casa -->
+        <section class="session-one">
+          <h2 id="teste">Forms</h2>
+          <div>
+            <input id="input-name" type="text" placeholder="Nome"> </input>
+            <input id="input-lastname" type="text" placeholder="Sobrenome"></input>
+          </div>
+          <div>
+            <input id="input-email" type="text" placeholder="Email"></input>
+            <label for="house"> Casa
+              <select name="SelectHouse" id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </label>
+          </div>
+        </section>
         <!-- 12. Crie um campo de entrada para qual família a pessoa estudante se identifica -->      
         <label for="family" id="label-family">Qual sua família?</label>
         <div class="label-family">
@@ -111,28 +114,23 @@
 
         <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
         <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
-
-        <div>
-          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-          <input id="agreement" type="checkbox" required>
-        </div>
-
-        <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
       </form>
        
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
- 
-      <!--17. Crie um botão de Enviar para submeter o formulário-->
-      <div>
-        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" required>
-      </div>
-
-      <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
-      <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
-
     </main>
+    
+    <div>
+      <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+      <input id="agreement" type="checkbox" required>
+    </div>
 
+    <button id="submit-btn" type="submit" class="button-submit" disabled>Enviar</button>
+    
+    <div>
+      <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+      <input id="agreement" type="checkbox" required>
+    </div>
+    
     <!-- 19 - Crie um rodapé no final da página -->
     <footer class="footer">Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>

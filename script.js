@@ -28,7 +28,7 @@ function enableButton() {
 
 enableButton();
 
-// 20. Adiciona contador ao textarea
+// 20. Adiciona contador ao textarea para contador do textarea
 function textareaCounter() {
   const text = document.getElementById('textarea');
   const counter = document.getElementById('counter');

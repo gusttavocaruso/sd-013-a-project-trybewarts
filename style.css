@@ -64,34 +64,42 @@ body {
   min-height: 100vh;
 }
 
-/* ARRUMAR */
 footer {
-  align-items: center;
+  width: 100%;
+  display: flex;
   background-color: rgb(60, 64, 74);
   color: white;
-  display: flex;
-  flex: 1 0;
   height: 40px;
   justify-content: center;
-  margin-top: auto;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 main {
   display: flex;
   justify-content: center;
-
-  /* justify-content: center; */
 }
 
-#evaluation-form {
-  width: 675px;
+.session-one {
   display: flex;
   flex-direction: column;
 }
 
-#evaluation-form input , select {
-  display: flex;
-  width: 50%;
+.session-one h2 {
+  align-self: center;
+  padding: 10px;
+
+}
+
+.session-one div {
+  margin: 5px;
+}
+
+#input-name , #input-lastname , #input-email {
+  width: 49%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 #trybewarts-forms-logo {
