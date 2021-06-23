@@ -1,3 +1,4 @@
+// Alteração para commit final
 const submitBtn = document.getElementById('submit-btn');
 // Faz a validação do Login
 function validateLogin() {
