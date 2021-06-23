@@ -78,16 +78,13 @@ footer {
 
 main {
   display: flex;
-  align-content: flex-start;
-  align-items: center;
-  flex-flow: column wrap;
-  width: 675px;
+  justify-content: center;
 }
 
 #evaluation-form {
+  width: 675px;
   display: flex;
   flex-direction: column;
-  width: 675px;
 }
 
 #evaluation-form input , select {
