@@ -158,7 +158,7 @@ hr {
   border: 0;
 }
 
-#submit-button [ id = "submit-btn" ] {
+#submit-button [ id = submit-btn ] {
   background-color: purple;
   color: white;
   padding: 5px;
