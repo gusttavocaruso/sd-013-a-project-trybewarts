@@ -28,8 +28,8 @@ const makeNumRadioBtn = (n) => {
     radioLabel.setAttribute('for', radioName);
     radioLabel.innerHTML = radioName;
 
-    numRadioBtn.appendChild(radioLabel);
     numRadioBtn.appendChild(radioBox);
+    numRadioBtn.appendChild(radioLabel);
   }
 }; makeNumRadioBtn(radioButtons);
 
@@ -71,7 +71,7 @@ const charCounter = () => {
   const charsUsed = obsAreaText.value.length;
   const maxChars = obsAreaText.maxLength;
   const charsLeft = maxChars - charsUsed;
-  document.getElementById('counter').innerHTML = `Restam ${charsLeft} caracteres.`;
+  document.getElementById('counter').innerHTML = `Restam <mark>${charsLeft}</mark> caracteres.`;
 };
 charCounter();
 const submitBtnOn = () => { enviar.disabled = !(checkBtn.checked); };

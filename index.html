@@ -12,8 +12,6 @@
 
     </head>
     <body>
-        
-        
         <header class="header"> 
             <img class = "trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
             <h1 id ='trybewarts-header-title'>Trybewarts</h1>
@@ -25,8 +23,6 @@
         </header>
 
         <main>
-
-            <!-- <div id='forms'> -->
             <form action="" id="evaluation-form">
                 <fieldset id="personal-info">
                     <input type="text" name="nome" id="input-name" placeholder="Nome">
@@ -44,28 +40,34 @@
 
                 <fieldset id="field-family-content">
                     <div class="campo esquerdo">
-                        <label id="label-family">Qual sua família?</label><br>
+                        <label id="label-family">Qual sua família?</label><br><br>
                         <input type="radio"  name="family" value="Frontend" required>
-                        <label for="Família Frontend">Família Frontend</label><br>
+                        <label for="Família Frontend">Família Frontend</label><br><br>
                         <input type="radio"  name="family" value="Backend">
-                        <label for="Família Backend">Família Backend</label><br>
+                        <label for="Família Backend">Família Backend</label><br><br>
                         <input type="radio"  name="family" value="FullStack">
                         <label for="Família Fullstack">Família FullStack</label> 
                     </div>
                     <div class="campo direito">
                         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-                        <input type="checkbox" class='subject' name="content" value="HoFs">
-                        <label for="HoFs"> HoFs</label><br>
-                        <input type="checkbox" class='subject' name="content" value="Jest">
-                        <label for="Jest"> Jest</label><br>
-                        <input type="checkbox" class='subject' name="content" value="Promises">
-                        <label for="Promises"> Promises</label><br>
-                        <input type="checkbox" class='subject' name="content" value="React">
-                        <label for="React"> React</label><br>
-                        <input type="checkbox" class='subject' name="content" value="SQL">
-                        <label for="SQL"> SQL</label><br>
-                        <input type="checkbox"  class='subject'name="content" value="Python">
-                        <label for="Python"> Python</label><br>
+                        <div class="campo direito columns">
+                            <div class="campo direito lcol">
+                                <input type="checkbox" class='subject' name="content" value="HoFs">
+                                <label for="HoFs"> HoFs</label><br>
+                                <input type="checkbox" class='subject' name="content" value="Jest">
+                                <label for="Jest"> Jest</label><br>
+                                <input type="checkbox" class='subject' name="content" value="Promises">
+                                <label for="Promises"> Promises</label><br>
+                            </div>
+                            <div class="campo direito rcol">
+                                <input type="checkbox" class='subject' name="content" value="React">
+                                <label for="React"> React</label><br>
+                                <input type="checkbox" class='subject' name="content" value="SQL">
+                                <label for="SQL"> SQL</label><br>
+                                <input type="checkbox"  class='subject'name="content" value="Python">
+                                <label for="Python"> Python</label><br>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -76,8 +78,8 @@
 
                 <fieldset id='coment-submit'>
                     <label class="textarea">Deixe seu comentário:</label>
-                    <span id="counter"></span>
                     <textarea id='textarea' rows="8" cols="60" maxlength="500"></textarea>
+                    <span id="counter"></span>
                     <div>
                         <label id="label-infos">Você concorda com o uso das informações acima?</label>
                         <input type="checkbox" id='agreement' value="agreement">
@@ -85,19 +87,11 @@
                     <button id='submit-btn' type='submit' disabled>Enviar</button>
                 </fieldset>
             </form>
-            
 
             <figure id='forms-image'>
                 <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
             </figure>
-
-            
-            
         </main>
-        
         <footer id='rodape'><h5>Direitos reservados à Trybewarts©</h5></footer>
-
-
-
     </body>
 </html>
