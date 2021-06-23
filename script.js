@@ -2,11 +2,11 @@ function loginAuth() {
   const submitButton = document.querySelector('#login-button');
 
   submitButton.addEventListener('click', () => {
-    const loginButton = document.querySelector('#login').value;
-    const passwordButton = document.querySelector('#password').value;
+    const loginButton = document.getElementById('login').value;
+    const passwordButton = document.getElementById('password').value;
 
-    if (loginButton === 'tryber@teste.com' && passwordButton === '123456') {
-      alert('Olá, Tryber!');
+    if (loginButton.value == 'tryber@teste.com' && passwordButton.value == '123456') {
+      alert("Olá, Tryber!");
     } else {
       alert('Login ou senha inválidos.');
     }
