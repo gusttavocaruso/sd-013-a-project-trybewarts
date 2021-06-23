@@ -5,7 +5,7 @@
 }
 
 .header {
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(51, 167, 145);
   display: flex;
   justify-content: space-between;
   padding: 10px;
