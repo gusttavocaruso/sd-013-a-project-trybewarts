@@ -38,7 +38,7 @@ textarea.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textarea.value.length;
 });
 
-// Deleta tudo do forms e cria paragrafo com valores dos inputs e botões
+// Cria paragrafo com valores dos inputs e botões
 const form = document.querySelector('#evaluation-form');
 const nome = document.querySelector('#input-name');
 const sobrenome = document.querySelector('#input-lastname');
