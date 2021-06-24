@@ -10,6 +10,7 @@ const enviarFormEvaluation = document.querySelector('#submit-btn');
 // const counterTextArea = document.querySelector('#counter');
 const textArea = document.querySelector('#textarea');
 const labelDoContador = document.querySelector('#counter');
+const casaSelect = document.querySelector('#house');
 let count = 500;
 
 // Verifica o email e a senha
@@ -43,3 +44,20 @@ textArea.addEventListener('input', () => {
 });
 
 // Vamos ver se o merge funciona
+
+// Alterando cor do select
+casaSelect.addEventListener('change', () => {
+  if (casaSelect.value === 'Corvinode') {
+    casaSelect.style.backgroundColor = '#245874';
+    casaSelect.style.color = 'white';
+  } else if (casaSelect.value === 'Gitnória') {
+    casaSelect.style.backgroundColor = '#3C0F0A';
+    casaSelect.style.color = 'white';
+  } else if (casaSelect.value === 'Reactpuff') {
+    casaSelect.style.backgroundColor = '#E7AE22';
+    casaSelect.style.color = 'black';
+  } else if (casaSelect.value === 'Pytherina') {
+    casaSelect.style.backgroundColor = '#417960';
+    casaSelect.style.color = 'black';
+  }
+});
