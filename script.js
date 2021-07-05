@@ -12,7 +12,7 @@ function tryLogin() {
 const loginButton = document.getElementById('login-button');
 loginButton.addEventListener('click', tryLogin, false);
 
-//18.  Faz com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada
+// 18.  Faz com que o botão 'Enviar' seja habilitado somente após a checkbox do requisito 16 ser selecionada
 function enableButton() {
   const agreement = document.querySelector('#agreement');
   const button = document.querySelector('#submit-btn');
