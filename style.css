@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* 1 - Crie uma barra verde na parte superior da página */
 .header {
   background-color: rgb(50, 167, 145);
@@ -13,6 +14,7 @@
   justify-content: space-between;
   padding: 10px;
 }
+
 /* 3 - Acrescente um formulário de autenticação com login, senha e um botão de entrar */
 .trybewarts-login {
   align-items: center;
@@ -40,11 +42,13 @@
   text-decoration: none;
   width: 150px;
 }
+
 /* 4 - Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header' */
 #trybewarts-header-title {
   align-items: center;
   display: flex;
 }
+
 /*
   19 - Crie um rodapé no final da página
   Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
