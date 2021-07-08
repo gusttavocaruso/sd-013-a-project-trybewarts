@@ -20,6 +20,7 @@
   align-items: center;
   display: flex;
 }
+
 #login , #pwd {
   width: 160px;
   height: 45px;
@@ -27,6 +28,7 @@
   padding: 0 9px;
   border-radius: 8px;
 }
+
 #login-button {
   align-items: center;
   appearance: button;
@@ -54,6 +56,7 @@
   Referencias: https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
   https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f
 */
+
 footer {
   width: 100%;
   display: flex;
@@ -65,21 +68,26 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
 main {
   display: flex;
   justify-content: center;
 }
+
 .session-one {
   display: flex;
   flex-direction: column;
 }
+
 .session-one h2 {
   align-self: center;
   padding: 10px;
 }
+
 .session-one div {
   margin: 5px;
 }
+
 .session-two {
   display: flex;
   flex-direction: column;
@@ -119,6 +127,7 @@ main {
   padding: 5px;
   border-radius: 10px;
 }
+
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
