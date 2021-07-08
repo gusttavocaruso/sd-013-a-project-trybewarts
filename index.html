@@ -50,9 +50,10 @@
             </label>
           </div>
         </section>
+        <hr>
         <!-- 12. Crie um campo de entrada para qual família a pessoa estudante se identifica -->      
         <label for="family" id="label-family">Qual sua família?</label>
-        <div class="label-family">
+        <div class="session-two">
           <label>Frontend
             <input type="radio" name="family" value="Frontend" checked>
           </label>
@@ -65,6 +66,7 @@
             <input type="radio" name="family" value="FullStack">
           </label>          
         </div>
+        <hr>
 
         <!-- 13. Crie campos de entrada do tipo 'checkbox' contendo seis opções -->
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>      
@@ -93,24 +95,57 @@
             <input type="checkbox" class="subject" name="python" value="Python">
           </label>                     
         </div>
-          
-         <!-- 15. Cria um textarea com o ID 'textarea' e uma label com a classe 'textarea' contendo o num maximo de caracteres igual à 500 -->
-        <label class="textarea" for="">Deixe seu comentário:
-          <textarea id="textarea" name="textarea" cols="60" rows="06" maxlength="500" required></textarea>
-          <span id="counter">500</span>
-        </label>
-
-        <!-- 16. Crie um campo de entrada do tipo checkbox com o ID 'agreement' para validar as informações -->
-        <div>
-          <label idCrie um botão de Enviar para submeter o formulário="label-infos" for="">Você concorda com o uso das informações acima?</label>
-          <input id="agreement" type="checkbox" required>
-        </div>        
-  
-        <!-- 17. Crie um botão de Enviar para submeter o formulário -->
-        <!--18. Faz com que o botão Enviar seja habilitado somente após a checkbox do requisito 16 ser selecionada-->
+        <hr>
+        <!--14. Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts -->
+        <section class="session-three">
+        <div class="evaluation">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <label for="one">
+            <input type="radio" name="rate" id="one" value="1">1
+          </label>
+          <label for="two">
+            <input type="radio" name="rate" id="two" value="2">2
+          </label>
+          <label for="three">
+            <input type="radio" name="rate" id="three" value="3">3
+          </label>
+          <label for="four">
+            <input type="radio" name="rate" id="four" value="4">4
+          </label>
+          <label for="five">
+            <input type="radio" name="rate" id="five" value="5">5
+          </label>
+          <label for="six">
+            <input type="radio" name="rate" id="six" value="6">6
+          </label>
+          <label for="seven">
+            <input type="radio" name="rate" id="seven" value="7">7
+          </label>
+          <label for="eight">
+            <input type="radio" name="rate" id="eight" value="8">8
+          </label>
+          <label for="nine">
+            <input type="radio" name="rate" id="nine" value="9">9
+          </label>
+          <label for="ten">
+            <input type="radio" name="rate" id="ten" value="10">10
+          </label>
+        </div>
+        <div class="textarea-content">
+          <div class='description-and-counter'>
+            <div><label class="textarea">Deixe seu comentário:</label></div>
+            <div id="counter" value='500'>500/500</div>
+            </div><textarea id="textarea" cols="30" rows="7" maxlength="500"></textarea></div>
+          <div>
+          <label id="label-infos" for="agreement">
+            <input type="checkbox" id="agreement"> Você concorda com o uso das informações acima?
+          </label>
+        </div>
         <div class="button-content">
           <button disabled=true type="submit" id="submit-btn">Enviar</button>
         </div>
+      </section>
+    </form>
       </form>
        
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"
