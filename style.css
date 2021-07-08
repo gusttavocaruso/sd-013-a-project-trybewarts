@@ -74,6 +74,14 @@ main {
   justify-content: center;
 }
 
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: left;
+}
+
 .session-one {
   display: flex;
   flex-direction: column;
