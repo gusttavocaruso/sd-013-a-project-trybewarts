@@ -7,7 +7,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   align-items: center;
   padding: 0 100px;
 }
@@ -43,25 +43,38 @@
 
 #container-familia-conteudo {
   display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #linha-1 {
   display: flex;
+  margin-top: 10px;
 }
 
 #linha-2 {
   display: flex;
+  align-items: center;
+
 }
 
 #comentario {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
 }
 
 #submit-button {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+#submit-button :hover{
+  background-color: rgb(171, 88, 248);
+  color: white;
 }
 
 #textarea {
@@ -74,7 +87,7 @@
   display: flex;
   flex-direction: row-reverse;
 }
-.form-2 {
+#form-2 {
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 250px;
@@ -82,5 +95,126 @@
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 250px;
-  display:block;
+  display:none;
+}
+
+.form-evaluation {
+  background-color:rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  height: 639px;
+}
+
+#evaluation-form {
+  width: 675px;
+}
+
+#title-form{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-form p{
+  font-size: 30px;
+}
+
+#nomeSobrenome {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nomeSobrenome input{
+  width: 294px;
+}
+
+#emailHouse {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 635px;
+}
+
+#input-email {
+  width: 294px;
+}
+
+#house{
+  width: 258.4px;
+}
+
+#label-family{
+  margin-top: 10px;
+  
+}
+
+#familia {
+  margin-right: 70px;
+
+}
+
+#linha-1 div:nth-child(n+2):nth-child(-n+3) {
+  margin-left: 30px;
+ }
+
+ #linha-2 div:nth-child(n+2):nth-child(-n+3) {
+  margin-left: 27px;
+ }
+
+#materias {
+  line-height: 30px;
+}
+
+.hr1 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.hr2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+#input-front {
+ margin-top: 10px;
+}
+
+#rate-item {
+  margin-left: 3px;
+  margin-right: 2px;
+}
+
+.familys {
+  margin-top: 5px;
+}
+
+#footer {
+  background-color: rgb(171, 88, 248);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#form1 input{
+  margin-right: 5px;
+}
+
+#botao-login {
+  width: 50px;
+  background-color: rgb(171, 88, 248);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#botao-login:hover{
+  background-color: rgb(131, 46, 211);
 }

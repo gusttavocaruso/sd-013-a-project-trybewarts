@@ -32,36 +32,68 @@ text.addEventListener('keyup', () => {
   counter.innerHTML = 500 - caracteres.length;
 });
 
-
 const nome1 = document.getElementById('input-name');
 const sobrenome1 = document.getElementById('input-lastname');
 const email1 = document.getElementById('input-email');
 const casa1 = document.getElementById('house');
-const familia1 = document.getElementById('familia');
-const materias1 = document.getElementById('materias');
-const avaliacao1 = document.getElementById('container-labelRate');
+const familia1 = document.querySelectorAll('.familys');
+const materias1 = document.querySelectorAll('.materia-list');
+const avaliacao1 = document.querySelectorAll('#rate-item');
 const observacoes1 = document.getElementById('textarea');
 
-let nome2 = document.getElementById('nome2');
-let email2 = document.getElementById('email12');
-let casa2 = document.getElementById('casa2');
-let familia2 = document.getElementById('familia2');
-let materias2 = document.getElementById('materias2');
-let avaliacao2 = document.getElementById('avaliacao2');
-let observacoes2 = document.getElementById('observacoes2');
+const nome2 = document.getElementById('nome2');
+const email2 = document.getElementById('email2');
+const casa2 = document.getElementById('casa2');
+const familia2 = document.getElementById('familia2');
+const materias2 = document.getElementById('materias2');
+const avaliacao2 = document.getElementById('avaliacao2');
+const observacoes2 = document.getElementById('observacoes2');
 
 const formulario1 = document.getElementById('evaluation-form');
 const formulario2 = document.getElementById('form-2');
 
+/* Retorna a família selecionada (string) */
+function familyChecked() {
+  for (let i = 0; i < familia1.length; i += 1) {
+    if (familia1[i].checked) {
+      return familia1[i].value;
+    }
+  }
+}
 
-function resultForms() {
+/* Retorna os conteúdos selecionados (string) */
+function subjectsChecked() {
+  let subjectList = '';
+  for (let i = 0; i < materias1.length; i += 1) {
+    if (materias1[i].checked) {
+      subjectList += `   ${materias1[i].value}    ,  `;
+    }
+  }
+  return subjectList;
+}
 
-  nome2.innerHTML = 'Nome:'+ nome1.value+' '+ nome2.value;
-  email2.innerHTML = 'Email: '+email1.value;
-  
+/* Retorna a avaliação selecionada (int) */
+function rateChecked() {
+  for (let i = 0; i < avaliacao1.length; i += 1) {
+    if (avaliacao1[i].checked) {
+      return avaliacao1[i].value;
+    }
+  }
+}
+
+function resultForms(event) {
+  event.preventDefault();
+  nome2.innerHTML = `${nome1.value} ${sobrenome1.value}`;
+  email2.innerHTML = `Email: ${email1.value}`;
+  casa2.innerHTML = `Casa: ${casa1.value}`;
+  familia2.innerText = `Família: ${familyChecked()}`;
+  materias2.innerText = `Matéria:  ${subjectsChecked()}`;
+  avaliacao2.innerText = `Avaliação: ${rateChecked()}`;
+  observacoes2.innerText = `Observações: ${observacoes1.value}`;
   formulario1.style.display = 'none';
   formulario2.style.display = 'block';
-
+  /*  nome2.innerText = 'Doug';
+  console.log(nome2); */
 }
 
 buttonSubmit.addEventListener('click', resultForms);
